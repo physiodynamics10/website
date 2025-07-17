@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Physio Dynamics | Best & Professional Physiotherapy Services in Wayanad</title>
+    <title>Physio Dynamics | Best Physiotherapy Services in Wayanad</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Physio Dynamics provides expert physiotherapy services in Wayanad including orthopedic, sports, neurological and pediatric physiotherapy treatments.">
+    <meta name="description" content="Physio Dynamics provides expert physiotherapy services in Wayanad including orthopedic, sports, neurological, Cardio respiratory and pediatric physiotherapy treatments.">
     <meta name="keywords" content="physiotherapy, Wayanad, sports injury, orthopedic, neurological, pediatric, chest physio, home care, best physiotherapy clinic, best physiotherapy, best physiotherapist,Panamaram">
     <link rel="canonical" href="https://yourwebsite.com/index.html">
 
@@ -95,10 +95,9 @@
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
+            <span class="visually-hidden">Loading...</span>
         </div>
     </div>
     <!-- Spinner End -->
@@ -108,7 +107,7 @@
         <div class="row gx-0 d-none d-lg-flex">
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small class="fa fa-map-marker-alt text-primary me-2" aria-hidden="true"></small>
                     <small>
                         <a href="https://maps.app.goo.gl/g7zxENEieYSZWFcQ7" target="_blank" rel="noopener noreferrer">
                             UB City Centre Building, Near Crescent public school, Panamaram
@@ -116,21 +115,28 @@
                     </small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center py-3">
-                    <small class="far fa-clock text-primary me-2"></small>
+                    <small class="far fa-clock text-primary me-2" aria-hidden="true"></small>
                     <small>Mon - Sat : 08.00 AM - 07.00 PM</small>
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center">
                     <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
-                        href="https://wa.me/6282929104" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        href="https://wa.me/6282929104" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                    </a>
                     <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
-                        href="https://www.facebook.com/physiodynamicz"><i class="fab fa-facebook-f"></i></a>
+                        href="https://www.facebook.com/physiodynamicz" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    </a>
                     <a class="btn btn-sm-square rounded-circle bg-white text-primary me-0"
-                        href="https://www.instagram.com/physio_.dynamics/"><i class="fab fa-instagram"></i></a>
+                        href="https://www.instagram.com/physio_.dynamics/" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram profile">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
                     <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
-                        href="https://www.linkedin.com/in/physio-dynamics-undefined-145495341/"><i
-                            class="fab fa-linkedin-in"></i></a>
+                        href="https://www.linkedin.com/in/physio-dynamics-undefined-145495341/" target="_blank" rel="noopener noreferrer" aria-label="Visit our LinkedIn profile">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -140,15 +146,16 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="container-fluid d-flex align-items-center justify-content-between px-4 px-lg-5">
-            <!-- Brand with Logo -->
+            <!-- Brand with Logo - Changed h1 to div for single H1 per page -->
             <a href="index.html" class="navbar-brand d-flex align-items-center m-0">
-                <img src="img/logo2.png" alt="PHYSIO DYNAMICS Logo" style="height: 40px; margin-right: 10px;"
+                <img src="img/logo2.png" alt="Physio Dynamics - Professional Physiotherapy Services" style="height: 40px; margin-right: 10px;"
                     onerror="this.style.display='none'">
-                <h1 class="m-0 text-primary">PHYSIO DYNAMICS</h1>
+                <div class="m-0 text-primary fs-3 fw-bold">PHYSIO DYNAMICS</div>
             </a>
 
             <!-- Mobile Toggle Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -161,424 +168,395 @@
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
                 <a href="tel:+916282929104" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">
-                    Appointment <i class="fa fa-arrow-right ms-3"></i>
+                    Appointment <i class="fa fa-arrow-right ms-3" aria-hidden="true"></i>
                 </a>
             </div>
         </div>
     </nav>
-
     <!-- navbar end-->
 
-
-    <!-- Header Start -->
-    <div class="container-fluid header bg-primary p-0 mb-5">
-        <div class="row g-0 align-items-center">
-            <div class="col-lg-6 p-5 wow fadeIn order-2 order-lg-1" data-wow-delay="0.1s">
-                <h1 class="display-4 text-white mb-5">'Physio Dynamics'</h1>
-                <h1 class="display-4 text-white mb-5"><i>Wayanad's Leading Physiotherapy &
-                        Sports Rehabilitation Center</i></h1>
-            </div>
-            <div class="col-lg-6 wow fadeIn order-1 order-lg-2" data-wow-delay="0.5s">
-                <div class="video-container">
-                    <!-- Remove 'muted' and add JavaScript audio enforcement -->
-                    <video id="heroVideo" autoplay loop playsinline class="w-100">
-                        <source src="video/video.mp4" type="video/mp4">
-                    </video>
+    <!-- Main Content -->
+    <main>
+        <!-- Header Start -->
+        <div class="container-fluid header bg-primary p-0 mb-5">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-6 p-5 wow fadeIn order-2 order-lg-1" data-wow-delay="0.1s">
+                    <h1 class="display-4 text-white mb-5">Physio Dynamics - Wayanad's Leading Physiotherapy & Sports Rehabilitation Center</h1>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const video = document.getElementById('heroVideo');
-
-            // Unmute and play with sound (will trigger on user interaction)
-            function enableAudio() {
-                video.muted = false;
-                video.play().catch(e => console.log("Playback failed:", e));
-                document.removeEventListener('click', enableAudio);
-            }
-
-            // Mobile browsers require user interaction first
-            document.addEventListener('click', enableAudio);
-
-            // Desktop browsers may allow this immediately
-            if (window.innerWidth > 992) {
-                enableAudio();
-            }
-        });
-    </script>
-    <!-- Header End -->
-
-    <!-- About Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="d-flex flex-column">
-                        <img class="img-fluid rounded w-75 align-self-end" src="img/img3.png" alt="">
-                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="img/logo2.png" alt=""
-                            style="margin-top: -25%;">
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <p class="d-inline-block border rounded-pill py-1 px-4">About Us</p>
-                    <h1 class="mb-4">Why You Should Trust Us? Get to Know About Us!</h1>
-                    <p>Physio Dynamics – Physiotherapy and Sports Rehabilitation Centre, located in Panamaram, Wayanad,
-                        India, was established on 20th August 2024. We are committed to providing effective,
-                        compassionate, and personalized care for all.</p>
-                    <p class="mb-4">Our clinic was started with a vision to offer better treatment and advanced
-                        rehabilitation solutions to the people of our community. Whether it's pain management, sports
-                        injuries, or post-operative care – we aim to help you recover, regain, and rebuild.</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Personalized Treatment Plans</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Post-Surgical Rehabilitation</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Pain Management Expertise</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Friendly and Supportive Environment</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Flexible Appointment Scheduling</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Focus on Long-Term Recovery</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Education on Self-care & Injury Prevention
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="d-inline-block border rounded-pill py-1 px-4">Services</p>
-                <h1>We provides</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item bg-light rounded h-100 p-5">
-                        <h4 class="mb-3">Orthopedic Physiotherapy</h4>
-                        <p class="mb-4">Orthopedic Physiotherapy focuses on diagnosing, managing, and treating
-                            conditions related to the bones, joints, ligaments, and muscles. It helps restore mobility,
-                            reduce pain, and improve strength after injuries, surgeries, or chronic orthopedic
-                            conditions.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item bg-light rounded h-100 p-5">
-                        <h4 class="mb-3">Sports Physiotherapy</h4>
-                        <p class="mb-4">Sports Physiotherapy is dedicated to the prevention, assessment, and treatment
-                            of sports-related injuries. It helps athletes of all levels recover faster, improve
-                            performance, and reduce the risk of future injuries through tailored rehabilitation and
-                            training programs.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item bg-light rounded h-100 p-5">
-                        <h4 class="mb-3">Neurological Physiotherapy</h4>
-                        <p class="mb-4">Neurological Physiotherapy focuses on treating patients with disorders of the
-                            nervous system such as stroke, Parkinson's disease, spinal cord injuries, and multiple
-                            sclerosis. It aims to improve mobility, coordination, balance, and overall functional
-                            independence.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item bg-light rounded h-100 p-5">
-                        <h4 class="mb-3">Pediatric Physiotherapy</h4>
-                        <p class="mb-4">Pediatric Physiotherapy specializes in the treatment of infants, children, and
-                            adolescents with physical challenges. It helps improve movement, strength, posture, and
-                            motor skills to support healthy growth and development.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item bg-light rounded h-100 p-5">
-                        <h4 class="mb-3">Chest Physiotherapy</h4>
-                        <p class="mb-4">Chest Physiotherapy helps clear mucus from the lungs and improve breathing in
-                            patients with respiratory conditions such as asthma, bronchitis, pneumonia, or COPD. It
-                            includes techniques like percussion, vibration, and breathing exercises to enhance lung
-                            function.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item bg-light rounded h-100 p-5">
-                        <h4 class="mb-3">Home Care</h4>
-                        <p class="mb-4">Home Care Physiotherapy provides personalized treatment in the comfort of your
-                            home for patients who are elderly, post-surgical, or unable to visit the clinic. It ensures
-                            continuity of care, convenience, and faster recovery in a familiar environment.</p>
+                <div class="col-lg-6 wow fadeIn order-1 order-lg-2" data-wow-delay="0.5s">
+                    <div class="video-container">
+                        <video id="heroVideo" autoplay loop playsinline class="w-100" muted>
+                            <source src="video/video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Service End -->
+        <!-- Header End -->
 
-    <!-- Feature Start -->
-    <div class="container-fluid bg-primary overflow-hidden my-5 px-lg-0">
-        <div class="container feature px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="p-lg-5 ps-lg-0">
-                        <p class="d-inline-block border rounded-pill text-light py-1 px-4">Features</p>
-                        <h1 class="text-white mb-4">Why Choose Us</h1>
-                        <p class="text-white mb-4 pb-2">Physio Dynamics is the Best Physiotherapy and Sports
-                            Rehabilitation Center in Wayanad. At Physio Dynamics we are committed to providing expert
-                            care with compassion and professionalism. Here's why patients choose us:</p>
-                        <div class="row g-4">
-                            <div class="col-12 col-md-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
-                                        style="width: 55px; height: 55px;">
-                                        <i class="fa fa-user-md text-primary"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="text-white mb-2">Experienced</p>
-                                        <h5 class="text-white mb-0">Physiotherapist</h5>
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="d-flex flex-column">
+                            <img class="img-fluid rounded w-75 align-self-end" src="img/img3.png" alt="Physiotherapy treatment at Physio Dynamics">
+                            <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="img/logo2.png" alt="Physio Dynamics logo"
+                                style="margin-top: -25%;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <p class="d-inline-block border rounded-pill py-1 px-4">About Us</p>
+                        <h2 class="mb-4">Why You Should Trust Us? Get to Know About Us!</h2>
+                        <p>Physio Dynamics – Physiotherapy and Sports Rehabilitation Centre, located in Panamaram, Wayanad,
+                            India, was established on 20th August 2024. We are committed to providing effective,
+                            compassionate, and personalized care for all.</p>
+                        <p class="mb-4">Our clinic was started with a vision to offer better treatment and advanced
+                            rehabilitation solutions to the people of our community. Whether it's pain management, sports
+                            injuries, or post-operative care – we aim to help you recover, regain, and rebuild.</p>
+                        <p><i class="far fa-check-circle text-primary me-3"></i>Personalized Treatment Plans</p>
+                        <p><i class="far fa-check-circle text-primary me-3"></i>Post-Surgical Rehabilitation</p>
+                        <p><i class="far fa-check-circle text-primary me-3"></i>Pain Management Expertise</p>
+                        <p><i class="far fa-check-circle text-primary me-3"></i>Friendly and Supportive Environment</p>
+                        <p><i class="far fa-check-circle text-primary me-3"></i>Flexible Appointment Scheduling</p>
+                        <p><i class="far fa-check-circle text-primary me-3"></i>Focus on Long-Term Recovery</p>
+                        <p><i class="far fa-check-circle text-primary me-3"></i>Education on Self-care & Injury Prevention</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Services</p>
+                    <h2>Our Professional Physiotherapy Services</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item bg-light rounded h-100 p-5">
+                            <h3 class="h4 mb-3">Orthopedic Physiotherapy</h3>
+                            <p class="mb-4">Orthopedic Physiotherapy focuses on diagnosing, managing, and treating
+                                conditions related to the bones, joints, ligaments, and muscles. It helps restore mobility,
+                                reduce pain, and improve strength after injuries, surgeries, or chronic orthopedic
+                                conditions.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item bg-light rounded h-100 p-5">
+                            <h3 class="h4 mb-3">Sports Physiotherapy</h3>
+                            <p class="mb-4">Sports Physiotherapy is dedicated to the prevention, assessment, and treatment
+                                of sports-related injuries. It helps athletes of all levels recover faster, improve
+                                performance, and reduce the risk of future injuries through tailored rehabilitation and
+                                training programs.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item bg-light rounded h-100 p-5">
+                            <h3 class="h4 mb-3">Neurological Physiotherapy</h3>
+                            <p class="mb-4">Neurological Physiotherapy focuses on treating patients with disorders of the
+                                nervous system such as stroke, Parkinson's disease, spinal cord injuries, and multiple
+                                sclerosis. It aims to improve mobility, coordination, balance, and overall functional
+                                independence.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item bg-light rounded h-100 p-5">
+                            <h3 class="h4 mb-3">Pediatric Physiotherapy</h3>
+                            <p class="mb-4">Pediatric Physiotherapy specializes in the treatment of infants, children, and
+                                adolescents with physical challenges. It helps improve movement, strength, posture, and
+                                motor skills to support healthy growth and development.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item bg-light rounded h-100 p-5">
+                            <h3 class="h4 mb-3">Chest Physiotherapy</h3>
+                            <p class="mb-4">Chest Physiotherapy helps clear mucus from the lungs and improve breathing in
+                                patients with respiratory conditions such as asthma, bronchitis, pneumonia, or COPD. It
+                                includes techniques like percussion, vibration, and breathing exercises to enhance lung
+                                function.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item bg-light rounded h-100 p-5">
+                            <h3 class="h4 mb-3">Home Care</h3>
+                            <p class="mb-4">Home Care Physiotherapy provides personalized treatment in the comfort of your
+                                home for patients who are elderly, post-surgical, or unable to visit the clinic. It ensures
+                                continuity of care, convenience, and faster recovery in a familiar environment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+        <!-- Feature Start -->
+        <div class="container-fluid bg-primary overflow-hidden my-5 px-lg-0">
+            <div class="container feature px-lg-0">
+                <div class="row g-0 mx-lg-0">
+                    <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="p-lg-5 ps-lg-0">
+                            <p class="d-inline-block border rounded-pill text-light py-1 px-4">Features</p>
+                            <h2 class="text-white mb-4">Why Choose Us</h2>
+                            <p class="text-white mb-4 pb-2">Physio Dynamics is the Best Physiotherapy and Sports
+                                Rehabilitation Center in Wayanad. At Physio Dynamics we are committed to providing expert
+                                care with compassion and professionalism. Here's why patients choose us:</p>
+                            <div class="row g-4">
+                                <div class="col-12 col-md-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                            style="width: 55px; height: 55px;">
+                                            <i class="fa fa-user-md text-primary" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="ms-4">
+                                            <p class="text-white mb-2">Experienced</p>
+                                            <h3 class="h5 text-white mb-0">Physiotherapist</h3>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
-                                        style="width: 55px; height: 55px;">
-                                        <i class="fa fa-check text-primary"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="text-white mb-2">Quality</p>
-                                        <h5 class="text-white mb-0">Services</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
-                                        style="width: 55px; height: 55px;">
-                                        <i class="fa fa-comment-medical text-primary"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="text-white mb-2">Positive</p>
-                                        <h5 class="text-white mb-0">Consultation</h5>
+                                <div class="col-12 col-md-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                            style="width: 55px; height: 55px;">
+                                            <i class="fa fa-check text-primary" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="ms-4">
+                                            <p class="text-white mb-2">Quality</p>
+                                            <h3 class="h5 text-white mb-0">Services</h3>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
-                                        style="width: 55px; height: 55px;">
-                                        <i class="fa fa-headphones text-primary"></i>
+                                <div class="col-12 col-md-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                            style="width: 55px; height: 55px;">
+                                            <i class="fa fa-comment-medical text-primary" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="ms-4">
+                                            <p class="text-white mb-2">Positive</p>
+                                            <h3 class="h5 text-white mb-0">Consultation</h3>
+                                        </div>
                                     </div>
-                                    <div class="ms-4">
-                                        <p class="text-white mb-2">Tailored</p>
-                                        <h5 class="text-white mb-0">Care Plans</h5>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                            style="width: 55px; height: 55px;">
+                                            <i class="fa fa-headphones text-primary" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="ms-4">
+                                            <p class="text-white mb-2">Tailored</p>
+                                            <h3 class="h5 text-white mb-0">Care Plans</h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/img2.png"
-                            style="object-fit: cover;" alt="">
+                    <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <img class="position-absolute img-fluid w-100 h-100" src="img/img2.png"
+                                style="object-fit: cover;" alt="Physiotherapy session at Physio Dynamics">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Feature End -->
+        <!-- Feature End -->
 
-    <!-- Contact Start -->
-    <div class="container-xxl py-5 mb-4">
-        <div class="text-center mb-5"> <!-- Added mb-5 (3rem/48px margin-bottom) -->
-            <p class="d-inline-block border rounded-pill py-1 px-4 mb-0">
-                Contact Us
-            </p>
-        </div>
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <div class="h-100 bg-light rounded d-flex align-items-center p-5">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
-                            style="width: 55px; height: 55px;">
-                            <i class="fa fa-map-marker-alt text-primary"></i>
-                        </div>
-                        <div class="ms-4">
-                            <p class="mb-2">Address</p>
-                            <h5 class="mb-0">
-                                <a href="https://maps.app.goo.gl/myuTpwMAnCEPEJa9A" target="_blank"
-                                    rel="noopener noreferrer" class="text-decoration-none">
-                                    UB City Centre Building, Near Crescent public school, Panamaram - Wayanad
-                                </a>
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="h-100 bg-light rounded d-flex align-items-center p-5">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
-                            style="width: 55px; height: 55px;">
-                            <i class="fa fa-phone-alt text-primary"></i>
-                        </div>
-                        <div class="ms-4">
-                            <p class="mb-2">Call Us Now</p>
-                            <h5 class="mb-0"><a href="tel:+916282929104">+91 6282929104</a></h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="h-100 bg-light rounded d-flex align-items-center p-5">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
-                            style="width: 55px; height: 55px;">
-                            <i class="fa fa-envelope-open text-primary"></i>
-                        </div>
-                        <div class="ms-4">
-                            <p class="mb-2">Mail Us Now</p>
-                            <h5 class="mb-0 email-address">
-                                <a href="mailto:physiodynamics10@gmail.com">physiodynamics10</a>
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="bg-light rounded p-5">
-
-                        <h1 class="mb-4">Have Any Query? Please Contact Us!</h1>
-
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                            style="height: 100px"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                                </div>
+        <!-- Contact Start -->
+        <div class="container-xxl py-5 mb-4">
+            <div class="text-center mb-5">
+                <p class="d-inline-block border rounded-pill py-1 px-4 mb-0">
+                    Contact Us
+                </p>
+            </div>
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="h-100 bg-light rounded d-flex align-items-center p-5">
+                            <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
+                                style="width: 55px; height: 55px;">
+                                <i class="fa fa-map-marker-alt text-primary" aria-hidden="true"></i>
                             </div>
-                        </form>
+                            <div class="ms-4">
+                                <p class="mb-2">Address</p>
+                                <h3 class="h5 mb-0">
+                                    <a href="https://maps.app.goo.gl/myuTpwMAnCEPEJa9A" target="_blank"
+                                        rel="noopener noreferrer" class="text-decoration-none">
+                                        UB City Centre Building, Near Crescent public school, Panamaram - Wayanad
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="h-100" style="min-height: 400px;">
-                        <iframe class="rounded w-100 h-100"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4684.704090452535!2d76.07001767575194!3d11.732372640832988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5df2bba302295%3A0x1bc38ba2aabd5b7f!2sPhysio%20Dynamics%20(Physiotherapy%20%26%20Sports%20Rehabilitation%20Centre)%20Panamaram!5e1!3m2!1sen!2sin!4v1752732685166!5m2!1sen!2sin"
-                            frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <div class="col-lg-4">
+                        <div class="h-100 bg-light rounded d-flex align-items-center p-5">
+                            <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
+                                style="width: 55px; height: 55px;">
+                                <i class="fa fa-phone-alt text-primary" aria-hidden="true"></i>
+                            </div>
+                            <div class="ms-4">
+                                <p class="mb-2">Call Us Now</p>
+                                <h3 class="h5 mb-0"><a href="tel:+916282929104">+91 6282929104</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="h-100 bg-light rounded d-flex align-items-center p-5">
+                            <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
+                                style="width: 55px; height: 55px;">
+                                <i class="fa fa-envelope-open text-primary" aria-hidden="true"></i>
+                            </div>
+                            <div class="ms-4">
+                                <p class="mb-2">Mail Us Now</p>
+                                <h3 class="h5 mb-0 email-address">
+                                    <a href="mailto:physiodynamics10@gmail.com">physiodynamics10</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="bg-light rounded p-5">
+                            <h2 class="mb-4">Have Any Query? Please Contact Us!</h2>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                            <label for="subject">Subject</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                                style="height: 100px"></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="h-100" style="min-height: 400px;">
+                            <iframe class="rounded w-100 h-100"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4684.704090452535!2d76.07001767575194!3d11.732372640832988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5df2bba302295%3A0x1bc38ba2aabd5b7f!2sPhysio%20Dynamics%20(Physiotherapy%20%26%20Sports%20Rehabilitation%20Centre)%20Panamaram!5e1!3m2!1sen!2sin!4v1752732685166!5m2!1sen!2sin"
+                                frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0" title="Physio Dynamics Location Map"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Contact End -->
+        <!-- Contact End -->
 
-
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="d-inline-block border rounded-pill py-1 px-4">Testimonial</p>
-                <h1>What Say Our Patients!</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/test1.png"
-                        style="width: 100px; height: 100px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Amazing center with tons of knowledge.
-                            I meet 4 physiotherapists and none of them could even understand my exact issue and gave
-                            default treatments with no use. Sandra gave me the right treatment and coaching. It’s been a
-                            year I am leading a normal life.</p>
-                        <h5 class="mb-1">Deepu Thomas</h5>
-                        <span class="fst-italic" style="color: gold;">★★★★★</span>
-                    </div>
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Testimonial</p>
+                    <h2>What Our Patients Say</h2>
                 </div>
-
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/tes2.png"
-                        style="width: 100px; height: 100px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Huge shoutout to my physiotherapist for their patience, expertise, and motivation throughout
-                            my healing journey. Every session is a step forward!"
-                            Thank you for your patience and clear guidance..The personalized care and attention to my
-                            condition have made a big difference.</p>
-                        <h5 class="mb-1">Rakhi Abhilash</h5>
-                        <span class="fst-italic" style="color: gold;">★★★★★</span>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item text-center">
+                        <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/test1.png"
+                            style="width: 100px; height: 100px;" alt="Deepu Thomas - Physio Dynamics patient">
+                        <div class="testimonial-text rounded text-center p-4">
+                            <p>Amazing center with tons of knowledge.
+                                I meet 4 physiotherapists and none of them could even understand my exact issue and gave
+                                default treatments with no use. Sandra gave me the right treatment and coaching. It's been a
+                                year I am leading a normal life.</p>
+                            <h3 class="h5 mb-1">Deepu Thomas</h3>
+                            <span class="fst-italic" style="color: gold;">★★★★★</span>
+                        </div>
                     </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/test3.png"
-                        style="width: 100px; height: 100px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Effective treatment was provided with care and professionalism. The environment was clean and
-                            calming</p>
-                        <h5 class="mb-1">Praksh R</h5>
-                        <span class="fst-italic" style="color: gold;">★★★★★</span>
+                    <div class="testimonial-item text-center">
+                        <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/tes2.png"
+                            style="width: 100px; height: 100px;" alt="Rakhi Abhilash - Physio Dynamics patient">
+                        <div class="testimonial-text rounded text-center p-4">
+                            <p>Huge shoutout to my physiotherapist for their patience, expertise, and motivation throughout
+                                my healing journey. Every session is a step forward!"
+                                Thank you for your patience and clear guidance..The personalized care and attention to my
+                                condition have made a big difference.</p>
+                            <h3 class="h5 mb-1">Rakhi Abhilash</h3>
+                            <span class="fst-italic" style="color: gold;">★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-item text-center">
+                        <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/test3.png"
+                            style="width: 100px; height: 100px;" alt="Praksh R - Physio Dynamics patient">
+                        <div class="testimonial-text rounded text-center p-4">
+                            <p>Effective treatment was provided with care and professionalism. The environment was clean and
+                                calming</p>
+                            <h3 class="h5 mb-1">Praksh R</h3>
+                            <span class="fst-italic" style="color: gold;">★★★★★</span>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
-    </div>
-    </div>
-    <!-- Testimonial End -->
+        <!-- Testimonial End -->
+    </main>
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <footer class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row">
-                <!-- Left-aligned single column -->
                 <div class="col-12">
                     <div class="row">
                         <!-- Contact Information -->
                         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                            <h5 class="text-white mb-4">Contact</h5>
-                            <div class="d-flex align-items-start mb-3">
-                                <i class="fa fa-map-marker-alt me-3 mt-1"></i>
-                                <span>UB City Centre Building, Near Crescent Public School, Panamaram, Wayanad, Kerala,
-                                    India 670721</span>
-                            </div>
-                            <div class="d-flex align-items-start mb-3">
-                                <i class="fa fa-phone-alt me-3 mt-1"></i>
-                                <a href="tel:+916282929104" class="text-white text-decoration-none">+91 6282929104</a>
-                            </div>
-                            <div class="d-flex align-items-start mb-3">
-                                <i class="fa fa-envelope me-3 mt-1"></i>
-                                <a href="mailto:physiodynamics10@gmail.com"
-                                    class="text-white text-decoration-none small">physiodynamics10@gmail.com</a>
-                            </div>
+                            <h2 class="h5 text-white mb-4">Contact</h2>
+                            <address class="d-flex flex-column">
+                                <div class="d-flex align-items-start mb-3">
+                                    <i class="fa fa-map-marker-alt me-3 mt-1" aria-hidden="true"></i>
+                                    <span>UB City Centre Building, Near Crescent Public School, Panamaram, Wayanad, Kerala,
+                                        India 670721</span>
+                                </div>
+                                <div class="d-flex align-items-start mb-3">
+                                    <i class="fa fa-phone-alt me-3 mt-1" aria-hidden="true"></i>
+                                    <a href="tel:+916282929104" class="text-white text-decoration-none">+91 6282929104</a>
+                                </div>
+                                <div class="d-flex align-items-start mb-3">
+                                    <i class="fa fa-envelope me-3 mt-1" aria-hidden="true"></i>
+                                    <a href="mailto:physiodynamics10@gmail.com"
+                                        class="text-white text-decoration-none small">physiodynamics10@gmail.com</a>
+                                </div>
+                            </address>
                         </div>
 
                         <!-- Quick Links -->
                         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                            <h5 class="text-white mb-4">Quick Links</h5>
-                            <div class="d-flex flex-column">
+                            <h2 class="h5 text-white mb-4">Quick Links</h2>
+                            <nav class="d-flex flex-column">
                                 <a class="text-white mb-2 text-decoration-none" href="index.html">Home</a>
                                 <a class="text-white mb-2 text-decoration-none" href="about.html">About Us</a>
                                 <a class="text-white mb-2 text-decoration-none" href="service.html">Our Services</a>
                                 <a class="text-white mb-2 text-decoration-none" href="contact.html">Contact Us</a>
-
-                            </div>
+                            </nav>
                         </div>
 
                         <!-- Opening Hours -->
                         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                            <h5 class="text-white mb-4">Opening Hours</h5>
+                            <h2 class="h5 text-white mb-4">Opening Hours</h2>
                             <div class="mb-3">
                                 <p class="mb-1">Monday - Saturday</p>
                                 <p class="text-light">08:00 AM - 07:00 PM</p>
@@ -591,27 +569,27 @@
 
                         <!-- Social Media -->
                         <div class="col-lg-2 col-md-6">
-                            <h5 class="text-white mb-4">Follow Us</h5>
+                            <h2 class="h5 text-white mb-4">Follow Us</h2>
                             <div class="d-flex flex-wrap">
                                 <a class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"
                                     href="https://wa.me/6282929104" target="_blank" rel="noopener noreferrer"
-                                    title="WhatsApp">
-                                    <i class="fab fa-whatsapp"></i>
+                                    aria-label="Chat on WhatsApp">
+                                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
                                 </a>
                                 <a class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"
                                     href="https://www.facebook.com/physiodynamicz" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="fab fa-facebook-f"></i>
+                                    rel="noopener noreferrer" aria-label="Visit our Facebook page">
+                                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
                                 </a>
                                 <a class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"
                                     href="https://www.instagram.com/physio_.dynamics/" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="fab fa-instagram"></i>
+                                    rel="noopener noreferrer" aria-label="Visit our Instagram profile">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
                                 </a>
                                 <a class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"
                                     href="https://www.linkedin.com/in/physio-dynamics-145495341/" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="fab fa-linkedin-in"></i>
+                                    rel="noopener noreferrer" aria-label="Visit our LinkedIn profile">
+                                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
@@ -625,13 +603,13 @@
             <div class="copyright py-4">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <p class="mb-0">&copy; <a class="text-white text-decoration-none" href="#">Physio Dynamics</a>,
+                        <p class="mb-0">&copy; <span id="currentYear"></span> <a class="text-white text-decoration-none" href="index.html">Physio Dynamics</a>,
                             All Rights Reserved.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
     <!-- Footer End -->
 
 
