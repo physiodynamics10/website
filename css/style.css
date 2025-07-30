@@ -16,14 +16,6 @@
     font-weight: 900 !important
 }
 
-.back-to-top {
-    position: fixed;
-    display: none;
-    right: 45px;
-    bottom: 45px;
-    z-index: 99
-}
-
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -553,35 +545,53 @@
     display: block
 }
 
+/* Floating Action Buttons Container - Compact Version */
 .floating-buttons {
     position: fixed;
-    right: 45px;           /* Same as .back-to-top */
-    bottom: 110px;         /* 45px (back-to-top) + 50px (button) + 15px gap */
+    right: 25px;           /* Reduced from 45px for more edge alignment */
+    bottom: 80px;          /* Reduced from 110px (original: 45+50+15) */
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    z-index: 99;           /* Same or slightly higher than .back-to-top */
+    gap: 10px;             /* Reduced from 15px */
+    z-index: 99;
 }
 
-.call-button, .whatsapp-button {
+/* Base Button Styles - Compact */
+.floating-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
+    width: 46px;           /* Slightly reduced from 50px */
+    height: 46px;          /* Slightly reduced from 50px */
     border-radius: 50%;
-    text-decoration: none;
-    background-color: #25D366;
-    color: white;
-    font-size: 24px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    transition: background-color 0.3s;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    transition: all 0.2s ease-out;
 }
 
-.call-button {
-    background-color: #0a66c2;
+/* Specific Button Colors */
+.call-button { background-color: #0a66c2; }
+.whatsapp-button { background-color: #25D366; }
+
+/* Hover Effects */
+.floating-button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 5px 8px rgba(0,0,0,0.2);
 }
 
-.call-button:hover, .whatsapp-button:hover {
-    background-color: #128C7E;
+/* Active State */
+.floating-button:active {
+    transform: scale(0.96);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .floating-buttons {
+        right: 15px;
+        bottom: 70px;
+        gap: 8px;
+    }
+    .floating-button {
+        width: 42px;
+        height: 42px;
+    }
 }
