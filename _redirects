@@ -1,2 +1,0 @@
-# 1. Main Netlify → Custom Domain Redirect
-https://physiodynamics.netlify.app/*  https://www.physio-dynamics.com/:splat  301!

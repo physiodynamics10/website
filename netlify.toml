@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://physiodynamics.netlify.app/*"
+  to = "https://www.physio-dynamics.com/:splat"
+  status = 301
+  force = true
