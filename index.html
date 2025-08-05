@@ -426,97 +426,114 @@
                 <p class="d-inline-block border rounded-pill py-1 px-4 mb-0">
                     Contact Us
                 </p>
+                <h1 class="mt-3">Get In Touch With Us</h1>
             </div>
             <div class="container">
                 <div class="row g-4">
+                    <!-- Contact Cards -->
                     <div class="col-lg-4">
-                        <div class="h-100 bg-light rounded d-flex align-items-center p-5">
-                            <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
-                                style="width: 55px; height: 55px;">
-                                <i class="fa fa-map-marker-alt text-primary" aria-hidden="true"></i>
+                        <div class="contact-card h-100 bg-light rounded d-flex align-items-center p-5">
+                            <div
+                                class="contact-icon d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white">
+                                <i class="fa fa-map-marker-alt text-primary"></i>
                             </div>
                             <div class="ms-4">
                                 <p class="mb-2">Address</p>
-                                <h3 class="h5 mb-0">
+                                <h5 class="mb-0">
                                     <a href="https://maps.app.goo.gl/myuTpwMAnCEPEJa9A" target="_blank"
                                         rel="noopener noreferrer" class="text-decoration-none">
-                                        UB City Centre Building, Near Crescent public school, Panamaram - Wayanad,
-                                        Kerala
+                                        UB City Centre Building, Near Crescent public school, Panamaram - Wayanad
                                     </a>
-                                </h3>
+                                </h5>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="h-100 bg-light rounded d-flex align-items-center p-5">
-                            <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
-                                style="width: 55px; height: 55px;">
-                                <i class="fa fa-phone-alt text-primary" aria-hidden="true"></i>
+                        <div class="contact-card h-100 bg-light rounded d-flex align-items-center p-5">
+                            <div
+                                class="contact-icon d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white">
+                                <i class="fa fa-phone-alt text-primary"></i>
                             </div>
                             <div class="ms-4">
                                 <p class="mb-2">Call Us Now</p>
-                                <h3 class="h5 mb-0"><a href="tel:+916282929104">+91 6282929104</a></h3>
+                                <h5 class="mb-0"><a href="tel:+916282929104">+91 6282929104</a></h5>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="h-100 bg-light rounded d-flex align-items-center p-5">
-                            <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
-                                style="width: 55px; height: 55px;">
-                                <i class="fa fa-envelope-open text-primary" aria-hidden="true"></i>
+                        <div class="contact-card h-100 bg-light rounded d-flex align-items-center p-5">
+                            <div
+                                class="contact-icon d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white">
+                                <i class="fa fa-envelope-open text-primary"></i>
                             </div>
                             <div class="ms-4">
                                 <p class="mb-2">Mail Us Now</p>
-                                <h3 class="h5 mb-0 email-address">
-                                    <a href="mailto:physiodynamics10@gmail.com">physiodynamics10</a>
-                                </h3>
+                                <h5 class="mb-0">
+                                    <a href="mailto:physiodynamics10@gmail.com"
+                                        class="email-link">physiodynamics10@gmail.com</a>
+                                </h5>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Contact Form -->
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                         <div class="bg-light rounded p-5">
                             <h2 class="mb-4">Have Any Query? Please Contact Us!</h2>
-                            <form>
+
+                            <div class="alert alert-success d-none" role="alert">
+                                <i class="fas fa-check-circle me-2"></i> Thank you! Your message has been sent
+                                successfully.
+                            </div>
+
+                            <form id="contactForm">
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                            <input type="text" class="form-control" id="name" name="name"
+                                                placeholder="Your Name" required>
                                             <label for="name">Your Name</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="email"
-                                                placeholder="Your Email">
+                                            <input type="email" class="form-control" id="email" name="email"
+                                                placeholder="Your Email" required>
                                             <label for="email">Your Email</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                            <input type="text" class="form-control" id="subject" name="subject"
+                                                placeholder="Subject" required>
                                             <label for="subject">Subject</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
                                             <textarea class="form-control" placeholder="Leave a message here"
-                                                id="message" style="height: 100px"></textarea>
+                                                id="message" name="message" style="height: 100px" required></textarea>
                                             <label for="message">Message</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                        <div class="g-recaptcha mb-3" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+                                        <button class="btn btn-primary w-100 py-3" type="submit" id="submitBtn">
+                                            <span class="submit-text">Send Message</span>
+                                            <span class="spinner-border spinner-border-sm d-none" role="status"></span>
+                                        </button>
                                     </div>
                                 </div>
                             </form>
                         </div>
                     </div>
+
+                    <!-- Google Map -->
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                        <div class="h-100" style="min-height: 400px;">
-                            <iframe loading="lazy" class="rounded w-100 h-100"
+                        <div class="h-100 map-container">
+                            <iframe class="rounded w-100 h-100" loading="lazy"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4684.704090452535!2d76.07001767575194!3d11.732372640832988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5df2bba302295%3A0x1bc38ba2aabd5b7f!2sPhysio%20Dynamics%20(Physiotherapy%20%26%20Sports%20Rehabilitation%20Centre)%20Panamaram!5e1!3m2!1sen!2sin!4v1752732685166!5m2!1sen!2sin"
-                                frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"
-                                title="Physio Dynamics Location Map"></iframe>
+                                frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
                     </div>
                 </div>
