@@ -3,14 +3,16 @@
 
     // Spinner
     var spinner = function () {
-        setTimeout(function () {
+        $(window).on('load', function () {
             if ($('#spinner').length > 0) {
-                $('#spinner').removeClass('show');
+                setTimeout(function () {
+                    $('#spinner').addClass('hide'); // use 'hide' class to trigger CSS fade
+                }, 500); // spinner hides 500ms after full load
             }
-        }, 1);
+        });
     };
+
     spinner();
-    
     
     // Initiate the wowjs
     new WOW().init();
@@ -73,8 +75,8 @@
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
-        autoplay: false,
-        smartSpeed: 1000,
+        autoplay: true,
+        smartSpeed: 2000,
         center: true,
         dots: false,
         loop: true,
