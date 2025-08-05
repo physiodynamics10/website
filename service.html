@@ -3,22 +3,25 @@
 
 <head>
     <meta charset="utf-8">
+    <!-- Skip navigation link for accessibility -->
+    <a href="#main-content" class="skip-link visually-hidden-focusable">Skip to content</a>
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.physio-dynamics.com/" />
+    <link rel="canonical" href="https://www.physio-dynamics.com/service" />
 
     <title>Physio Dynamics | Best Physiotherapy Services in Wayanad</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Meta Description & Keywords -->
     <meta name="description"
-        content="Physio Dynamics provides expert physiotherapy services in Wayanad including orthopedic, sports, neurological, chest and pediatric physiotherapy treatments.">
+        content="Expert physiotherapy services in Wayanad: Orthopedic, Sports, Neurological, Pediatric, Chest Physio and Home Care treatments.">
     <meta name="keywords"
-        content="physiotherapy, Wayanad, sports injury, orthopedic, neurological, pediatric, chest physio, home care, best physiotherapy clinic, best physiotherapy, best physiotherapist, Panamaram">
+        content="physiotherapy Wayanad, sports injury rehab, orthopedic physio, neurological therapy, pediatric physiotherapy, chest physio, home care physio">
 
     <!-- Preconnect for Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://maps.googleapis.com">
 
     <!-- Preload Critical Resources -->
     <link rel="preload"
@@ -30,7 +33,7 @@
     <!-- Google Fonts -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
-        media="print" onload="this.media='all'">>
+        media="print" onload="this.media='all'">
 
     <!-- Icon Fonts -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"
@@ -43,6 +46,7 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" media="print" onload="this.media='all'">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" media="print"
         onload="this.media='all'">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
     <!-- Bootstrap and Template Styles -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="print" onload="this.media='all'">
@@ -51,14 +55,14 @@
     <!-- Favicon -->
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
-    <!-- Open Graph (for Facebook, Instagram, Threads) -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.physio-dynamics.com/">
-    <meta property="og:title" content="Physio Dynamics | Professional Physiotherapy Services">
-    <meta property="og:description"
-        content="Expert physiotherapy services in Wayanad for pain relief, injury recovery and improved mobility.">
+    <meta property="og:url" content="https://www.physio-dynamics.com/service">
+    <meta property="og:title" content="Physio Dynamics | Professional Physiotherapy Services in Wayanad">
+    <meta property="og:description" content="Specialized physiotherapy treatments for orthopedic, neurological, and sports injuries.">
+    <meta property="og:image" content="https://www.physio-dynamics.com/img/og-services.jpg">
 
-    <!-- Structured Data (JSON-LD) -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -105,16 +109,15 @@
 </head>
 
 <body>
-    <!-- Spinner Start -->
+    <!-- Spinner -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="visually-hidden">Loading...</span>
         </div>
     </div>
-    <!-- Spinner End -->
 
-    <!-- Topbar Start -->
+    <!-- Topbar -->
     <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="row gx-0 d-none d-lg-flex">
             <div class="col-lg-7 px-5 text-start">
@@ -134,7 +137,7 @@
             <div class="col-lg-5 px-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center">
                     <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
-                        href="https://wa.me/6282929104" target="_blank" rel="noopener noreferrer"
+                        href="https://wa.me/916282929104" target="_blank" rel="noopener noreferrer"
                         aria-label="Chat on WhatsApp">
                         <i class="fab fa-whatsapp" aria-hidden="true"></i>
                     </a>
@@ -157,30 +160,26 @@
             </div>
         </div>
     </div>
-    <!-- Topbar End -->
 
-    <!-- Navbar Start -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="container-fluid d-flex align-items-center justify-content-between px-4 px-lg-5">
-            <!-- Brand with Logo - Changed h1 to div for single H1 per page -->
             <a href="index.html" class="navbar-brand d-flex align-items-center m-0">
                 <img src="img/logo2.png" alt="Physio Dynamics - Professional Physiotherapy Services"
-                    style="height: 40px; margin-right: 10px;" onerror="this.style.display='none'">
+                    style="height: 40px; margin-right: 10px;" loading="lazy" onerror="this.style.display='none'">
                 <div class="m-0 text-primary fs-3 fw-bold">PHYSIO DYNAMICS</div>
             </a>
 
-            <!-- Mobile Toggle Button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Navigation Links -->
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="about.html" class="nav-item nav-link">About Us</a>
-                    <a href="service.html" class="nav-item nav-link">Services</a>
+                    <a href="service.html" class="nav-item nav-link active" aria-current="page">Services</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
                 <a href="https://kapcwayanad.in/bookings/create/9"
@@ -191,85 +190,106 @@
             </div>
         </div>
     </nav>
-    <!-- navbar end-->
 
     <!-- Main Content -->
-    <main>
-        <!-- Service Start -->
+    <main id="main-content">
+        <!-- Services Section -->
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <p class="d-inline-block border rounded-pill py-1 px-4">Services</p>
-                    <h1>We provides</h1>
+                    <h1 class="mb-4">Our Professional Physiotherapy Services</h1>
+                    <p class="mb-0">Specialized treatments tailored to your unique needs and recovery goals</p>
                 </div>
+                
                 <div class="row g-4">
+                    <!-- Orthopedic Physiotherapy -->
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item bg-light rounded h-100 p-5">
-                            <h2 class="h4 mb-3">Orthopedic Physiotherapy</h2>
-                            <p class="mb-4">Orthopedic Physiotherapy focuses on diagnosing, managing, and treating
-                                conditions related to the bones, joints, ligaments, and muscles. It helps restore
-                                mobility,
-                                reduce pain, and improve strength after injuries, surgeries, or chronic orthopedic
-                                conditions.</p>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-bone text-primary me-3 fs-2"></i>
+                                <h3 class="mb-0">Orthopedic Physiotherapy</h3>
+                            </div>
+                            <p class="mb-4">Comprehensive treatment for bones, joints, ligaments, and muscles. Restore mobility, reduce pain, and improve strength after injuries or surgeries with our specialized orthopedic rehabilitation programs.</p>
+                            
                         </div>
                     </div>
+
+                    <!-- Sports Physiotherapy -->
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="service-item bg-light rounded h-100 p-5">
-                            <h2 class="h4 mb-3">Sports Physiotherapy</h2>
-                            <p class="mb-4">Sports Physiotherapy is dedicated to the prevention, assessment, and
-                                treatment
-                                of sports-related injuries. It helps athletes of all levels recover faster, improve
-                                performance, and reduce the risk of future injuries through tailored rehabilitation and
-                                training programs.</p>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-running text-primary me-3 fs-2"></i>
+                                <h3 class="mb-0">Sports Physiotherapy</h3>
+                            </div>
+                            <p class="mb-4">Specialized care for athletes of all levels. Our sports therapy programs focus on injury prevention, performance enhancement, and faster recovery through evidence-based rehabilitation techniques.</p>
+                            
                         </div>
                     </div>
+
+                    <!-- Neurological Physiotherapy -->
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="service-item bg-light rounded h-100 p-5">
-                            <h2 class="h4 mb-3">Neurological Physiotherapy</h2>
-                            <p class="mb-4">Neurological Physiotherapy focuses on treating patients with disorders of
-                                the
-                                nervous system such as stroke, Parkinson's disease, spinal cord injuries, and multiple
-                                sclerosis. It aims to improve mobility, coordination, balance, and overall functional
-                                independence.</p>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-brain text-primary me-3 fs-2"></i>
+                                <h3 class="mb-0">Neurological Physiotherapy</h3>
+                            </div>
+                            <p class="mb-4">Advanced rehabilitation for neurological conditions including stroke, Parkinson's, and spinal cord injuries. Improve mobility, coordination, and independence with our neuro-specific therapies.</p>
+                           
                         </div>
                     </div>
+
+                    <!-- Pediatric Physiotherapy -->
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item bg-light rounded h-100 p-5">
-                            <h2 class="h4 mb-3">Pediatric Physiotherapy</h2>
-                            <p class="mb-4">Pediatric Physiotherapy specializes in the treatment of infants, children,
-                                and
-                                adolescents with physical challenges. It helps improve movement, strength, posture, and
-                                motor skills to support healthy growth and development.</p>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-child text-primary me-3 fs-2"></i>
+                                <h3 class="mb-0">Pediatric Physiotherapy</h3>
+                            </div>
+                            <p class="mb-4">Specialized care for infants and children with developmental challenges. Our pediatric programs enhance movement, strength, and motor skills through play-based therapeutic interventions.</p>
+                           
                         </div>
                     </div>
+
+                    <!-- Chest Physiotherapy -->
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="service-item bg-light rounded h-100 p-5">
-                            <h2 class="h4 mb-3">Chest Physiotherapy</h2>
-                            <p class="mb-4">Chest Physiotherapy helps clear mucus from the lungs and improve breathing
-                                in
-                                patients with respiratory conditions such as asthma, bronchitis, pneumonia, or COPD. It
-                                includes techniques like percussion, vibration, and breathing exercises to enhance lung
-                                function.</p>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-lungs text-primary me-3 fs-2"></i>
+                                <h3 class="mb-0">Chest Physiotherapy</h3>
+                            </div>
+                            <p class="mb-4">Respiratory care for conditions like asthma, COPD, and pneumonia. Our techniques including percussion, vibration, and breathing exercises help clear mucus and improve lung function.</p>
+                            
                         </div>
                     </div>
+
+                    <!-- Home Care -->
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="service-item bg-light rounded h-100 p-5">
-                            <h2 class="h4 mb-3">Home Care</h2>
-                            <p class="mb-4">Home Care Physiotherapy provides personalized treatment in the comfort of
-                                your
-                                home for patients who are elderly, post-surgical, or unable to visit the clinic. It
-                                ensures
-                                continuity of care, convenience, and faster recovery in a familiar environment.</p>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-home text-primary me-3 fs-2"></i>
+                                <h3 class="mb-0">Home Care Physiotherapy</h3>
+                            </div>
+                            <p class="mb-4">Personalized treatment in the comfort of your home. Ideal for post-surgical patients, elderly individuals, or those with mobility challenges who require professional rehabilitation services.</p>
+                           
                         </div>
                     </div>
+                </div>
+
+                <!-- Appointment CTA -->
+                <div class="text-center mt-5 wow fadeInUp" data-wow-delay="0.2s">
+                    <h3 class="mb-4">Ready to Start Your Recovery Journey?</h3>
+                    <a href="https://kapcwayanad.in/bookings/create/9" 
+                       class="btn btn-primary py-3 px-5" 
+                       target="_blank">
+                       Book an Appointment Now
+                    </a>
                 </div>
             </div>
         </div>
-        <!-- Service End -->
     </main>
 
-    <!-- Footer Start -->
-    <!-- Footer Start -->
+    <!-- Footer -->
     <footer class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row">
@@ -286,8 +306,7 @@
                                 </div>
                                 <div class="d-flex align-items-start mb-3">
                                     <i class="fa fa-phone-alt me-3 mt-1" aria-hidden="true"></i>
-                                    <a href="tel:+916282929104" class="text-white text-decoration-none">+91
-                                        6282929104</a>
+                                    <a href="tel:+916282929104" class="text-white text-decoration-none">+91 6282929104</a>
                                 </div>
                                 <div class="d-flex align-items-start mb-3">
                                     <i class="fa fa-envelope me-3 mt-1" aria-hidden="true"></i>
@@ -326,7 +345,7 @@
                             <h2 class="h5 text-white mb-4">Follow Us</h2>
                             <div class="d-flex flex-wrap">
                                 <a class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"
-                                    href="https://wa.me/6282929104" target="_blank" rel="noopener noreferrer"
+                                    href="https://wa.me/916282929104" target="_blank" rel="noopener noreferrer"
                                     aria-label="Chat on WhatsApp" title="WhatsApp">
                                     <i class="fab fa-whatsapp" aria-hidden="true"></i>
                                 </a>
@@ -348,7 +367,6 @@
                                 </a>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -366,12 +384,10 @@
             </div>
         </div>
     </footer>
-    <!-- Footer End -->
 
-    <!-- Floating Call & WhatsApp & Back to Top  Buttons -->
     <!-- Floating Action Buttons -->
     <div class="floating-buttons" role="group" aria-label="Quick action buttons">
-        <!-- Back to Top Button -->
+        <!-- Back to Top -->
         <button class="btn btn-primary btn-lg-square rounded-circle back-to-top" aria-label="Scroll to top of page"
             title="Back to top">
             <i class="bi bi-arrow-up" aria-hidden="true"></i>
@@ -391,7 +407,76 @@
             <span class="visually-hidden">WhatsApp</span>
         </a>
     </div>
-    <!-- Floating Call & WhatsApp Buttons end -->
+
+    <!-- Service Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Service",
+            "name": "Orthopedic Physiotherapy",
+            "description": "Treatment for bones, joints, and muscles to restore mobility and reduce pain",
+            "serviceType": "Physical Therapy"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Service",
+            "name": "Sports Physiotherapy",
+            "description": "Injury prevention and rehabilitation programs for athletes",
+            "serviceType": "Sports Medicine"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Service",
+            "name": "Neurological Physiotherapy",
+            "description": "Rehabilitation for stroke, Parkinson's and spinal cord injuries",
+            "serviceType": "Neurological Rehabilitation"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Service",
+            "name": "Pediatric Physiotherapy",
+            "description": "Therapy for children with developmental challenges",
+            "serviceType": "Pediatric Physical Therapy"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Service",
+            "name": "Chest Physiotherapy",
+            "description": "Respiratory care for asthma, COPD and pneumonia patients",
+            "serviceType": "Respiratory Therapy"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "Service",
+            "name": "Home Care Physiotherapy",
+            "description": "Personalized treatment in the comfort of your home",
+            "serviceType": "Home Health Care"
+          }
+        }
+      ]
+    }
+    </script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PF3YJYKC6V"></script>
@@ -399,7 +484,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-PF3YJYKC6V');
     </script>
 
@@ -426,5 +510,4 @@
     </script>
 
 </body>
-
 </html>
