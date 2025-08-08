@@ -53,12 +53,27 @@
     <!-- Favicon -->
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
-    <!-- Open Graph (for Facebook, Instagram, Threads) -->
+    <!-- Open Graph (Facebook / Instagram / Threads) -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.physio-dynamics.com/">
-    <meta property="og:title" content="Physio Dynamics | Professional Physiotherapy Services">
+    <meta property="og:title" content="Physio Dynamics | Professional Physiotherapy Services in Wayanad">
     <meta property="og:description"
-        content="Expert physiotherapy services in Wayanad for pain relief, injury recovery and improved mobility.">
+        content="Expert physiotherapy in Wayanad for pain relief, injury recovery, and improved mobility.">
+    <meta property="og:image" content="https://www.physio-dynamics.com/img/og-home.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Physio Dynamics">
+    <meta property="og:locale" content="en_IN">
+    <!-- <meta property="fb:app_id" content="YOUR_FACEBOOK_APP_ID"> -->
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Physio Dynamics | Professional Physiotherapy Services in Wayanad">
+    <meta name="twitter:description"
+        content="Expert physiotherapy in Wayanad for pain relief, injury recovery, and improved mobility.">
+    <meta name="twitter:image" content="https://www.physio-dynamics.com/img/og-home.jpg">
+    <!-- <meta name="twitter:site" content="@YourHandle"> -->
+
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -120,26 +135,35 @@
 
     <!-- Topbar Start -->
     <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="row gx-0 d-none d-lg-flex">
+        <div class="row gx-0 d-none d-lg-flex" aria-label="Top information bar">
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                    <small class="fa fa-map-marker-alt text-primary me-2" aria-hidden="true"></small>
+                    <i class="fa fa-map-marker-alt text-primary me-2" aria-hidden="true"></i>
                     <small>
-                        <a href="https://maps.app.goo.gl/g7zxENEieYSZWFcQ7" target="_blank" rel="noopener noreferrer">
-                            UB City Centre Building, Near Crescent public school, Panamaram, Wayanad, Kerala, India
-                        </a>
+                        <address class="m-0">
+                            <a href="https://maps.app.goo.gl/g7zxENEieYSZWFcQ7" target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Open location on Google Maps: UB City Centre Building, Near Crescent Public School, Panamaram, Wayanad">
+                                UB City Centre Building, Near Crescent Public School, Panamaram
+                            </a>
+                        </address>
                     </small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center py-3">
-                    <small class="far fa-clock text-primary me-2" aria-hidden="true"></small>
-                    <small>Mon - Sat : 08.00 AM - 07.00 PM</small>
+                    <i class="far fa-clock text-primary me-2" aria-hidden="true"></i>
+                    <small>
+                        <time datetime="Mo-Sa 08:00-19:00" aria-label="Opening hours Monday to Saturday, 8 AM to 7 PM">
+                            Mon - Sat : 08.00 AM - 07.00 PM
+                        </time>
+                    </small>
                 </div>
             </div>
+
             <div class="col-lg-5 px-5 text-end">
-                <div class="h-100 d-inline-flex align-items-center">
+                <nav class="h-100 d-inline-flex align-items-center" aria-label="Social media">
                     <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
-                        href="https://wa.me/6282929104" target="_blank" rel="noopener noreferrer"
-                        aria-label="Chat on WhatsApp">
+                        href="https://wa.me/916282929104" target="_blank" rel="noopener noreferrer"
+                        aria-label="Chat with us on WhatsApp">
                         <i class="fab fa-whatsapp" aria-hidden="true"></i>
                     </a>
                     <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
@@ -152,25 +176,30 @@
                         aria-label="Visit our Instagram profile">
                         <i class="fab fa-instagram" aria-hidden="true"></i>
                     </a>
-                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary ms-1"
                         href="https://www.linkedin.com/company/physio-dynamics-health/" target="_blank"
                         rel="noopener noreferrer" aria-label="Visit our LinkedIn profile">
                         <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                     </a>
-                </div>
+                </nav>
             </div>
         </div>
     </div>
     <!-- Topbar End -->
 
+
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="container-fluid d-flex align-items-center justify-content-between px-4 px-lg-5">
             <!-- Brand with Logo - Changed h1 to div for single H1 per page -->
-            <a href="index.html" class="navbar-brand d-flex align-items-center m-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center m-0" aria-label="Physio Dynamics Home">
                 <img src="img/logo2.png" alt="Physio Dynamics - Professional Physiotherapy Services"
-                    style="height: 40px; margin-right: 10px;" onerror="this.style.display='none'">
-                <div class="m-0 text-primary fs-3 fw-bold">PHYSIO DYNAMICS</div>
+                    style="height: 40px; margin-right: 10px;" onerror="this.style.display='none'" decoding="async"
+                    fetchpriority="high" loading="eager">
+                <div class="m-0 text-primary fs-3 fw-bold"
+                    style="letter-spacing: 1px; font-family: 'Roboto', sans-serif; text-transform: uppercase;">
+                    Physio Dynamics
+                </div>
             </a>
 
             <!-- Mobile Toggle Button -->
