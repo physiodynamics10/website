@@ -1,2 +1,0 @@
-# Redirect ONLY if coming from the Netlify subdomain
-https://physiodynamics.netlify.app/* https://www.physio-dynamics.com/:splat 301!

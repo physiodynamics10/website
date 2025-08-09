@@ -5,23 +5,24 @@ const { SitemapStream, streamToPromise } = require("sitemap");
 
 const HOSTNAME = "https://www.physio-dynamics.com";
 
-// Where your published files actually live during local runs.
-// If your HTML files are in the repo root, this is fine.
-// If they are in a subfolder (e.g. "public"), change it here.
+// Adjust this if your HTML files live in a subfolder (e.g., "public")
 const PUBLIC_DIR =
   process.env.PUBLISH_DIR ||
   process.env.NETLIFY_PUBLISH_PATH ||
   path.resolve(__dirname);
 
-// Ignore some files
+// Files to exclude from sitemap
 const IGNORE = new Set(["404.html", "robots.txt", "sitemap.xml"]);
+
+// Folders you don't want to crawl
+const SKIP_DIRS = new Set(["node_modules", ".git", ".netlify", "dist", "build"]);
 
 async function* walk(dir) {
   const entries = await fs.readdir(dir, { withFileTypes: true });
   for (const e of entries) {
     const full = path.join(dir, e.name);
     if (e.isDirectory()) {
-      if (e.name.startsWith(".")) continue;
+      if (e.name.startsWith(".") || SKIP_DIRS.has(e.name)) continue;
       yield* walk(full);
     } else {
       yield full;
@@ -48,7 +49,6 @@ function guessMeta(urlPath) {
 }
 
 (async () => {
-  // Collect .html files
   const htmlFiles = [];
   for await (const file of walk(PUBLIC_DIR)) {
     if (!file.endsWith(".html")) continue;
@@ -58,21 +58,16 @@ function guessMeta(urlPath) {
   }
 
   const sm = new SitemapStream({ hostname: HOSTNAME });
-  const promise = streamToPromise(sm); // <-- attach before end()
-
-  let wroteAny = false;
+  const promise = streamToPromise(sm); // attach before end()
 
   if (htmlFiles.length === 0) {
-    // Fallback: at least write the homepage to avoid EmptyStream
-    sm.write({ url: "/", ...guessMeta("/") });
-    wroteAny = true;
+    sm.write({ url: "/", ...guessMeta("/") }); // fallback, avoids EmptyStream
   } else {
     for (const file of htmlFiles) {
       const url = toUrlPath(PUBLIC_DIR, file);
       const stat = await fs.stat(file);
       const lastmod = stat.mtime.toISOString().slice(0, 10);
       sm.write({ url, lastmod, ...guessMeta(url) });
-      wroteAny = true;
     }
   }
 
@@ -80,7 +75,7 @@ function guessMeta(urlPath) {
   const xml = await promise.then((d) => d.toString());
 
   await fs.writeFile(path.join(PUBLIC_DIR, "sitemap.xml"), xml, "utf8");
-  console.log(`✅ sitemap.xml generated (${wroteAny ? "with URLs" : "fallback only"})`);
+  console.log("✅ sitemap.xml generated");
 })().catch((err) => {
   console.error("❌ Failed to generate sitemap:", err);
   process.exit(1);

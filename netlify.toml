@@ -1,5 +1,29 @@
+# netlify.toml
+[build]
+  command = "npm run build"
+  publish = "."
+
+# Force canonical: HTTPS + www + move Netlify preview domain to primary
 [[redirects]]
   from = "https://physiodynamics.netlify.app/*"
-  to = "https://www.physio-dynamics.com/:splat"
+  to   = "https://www.physio-dynamics.com/:splat"
   status = 301
-  force = true
+  force  = true
+
+[[redirects]]
+  from = "http://physio-dynamics.com/*"
+  to   = "https://www.physio-dynamics.com/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "https://physio-dynamics.com/*"
+  to   = "https://www.physio-dynamics.com/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "http://www.physio-dynamics.com/*"
+  to   = "https://www.physio-dynamics.com/:splat"
+  status = 301
+  force  = true
