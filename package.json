@@ -7,7 +7,9 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sitemap": "node generate-sitemap.js",
+    "build": "npm run sitemap"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
   "homepage": "https://github.com/physiodynamics10/website#readme",
   "devDependencies": {
     "htmlhint": "^1.6.3",
-    "prettier": "^3.6.2"
+    "prettier": "^3.6.2",
+    "sitemap": "^8.0.0"
   }
 }
