@@ -51,659 +51,702 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
     />
 
     <!-- Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-    <!-- Icons & Libraries -->
+    <!-- Icons -->
     <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      rel="stylesheet"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Favicon -->
-    <link rel="icon" href="https://www.physio-dynamics.com/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- Breadcrumb Schema -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.physio-dynamics.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "About Us",
-            "item": "https://www.physio-dynamics.com/about.html"
-          }
-        ]
-      }
-    </script>
+    <!-- Custom CSS with modern design -->
+    <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Business Schema -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "MedicalBusiness",
-        "name": "Physio Dynamics",
-        "url": "https://www.physio-dynamics.com/",
-        "telephone": "+91 6282929104",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "UB City Centre Building, Near Crescent Public School",
-          "addressLocality": "Panamaram",
-          "addressRegion": "Wayanad",
-          "postalCode": "670721",
-          "addressCountry": "IN"
-        },
-        "openingHours": "Mo-Sa 08:00-19:00"
-      }
-    </script>
-    <!-- End Business Schema -->
-    <!-- FAQ Schema -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "When was Physio Dynamics established?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Physio Dynamics was established in August 2024 in Panamaram, Wayanad."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What makes Physio Dynamics different?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We focus on one-on-one care, one-hour treatment sessions, personalized rehabilitation plans, and patient education."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you follow personalized treatment plans?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Every patient receives a customized physiotherapy plan based on assessment and recovery goals."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is your clinic suitable for elderly patients?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. We provide gentle, supervised physiotherapy for elderly patients, including home care services."
-            }
-          }
-        ]
-      }
-    </script>
-    <!-- End FAQ Schema -->
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </head>
 
   <body>
-    <!-- Spinner Start -->
-    <div
-      id="spinner"
-      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-      aria-hidden="true"
-    >
-      <div
-        class="spinner-grow text-primary"
-        style="width: 3rem; height: 3rem"
-        role="status"
-        aria-live="polite"
-        aria-label="Loading"
-      >
-        <span class="visually-hidden">Loading...</span>
-      </div>
-    </div>
-    <!-- Spinner End -->
-
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
-      <div class="row gx-0 d-none d-lg-flex" aria-label="Top information bar">
-        <div class="col-lg-7 px-5 text-start">
-          <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-            <i
-              class="fa fa-map-marker-alt text-primary me-2"
-              aria-hidden="true"
-            ></i>
-            <small>
-              <address class="m-0">
-                <a
-                  href="https://maps.app.goo.gl/g7zxENEieYSZWFcQ7"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open location on Google Maps: UB City Centre Building, Near Crescent Public School, Panamaram, Wayanad"
-                >
-                  UB City Centre Building, Near Crescent Public School,
-                  Panamaram
-                </a>
-              </address>
-            </small>
-          </div>
-          <div class="h-100 d-inline-flex align-items-center py-3">
-            <i class="far fa-clock text-primary me-2" aria-hidden="true"></i>
-            <small
-              ><time
-                datetime="Mo-Sa 08:00-19:00"
-                aria-label="Opening hours Monday to Saturday, 8 AM to 7 PM"
-                >Mon - Sat : 08.00 AM - 07.00 PM</time
-              ></small
-            >
-          </div>
-        </div>
-        <div class="col-lg-5 px-5 text-end">
-          <nav
-            class="h-100 d-inline-flex align-items-center"
-            aria-label="Social media"
-          >
-            <a
-              class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
-              href="https://wa.me/916282929104"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Chat with us on WhatsApp"
-              ><i class="fab fa-whatsapp" aria-hidden="true"></i
-            ></a>
-            <a
-              class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
-              href="https://www.facebook.com/physiodynamicz"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit our Facebook page"
-              ><i class="fab fa-facebook-f" aria-hidden="true"></i
-            ></a>
-            <a
-              class="btn btn-sm-square rounded-circle bg-white text-primary me-0"
-              href="https://www.instagram.com/physio_.dynamics/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit our Instagram profile"
-              ><i class="fab fa-instagram" aria-hidden="true"></i
-            ></a>
-            <a
-              class="btn btn-sm-square rounded-circle bg-white text-primary ms-1"
-              href="https://www.linkedin.com/company/physio-dynamics-health/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit our LinkedIn profile"
-              ><i class="fab fa-linkedin-in" aria-hidden="true"></i
-            ></a>
-          </nav>
-        </div>
-      </div>
-    </div>
-    <!-- Topbar End -->
-
-    <!-- Navbar Start -->
-    <nav
-      class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <div
-        class="container-fluid d-flex align-items-center justify-content-between px-4 px-lg-5"
-      >
-        <a
-          href="index.html"
-          class="navbar-brand d-flex align-items-center m-0"
-          aria-label="Physio Dynamics Home"
-        >
-          <img
-            src="img/logo2.png"
-            alt="Physio Dynamics - Professional Physiotherapy Services"
-            style="height: 40px; margin-right: 10px"
-            onerror="this.style.display='none'"
-            decoding="async"
-            fetchpriority="high"
-            loading="eager"
-          />
-          <div
-            class="m-0 text-primary fs-3 fw-bold"
-            style="
-              letter-spacing: 1px;
-              font-family: &quot;Roboto&quot;, sans-serif;
-              text-transform: uppercase;
-            "
-          >
-            Physio Dynamics
-          </div>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <a href="index.html" class="nav-item nav-link">Home</a>
-            <a
-              href="about.html"
-              class="nav-item nav-link active"
-              aria-current="page"
-              >About Us</a
-            >
-            <a href="service.html" class="nav-item nav-link">Services</a>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
-          </div>
-          <a
-            href="https://kapcwayanad.in/bookings/create/9"
-            class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Appointment
-            <i class="fa fa-arrow-right ms-3" aria-hidden="true"></i>
-          </a>
-        </div>
-      </div>
-    </nav>
-    <!-- Navbar End-->
-
-    <!-- About Start -->
-    <main>
-      <section class="container-xxl py-5">
-        <div class="container">
-          <div class="row g-5">
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="d-flex flex-column">
-                <img
-                  class="img-fluid rounded w-75 align-self-end"
-                  src="img/img3.png"
-                  alt="Physiotherapy treatment at Physio Dynamics clinic in Wayanad"
-                  loading="lazy"
-                />
-                <img
-                  class="img-fluid rounded w-50 bg-white pt-3 pe-3"
-                  src="img/logo2.png"
-                  alt="Physio Dynamics logo"
-                  style="margin-top: -25%"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-              <p class="d-inline-block border rounded-pill py-1 px-4">
-                About Us
-              </p>
-
-              <!-- ✅ FIXED H1 -->
-              <h1 class="mb-4">
-                About Physio Dynamics – Physiotherapy & Sports Rehabilitation in
-                Wayanad
-              </h1>
-
-              <!-- ✅ STRUCTURE ADDED -->
-              <h2 class="mb-3">Who We Are</h2>
-              <p>
-                Physio Dynamics is a physiotherapy and sports rehabilitation
-                centre located in Panamaram, Wayanad. Established on 20th August
-                2024, we focus on delivering effective, compassionate, and
-                personalized care.
-              </p>
-
-              <p class="mb-4">
-                Our clinic was started with a vision to offer advanced
-                rehabilitation solutions for pain management, sports injuries,
-                neurological conditions, and post-surgical recovery.
-              </p>
-
-              <h2 class="mt-4 mb-3">What Makes Physio Dynamics Different</h2>
-
-              <p>
-                <i class="far fa-check-circle text-primary me-3"></i
-                >Personalized Treatment Plans
-              </p>
-              <p>
-                <i class="far fa-check-circle text-primary me-3"></i
-                >Post-Surgical Rehabilitation
-              </p>
-              <p>
-                <i class="far fa-check-circle text-primary me-3"></i>Pain
-                Management Expertise
-              </p>
-              <p>
-                <i class="far fa-check-circle text-primary me-3"></i>Friendly &
-                Supportive Environment
-              </p>
-              <p>
-                <i class="far fa-check-circle text-primary me-3"></i>Flexible
-                Appointment Scheduling
-              </p>
-              <p>
-                <i class="far fa-check-circle text-primary me-3"></i>Focus on
-                Long-Term Recovery
-              </p>
-              <p>
-                <i class="far fa-check-circle text-primary me-3"></i>Education
-                on Self-care & Injury Prevention
-              </p>
-
-              <p class="mt-3">
-                Explore our
-                <a href="service.html"
-                  >physiotherapy and sports rehabilitation services</a
-                >.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- FAQ Start -->
-      <section class="faq-section py-5">
-        <div class="container">
-          <h2 class="faq-title mb-4">About Physio Dynamics – FAQs</h2>
-
-          <div class="faq-wrapper">
-            <div class="faq-item">
-              <h3>When was Physio Dynamics established?</h3>
-              <p>
-                Physio Dynamics was established in August 2024 in Panamaram,
-                Wayanad.
-              </p>
-            </div>
-
-            <div class="faq-item">
-              <h3>What makes Physio Dynamics different?</h3>
-              <p>
-                We focus on one-on-one care, one-hour treatment sessions,
-                personalized rehabilitation plans, and patient education.
-              </p>
-            </div>
-
-            <div class="faq-item">
-              <h3>Do you follow personalized treatment plans?</h3>
-              <p>
-                Yes. Every patient receives a customized physiotherapy plan
-                based on assessment and recovery goals.
-              </p>
-            </div>
-
-            <div class="faq-item">
-              <h3>Is your clinic suitable for elderly patients?</h3>
-              <p>
-                Yes. We provide gentle, supervised physiotherapy for elderly
-                patients, including home care services.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- FAQ End -->
-    </main>
-    <!-- About End -->
-
-    <!-- Footer Start -->
-    <footer
-      class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <div class="container py-5">
-        <div class="row">
-          <div class="col-12">
-            <div class="row">
-              <!-- Contact Information -->
-              <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                <h2 class="h5 text-white mb-4">Contact</h2>
-                <address class="d-flex flex-column">
-                  <div class="d-flex align-items-start mb-3">
-                    <i
-                      class="fa fa-map-marker-alt me-3 mt-1"
-                      aria-hidden="true"
-                    ></i>
-                    <span
-                      >UB City Centre Building, Near Crescent Public School,
-                      Panamaram, Wayanad, Kerala, India 670721</span
-                    >
-                  </div>
-                  <div class="d-flex align-items-start mb-3">
-                    <i class="fa fa-phone-alt me-3 mt-1" aria-hidden="true"></i>
-                    <a
-                      href="tel:+916282929104"
-                      class="text-white text-decoration-none"
-                      >+91 6282929104</a
-                    >
-                  </div>
-                  <div class="d-flex align-items-start mb-3">
-                    <i class="fa fa-envelope me-3 mt-1" aria-hidden="true"></i>
-                    <a
-                      href="mailto:physiodynamics10@gmail.com"
-                      class="text-white text-decoration-none small"
-                      >physiodynamics10@gmail.com</a
-                    >
-                  </div>
-                </address>
-              </div>
-
-              <!-- Quick Links -->
-              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h2 class="h5 text-white mb-4">Quick Links</h2>
-                <nav class="d-flex flex-column" aria-label="Footer">
-                  <a
-                    class="text-white mb-2 text-decoration-none"
-                    href="index.html"
-                    >Home</a
-                  >
-                  <a
-                    class="text-white mb-2 text-decoration-none"
-                    href="about.html"
-                    aria-current="page"
-                    >About Us</a
-                  >
-                  <a
-                    class="text-white mb-2 text-decoration-none"
-                    href="service.html"
-                    >Our Services</a
-                  >
-                  <a
-                    class="text-white mb-2 text-decoration-none"
-                    href="contact.html"
-                    >Contact Us</a
-                  >
-                </nav>
-              </div>
-
-              <!-- Opening Hours -->
-              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h2 class="h5 text-white mb-4">Opening Hours</h2>
-                <div class="mb-3">
-                  <p class="mb-1">Monday - Saturday</p>
-                  <p class="text-light">08:00 AM - 07:00 PM</p>
-                </div>
-                <div>
-                  <p class="mb-1">Sunday</p>
-                  <p class="text-light">Closed</p>
-                </div>
-              </div>
-
-              <!-- Social Media -->
-              <div class="col-lg-2 col-md-6">
-                <h2 class="h5 text-white mb-4">Follow Us</h2>
-                <div class="d-flex flex-wrap">
-                  <a
-                    class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"
-                    href="https://wa.me/916282929104"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Chat on WhatsApp"
-                    title="WhatsApp"
-                    ><i class="fab fa-whatsapp" aria-hidden="true"></i
-                  ></a>
-                  <a
-                    class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"
-                    href="https://www.facebook.com/physiodynamicz"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Visit our Facebook page"
-                    title="Facebook"
-                    ><i class="fab fa-facebook-f" aria-hidden="true"></i
-                  ></a>
-                  <a
-                    class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"
-                    href="https://www.instagram.com/physio_.dynamics/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Visit our Instagram profile"
-                    title="Instagram"
-                    ><i class="fab fa-instagram" aria-hidden="true"></i
-                  ></a>
-                  <a
-                    class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"
-                    href="https://www.linkedin.com/company/physio-dynamics-health/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Visit our LinkedIn profile"
-                    title="LinkedIn"
-                    ><i class="fab fa-linkedin-in" aria-hidden="true"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Copyright -->
+    <!-- Modern Header with Dropdown - Updated to match service page -->
+    <header class="modern-header">
       <div class="container">
-        <div class="copyright py-4">
-          <div class="row">
-            <div class="col-12 text-center">
-              <p class="mb-0">
-                &copy; <span id="currentYear"></span>
-                <a class="text-white text-decoration-none" href="index.html"
-                  >Physio Dynamics</a
-                >, All Rights Reserved.
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo2.png" alt="Physio Dynamics" />
+            Physio Dynamics
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"
+              ><i class="fas fa-bars text-white"></i
+            ></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="service.html"
+                  id="servicesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown "
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="service/orthopedic-physiotherapy.html"
+                    >
+                      <i class="fas fa-bone"></i> Orthopedic Physiotherapy
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="service/sports-physiotherapy.html"
+                    >
+                      <i class="fas fa-running"></i> Sports Physiotherapy
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="service/neurological-physiotherapy.html"
+                    >
+                      <i class="fas fa-brain"></i> Neurological Physiotherapy
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="service/pediatric-physiotherapy.html">
+                      <i class="fas fa-child"></i> Pediatric Physiotherapy
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="service/chest-physiotherapy.html">
+                      <i class="fas fa-lungs"></i> Chest Physiotherapy
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="service/home-care.html">
+                      <i class="fas fa-home"></i> Home Care Services
+                    </a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="service.html">
+                      <i class="fas fa-list"></i> View All Services
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="appointment-btn btn"
+                  href="https://kapcwayanad.in/bookings/create/9"
+                  target="_blank"
+                >
+                  <i class="fas fa-calendar-check me-2"></i>Appointment
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <h1 class="animate-fade-in">About Physio Dynamics</h1>
+            <p class="animate-fade-in">
+              Discover our journey, values, and commitment to providing
+              exceptional physiotherapy and sports rehabilitation services in
+              Wayanad since 2024.
+            </p>
+            <a href="#story" class="btn btn-primary btn-lg animate-fade-in">
+              <i class="fas fa-arrow-down me-2"></i>Our Story
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Story -->
+    <section id="story" class="about-content-section">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6">
+            <div class="about-img-container animate-fade-in">
+              <img
+                src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1453&q=80"
+                alt="Physio Dynamics Clinic"
+              />
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="about-story animate-fade-in">
+              <h2>Our Journey</h2>
+              <p>
+                Physio Dynamics – Physiotherapy and Sports Rehabilitation Centre
+                was established on 20th August 2024 in Panamaram, Wayanad, with
+                a vision to bring advanced rehabilitation solutions to our
+                community.
+              </p>
+              <p>
+                We recognized the need for professional, compassionate, and
+                personalized physiotherapy care in the region and set out to
+                create a center that combines clinical expertise with a
+                patient-centered approach.
+              </p>
+              <p>
+                From our humble beginnings, we have grown into a trusted
+                healthcare partner for individuals recovering from injuries,
+                surgeries, and chronic conditions, as well as athletes seeking
+                performance enhancement.
               </p>
             </div>
           </div>
+        </div>
+
+        <!-- Mission & Vision -->
+        <div class="row g-5 mt-5">
+          <div class="col-lg-6">
+            <div class="about-story animate-fade-in">
+              <h2>Our Mission</h2>
+              <p>
+                To provide exceptional, evidence-based physiotherapy services
+                that empower our patients to achieve optimal physical function,
+                reduce pain, and improve their quality of life through
+                personalized treatment plans and compassionate care.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="about-story animate-fade-in">
+              <h2>Our Vision</h2>
+              <p>
+                To be the leading physiotherapy and sports rehabilitation center
+                in Wayanad, recognized for excellence in patient care,
+                innovative treatment approaches, and commitment to community
+                health and wellness.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Our Values -->
+        <div class="values-grid">
+          <div class="section-title text-center">
+            <h2>Our Core Values</h2>
+            <p>The principles that guide our practice and patient care</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+              <div class="value-card animate-fade-in">
+                <div class="value-icon">
+                  <i class="fas fa-user-md"></i>
+                </div>
+                <h3>Patient-Centered Care</h3>
+                <p>
+                  Every treatment plan is tailored to the individual needs,
+                  goals, and circumstances of our patients.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="value-card animate-fade-in">
+                <div class="value-icon">
+                  <i class="fas fa-hand-holding-heart"></i>
+                </div>
+                <h3>Compassion</h3>
+                <p>
+                  We treat every patient with empathy, respect, and
+                  understanding throughout their recovery journey.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="value-card animate-fade-in">
+                <div class="value-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Excellence</h3>
+                <p>
+                  We maintain the highest standards of clinical practice through
+                  continuous learning and skill development.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="value-card animate-fade-in">
+                <div class="value-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <h3>Integrity</h3>
+                <p>
+                  We practice with honesty, transparency, and ethical standards
+                  in all our interactions.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="value-card animate-fade-in">
+                <div class="value-icon">
+                  <i class="fas fa-handshake"></i>
+                </div>
+                <h3>Collaboration</h3>
+                <p>
+                  We work closely with patients, families, and healthcare
+                  providers to ensure comprehensive care.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="value-card animate-fade-in">
+                <div class="value-icon">
+                  <i class="fas fa-bullseye"></i>
+                </div>
+                <h3>Results-Oriented</h3>
+                <p>
+                  We focus on achieving measurable improvements in function,
+                  mobility, and quality of life.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <!-- <section class="team-section">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Our Expert Team</h2>
+          <p>Meet the dedicated professionals behind Physio Dynamics</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="team-card animate-fade-in">
+              <img
+                src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                class="team-img"
+                alt="Lead Physiotherapist"
+              />
+              <h3>Sandra Thomas</h3>
+              <p>Lead Physiotherapist & Founder</p>
+              <p>
+                With over 8 years of experience in orthopedic and sports
+                physiotherapy, Sandra specializes in injury rehabilitation and
+                pain management.
+              </p>
+              <div class="mt-3">
+                <a href="#" class="text-primary me-3"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="#" class="text-primary"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="team-card animate-fade-in">
+              <img
+                src="https://images.unsplash.com/photo-1591604021695-0c69b7c05981?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                class="team-img"
+                alt="Neurological Specialist"
+              />
+              <h3>Dr. Rahul Menon</h3>
+              <p>Neurological Physiotherapy Specialist</p>
+              <p>
+                Expert in stroke rehabilitation, Parkinson's disease management,
+                and spinal cord injury recovery with 6+ years of clinical
+                experience.
+              </p>
+              <div class="mt-3">
+                <a href="#" class="text-primary me-3"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="#" class="text-primary"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="team-card animate-fade-in">
+              <img
+                src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80"
+                class="team-img"
+                alt="Sports Physiotherapist"
+              />
+              <h3>Anjali Nair</h3>
+              <p>Sports & Pediatric Physiotherapist</p>
+              <p>
+                Specializes in athletic injury prevention, pediatric
+                development, and performance enhancement for athletes of all
+                levels.
+              </p>
+              <div class="mt-3">
+                <a href="#" class="text-primary me-3"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="#" class="text-primary"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Frequently Asked Questions</h2>
+          <p>Common questions about Physio Dynamics and our services</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="faq-accordion animate-fade-in">
+              <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                    >
+                      When was Physio Dynamics established?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Physio Dynamics was established on 20th August 2024 in
+                      Panamaram, Wayanad, with a vision to provide advanced
+                      rehabilitation solutions to the community.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                    >
+                      What makes Physio Dynamics different from other clinics?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      We focus on one-on-one care with dedicated one-hour
+                      treatment sessions, personalized rehabilitation plans
+                      based on thorough assessment, and comprehensive patient
+                      education for long-term recovery.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                    >
+                      Do you follow personalized treatment plans?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Yes, absolutely. Every patient receives a customized
+                      physiotherapy plan based on their specific condition,
+                      assessment results, recovery goals, and lifestyle factors.
+                      We don't believe in one-size-fits-all approaches.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                    >
+                      Is your clinic suitable for elderly patients?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Yes, we provide gentle, supervised physiotherapy
+                      specifically designed for elderly patients. We also offer
+                      home care services for those with mobility challenges or
+                      who prefer treatment in the comfort of their own home.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive"
+                    >
+                      What conditions do you treat?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFive"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      We treat a wide range of conditions including sports
+                      injuries, post-surgical rehabilitation, arthritis, back
+                      and neck pain, stroke recovery, Parkinson's disease,
+                      pediatric developmental issues, respiratory conditions,
+                      and age-related mobility problems.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="animate-fade-in">
+              Ready to Start Your Recovery Journey?
+            </h2>
+            <p class="animate-fade-in">
+              Schedule a consultation with our expert physiotherapists and take
+              the first step toward pain relief, improved mobility, and better
+              quality of life.
+            </p>
+            <a
+              href="https://kapcwayanad.in/bookings/create/9"
+              target="_blank"
+              class="cta-btn btn animate-fade-in"
+            >
+              <i class="fas fa-calendar-check me-2"></i>Book Appointment Now
+            </a>
+            <p class="mt-4 animate-fade-in">
+              Or call us at
+              <a href="tel:+916282929104" class="text-white fw-bold"
+                >+91 6282929104</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="modern-footer">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <a href="index.html" class="footer-logo">Physio Dynamics</a>
+            <p class="mb-4">
+              Leading physiotherapy and sports rehabilitation center in Wayanad,
+              providing expert care with compassion and professionalism since
+              2024.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://wa.me/916282929104"
+                target="_blank"
+                aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/physiodynamicz"
+                target="_blank"
+                aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/physio_.dynamics/"
+                target="_blank"
+                aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/physio-dynamics-health/"
+                target="_blank"
+                aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-links">
+              <h5>Quick Links</h5>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="service.html">Our Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li>
+                  <a
+                    href="https://kapcwayanad.in/bookings/create/9"
+                    target="_blank"
+                    >Book Appointment</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-links">
+              <h5>Our Services</h5>
+              <ul>
+                <li>
+                  <a href="service/orthopedic-physiotherapy.html">Orthopedic Physiotherapy</a>
+                </li>
+                <li><a href="service/sports-physiotherapy.html">Sports Physiotherapy</a></li>
+                <li>
+                  <a href="service/neurological-physiotherapy.html"
+                    >Neurological Physiotherapy</a
+                  >
+                </li>
+                <li>
+                  <a href="service/pediatric-physiotherapy.html">Pediatric Physiotherapy</a>
+                </li>
+                <li><a href="service/home-care.html">Home Care Services</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-links">
+              <h5>Opening Hours</h5>
+              <ul>
+                <li><strong>Mon - Sat:</strong> </li>
+                <li>8:00 AM - 7:00 PM</li>
+                <li><strong>Sunday:</strong> Closed</li>
+                <li><strong>Emergency:</strong> Available</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>
+            &copy; <span id="currentYear"></span> Physio Dynamics. All Rights
+            Reserved.
+          </p>
         </div>
       </div>
     </footer>
-    <!-- Footer End -->
 
-    <!-- Floating Action Buttons -->
-    <div
-      class="floating-buttons"
-      role="group"
-      aria-label="Quick action buttons"
-    >
-      <button
-        class="btn btn-primary btn-lg-square rounded-circle back-to-top"
-        aria-label="Scroll to top of page"
-        title="Back to top"
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+      <a
+        href="#top"
+        class="floating-button back-to-top"
+        aria-label="Back to top"
       >
-        <i class="bi bi-arrow-up" aria-hidden="true"></i>
-      </button>
-
+        <i class="fas fa-arrow-up"></i>
+      </a>
       <a
         href="tel:+916282929104"
-        class="floating-button call-button"
-        target="_blank"
-        rel="noopener noreferrer"
+        class="floating-button phone"
         aria-label="Call us"
-        title="Call +91 6282929104"
       >
-        <img
-          src="https://img.icons8.com/ios-filled/50/ffffff/phone.png"
-          alt=""
-          width="24"
-          height="24"
-          aria-hidden="true"
-          loading="lazy"
-        />
-        <span class="visually-hidden">Call Us</span>
+        <i class="fas fa-phone-alt"></i>
       </a>
-
       <a
         href="https://wa.me/916282929104"
-        class="floating-button whatsapp-button"
-        target="_blank"
-        rel="noopener noreferrer"
+        class="floating-button whatsapp"
         aria-label="Chat on WhatsApp"
-        title="Message us on WhatsApp"
       >
-        <img
-          src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"
-          alt=""
-          width="32"
-          height="32"
-          aria-hidden="true"
-          loading="lazy"
-        />
-        <span class="visually-hidden">WhatsApp</span>
+        <i class="fab fa-whatsapp"></i>
       </a>
     </div>
-    <!-- Floating Buttons end -->
-
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-PF3YJYKC6V"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-PF3YJYKC6V");
-    </script>
-
-    <!-- JavaScript Libraries (deferred) -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
-      defer
-    ></script>
-    <script src="lib/wow/wow.min.js" defer></script>
-    <script src="lib/easing/easing.min.js" defer></script>
-    <script src="lib/waypoints/waypoints.min.js" defer></script>
-    <script src="lib/counterup/counterup.min.js" defer></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js" defer></script>
-    <script src="lib/tempusdominus/js/moment.min.js" defer></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js" defer></script>
-    <script
-      src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"
-      defer
-    ></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js" defer></script>
-
-    <!-- Dynamic Year -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var yearEl = document.getElementById("currentYear");
-        if (yearEl) yearEl.textContent = new Date().getFullYear();
-      });
-    </script>
   </body>
 </html>
