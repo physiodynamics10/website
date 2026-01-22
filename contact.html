@@ -49,478 +49,307 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
     />
 
     <!-- Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Icons -->
     <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      rel="stylesheet"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-
-    <!-- Libraries -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Favicons -->
-    <link rel="icon" href="https://www.physio-dynamics.com/favicon.ico?v=2" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- Structured Data: FAQ -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Where is Physio Dynamics located?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Physio Dynamics is located in Panamaram, Wayanad, Kerala, India."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What are your clinic working hours?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The clinic operates Monday to Saturday from 8:00 AM to 7:00 PM. Sunday is closed."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How can I contact Physio Dynamics?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "You can contact us via phone call, WhatsApp, or through the contact form on our website."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you accept walk-in appointments?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Walk-in appointments may be accepted based on availability, but advance booking is recommended."
-            }
-          }
-        ]
-      }
-    </script>
-    <!-- End FAQ Structured Data -->
+    <!-- Custom CSS with modern design -->
+    <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Structured Data: Organization + MedicalBusiness + ContactPage -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Organization",
-            "@id": "https://www.physio-dynamics.com/#org",
-            "name": "Physio Dynamics",
-            "url": "https://www.physio-dynamics.com/",
-            "logo": "https://www.physio-dynamics.com/favicon-192.png",
-            "sameAs": [
-              "https://www.instagram.com/physio_.dynamics/",
-              "https://www.facebook.com/physiodynamicz",
-              "https://www.linkedin.com/company/physio-dynamics-health/"
-            ]
-          },
-          {
-            "@type": "MedicalBusiness",
-            "@id": "https://www.physio-dynamics.com/#clinic",
-            "name": "Physio Dynamics",
-            "url": "https://www.physio-dynamics.com/",
-            "telephone": "+91 6282929104",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "UB City Centre Building, Near Crescent Public School",
-              "addressLocality": "Panamaram",
-              "addressRegion": "Wayanad",
-              "postalCode": "670721",
-              "addressCountry": "IN"
-            },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": 11.7386,
-              "longitude": 76.0787
-            },
-            "openingHours": "Mo-Sa 08:00-19:00"
-          },
-          {
-            "@type": "ContactPage",
-            "@id": "https://www.physio-dynamics.com/contact.html",
-            "url": "https://www.physio-dynamics.com/contact.html",
-            "name": "Contact Physio Dynamics",
-            "about": {
-              "@id": "https://www.physio-dynamics.com/#clinic"
-            }
-          }
-        ]
-      }
-    </script>
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </head>
 
   <body>
-    <!-- Spinner Start -->
-    <div
-      id="spinner"
-      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-      aria-hidden="true"
-    >
-      <div
-        class="spinner-grow text-primary"
-        style="width: 3rem; height: 3rem"
-        role="status"
-        aria-live="polite"
-        aria-label="Loading"
-      >
-        <span class="visually-hidden">Loading...</span>
-      </div>
-    </div>
-    <!-- Spinner End -->
-
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
-      <div class="row gx-0 d-none d-lg-flex" aria-label="Top information bar">
-        <div class="col-lg-7 px-5 text-start">
-          <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-            <i
-              class="fa fa-map-marker-alt text-primary me-2"
-              aria-hidden="true"
-            ></i>
-            <small>
-              <address class="m-0">
-                <a
-                  href="https://maps.app.goo.gl/g7zxENEieYSZWFcQ7"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open location on Google Maps: UB City Centre Building, Near Crescent Public School, Panamaram, Wayanad"
-                >
-                  UB City Centre Building, Near Crescent Public School,
-                  Panamaram
-                </a>
-              </address>
-            </small>
-          </div>
-          <div class="h-100 d-inline-flex align-items-center py-3">
-            <i class="far fa-clock text-primary me-2" aria-hidden="true"></i>
-            <small>
-              <time
-                datetime="Mo-Sa 08:00-19:00"
-                aria-label="Opening hours Monday to Saturday, 8 AM to 7 PM"
-              >
-                Mon - Sat : 08.00 AM - 07.00 PM
-              </time>
-            </small>
-          </div>
-        </div>
-
-        <div class="col-lg-5 px-5 text-end">
-          <nav
-            class="h-100 d-inline-flex align-items-center"
-            aria-label="Social media"
-          >
-            <a
-              class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
-              href="https://wa.me/916282929104"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Chat with us on WhatsApp"
-            >
-              <i class="fab fa-whatsapp" aria-hidden="true"></i>
-            </a>
-            <a
-              class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
-              href="https://www.facebook.com/physiodynamicz"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit our Facebook page"
-            >
-              <i class="fab fa-facebook-f" aria-hidden="true"></i>
-            </a>
-            <a
-              class="btn btn-sm-square rounded-circle bg-white text-primary me-0"
-              href="https://www.instagram.com/physio_.dynamics/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit our Instagram profile"
-            >
-              <i class="fab fa-instagram" aria-hidden="true"></i>
-            </a>
-            <a
-              class="btn btn-sm-square rounded-circle bg-white text-primary ms-1"
-              href="https://www.linkedin.com/company/physio-dynamics-health/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit our LinkedIn profile"
-            >
-              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-            </a>
-          </nav>
-        </div>
-      </div>
-    </div>
-    <!-- Topbar End -->
-
-    <!-- Navbar Start -->
-    <nav
-      class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <div
-        class="container-fluid d-flex align-items-center justify-content-between px-4 px-lg-5"
-      >
-        <!-- Brand with Logo -->
-        <a
-          href="index.html"
-          class="navbar-brand d-flex align-items-center m-0"
-          aria-label="Physio Dynamics Home"
-        >
-          <img
-            src="img/logo2.png"
-            alt="Physio Dynamics - Professional Physiotherapy Services"
-            style="height: 40px; margin-right: 10px"
-            onerror="this.style.display='none'"
-            decoding="async"
-            fetchpriority="high"
-            loading="eager"
-          />
-          <div
-            class="m-0 text-primary fs-3 fw-bold"
-            style="
-              letter-spacing: 1px;
-              font-family: &quot;Roboto&quot;, sans-serif;
-              text-transform: uppercase;
-            "
-          >
-            Physio Dynamics
-          </div>
-        </a>
-
-        <!-- Mobile Toggle Button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navigation Links -->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <a href="index.html" class="nav-item nav-link">Home</a>
-            <a href="about.html" class="nav-item nav-link">About Us</a>
-            <a href="service.html" class="nav-item nav-link">Services</a>
-            <a
-              href="contact.html"
-              class="nav-item nav-link active"
-              aria-current="page"
-              >Contact</a
-            >
-          </div>
-          <a
-            href="https://kapcwayanad.in/bookings/create/9"
-            class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Appointment
-            <i class="fa fa-arrow-right ms-3" aria-hidden="true"></i>
-          </a>
-        </div>
-      </div>
-    </nav>
-    <!-- navbar end-->
-
-    <!-- Contact Start -->
-    <div class="container-xxl py-5 mb-4">
-      <div class="text-center mb-5">
-        <p class="d-inline-block border rounded-pill py-1 px-4 mb-0">
-          Contact Us
-        </p>
-        <h1 class="mt-3">Get In Touch With Us</h1>
-      </div>
+    <!-- Modern Header with Dropdown - Updated to match service page -->
+    <header class="modern-header">
       <div class="container">
-        <div class="row g-4">
-          <!-- Contact Cards -->
-          <div class="col-lg-4">
-            <div
-              class="contact-card h-100 bg-light rounded d-flex align-items-center p-5"
-            >
-              <div
-                class="contact-icon d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
-                aria-hidden="true"
-              >
-                <i class="fa fa-map-marker-alt text-primary"></i>
-              </div>
-              <div class="ms-4">
-                <p class="mb-2">Address</p>
-                <h5 class="mb-0">
-                  <a
-                    href="https://maps.app.goo.gl/myuTpwMAnCEPEJa9A"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-decoration-none"
-                  >
-                    UB City Centre Building, Near Crescent public school,
-                    Panamaram - Wayanad
-                  </a>
-                </h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div
-              class="contact-card h-100 bg-light rounded d-flex align-items-center p-5"
-            >
-              <div
-                class="contact-icon d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
-                aria-hidden="true"
-              >
-                <i class="fa fa-phone-alt text-primary"></i>
-              </div>
-              <div class="ms-4">
-                <p class="mb-2">Call Us Now</p>
-                <h5 class="mb-0">
-                  <a href="tel:+916282929104">+91 6282929104</a>
-                </h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div
-              class="contact-card h-100 bg-light rounded d-flex align-items-center p-5"
-            >
-              <div
-                class="contact-icon d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
-                aria-hidden="true"
-              >
-                <i class="fa fa-envelope-open text-primary"></i>
-              </div>
-              <div class="ms-4">
-                <p class="mb-2">Mail Us Now</p>
-                <h5 class="mb-0">
-                  <a href="mailto:physiodynamics10@gmail.com" class="email-link"
-                    >physiodynamics10@gmail.com</a
-                  >
-                </h5>
-              </div>
-            </div>
-          </div>
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo2.png" alt="Physio Dynamics" />
+            Physio Dynamics
+          </a>
 
-          <!-- Contact Form -->
-          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-            <div class="bg-light rounded p-5">
-              <h2 class="mb-4">Have Any Query? Please Contact Us!</h2>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"
+              ><i class="fas fa-bars text-white"></i
+            ></span>
+          </button>
 
-              <div
-                class="alert alert-success d-none"
-                role="alert"
-                aria-live="polite"
-              >
-                <i class="fas fa-check-circle me-2" aria-hidden="true"></i>
-                Thank you! Your message has been sent successfully.
-              </div>
-
-              <form id="contactForm" novalidate>
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="name"
-                        name="name"
-                        placeholder="Your Name"
-                        required
-                        autocomplete="name"
-                      />
-                      <label for="name">Your Name</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-floating">
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        name="email"
-                        placeholder="Your Email"
-                        required
-                        autocomplete="email"
-                        inputmode="email"
-                      />
-                      <label for="email">Your Email</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="subject"
-                        name="subject"
-                        placeholder="Subject"
-                        required
-                      />
-                      <label for="subject">Subject</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-floating">
-                      <textarea
-                        class="form-control"
-                        placeholder="Leave a message here"
-                        id="message"
-                        name="message"
-                        style="height: 100px"
-                        required
-                      ></textarea>
-                      <label for="message">Message</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div
-                      class="g-recaptcha mb-3"
-                      data-sitekey="YOUR_RECAPTCHA_SITE_KEY"
-                    ></div>
-                    <button
-                      class="btn btn-primary w-100 py-3"
-                      type="submit"
-                      id="submitBtn"
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="service.html"
+                  id="servicesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown "
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="service/orthopedic-physiotherapy.html"
                     >
-                      <span class="submit-text">Send Message</span>
-                      <span
-                        class="spinner-border spinner-border-sm d-none"
-                        role="status"
-                        aria-hidden="true"
-                      ></span>
-                    </button>
-                  </div>
-                </div>
-              </form>
+                      <i class="fas fa-bone"></i> Orthopedic Physiotherapy
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="service/sports-physiotherapy.html"
+                    >
+                      <i class="fas fa-running"></i> Sports Physiotherapy
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="service/neurological-physiotherapy.html"
+                    >
+                      <i class="fas fa-brain"></i> Neurological Physiotherapy
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="service.html#pediatric">
+                      <i class="fas fa-child"></i> Pediatric Physiotherapy
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="service.html#chest">
+                      <i class="fas fa-lungs"></i> Chest Physiotherapy
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="service.html#homecare">
+                      <i class="fas fa-home"></i> Home Care Services
+                    </a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="service.html">
+                      <i class="fas fa-list"></i> View All Services
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="appointment-btn btn"
+                  href="https://kapcwayanad.in/bookings/create/9"
+                  target="_blank"
+                >
+                  <i class="fas fa-calendar-check me-2"></i>Appointment
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <h1 class="animate-fade-in">Contact Physio Dynamics</h1>
+            <p class="animate-fade-in">
+              Get in touch with our expert physiotherapists for personalized
+              care, appointments, or any inquiries. We're here to help you on
+              your recovery journey.
+            </p>
+            <div class="mt-4 animate-fade-in">
+              <a href="#contact-info" class="btn btn-primary btn-lg me-3">
+                <i class="fas fa-map-marker-alt me-2"></i>Visit Us
+              </a>
+              <a href="tel:+916282929104" class="btn btn-outline-light btn-lg">
+                <i class="fas fa-phone-alt me-2"></i>Call Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section id="contact-info" class="contact-section">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Get In Touch</h2>
+          <p>Multiple ways to connect with our physiotherapy team</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="contact-card animate-fade-in">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h3>Our Location</h3>
+              <p>
+                Visit our clinic in Panamaram, Wayanad for personalized
+                physiotherapy treatment and consultation.
+              </p>
+              <p>
+                <strong
+                  >UB City Centre Building, Near Crescent Public School,
+                  Panamaram, Wayanad, Kerala 670721</strong
+                >
+              </p>
+              <a
+                href="https://maps.app.goo.gl/myuTpwMAnCEPEJa9A"
+                target="_blank"
+                class="contact-link"
+              >
+                <i class="fas fa-directions me-2"></i>Get Directions
+              </a>
             </div>
           </div>
 
-          <!-- Google Map -->
-          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-            <div class="h-100 map-container">
+          <div class="col-lg-4 col-md-6">
+            <div class="contact-card animate-fade-in">
+              <div class="contact-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <h3>Call Us</h3>
+              <p>
+                Speak directly with our physiotherapists for appointments,
+                queries, or emergency consultations.
+              </p>
+              <p><strong>Monday - Saturday: 8:00 AM - 7:00 PM</strong></p>
+              <a href="tel:+916282929104" class="contact-link">
+                <i class="fas fa-phone me-2"></i>+91 6282929104
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="contact-card animate-fade-in">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h3>Email Us</h3>
+              <p>
+                Send us your queries, appointment requests, or medical reports
+                for review by our specialists.
+              </p>
+              <p><strong>We typically respond within 24 hours</strong></p>
+              <a href="mailto:physiodynamics10@gmail.com" class="contact-link">
+                <i class="fas fa-envelope me-2"></i>physiodynamics10@gmail.com
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <!-- <div class="contact-form-container animate-fade-in">
+          <h2>Send Us a Message</h2>
+          <form id="contactForm">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required autocomplete="name">
+                  <label for="name">Your Full Name</label>
+                </div>
+              </div>
+              
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required autocomplete="email">
+                  <label for="email">Your Email Address</label>
+                </div>
+              </div>
+              
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your Phone Number" required autocomplete="tel">
+                  <label for="phone">Your Phone Number</label>
+                </div>
+              </div>
+              
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                  <label for="subject">Subject</label>
+                </div>
+              </div>
+              
+              <div class="col-12">
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 150px" required></textarea>
+                  <label for="message">Your Message</label>
+                </div>
+              </div>
+              
+              <div class="col-12">
+                <div class="alert alert-success d-none" role="alert" id="successMessage">
+                  <i class="fas fa-check-circle me-2"></i>Thank you! Your message has been sent successfully. We'll contact you soon.
+                </div>
+                
+                <div class="alert alert-danger d-none" role="alert" id="errorMessage">
+                  <i class="fas fa-exclamation-circle me-2"></i>There was an error sending your message. Please try again or call us directly.
+                </div>
+              </div>
+              
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary btn-lg px-5" id="submitBtn">
+                  <span id="submitText">Send Message</span>
+                  <span class="spinner-border spinner-border-sm d-none" role="status" id="submitSpinner"></span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Map & Hours Section - LEFT-RIGHT LAYOUT -->
+    <section class="map-hours-section">
+      <div class="container">
+        <div class="row g-5 align-items-stretch">
+          <!-- Left Side: Find Our Clinic -->
+          <div class="col-lg-7">
+            <div class="map-container animate-fade-in">
               <iframe
-                class="rounded w-100 h-100"
                 loading="lazy"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4684.704090452535!2d76.07001767575194!3d11.732372640832988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5df2bba302295%3A0x1bc38ba2aabd5b7f!2sPhysio%20Dynamics%20(Physiotherapy%20%26%20Sports%20Rehabilitation%20Centre)%20Panamaram!5e1!3m2!1sen!2sin!4v1752732685166!5m2!1sen!2sin"
                 frameborder="0"
@@ -532,303 +361,427 @@
               ></iframe>
             </div>
           </div>
+
+          <!-- Right Side: Clinic Hours -->
+          <div class="col-lg-5">
+            <div class="hours-container animate-fade-in">
+              <h3>Clinic Hours</h3>
+              <ul class="hours-list">
+                <li>
+                  <span class="day">Monday</span>
+                  <span class="time">8:00 AM - 7:00 PM</span>
+                </li>
+                <li>
+                  <span class="day">Tuesday</span>
+                  <span class="time">8:00 AM - 7:00 PM</span>
+                </li>
+                <li>
+                  <span class="day">Wednesday</span>
+                  <span class="time">8:00 AM - 7:00 PM</span>
+                </li>
+                <li>
+                  <span class="day">Thursday</span>
+                  <span class="time">8:00 AM - 7:00 PM</span>
+                </li>
+                <li>
+                  <span class="day">Friday</span>
+                  <span class="time">8:00 AM - 7:00 PM</span>
+                </li>
+                <li>
+                  <span class="day">Saturday</span>
+                  <span class="time">8:00 AM - 7:00 PM</span>
+                </li>
+                <li>
+                  <span class="day">Sunday</span>
+                  <span class="time" style="color: #dc3545; font-weight: 600"
+                    >Closed</span
+                  >
+                </li>
+              </ul>
+
+              <div class="hours-note">
+                <p>
+                  <i class="fas fa-info-circle"></i> Emergency consultations
+                  available outside hours by appointment
+                </p>
+                <p>
+                  <i class="fas fa-home"></i> Home visit services available for
+                  elderly and mobility-challenged patients
+                </p>
+                <p>
+                  <i class="fas fa-calendar-check"></i> Advance booking
+                  recommended to ensure availability
+                </p>
+              </div>
+
+              <div class="text-center mt-4">
+                <a
+                  href="https://kapcwayanad.in/bookings/create/9"
+                  target="_blank"
+                  class="btn btn-primary"
+                >
+                  <i class="fas fa-calendar-plus me-2"></i>Book Appointment
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <!-- Contact End -->
 
-    <!-- FAQ Start -->
-    <section class="faq-section py-5">
-      <div class="container">
-        <h2 class="faq-title mb-4">Contact & Appointments – FAQs</h2>
-
-        <div class="faq-wrapper">
-          <div class="faq-item">
-            <h3>Where is Physio Dynamics located?</h3>
-            <p>
-              Physio Dynamics is located in Panamaram, Wayanad, Kerala, India.
-            </p>
+        <!-- Additional Info Cards -->
+        <div class="row info-cards g-4">
+          <div class="col-lg-6">
+            <div class="info-card animate-fade-in">
+              <h4><i class="fas fa-parking"></i> Parking & Accessibility</h4>
+              <ul>
+                <li>
+                  <i class="fas fa-check-circle"></i> Ample parking space
+                  available in front of the building
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Wheelchair accessible
+                  entrance and facilities
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Clean restroom facilities
+                  available
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Ramp access for easy entry
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Spacious waiting area with
+                  comfortable seating
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div class="faq-item">
-            <h3>What are your clinic working hours?</h3>
-            <p>
-              The clinic operates Monday to Saturday from 8:00 AM to 7:00 PM.
-              Sunday is closed.
-            </p>
-          </div>
-
-          <div class="faq-item">
-            <h3>How can I contact Physio Dynamics?</h3>
-            <p>
-              You can contact us via phone call, WhatsApp, or through the
-              contact form available on our website.
-            </p>
-          </div>
-
-          <div class="faq-item">
-            <h3>Do you accept walk-in appointments?</h3>
-            <p>
-              Walk-in appointments may be accepted based on availability, but
-              advance booking is recommended.
-            </p>
+          <div class="col-lg-6">
+            <div class="info-card animate-fade-in">
+              <h4><i class="fas fa-bus"></i> Transportation & Directions</h4>
+              <ul>
+                <li>
+                  <i class="fas fa-check-circle"></i> Bus stop within 200 meters
+                  of the clinic
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Easy taxi and
+                  auto-rickshaw access
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Convenient road
+                  connectivity from major routes
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Located near Crescent
+                  Public School landmark
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Clear signboard visible
+                  from the road
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- FAQ End -->
 
-    <!-- Footer Start -->
-    <footer
-      class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <div class="container py-5">
-        <div class="row">
-          <div class="col-12">
-            <div class="row">
-              <!-- Contact Information -->
-              <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                <h2 class="h5 text-white mb-4">Contact</h2>
-                <address class="d-flex flex-column">
-                  <div class="d-flex align-items-start mb-3">
-                    <i
-                      class="fa fa-map-marker-alt me-3 mt-1"
-                      aria-hidden="true"
-                    ></i>
-                    <span
-                      >UB City Centre Building, Near Crescent Public School,
-                      Panamaram, Wayanad, Kerala, India 670721</span
-                    >
-                  </div>
-                  <div class="d-flex align-items-start mb-3">
-                    <i class="fa fa-phone-alt me-3 mt-1" aria-hidden="true"></i>
-                    <a
-                      href="tel:+916282929104"
-                      class="text-white text-decoration-none"
-                      >+91 6282929104</a
-                    >
-                  </div>
-                  <div class="d-flex align-items-start mb-3">
-                    <i class="fa fa-envelope me-3 mt-1" aria-hidden="true"></i>
-                    <a
-                      href="mailto:physiodynamics10@gmail.com"
-                      class="text-white text-decoration-none small"
-                      >physiodynamics10@gmail.com</a
-                    >
-                  </div>
-                </address>
-              </div>
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Frequently Asked Questions</h2>
+          <p>Common questions about contacting and visiting our clinic</p>
+        </div>
 
-              <!-- Quick Links -->
-              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h2 class="h5 text-white mb-4">Quick Links</h2>
-                <nav class="d-flex flex-column" aria-label="Footer">
-                  <a
-                    class="text-white mb-2 text-decoration-none"
-                    href="index.html"
-                    >Home</a
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="faq-accordion animate-fade-in">
+              <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                    >
+                      Where is Physio Dynamics located?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#faqAccordion"
                   >
-                  <a
-                    class="text-white mb-2 text-decoration-none"
-                    href="about.html"
-                    >About Us</a
-                  >
-                  <a
-                    class="text-white mb-2 text-decoration-none"
-                    href="service.html"
-                    >Our Services</a
-                  >
-                  <a
-                    class="text-white mb-2 text-decoration-none"
-                    href="contact.html"
-                    aria-current="page"
-                    >Contact Us</a
-                  >
-                </nav>
-              </div>
-
-              <!-- Opening Hours -->
-              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h2 class="h5 text-white mb-4">Opening Hours</h2>
-                <div class="mb-3">
-                  <p class="mb-1">Monday - Saturday</p>
-                  <p class="text-light">08:00 AM - 07:00 PM</p>
+                    <div class="accordion-body">
+                      Physio Dynamics is located at UB City Centre Building,
+                      Near Crescent Public School, Panamaram, Wayanad, Kerala,
+                      India 670721. We're easily accessible by road and public
+                      transportation.
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <p class="mb-1">Sunday</p>
-                  <p class="text-light">Closed</p>
-                </div>
-              </div>
 
-              <!-- Social Media -->
-              <div class="col-lg-2 col-md-6">
-                <h2 class="h5 text-white mb-4">Follow Us</h2>
-                <div class="d-flex flex-wrap">
-                  <a
-                    class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"
-                    href="https://wa.me/916282929104"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Chat on WhatsApp"
-                    title="WhatsApp"
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                    >
+                      What are your clinic working hours?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
                   >
-                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
-                  </a>
-                  <a
-                    class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"
-                    href="https://www.facebook.com/physiodynamicz"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Visit our Facebook page"
-                    title="Facebook"
+                    <div class="accordion-body">
+                      Our clinic operates Monday to Saturday from 8:00 AM to
+                      7:00 PM. Sunday is closed. Emergency consultations may be
+                      available outside these hours by prior appointment.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                    >
+                      How can I contact Physio Dynamics?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
                   >
-                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                  </a>
-                  <a
-                    class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"
-                    href="https://www.instagram.com/physio_.dynamics/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Visit our Instagram profile"
-                    title="Instagram"
+                    <div class="accordion-body">
+                      You can contact us via phone at +91 6282929104, WhatsApp
+                      at the same number, email at physiodynamics10@gmail.com,
+                      or through the contact form on our website. We respond to
+                      all inquiries within 24 hours.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                    >
+                      Do you accept walk-in appointments?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
                   >
-                    <i class="fab fa-instagram" aria-hidden="true"></i>
-                  </a>
-                  <a
-                    class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"
-                    href="https://www.linkedin.com/company/physio-dynamics-health/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Visit our LinkedIn profile"
-                    title="LinkedIn"
+                    <div class="accordion-body">
+                      Walk-in appointments may be accepted based on
+                      availability, but advance booking is highly recommended to
+                      ensure you get your preferred time slot and to minimize
+                      waiting time.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive"
+                    >
+                      Do you provide home visit services?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFive"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
                   >
-                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                  </a>
+                    <div class="accordion-body">
+                      Yes, we provide home physiotherapy services for elderly
+                      patients, post-surgical patients, and individuals with
+                      mobility challenges. Home visits are available in
+                      Panamaram and nearby areas of Wayanad.
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Copyright -->
+    <!-- CTA Section -->
+    <section class="cta-section">
       <div class="container">
-        <div class="copyright py-4">
-          <div class="row">
-            <div class="col-12 text-center">
-              <p class="mb-0">
-                &copy; <span id="currentYear"></span>
-                <a class="text-white text-decoration-none" href="index.html"
-                  >Physio Dynamics</a
-                >, All Rights Reserved.
-              </p>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="animate-fade-in">Ready to Start Your Recovery?</h2>
+            <p class="animate-fade-in">
+              Schedule your first consultation with our expert physiotherapists.
+              We'll assess your condition and create a personalized treatment
+              plan for your recovery.
+            </p>
+            <div class="mt-4 animate-fade-in">
+              <a
+                href="https://kapcwayanad.in/bookings/create/9"
+                target="_blank"
+                class="cta-btn btn me-3"
+              >
+                <i class="fas fa-calendar-check me-2"></i>Book Appointment
+                Online
+              </a>
+              <a href="tel:+916282929104" class="btn btn-outline-light btn-lg">
+                <i class="fas fa-phone-alt me-2"></i>Call to Book
+              </a>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="modern-footer">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <a href="index.html" class="footer-logo">Physio Dynamics</a>
+            <p class="mb-4">
+              Leading physiotherapy and sports rehabilitation center in Wayanad,
+              providing expert care with compassion and professionalism since
+              2024.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://wa.me/916282929104"
+                target="_blank"
+                aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/physiodynamicz"
+                target="_blank"
+                aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/physio_.dynamics/"
+                target="_blank"
+                aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/physio-dynamics-health/"
+                target="_blank"
+                aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-links">
+              <h5>Quick Links</h5>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="service.html">Our Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li>
+                  <a
+                    href="https://kapcwayanad.in/bookings/create/9"
+                    target="_blank"
+                    >Book Appointment</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-links">
+              <h5>Our Services</h5>
+              <ul>
+                <li>
+                  <a href="service.html#orthopedic">Orthopedic Physiotherapy</a>
+                </li>
+                <li><a href="service.html#sports">Sports Physiotherapy</a></li>
+                <li>
+                  <a href="service.html#neurological"
+                    >Neurological Physiotherapy</a
+                  >
+                </li>
+                <li>
+                  <a href="service.html#pediatric">Pediatric Physiotherapy</a>
+                </li>
+                <li><a href="service.html#homecare">Home Care Services</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-links">
+              <h5>Opening Hours</h5>
+              <ul>
+                <li><strong>Mon - Sat:</strong> </li>
+                <li>8:00 AM - 7:00 PM</li>
+                <li><strong>Sunday:</strong> Closed</li>
+                <li><strong>Emergency:</strong> Available</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>
+            &copy; <span id="currentYear"></span> Physio Dynamics. All Rights
+            Reserved.
+          </p>
         </div>
       </div>
     </footer>
-    <!-- Footer End -->
 
-    <!-- Floating Call & WhatsApp & Back to Top  Buttons -->
-    <div
-      class="floating-buttons"
-      role="group"
-      aria-label="Quick action buttons"
-    >
-      <!-- Back to Top Button -->
-      <button
-        class="btn btn-primary btn-lg-square rounded-circle back-to-top"
-        aria-label="Scroll to top of page"
-        title="Back to top"
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+      <a
+        href="#top"
+        class="floating-button back-to-top"
+        aria-label="Back to top"
       >
-        <i class="bi bi-arrow-up" aria-hidden="true"></i>
-      </button>
-
-      <!-- Call Button -->
+        <i class="fas fa-arrow-up"></i>
+      </a>
       <a
         href="tel:+916282929104"
-        class="floating-button call-button"
-        target="_blank"
-        rel="noopener noreferrer"
+        class="floating-button phone"
         aria-label="Call us"
-        title="Call +91 6282929104"
       >
-        <img
-          src="https://img.icons8.com/ios-filled/50/ffffff/phone.png"
-          alt=""
-          width="24"
-          height="24"
-          aria-hidden="true"
-          loading="lazy"
-        />
-        <span class="visually-hidden">Call Us</span>
+        <i class="fas fa-phone-alt"></i>
       </a>
-
-      <!-- WhatsApp Button -->
       <a
         href="https://wa.me/916282929104"
-        class="floating-button whatsapp-button"
-        target="_blank"
-        rel="noopener noreferrer"
+        class="floating-button whatsapp"
         aria-label="Chat on WhatsApp"
-        title="Message us on WhatsApp"
       >
-        <img
-          src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"
-          alt=""
-          width="32"
-          height="32"
-          aria-hidden="true"
-          loading="lazy"
-        />
-        <span class="visually-hidden">WhatsApp</span>
+        <i class="fab fa-whatsapp"></i>
       </a>
     </div>
-    <!-- Floating Call & WhatsApp Buttons end -->
-
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-PF3YJYKC6V"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-PF3YJYKC6V");
-    </script>
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
-      defer
-    ></script>
-    <script src="lib/wow/wow.min.js" defer></script>
-    <script src="lib/easing/easing.min.js" defer></script>
-    <script src="lib/waypoints/waypoints.min.js" defer></script>
-    <script src="lib/counterup/counterup.min.js" defer></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js" defer></script>
-    <script src="lib/tempusdominus/js/moment.min.js" defer></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js" defer></script>
-    <script
-      src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"
-      defer
-    ></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js" defer></script>
-    <script src="js/contact.js" defer></script>
-
-    <!-- Dynamic Year -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var yearEl = document.getElementById("currentYear");
-        if (yearEl) yearEl.textContent = new Date().getFullYear();
-      });
-    </script>
   </body>
 </html>
