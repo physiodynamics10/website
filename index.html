@@ -79,139 +79,6 @@
 
     <!-- Custom CSS with modern design -->
     <link rel="stylesheet" href="css/style.css" />
-    
-    <style>
-      /* Testimonials Carousel Styles */
-      .testimonials-carousel-section {
-        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-        padding: 80px 0;
-        overflow: hidden;
-        position: relative;
-      }
-      
-      .testimonials-carousel-section h2 {
-        color: #007d94;
-        margin-bottom: 15px;
-        text-align: center;
-      }
-      
-      .testimonials-subtitle {
-        text-align: center;
-        color: #666;
-        max-width: 700px;
-        margin: 0 auto 50px;
-        font-size: 1.1rem;
-      }
-      
-      .testimonials-track {
-        display: flex;
-        gap: 30px;
-        animation: scroll 40s linear infinite;
-        padding: 20px 0;
-      }
-      
-      .testimonials-track:hover {
-        animation-play-state: paused;
-      }
-      
-      @keyframes scroll {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(calc(-350px * 6 - 30px * 6));
-        }
-      }
-      
-      .testimonial-slide {
-        flex: 0 0 350px;
-        background: white;
-        border-radius: 15px;
-        padding: 30px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-      
-      .testimonial-slide:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-      }
-      
-      .testimonial-rating {
-        color: #ffc107;
-        margin-bottom: 15px;
-      }
-      
-      .testimonial-content p {
-        color: #555;
-        font-style: italic;
-        line-height: 1.6;
-        margin-bottom: 25px;
-        position: relative;
-        padding-left: 20px;
-      }
-      
-      .testimonial-content p:before {
-        content: '"';
-        position: absolute;
-        left: 0;
-        top: -10px;
-        font-size: 40px;
-        color: #007d94;
-        opacity: 0.3;
-        font-family: serif;
-      }
-      
-      .testimonial-author {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-      }
-      
-      .testimonial-author img {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 3px solid #007d94;
-      }
-      
-      .testimonial-author h5 {
-        color: #333;
-        margin-bottom: 5px;
-      }
-      
-      .testimonial-author small {
-        color: #666;
-      }
-      
-      .testimonials-container {
-        position: relative;
-        overflow: hidden;
-        padding: 20px 0;
-      }
-      
-      /* Gradient fade effect on edges */
-      .testimonials-container:before,
-      .testimonials-container:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        width: 100px;
-        height: 100%;
-        z-index: 2;
-      }
-      
-      .testimonials-container:before {
-        left: 0;
-        background: linear-gradient(to right, #f8f9fa, transparent);
-      }
-      
-      .testimonials-container:after {
-        right: 0;
-        background: linear-gradient(to left, #f8f9fa, transparent);
-      }
-    </style>
 
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
@@ -562,226 +429,225 @@
     </section>
 
     <!-- Moving Testimonials Carousel -->
-    <section class="testimonials-carousel-section">
-      <div class="container">
-        <h2 class="animate-fade-in">Patient Testimonials</h2>
-        <p class="testimonials-subtitle animate-fade-in">
-          What our patients say about their experience at Physio Dynamics
-        </p>
-        
-        <div class="testimonials-container">
-          <div class="testimonials-track">
-            <!-- Testimonial 1 -->
-            <div class="testimonial-slide">
-              <div class="testimonial-content">
-                <div class="testimonial-rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <p>
-                  Amazing center with tons of knowledge. I met 4 physiotherapists before and none could understand my exact issue. The team at Physio Dynamics gave me the right treatment and coaching. It's been a year I am leading a normal life.
-                </p>
-                <div class="testimonial-author">
-                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Deepu Thomas">
-                  <div>
-                    <h5 class="mb-0">Deepu Thomas</h5>
-                    <small class="text-muted">Sports Injury Recovery</small>
-                  </div>
+<section class="testimonials-carousel-section">
+  <div class="container">
+    <h2 class="animate-fade-in">Patient Testimonials</h2>
+    <p class="testimonials-subtitle animate-fade-in">
+      What our patients say about their experience at Physio Dynamics
+    </p>
+
+    <div class="testimonials-wrapper">
+      <!-- Left Arrow -->
+      <button class="testimonial-arrow testimonial-arrow-left" aria-label="Previous testimonial">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+
+      <div class="testimonials-container">
+        <div class="testimonials-track">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                Amazing center with tons of knowledge. I met 4
+                physiotherapists before and none could understand my exact
+                issue. The team at Physio Dynamics gave me the right
+                treatment and coaching. It's been a year I am leading a
+                normal life.
+              </p>
+              <div class="testimonial-author">
+                <img src="img/test1.png" alt="Deepu Thomas" />
+                <div>
+                  <h5 class="mb-0">Deepu Thomas</h5>
+                  <small class="text-muted">Sports Injury Recovery</small>
                 </div>
               </div>
             </div>
-            
-            <!-- Testimonial 2 -->
-            <div class="testimonial-slide">
-              <div class="testimonial-content">
-                <div class="testimonial-rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <p>
-                  Huge shoutout to my physiotherapist for their patience, expertise, and motivation throughout my healing journey. Every session is a step forward! Thank you for your patience and clear guidance.
-                </p>
-                <div class="testimonial-author">
-                  <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Rakhi Abhilash">
-                  <div>
-                    <h5 class="mb-0">Rakhi Abhilash</h5>
-                    <small class="text-muted">Post-Surgical Rehabilitation</small>
-                  </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                Huge shoutout to my physiotherapist for their patience,
+                expertise, and motivation throughout my healing journey.
+                Every session is a step forward! Thank you for your patience
+                and clear guidance.
+              </p>
+              <div class="testimonial-author">
+                <img src="img/test2.png" alt="Rakhi Abhilash" />
+                <div>
+                  <h5 class="mb-0">Rakhi Abhilash</h5>
+                  <small class="text-muted">Post-Surgical Rehabilitation</small>
                 </div>
               </div>
             </div>
-            
-            <!-- Testimonial 3 -->
-            <div class="testimonial-slide">
-              <div class="testimonial-content">
-                <div class="testimonial-rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <p>
-                  Effective treatment was provided with care and professionalism. The environment was clean and calming. Highly recommended for anyone needing physiotherapy in Wayanad.
-                </p>
-                <div class="testimonial-author">
-                  <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Praksh R">
-                  <div>
-                    <h5 class="mb-0">Praksh R</h5>
-                    <small class="text-muted">Orthopedic Treatment</small>
-                  </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                Effective treatment was provided with care and
+                professionalism. The environment was clean and calming.
+                Highly recommended for anyone needing physiotherapy in
+                Wayanad.
+              </p>
+              <div class="testimonial-author">
+                <img src="img/test3.png" alt="Praksh R" />
+                <div>
+                  <h5 class="mb-0">Praksh R</h5>
+                  <small class="text-muted">Orthopedic Treatment</small>
                 </div>
               </div>
             </div>
-            
-            <!-- Testimonial 4 -->
-            <div class="testimonial-slide">
-              <div class="testimonial-content">
-                <div class="testimonial-rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <p>
-                  After my knee surgery, I was worried about recovery. Physio Dynamics created a perfect rehab plan. Today I can walk without pain. Their home care service was especially helpful during initial weeks.
-                </p>
-                <div class="testimonial-author">
-                  <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Rajesh Kumar">
-                  <div>
-                    <h5 class="mb-0">Rajesh Kumar</h5>
-                    <small class="text-muted">Knee Surgery Recovery</small>
-                  </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                After my knee surgery, I was worried about recovery. Physio
+                Dynamics created a perfect rehab plan. Today I can walk
+                without pain. Their home care service was especially helpful
+                during initial weeks.
+              </p>
+              <div class="testimonial-author">
+                <img src="img/test4.png" alt="Rajesh Kumar" />
+                <div>
+                  <h5 class="mb-0">Rajesh Kumar</h5>
+                  <small class="text-muted">Knee Surgery Recovery</small>
                 </div>
               </div>
             </div>
-            
-            <!-- Testimonial 5 -->
-            <div class="testimonial-slide">
-              <div class="testimonial-content">
-                <div class="testimonial-rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <p>
-                  My child had developmental delays and we were very concerned. The pediatric physiotherapy sessions have shown remarkable improvement. The therapists are so patient and good with children.
-                </p>
-                <div class="testimonial-author">
-                  <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Anjali Menon">
-                  <div>
-                    <h5 class="mb-0">Anjali Menon</h5>
-                    <small class="text-muted">Pediatric Therapy</small>
-                  </div>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                The physiotherapy centre is exceptionally one of the best
+                centres. The approach and treatment very nice and sincere. I
+                have completely recovered and now am very well. I am very
+                happy with this centre. Thank you! 😊
+              </p>
+              <div class="testimonial-author">
+                <img src="img/saleem.png" alt="Saleem P" />
+                <div>
+                  <h5 class="mb-0">Saleem P</h5>
+                  <small class="text-muted">Pediatric Therapy</small>
                 </div>
               </div>
             </div>
-            
-            <!-- Testimonial 6 -->
-            <div class="testimonial-slide">
-              <div class="testimonial-content">
-                <div class="testimonial-rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <p>
-                  Suffering from chronic back pain for years. Tried many treatments but only at Physio Dynamics I found real relief. Their combination of manual therapy and exercises worked wonders for me.
-                </p>
-                <div class="testimonial-author">
-                  <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Meera Nair">
-                  <div>
-                    <h5 class="mb-0">Meera Nair</h5>
-                    <small class="text-muted">Chronic Back Pain</small>
-                  </div>
+          </div>
+
+          <!-- Testimonial 6 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                My experience at physio dynamics was fantastic. I was
+                struggling with knee pain and after some sessions, I can
+                honestly say my pain is significantly reduced. The therapist
+                explained my condition and provided me with a clear plan of
+                exercises to do at home.
+              </p>
+              <div class="testimonial-author">
+                <img src="img/Abhi.png" alt="Abhinandh AG" />
+                <div>
+                  <h5 class="mb-0">Abhinandh AG</h5>
+                  <small class="text-muted">Knee Pain Treatment</small>
                 </div>
               </div>
             </div>
-            
-            <!-- Duplicate testimonials for seamless loop -->
-            <!-- Testimonial 1 (Duplicate) -->
-            <div class="testimonial-slide">
-              <div class="testimonial-content">
-                <div class="testimonial-rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <p>
-                  Amazing center with tons of knowledge. I met 4 physiotherapists before and none could understand my exact issue. The team at Physio Dynamics gave me the right treatment and coaching. It's been a year I am leading a normal life.
-                </p>
-                <div class="testimonial-author">
-                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Deepu Thomas">
-                  <div>
-                    <h5 class="mb-0">Deepu Thomas</h5>
-                    <small class="text-muted">Sports Injury Recovery</small>
-                  </div>
-                </div>
+          </div>
+
+          <!-- Testimonial 7 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
               </div>
-            </div>
-            
-            <!-- Testimonial 2 (Duplicate) -->
-            <div class="testimonial-slide">
-              <div class="testimonial-content">
-                <div class="testimonial-rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <p>
-                  Huge shoutout to my physiotherapist for their patience, expertise, and motivation throughout my healing journey. Every session is a step forward! Thank you for your patience and clear guidance.
-                </p>
-                <div class="testimonial-author">
-                  <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Rakhi Abhilash">
-                  <div>
-                    <h5 class="mb-0">Rakhi Abhilash</h5>
-                    <small class="text-muted">Post-Surgical Rehabilitation</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Testimonial 3 (Duplicate) -->
-            <div class="testimonial-slide">
-              <div class="testimonial-content">
-                <div class="testimonial-rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <p>
-                  Effective treatment was provided with care and professionalism. The environment was clean and calming. Highly recommended for anyone needing physiotherapy in Wayanad.
-                </p>
-                <div class="testimonial-author">
-                  <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Praksh R">
-                  <div>
-                    <h5 class="mb-0">Praksh R</h5>
-                    <small class="text-muted">Orthopedic Treatment</small>
-                  </div>
+              <p>
+                Suffering from chronic back pain for years. Tried many
+                treatments but only at Physio Dynamics I found real relief.
+                Their combination of manual therapy and exercises worked
+                wonders for me.
+              </p>
+              <div class="testimonial-author">
+                <img src="img/test5.png" alt="Meera Nair" />
+                <div>
+                  <h5 class="mb-0">Meera Nair</h5>
+                  <small class="text-muted">Chronic Back Pain</small>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+
+      <!-- Right Arrow -->
+      <button class="testimonial-arrow testimonial-arrow-right" aria-label="Next testimonial">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <!-- Dots Navigation -->
+    <div class="testimonial-dots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+      <span class="dot" data-index="3"></span>
+      <span class="dot" data-index="4"></span>
+      <span class="dot" data-index="5"></span>
+      <span class="dot" data-index="6"></span>
+    </div>
+  </div>
+</section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
@@ -950,6 +816,9 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 
     <!-- Floating Buttons -->
     <div class="floating-buttons">
