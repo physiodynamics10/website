@@ -4826,7 +4826,8 @@ a {
 
 .testimonials-container {
     position: relative;
-    max-width: 1400px; /* Increased for 4 items */
+    max-width: 1400px;
+    /* Increased for 4 items */
     margin: 0 auto;
     padding: 0 60px;
 }
@@ -4885,17 +4886,20 @@ a {
 /* Carousel Track */
 .testimonials-track {
     display: flex;
-    gap: 25px; /* Reduced gap for 4 items */
+    gap: 25px;
+    /* Reduced gap for 4 items */
     transition: transform 0.5s ease;
     padding: 20px 0;
     will-change: transform;
 }
 
 .testimonial-slide {
-    flex: 0 0 calc(25% - 18.75px); /* 4 items on desktop (25% width minus 75% of gap) */
+    flex: 0 0 calc(25% - 18.75px);
+    /* 4 items on desktop (25% width minus 75% of gap) */
     background: white;
     border-radius: 15px;
-    padding: 25px; /* Slightly smaller padding */
+    padding: 25px;
+    /* Slightly smaller padding */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     min-height: 300px;
@@ -4925,7 +4929,8 @@ a {
     margin-bottom: 25px;
     position: relative;
     padding-left: 20px;
-    font-size: 0.95rem; /* Slightly smaller font for 4 items */
+    font-size: 0.95rem;
+    /* Slightly smaller font for 4 items */
     flex-grow: 1;
 }
 
@@ -4943,12 +4948,14 @@ a {
 .testimonial-author {
     display: flex;
     align-items: center;
-    gap: 12px; /* Slightly smaller gap */
+    gap: 12px;
+    /* Slightly smaller gap */
     margin-top: auto;
 }
 
 .testimonial-author img {
-    width: 45px; /* Slightly smaller image */
+    width: 45px;
+    /* Slightly smaller image */
     height: 45px;
     border-radius: 50%;
     object-fit: cover;
@@ -4958,12 +4965,14 @@ a {
 .testimonial-author-info h5 {
     color: #333;
     margin-bottom: 5px;
-    font-size: 0.95rem; /* Slightly smaller */
+    font-size: 0.95rem;
+    /* Slightly smaller */
 }
 
 .testimonial-author-info small {
     color: #666;
-    font-size: 0.85rem; /* Slightly smaller */
+    font-size: 0.85rem;
+    /* Slightly smaller */
 }
 
 /* Dot Indicators */
@@ -5000,40 +5009,47 @@ a {
     .testimonials-container {
         max-width: 1200px;
     }
-    
+
     .testimonial-slide {
-        flex: 0 0 calc(33.333% - 16.67px); /* 3 items */
-        padding: 30px; /* Restore original padding */
+        flex: 0 0 calc(33.333% - 16.67px);
+        /* 3 items */
+        padding: 30px;
+        /* Restore original padding */
     }
-    
+
     .testimonial-content p {
-        font-size: 1rem; /* Restore original font size */
+        font-size: 1rem;
+        /* Restore original font size */
     }
-    
+
     .testimonial-author img {
-        width: 50px; /* Restore original image size */
+        width: 50px;
+        /* Restore original image size */
         height: 50px;
     }
-    
+
     .testimonial-author-info h5 {
-        font-size: 1rem; /* Restore original font size */
+        font-size: 1rem;
+        /* Restore original font size */
     }
-    
+
     .testimonial-author-info small {
-        font-size: 0.9rem; /* Restore original font size */
+        font-size: 0.9rem;
+        /* Restore original font size */
     }
 }
 
 /* Responsive Design - 3 items to 2 items */
 @media (max-width: 992px) {
     .testimonial-slide {
-        flex: 0 0 calc(50% - 12.5px); /* 2 items on tablet */
+        flex: 0 0 calc(50% - 12.5px);
+        /* 2 items on tablet */
     }
-    
+
     .testimonials-container {
         padding: 0 50px;
     }
-    
+
     .testimonial-arrow {
         width: 45px;
         height: 45px;
@@ -5045,30 +5061,31 @@ a {
     .testimonials-carousel-section {
         padding: 60px 0;
     }
-    
+
     .testimonial-slide {
-        flex: 0 0 100%; /* 1 item on mobile */
+        flex: 0 0 100%;
+        /* 1 item on mobile */
     }
-    
+
     .testimonials-container {
         padding: 0 40px;
     }
-    
+
     .testimonial-arrow {
         width: 40px;
         height: 40px;
         font-size: 1rem;
     }
-    
+
     .testimonials-subtitle {
         margin-bottom: 40px;
         padding: 0 20px;
     }
-    
+
     .testimonial-slide {
         padding: 25px;
     }
-    
+
     .testimonial-content p {
         font-size: 0.95rem;
     }
@@ -5079,28 +5096,28 @@ a {
     .testimonials-container {
         padding: 0 20px;
     }
-    
+
     .testimonial-arrow {
         width: 35px;
         height: 35px;
         font-size: 0.9rem;
     }
-    
+
     .testimonial-dots {
         margin-top: 30px;
     }
-    
+
     .testimonial-slide {
         padding: 20px;
         min-height: 280px;
     }
-    
+
     .testimonial-author {
         flex-direction: column;
         text-align: center;
         gap: 10px;
     }
-    
+
     .testimonial-author img {
         width: 45px;
         height: 45px;
@@ -5216,11 +5233,11 @@ a {
     .journey-content-box {
         padding: 30px;
     }
-    
+
     .journey-title {
         font-size: 1.8rem;
     }
-    
+
     .journey-paragraph.lead {
         font-size: 1.1rem;
     }
@@ -5230,11 +5247,11 @@ a {
     .journey-content-box {
         padding: 25px;
     }
-    
+
     .journey-title {
         font-size: 1.6rem;
     }
-    
+
     .badge-text {
         font-size: 0.8rem;
         padding: 6px 15px;
@@ -5245,11 +5262,11 @@ a {
     .journey-content-box {
         padding: 20px;
     }
-    
+
     .journey-paragraph {
         padding-left: 20px;
     }
-    
+
     .journey-paragraph.lead {
         font-size: 1rem;
     }
@@ -5283,9 +5300,9 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, 
-        rgba(0, 125, 148, 0.1) 0%,
-        rgba(0, 198, 200, 0.05) 100%);
+    background: linear-gradient(to bottom,
+            rgba(0, 125, 148, 0.1) 0%,
+            rgba(0, 198, 200, 0.05) 100%);
     pointer-events: none;
 }
 
@@ -5324,4 +5341,218 @@ a {
 
 .about-img-container.animate-fade-in {
     animation-delay: 0.1s;
+}
+
+
+/* Pediatric-specific accent colors within the orthopedic color scheme */
+.pediatric-accent {
+    color: #4dabf7 !important;
+}
+
+.pediatric-accent-bg {
+    background: linear-gradient(135deg,
+            #4dabf7 0%,
+            #339af0 100%) !important;
+}
+
+.age-icon {
+    color: #4dabf7 !important;
+}
+
+.treatment-card:hover {
+    border-color: #4dabf7 !important;
+}
+
+/* 404 Content Section */
+.error-container {
+    min-height: calc(100vh - 400px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--light-gray) 0%, white 100%);
+    margin-top: 70px;
+}
+
+.error-content {
+    text-align: center;
+}
+
+.error-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: 0 20px 60px rgba(0, 125, 148, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.error-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(to right, var(--primary), var(--primary-light));
+}
+
+.error-icon {
+    margin-bottom: 30px;
+}
+
+.error-icon i {
+    font-size: 5rem;
+    color: var(--primary-light);
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: float 3s ease-in-out infinite;
+}
+
+.error-title {
+    font-size: 8rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 10px;
+    line-height: 1;
+    text-shadow: 3px 3px 0 rgba(0, 125, 148, 0.1);
+    font-family: 'Poppins', sans-serif;
+}
+
+.error-subtitle {
+    font-size: 2.5rem;
+    color: var(--dark);
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.error-description {
+    font-size: 1.2rem;
+    color: var(--gray);
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+}
+
+/* Floating animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Background decorative elements */
+.error-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, var(--primary-light) 0%, transparent 70%);
+    opacity: 0.1;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Add decorative dots pattern */
+.error-wrapper {
+    background-image: 
+        radial-gradient(circle at 20px 20px, rgba(0, 125, 148, 0.05) 2px, transparent 0),
+        radial-gradient(circle at 60px 60px, rgba(0, 198, 200, 0.05) 2px, transparent 0);
+    background-size: 80px 80px;
+}
+
+/* Action Buttons - Add these if you want buttons */
+.error-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.error-btn {
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+.error-btn-primary {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: white;
+    box-shadow: 0 10px 25px rgba(0, 125, 148, 0.3);
+}
+
+.error-btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 125, 148, 0.4);
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .error-title {
+        font-size: 6rem;
+    }
+    
+    .error-subtitle {
+        font-size: 2rem;
+    }
+    
+    .error-description {
+        font-size: 1.1rem;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .error-container {
+        padding: 60px 20px;
+        min-height: calc(100vh - 300px);
+    }
+    
+    .error-wrapper {
+        padding: 40px 25px;
+    }
+    
+    .error-title {
+        font-size: 5rem;
+    }
+    
+    .error-subtitle {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .error-title {
+        font-size: 4rem;
+    }
+    
+    .error-subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .error-description {
+        font-size: 1rem;
+    }
+    
+    .error-icon i {
+        font-size: 4rem;
+    }
 }
