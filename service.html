@@ -10,13 +10,14 @@
     <meta name="author" content="Physio Dynamics" />
     <meta name="copyright" content="Physio Dynamics" />
     <meta name="language" content="English" />
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.physio-dynamics.com/service.html" />
 
     <!-- Title -->
     <title>
-      Physiotherapy Services in Wayanad | Orthopedic, Sports, Neurological & Pediatric - Physio Dynamics
+      Physiotherapy Services in Wayanad | Orthopedic, Sports, Neurological &
+      Pediatric - Physio Dynamics
     </title>
 
     <!-- Meta Description -->
@@ -104,19 +105,45 @@
 
     <!-- Bootstrap CSS -->
     <link
+      rel="preload"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      />
+    </noscript>
 
     <!-- Font Awesome Icons -->
     <link
-      rel="stylesheet"
+      rel="preload"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
-
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      />
+    </noscript>
+    
     <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-chrome-192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/android-chrome-512.png"
+    />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
     <link rel="icon" href="/favicon.ico" />
@@ -128,276 +155,305 @@
 
     <!-- JSON-LD Structured Data for Service Page -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Physiotherapy Services",
-      "serviceType": "Medical Services",
-      "provider": {
-        "@type": "MedicalBusiness",
-        "name": "Physio Dynamics",
-        "url": "https://www.physio-dynamics.com/",
-        "medicalSpecialty": "Physiotherapy"
-      },
-      "description": "Comprehensive physiotherapy services including orthopedic rehabilitation, sports injury treatment, neurological care, pediatric physiotherapy, chest therapy and home care services in Wayanad.",
-      "areaServed": {
-        "@type": "GeoCircle",
-        "geoMidpoint": {
-          "@type": "GeoCoordinates",
-          "latitude": 11.7387,
-          "longitude": 76.0823
-        },
-        "geoRadius": "20000"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
         "name": "Physiotherapy Services",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Orthopedic Physiotherapy",
-              "description": "Treatment for bones, joints, and muscles to restore mobility and reduce pain after injuries or surgeries."
-            }
+        "serviceType": "Medical Services",
+        "provider": {
+          "@type": "MedicalBusiness",
+          "name": "Physio Dynamics",
+          "url": "https://www.physio-dynamics.com/",
+          "medicalSpecialty": "Physiotherapy"
+        },
+        "description": "Comprehensive physiotherapy services including orthopedic rehabilitation, sports injury treatment, neurological care, pediatric physiotherapy, chest therapy and home care services in Wayanad.",
+        "areaServed": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": 11.7387,
+            "longitude": 76.0823
           },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Sports Physiotherapy",
-              "description": "Injury prevention, assessment, and treatment for athletes of all levels to enhance performance."
+          "geoRadius": "20000"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Physiotherapy Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Orthopedic Physiotherapy",
+                "description": "Treatment for bones, joints, and muscles to restore mobility and reduce pain after injuries or surgeries."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Sports Physiotherapy",
+                "description": "Injury prevention, assessment, and treatment for athletes of all levels to enhance performance."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Neurological Physiotherapy",
+                "description": "Treatment for stroke, Parkinson's, spinal cord injuries to improve mobility and independence."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Pediatric Physiotherapy",
+                "description": "Specialized care for children to improve movement, strength, posture, and motor skills."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Chest Physiotherapy",
+                "description": "Techniques to clear mucus and improve breathing for asthma, bronchitis, pneumonia, or COPD."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Home Care Physiotherapy",
+                "description": "Personalized treatment at home for elderly, post-surgical, or mobility-challenged patients."
+              }
             }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Neurological Physiotherapy",
-              "description": "Treatment for stroke, Parkinson's, spinal cord injuries to improve mobility and independence."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Pediatric Physiotherapy",
-              "description": "Specialized care for children to improve movement, strength, posture, and motor skills."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Chest Physiotherapy",
-              "description": "Techniques to clear mucus and improve breathing for asthma, bronchitis, pneumonia, or COPD."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Home Care Physiotherapy",
-              "description": "Personalized treatment at home for elderly, post-surgical, or mobility-challenged patients."
-            }
-          }
-        ]
+          ]
+        }
       }
-    }
     </script>
 
     <!-- Breadcrumb Schema -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.physio-dynamics.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Services",
-          "item": "https://www.physio-dynamics.com/service.html"
-        }
-      ]
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.physio-dynamics.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://www.physio-dynamics.com/service.html"
+          }
+        ]
+      }
     </script>
 
     <!-- Google Tag Manager -->
     <script>
-        (function(w,d,s,l,i){
-            w[l]=w[l]||[];
-            w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-            var f=d.getElementsByTagName(s)[0],
-                j=d.createElement(s),
-                dl=l!='dataLayer'?'&l='+l:'';
-            j.async=true;
-            j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-            f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-WKMWL3T3');
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WKMWL3T3");
     </script>
     <!-- End Google Tag Manager -->
 
     <!-- Google Analytics 4 with your actual Measurement ID -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PF3YJYKC6V"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PF3YJYKC6V"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        
-        // Your actual GA4 Measurement ID
-        gtag('config', 'G-PF3YJYKC6V');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        // Page-specific tracking for Services page
-        document.addEventListener('DOMContentLoaded', function() {
-            // Track service category clicks
-            const serviceCards = document.querySelectorAll('.service-card');
-            serviceCards.forEach(card => {
-                card.addEventListener('click', function(e) {
-                    // Don't track if clicking on links inside the card
-                    if (e.target.tagName === 'A' || e.target.closest('a')) return;
-                    
-                    const serviceName = this.querySelector('h3').textContent.trim();
-                    gtag('event', 'service_view', {
-                        'event_category': 'engagement',
-                        'event_label': serviceName
-                    });
-                });
-            });
+      // Your actual GA4 Measurement ID
+      gtag("config", "G-PF3YJYKC6V");
 
-            // Track service link clicks
-            const serviceLinks = document.querySelectorAll('.service-link');
-            serviceLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    const serviceName = this.closest('.service-card').querySelector('h3').textContent.trim();
-                    gtag('event', 'service_consultation_click', {
-                        'event_category': 'conversion',
-                        'event_label': serviceName
-                    });
-                });
-            });
+      // Page-specific tracking for Services page
+      document.addEventListener("DOMContentLoaded", function () {
+        // Track service category clicks
+        const serviceCards = document.querySelectorAll(".service-card");
+        serviceCards.forEach((card) => {
+          card.addEventListener("click", function (e) {
+            // Don't track if clicking on links inside the card
+            if (e.target.tagName === "A" || e.target.closest("a")) return;
 
-            // Track condition category views
-            const conditionCards = document.querySelectorAll('.condition-card');
-            conditionCards.forEach(card => {
-                card.addEventListener('click', function() {
-                    const conditionName = this.querySelector('h4').textContent.trim();
-                    gtag('event', 'condition_view', {
-                        'event_category': 'engagement',
-                        'event_label': conditionName
-                    });
-                });
+            const serviceName = this.querySelector("h3").textContent.trim();
+            gtag("event", "service_view", {
+              event_category: "engagement",
+              event_label: serviceName,
             });
-
-            // Track FAQ interactions
-            const faqButtons = document.querySelectorAll('.accordion-button');
-            faqButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    const faqQuestion = this.textContent.trim();
-                    gtag('event', 'faq_click', {
-                        'event_category': 'engagement',
-                        'event_label': faqQuestion.substring(0, 50)
-                    });
-                });
-            });
-
-            // Track CTA button clicks
-            const ctaButtons = document.querySelectorAll('.cta-btn');
-            ctaButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    gtag('event', 'services_cta_click', {
-                        'event_category': 'conversion',
-                        'event_label': 'Services Page CTA'
-                    });
-                });
-            });
-
-            // Track "Call Now" button clicks
-            const callButtons = document.querySelectorAll('[href^="tel:"]');
-            callButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    gtag('event', 'service_call_click', {
-                        'event_category': 'contact',
-                        'event_label': 'Services Page Call Button'
-                    });
-                });
-            });
-
-            // Track specific service section views
-            const serviceSections = document.querySelectorAll('[id^="orthopedic"], [id^="sports"], [id^="neurological"], [id^="pediatric"], [id^="chest"], [id^="homecare"]');
-            serviceSections.forEach(section => {
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            const serviceType = section.id;
-                            gtag('event', 'service_section_view', {
-                                'event_category': 'engagement',
-                                'event_label': serviceType.charAt(0).toUpperCase() + serviceType.slice(1) + ' Service Viewed',
-                                'non_interaction': true
-                            });
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                }, { threshold: 0.5 });
-                observer.observe(section);
-            });
+          });
         });
 
-        // Track Scroll Depth
-        window.addEventListener('scroll', function() {
-            const scrollPercent = Math.round(
-                (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100
-            );
-            if ([25, 50, 75, 90].includes(scrollPercent)) {
-                gtag('event', 'scroll_depth', {
-                    'event_category': 'engagement',
-                    'event_label': `${scrollPercent}% scroll`,
-                    'non_interaction': true
-                });
-            }
+        // Track service link clicks
+        const serviceLinks = document.querySelectorAll(".service-link");
+        serviceLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            const serviceName = this.closest(".service-card")
+              .querySelector("h3")
+              .textContent.trim();
+            gtag("event", "service_consultation_click", {
+              event_category: "conversion",
+              event_label: serviceName,
+            });
+          });
         });
 
-        // Track Time on Page
-        let pageStartTime = new Date();
-        window.addEventListener('beforeunload', function() {
-            const timeSpent = Math.round((new Date() - pageStartTime) / 1000);
-            if (timeSpent > 30) {
-                gtag('event', 'time_on_page', {
-                    'event_category': 'engagement',
-                    'event_label': '30+ seconds',
-                    'value': timeSpent,
-                    'non_interaction': true
-                });
-            }
+        // Track condition category views
+        const conditionCards = document.querySelectorAll(".condition-card");
+        conditionCards.forEach((card) => {
+          card.addEventListener("click", function () {
+            const conditionName = this.querySelector("h4").textContent.trim();
+            gtag("event", "condition_view", {
+              event_category: "engagement",
+              event_label: conditionName,
+            });
+          });
         });
 
-        // Track Outbound Links
-        document.addEventListener('click', function(e) {
-            const link = e.target.closest('a');
-            if (link && link.href && link.hostname !== window.location.hostname && !link.href.startsWith('javascript:')) {
-                gtag('event', 'outbound_click', {
-                    'event_category': 'engagement',
-                    'event_label': link.href,
-                    'transport_type': 'beacon'
-                });
-            }
+        // Track FAQ interactions
+        const faqButtons = document.querySelectorAll(".accordion-button");
+        faqButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const faqQuestion = this.textContent.trim();
+            gtag("event", "faq_click", {
+              event_category: "engagement",
+              event_label: faqQuestion.substring(0, 50),
+            });
+          });
         });
+
+        // Track CTA button clicks
+        const ctaButtons = document.querySelectorAll(".cta-btn");
+        ctaButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            gtag("event", "services_cta_click", {
+              event_category: "conversion",
+              event_label: "Services Page CTA",
+            });
+          });
+        });
+
+        // Track "Call Now" button clicks
+        const callButtons = document.querySelectorAll('[href^="tel:"]');
+        callButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            gtag("event", "service_call_click", {
+              event_category: "contact",
+              event_label: "Services Page Call Button",
+            });
+          });
+        });
+
+        // Track specific service section views
+        const serviceSections = document.querySelectorAll(
+          '[id^="orthopedic"], [id^="sports"], [id^="neurological"], [id^="pediatric"], [id^="chest"], [id^="homecare"]',
+        );
+        serviceSections.forEach((section) => {
+          const observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  const serviceType = section.id;
+                  gtag("event", "service_section_view", {
+                    event_category: "engagement",
+                    event_label:
+                      serviceType.charAt(0).toUpperCase() +
+                      serviceType.slice(1) +
+                      " Service Viewed",
+                    non_interaction: true,
+                  });
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.5 },
+          );
+          observer.observe(section);
+        });
+      });
+
+      // Track Scroll Depth
+      window.addEventListener("scroll", function () {
+        const scrollPercent = Math.round(
+          (window.scrollY /
+            (document.documentElement.scrollHeight - window.innerHeight)) *
+            100,
+        );
+        if ([25, 50, 75, 90].includes(scrollPercent)) {
+          gtag("event", "scroll_depth", {
+            event_category: "engagement",
+            event_label: `${scrollPercent}% scroll`,
+            non_interaction: true,
+          });
+        }
+      });
+
+      // Track Time on Page
+      let pageStartTime = new Date();
+      window.addEventListener("beforeunload", function () {
+        const timeSpent = Math.round((new Date() - pageStartTime) / 1000);
+        if (timeSpent > 30) {
+          gtag("event", "time_on_page", {
+            event_category: "engagement",
+            event_label: "30+ seconds",
+            value: timeSpent,
+            non_interaction: true,
+          });
+        }
+      });
+
+      // Track Outbound Links
+      document.addEventListener("click", function (e) {
+        const link = e.target.closest("a");
+        if (
+          link &&
+          link.href &&
+          link.hostname !== window.location.hostname &&
+          !link.href.startsWith("javascript:")
+        ) {
+          gtag("event", "outbound_click", {
+            event_category: "engagement",
+            event_label: link.href,
+            transport_type: "beacon",
+          });
+        }
+      });
     </script>
     <!-- End Google Analytics 4 -->
   </head>
 
   <body itemscope itemtype="https://schema.org/WebPage">
     <!-- Skip to main content for accessibility -->
-    <a class="skip-to-main visually-hidden" href="#main-content">Skip to main content</a>
+    <a class="skip-to-main visually-hidden" href="#main-content"
+      >Skip to main content</a
+    >
 
     <!-- Google Tag Manager (noscript) -->
     <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WKMWL3T3" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WKMWL3T3"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
@@ -406,11 +462,22 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="index.html">
-            <img src="img/favicon-48.png" alt="Physio Dynamics Logo" loading="eager">
+            <img
+              src="img/favicon-48.png"
+              alt="Physio Dynamics Logo"
+              loading="eager"
+            />
             Physio Dynamics
           </a>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon">
               <i class="fas fa-bars text-white"></i>
             </span>
@@ -521,14 +588,18 @@
               </h1>
               <p class="animate-fade-in">
                 Comprehensive assessment, tailored treatment plans, and
-                evidence-based rehabilitation for all your physiotherapy needs in
-                Wayanad.
+                evidence-based rehabilitation for all your physiotherapy needs
+                in Wayanad.
               </p>
               <div class="mt-3 animate-fade-in">
                 <a href="#services" class="btn btn-primary btn-lg me-2">
                   <i class="fas fa-list me-2"></i>View Services
                 </a>
-                <a href="tel:+916282929104" class="btn btn-outline-light btn-lg" rel="noopener">
+                <a
+                  href="tel:+916282929104"
+                  class="btn btn-outline-light btn-lg"
+                  rel="noopener"
+                >
                   <i class="fas fa-phone-alt me-2"></i>Call Now
                 </a>
               </div>
@@ -543,8 +614,8 @@
           <div class="section-title animate-fade-in">
             <h2>Our Specialized Services</h2>
             <p>
-              Expert physiotherapy treatments tailored to your specific needs and
-              recovery goals
+              Expert physiotherapy treatments tailored to your specific needs
+              and recovery goals
             </p>
           </div>
 
@@ -585,8 +656,8 @@
                 </div>
                 <h3>Sports Physiotherapy</h3>
                 <p>
-                  Prevention, assessment, and rehab of sports injuries. Return to
-                  play faster and safer with sport-specific conditioning and
+                  Prevention, assessment, and rehab of sports injuries. Return
+                  to play faster and safer with sport-specific conditioning and
                   training programs.
                 </p>
 
@@ -595,7 +666,9 @@
                     <i class="fas fa-check"></i> Sports injury rehabilitation
                   </li>
                   <li><i class="fas fa-check"></i> Performance enhancement</li>
-                  <li><i class="fas fa-check"></i> Injury prevention programs</li>
+                  <li>
+                    <i class="fas fa-check"></i> Injury prevention programs
+                  </li>
                   <li><i class="fas fa-check"></i> Athletic conditioning</li>
                 </ul>
 
@@ -613,8 +686,9 @@
                 </div>
                 <h3>Neurological Physiotherapy</h3>
                 <p>
-                  Rehabilitation for stroke, Parkinson's, spinal cord injury, and
-                  MS—improving mobility, balance, coordination, and independence.
+                  Rehabilitation for stroke, Parkinson's, spinal cord injury,
+                  and MS—improving mobility, balance, coordination, and
+                  independence.
                 </p>
 
                 <ul class="service-features">
@@ -639,13 +713,15 @@
                 <h3>Pediatric Physiotherapy</h3>
                 <p>
                   Care for infants, children, and teens to support healthy
-                  growth—improving posture, strength, motor skills, and functional
-                  movement.
+                  growth—improving posture, strength, motor skills, and
+                  functional movement.
                 </p>
 
                 <ul class="service-features">
                   <li><i class="fas fa-check"></i> Developmental delays</li>
-                  <li><i class="fas fa-check"></i> Cerebral palsy management</li>
+                  <li>
+                    <i class="fas fa-check"></i> Cerebral palsy management
+                  </li>
                   <li><i class="fas fa-check"></i> Motor skill development</li>
                   <li><i class="fas fa-check"></i> Postural correction</li>
                 </ul>
@@ -815,9 +891,9 @@
             <div class="col-lg-8 text-center">
               <h2 class="animate-fade-in">Ready to Start Your Recovery?</h2>
               <p class="animate-fade-in">
-                Schedule your first consultation with our expert physiotherapists.
-                We'll assess your condition and create a personalized treatment
-                plan for your recovery.
+                Schedule your first consultation with our expert
+                physiotherapists. We'll assess your condition and create a
+                personalized treatment plan for your recovery.
               </p>
               <div class="mt-3 animate-fade-in">
                 <a
@@ -829,7 +905,11 @@
                   <i class="fas fa-calendar-check me-2"></i>Book Appointment
                   Online
                 </a>
-                <a href="tel:+916282929104" class="btn btn-outline-light" rel="noopener">
+                <a
+                  href="tel:+916282929104"
+                  class="btn btn-outline-light"
+                  rel="noopener"
+                >
                   <i class="fas fa-phone-alt me-2"></i>Call to Book
                 </a>
               </div>
@@ -871,7 +951,8 @@
                         orthopedic rehabilitation, sports injury management,
                         neurological rehabilitation, pediatric physiotherapy,
                         chest physiotherapy, and home care services. Our
-                        treatments are tailored to each patient's specific needs.
+                        treatments are tailored to each patient's specific
+                        needs.
                       </div>
                     </div>
                   </div>
@@ -896,8 +977,8 @@
                         We treat a wide range of conditions including back pain,
                         neck pain, knee pain, sports injuries, stroke recovery,
                         post-operative conditions, arthritis, neurological
-                        disorders, pediatric developmental issues, and respiratory
-                        conditions.
+                        disorders, pediatric developmental issues, and
+                        respiratory conditions.
                       </div>
                     </div>
                   </div>
@@ -922,8 +1003,8 @@
                         Yes, we provide structured post-surgical rehabilitation
                         programs for joint replacements, ACL reconstruction,
                         spinal surgeries, fracture recovery, and other surgical
-                        procedures. Our programs are designed to support safe and
-                        effective recovery while minimizing complications.
+                        procedures. Our programs are designed to support safe
+                        and effective recovery while minimizing complications.
                       </div>
                     </div>
                   </div>
@@ -946,10 +1027,11 @@
                     >
                       <div class="accordion-body">
                         Yes, physiotherapy is safe and highly beneficial for
-                        elderly patients. All treatments are carefully adapted and
-                        supervised by our experienced therapists to ensure safety
-                        and comfort. We also offer home care services for elderly
-                        patients who prefer treatment in their own environment.
+                        elderly patients. All treatments are carefully adapted
+                        and supervised by our experienced therapists to ensure
+                        safety and comfort. We also offer home care services for
+                        elderly patients who prefer treatment in their own
+                        environment.
                       </div>
                     </div>
                   </div>
@@ -972,11 +1054,11 @@
                     >
                       <div class="accordion-body">
                         Absolutely. All our rehabilitation programs are
-                        personalized based on thorough assessment of the patient's
-                        condition, medical history, recovery goals, and lifestyle
-                        factors. We don't believe in one-size-fits-all approaches
-                        and create individualized treatment plans for each
-                        patient.
+                        personalized based on thorough assessment of the
+                        patient's condition, medical history, recovery goals,
+                        and lifestyle factors. We don't believe in
+                        one-size-fits-all approaches and create individualized
+                        treatment plans for each patient.
                       </div>
                     </div>
                   </div>
@@ -1056,16 +1138,24 @@
               <h5>Our Services</h5>
               <ul>
                 <li>
-                  <a href="service/orthopedic-physiotherapy.html">Orthopedic Physiotherapy</a>
+                  <a href="service/orthopedic-physiotherapy.html"
+                    >Orthopedic Physiotherapy</a
+                  >
                 </li>
-                <li><a href="service/sports-physiotherapy.html">Sports Physiotherapy</a></li>
+                <li>
+                  <a href="service/sports-physiotherapy.html"
+                    >Sports Physiotherapy</a
+                  >
+                </li>
                 <li>
                   <a href="service/neurological-physiotherapy.html"
                     >Neurological Physiotherapy</a
                   >
                 </li>
                 <li>
-                  <a href="service/pediatric-physiotherapy.html">Pediatric Physiotherapy</a>
+                  <a href="service/pediatric-physiotherapy.html"
+                    >Pediatric Physiotherapy</a
+                  >
                 </li>
                 <li><a href="service/home-care.html">Home Care Services</a></li>
               </ul>
@@ -1127,7 +1217,8 @@
 
     <script>
       // Set current year in footer
-      document.getElementById('currentYear').textContent = new Date().getFullYear();
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
     </script>
   </body>
 </html>
