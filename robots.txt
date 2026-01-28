@@ -1,26 +1,7 @@
-# robots.txt for Physio Dynamics
 User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
 Disallow: /tmp/
 
-# Sitemap
 Sitemap: https://www.physio-dynamics.com/sitemap.xml
-
-# Crawl delay (optional)
-Crawl-delay: 2
-
-# Specific bots
-User-agent: Googlebot
-Allow: /
-Disallow: /admin/
-Crawl-delay: 1
-
-User-agent: Bingbot
-Allow: /
-Disallow: /admin/
-
-User-agent: Yandex
-Allow: /
-Disallow: /admin/
