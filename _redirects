@@ -1,0 +1,7 @@
+# Main domain redirects
+http://physio-dynamics.com/* https://www.physio-dynamics.com/:splat 301!
+https://physio-dynamics.com/* https://www.physio-dynamics.com/:splat 301!
+http://www.physio-dynamics.com/* https://www.physio-dynamics.com/:splat 301!
+
+# Catch-all for any other variations
+/* /index.html 200
