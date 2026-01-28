@@ -4894,12 +4894,11 @@ a {
 }
 
 .testimonial-slide {
-    flex: 0 0 calc(25% - 18.75px);
-    /* 4 items on desktop (25% width minus 75% of gap) */
+    flex: 0 0 calc(33.333% - 12.5px);
+    /* 3 items on desktop (33.333% width minus 66.666% of gap) */
     background: white;
     border-radius: 15px;
     padding: 25px;
-    /* Slightly smaller padding */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     min-height: 300px;
