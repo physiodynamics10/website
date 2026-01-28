@@ -133,12 +133,5 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- 404 Page (Optional but good for SEO) -->
-  <url>
-    <loc>https://www.physio-dynamics.com/404.html</loc>
-    <lastmod>2026-01-28</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
-  </url>
   
 </urlset>
