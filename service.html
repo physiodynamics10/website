@@ -172,6 +172,56 @@
       }
     </script>
 
+  <!-- FAQ Schema Script for Physiotherapy Services -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What physiotherapy services do you offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer comprehensive physiotherapy services including orthopedic rehabilitation, sports injury management, neurological rehabilitation, pediatric physiotherapy, chest physiotherapy, and home care services. Our treatments are tailored to each patient's specific needs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which conditions are treated at Physio Dynamics?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We treat a wide range of conditions including back pain, neck pain, knee pain, sports injuries, stroke recovery, post-operative conditions, arthritis, neurological disorders, pediatric developmental issues, and respiratory conditions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide post-surgical rehabilitation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we provide structured post-surgical rehabilitation programs for joint replacements, ACL reconstruction, spinal surgeries, fracture recovery, and other surgical procedures. Our programs are designed to support safe and effective recovery while minimizing complications."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is physiotherapy safe for elderly patients?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, physiotherapy is safe and highly beneficial for elderly patients. All treatments are carefully adapted and supervised by our experienced therapists to ensure safety and comfort. We also offer home care services for elderly patients who prefer treatment in their own environment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are customized rehabilitation programs available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. All our rehabilitation programs are personalized based on thorough assessment of the patient's condition, medical history, recovery goals, and lifestyle factors. We don't believe in one-size-fits-all approaches and create individualized treatment plans for each patient."
+      }
+    }
+  ]
+}
+</script>
+
   <!-- Breadcrumb Schema -->
   <script type="application/ld+json">
       {
@@ -700,11 +750,12 @@
       </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="faq-section" aria-label="Frequently Asked Questions">
+    <!-- Enhanced FAQ Section with Schema Microdata -->
+    <section class="faq-section" aria-label="Frequently Asked Questions about Physiotherapy Services" itemscope
+      itemtype="https://schema.org/FAQPage">
       <div class="container">
         <div class="section-title animate-fade-in">
-          <h2>Frequently Asked Questions</h2>
+          <h2 itemprop="headline">Frequently Asked Questions</h2>
           <p>Common questions about our physiotherapy services</p>
         </div>
 
@@ -712,95 +763,120 @@
           <div class="col-lg-10">
             <div class="faq-accordion animate-fade-in">
               <div class="accordion" id="faqAccordion">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
+                <!-- FAQ Item 1 -->
+                <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <h3 class="accordion-header" id="headingServices">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne">
-                      What physiotherapy services do you offer?
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <span itemprop="name">What physiotherapy services do you offer?</span>
                     </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                  </h3>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingServices"
+                    data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer"
+                    itemtype="https://schema.org/Answer">
                     <div class="accordion-body">
-                      We offer comprehensive physiotherapy services including
-                      orthopedic rehabilitation, sports injury management,
-                      neurological rehabilitation, pediatric physiotherapy,
-                      chest physiotherapy, and home care services. Our
-                      treatments are tailored to each patient's specific
-                      needs.
+                      <div itemprop="text">
+                        We offer comprehensive physiotherapy services including
+                        orthopedic rehabilitation, sports injury management,
+                        neurological rehabilitation, pediatric physiotherapy,
+                        chest physiotherapy, and home care services. Our
+                        treatments are tailored to each patient's specific
+                        needs.
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
+                <!-- FAQ Item 2 -->
+                <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <h3 class="accordion-header" id="headingConditions">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo">
-                      Which conditions are treated at Physio Dynamics?
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <span itemprop="name">Which conditions are treated at Physio Dynamics?</span>
                     </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  </h3>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingConditions"
+                    data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer"
+                    itemtype="https://schema.org/Answer">
                     <div class="accordion-body">
-                      We treat a wide range of conditions including back pain,
-                      neck pain, knee pain, sports injuries, stroke recovery,
-                      post-operative conditions, arthritis, neurological
-                      disorders, pediatric developmental issues, and
-                      respiratory conditions.
+                      <div itemprop="text">
+                        We treat a wide range of conditions including back pain,
+                        neck pain, knee pain, sports injuries, stroke recovery,
+                        post-operative conditions, arthritis, neurological
+                        disorders, pediatric developmental issues, and
+                        respiratory conditions.
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
+                <!-- FAQ Item 3 -->
+                <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <h3 class="accordion-header" id="headingPostSurgical">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree">
-                      Do you provide post-surgical rehabilitation?
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <span itemprop="name">Do you provide post-surgical rehabilitation?</span>
                     </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  </h3>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingPostSurgical"
+                    data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer"
+                    itemtype="https://schema.org/Answer">
                     <div class="accordion-body">
-                      Yes, we provide structured post-surgical rehabilitation
-                      programs for joint replacements, ACL reconstruction,
-                      spinal surgeries, fracture recovery, and other surgical
-                      procedures. Our programs are designed to support safe
-                      and effective recovery while minimizing complications.
+                      <div itemprop="text">
+                        Yes, we provide structured post-surgical rehabilitation
+                        programs for joint replacements, ACL reconstruction,
+                        spinal surgeries, fracture recovery, and other surgical
+                        procedures. Our programs are designed to support safe
+                        and effective recovery while minimizing complications.
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
+                <!-- FAQ Item 4 -->
+                <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <h3 class="accordion-header" id="headingElderly">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseFour">
-                      Is physiotherapy safe for elderly patients?
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      <span itemprop="name">Is physiotherapy safe for elderly patients?</span>
                     </button>
-                  </h2>
-                  <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  </h3>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingElderly"
+                    data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer"
+                    itemtype="https://schema.org/Answer">
                     <div class="accordion-body">
-                      Yes, physiotherapy is safe and highly beneficial for
-                      elderly patients. All treatments are carefully adapted
-                      and supervised by our experienced therapists to ensure
-                      safety and comfort. We also offer home care services for
-                      elderly patients who prefer treatment in their own
-                      environment.
+                      <div itemprop="text">
+                        Yes, physiotherapy is safe and highly beneficial for
+                        elderly patients. All treatments are carefully adapted
+                        and supervised by our experienced therapists to ensure
+                        safety and comfort. We also offer home care services for
+                        elderly patients who prefer treatment in their own
+                        environment.
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
+                <!-- FAQ Item 5 -->
+                <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <h3 class="accordion-header" id="headingCustomized">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseFive">
-                      Are customized rehabilitation programs available?
+                      data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      <span itemprop="name">Are customized rehabilitation programs available?</span>
                     </button>
-                  </h2>
-                  <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  </h3>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingCustomized"
+                    data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer"
+                    itemtype="https://schema.org/Answer">
                     <div class="accordion-body">
-                      Absolutely. All our rehabilitation programs are
-                      personalized based on thorough assessment of the
-                      patient's condition, medical history, recovery goals,
-                      and lifestyle factors. We don't believe in
-                      one-size-fits-all approaches and create individualized
-                      treatment plans for each patient.
+                      <div itemprop="text">
+                        Absolutely. All our rehabilitation programs are
+                        personalized based on thorough assessment of the
+                        patient's condition, medical history, recovery goals,
+                        and lifestyle factors. We don't believe in
+                        one-size-fits-all approaches and create individualized
+                        treatment plans for each patient.
+                      </div>
                     </div>
                   </div>
                 </div>

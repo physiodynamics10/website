@@ -137,6 +137,57 @@
     }
     </script>
 
+  <!-- FAQ Schema Script -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where is Physio Dynamics located?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Physio Dynamics is located at UB City Centre Building, Near Crescent Public School, Panamaram, Wayanad, Kerala, India 670721. We're easily accessible by road and public transportation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are your clinic working hours?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our clinic operates Monday to Saturday from 8:00 AM to 7:00 PM. Sunday is closed. Emergency consultations may be available outside these hours by prior appointment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I contact Physio Dynamics?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can contact us via phone at +91 6282929104, WhatsApp at the same number, email at physiodynamics10@gmail.com, or through the contact form on our website. We respond to all inquiries within 24 hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you accept walk-in appointments?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Walk-in appointments may be accepted based on availability, but advance booking is highly recommended to ensure you get your preferred time slot and to minimize waiting time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide home visit services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we provide home physiotherapy services for elderly patients, post-surgical patients, and individuals with mobility challenges. Home visits are available in Panamaram and nearby areas of Wayanad."
+      }
+    }
+  ]
+}
+</script>
+
+
   <!-- Breadcrumb Schema -->
   <script type="application/ld+json">
     {
@@ -563,11 +614,12 @@
       </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="faq-section" aria-label="Frequently Asked Questions">
+    <!-- Enhanced FAQ Section with Schema Microdata -->
+    <section class="faq-section" aria-label="Frequently Asked Questions" itemscope
+      itemtype="https://schema.org/FAQPage">
       <div class="container">
         <div class="section-title text-center">
-          <h2>Frequently Asked Questions</h2>
+          <h2 itemprop="headline">Frequently Asked Questions</h2>
           <p>Common questions about contacting and visiting our clinic</p>
         </div>
 
@@ -575,86 +627,111 @@
           <div class="col-lg-10">
             <div class="faq-accordion animate-fade-in">
               <div class="accordion" id="faqAccordion">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
+                <!-- FAQ Item 1 -->
+                <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <h3 class="accordion-header" id="headingLocation">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne">
-                      Where is Physio Dynamics located?
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <span itemprop="name">Where is Physio Dynamics located?</span>
                     </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                  </h3>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingLocation"
+                    data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer"
+                    itemtype="https://schema.org/Answer">
                     <div class="accordion-body">
-                      Physio Dynamics is located at UB City Centre Building,
-                      Near Crescent Public School, Panamaram, Wayanad, Kerala,
-                      India 670721. We're easily accessible by road and public
-                      transportation.
+                      <div itemprop="text">
+                        Physio Dynamics is located at UB City Centre Building,
+                        Near Crescent Public School, Panamaram, Wayanad, Kerala,
+                        India 670721. We're easily accessible by road and public
+                        transportation.
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
+                <!-- FAQ Item 2 -->
+                <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <h3 class="accordion-header" id="headingHours">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo">
-                      What are your clinic working hours?
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <span itemprop="name">What are your clinic working hours?</span>
                     </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  </h3>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingHours"
+                    data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer"
+                    itemtype="https://schema.org/Answer">
                     <div class="accordion-body">
-                      Our clinic operates Monday to Saturday from 8:00 AM to
-                      7:00 PM. Sunday is closed. Emergency consultations may be
-                      available outside these hours by prior appointment.
+                      <div itemprop="text">
+                        Our clinic operates Monday to Saturday from 8:00 AM to
+                        7:00 PM. Sunday is closed. Emergency consultations may be
+                        available outside these hours by prior appointment.
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
+                <!-- FAQ Item 3 -->
+                <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <h3 class="accordion-header" id="headingContact">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree">
-                      How can I contact Physio Dynamics?
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <span itemprop="name">How can I contact Physio Dynamics?</span>
                     </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  </h3>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingContact"
+                    data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer"
+                    itemtype="https://schema.org/Answer">
                     <div class="accordion-body">
-                      You can contact us via phone at +91 6282929104, WhatsApp
-                      at the same number, email at physiodynamics10@gmail.com,
-                      or through the contact form on our website. We respond to
-                      all inquiries within 24 hours.
+                      <div itemprop="text">
+                        You can contact us via phone at +91 6282929104, WhatsApp
+                        at the same number, email at physiodynamics10@gmail.com,
+                        or through the contact form on our website. We respond to
+                        all inquiries within 24 hours.
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
+                <!-- FAQ Item 4 -->
+                <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <h3 class="accordion-header" id="headingWalkin">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseFour">
-                      Do you accept walk-in appointments?
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      <span itemprop="name">Do you accept walk-in appointments?</span>
                     </button>
-                  </h2>
-                  <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  </h3>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingWalkin"
+                    data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer"
+                    itemtype="https://schema.org/Answer">
                     <div class="accordion-body">
-                      Walk-in appointments may be accepted based on
-                      availability, but advance booking is highly recommended to
-                      ensure you get your preferred time slot and to minimize
-                      waiting time.
+                      <div itemprop="text">
+                        Walk-in appointments may be accepted based on
+                        availability, but advance booking is highly recommended to
+                        ensure you get your preferred time slot and to minimize
+                        waiting time.
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
+                <!-- FAQ Item 5 -->
+                <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <h3 class="accordion-header" id="headingHomeVisit">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseFive">
-                      Do you provide home visit services?
+                      data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      <span itemprop="name">Do you provide home visit services?</span>
                     </button>
-                  </h2>
-                  <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  </h3>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingHomeVisit"
+                    data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer"
+                    itemtype="https://schema.org/Answer">
                     <div class="accordion-body">
-                      Yes, we provide home physiotherapy services for elderly
-                      patients, post-surgical patients, and individuals with
-                      mobility challenges. Home visits are available in
-                      Panamaram and nearby areas of Wayanad.
+                      <div itemprop="text">
+                        Yes, we provide home physiotherapy services for elderly
+                        patients, post-surgical patients, and individuals with
+                        mobility challenges. Home visits are available in
+                        Panamaram and nearby areas of Wayanad.
+                      </div>
                     </div>
                   </div>
                 </div>

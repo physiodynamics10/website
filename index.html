@@ -153,6 +153,56 @@
       }
     </script>
 
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "When was Physio Dynamics established?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Physio Dynamics was established on 20th August 2024 in Panamaram, Wayanad, with a vision to provide advanced rehabilitation solutions to the community."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes Physio Dynamics different from other physiotherapy clinics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We focus on one-on-one care with dedicated one-hour treatment sessions, personalized rehabilitation plans based on thorough assessment, and comprehensive patient education for long-term recovery."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you follow personalized treatment plans for physiotherapy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, absolutely. Every patient receives a customized physiotherapy plan based on their specific condition, assessment results, recovery goals, and lifestyle factors. We don't believe in one-size-fits-all approaches."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is your physiotherapy clinic suitable for elderly patients?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we provide gentle, supervised physiotherapy specifically designed for elderly patients. We also offer home care services for those with mobility challenges or who prefer treatment in the comfort of their own home."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What conditions does Physio Dynamics treat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We treat a wide range of conditions including sports injuries, post-surgical rehabilitation, arthritis, back and neck pain, stroke recovery, Parkinson's disease, pediatric developmental issues, respiratory conditions, and age-related mobility problems."
+          }
+        }
+      ]
+    }
+    </script>
+
     <script>
         window.addEventListener("load", () => {
             setTimeout(initAnalytics, 3000);
@@ -553,6 +603,8 @@
             </div>
         </section>
 
+
+
         <!-- Testimonials Carousel -->
         <section class="testimonials-carousel-section" aria-label="Patient Testimonials">
             <div class="container">
@@ -775,6 +827,8 @@
             </div>
         </section>
 
+       
+
         <!-- Contact Section -->
         <section id="contact" class="contact-section" aria-label="Contact Information">
             <div class="container">
@@ -825,6 +879,147 @@
                             <a href="mailto:physiodynamics10@gmail.com" class="contact-link">
                                 <i class="fas fa-envelope me-2"></i>physiodynamics10@gmail.com
                             </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+         <!-- FAQ Section -->
+        <section class="faq-section" aria-label="Frequently Asked Questions" itemscope
+            itemtype="https://schema.org/FAQPage">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Common questions about Physio Dynamics and our services</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="faq-accordion animate-fade-in">
+                            <div class="accordion" id="faqAccordion">
+                                <!-- FAQ Item 1 -->
+                                <div class="accordion-item" itemscope itemprop="mainEntity"
+                                    itemtype="https://schema.org/Question">
+                                    <h3 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            <span itemprop="name">When was Physio Dynamics established?</span>
+                                        </button>
+                                    </h3>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#faqAccordion" itemscope
+                                        itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                        <div class="accordion-body">
+                                            <div itemprop="text">
+                                                Physio Dynamics was established on 20th August 2024 in
+                                                Panamaram, Wayanad, with a vision to provide advanced
+                                                rehabilitation solutions to the community.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ Item 2 -->
+                                <div class="accordion-item" itemscope itemprop="mainEntity"
+                                    itemtype="https://schema.org/Question">
+                                    <h3 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            <span itemprop="name">What makes Physio Dynamics different from other
+                                                clinics?</span>
+                                        </button>
+                                    </h3>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#faqAccordion" itemscope
+                                        itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                        <div class="accordion-body">
+                                            <div itemprop="text">
+                                                We focus on one-on-one care with dedicated one-hour
+                                                treatment sessions, personalized rehabilitation plans
+                                                based on thorough assessment, and comprehensive patient
+                                                education for long-term recovery.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ Item 3 -->
+                                <div class="accordion-item" itemscope itemprop="mainEntity"
+                                    itemtype="https://schema.org/Question">
+                                    <h3 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            <span itemprop="name">Do you follow personalized treatment plans?</span>
+                                        </button>
+                                    </h3>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#faqAccordion" itemscope
+                                        itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                        <div class="accordion-body">
+                                            <div itemprop="text">
+                                                Yes, absolutely. Every patient receives a customized
+                                                physiotherapy plan based on their specific condition,
+                                                assessment results, recovery goals, and lifestyle factors.
+                                                We don't believe in one-size-fits-all approaches.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ Item 4 -->
+                                <div class="accordion-item" itemscope itemprop="mainEntity"
+                                    itemtype="https://schema.org/Question">
+                                    <h3 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            <span itemprop="name">Is your clinic suitable for elderly patients?</span>
+                                        </button>
+                                    </h3>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFour" data-bs-parent="#faqAccordion" itemscope
+                                        itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                        <div class="accordion-body">
+                                            <div itemprop="text">
+                                                Yes, we provide gentle, supervised physiotherapy
+                                                specifically designed for elderly patients. We also offer
+                                                home care services for those with mobility challenges or
+                                                who prefer treatment in the comfort of their own home.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ Item 5 -->
+                                <div class="accordion-item" itemscope itemprop="mainEntity"
+                                    itemtype="https://schema.org/Question">
+                                    <h3 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                            aria-expanded="false" aria-controls="collapseFive">
+                                            <span itemprop="name">What conditions do you treat?</span>
+                                        </button>
+                                    </h3>
+                                    <div id="collapseFive" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFive" data-bs-parent="#faqAccordion" itemscope
+                                        itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                        <div class="accordion-body">
+                                            <div itemprop="text">
+                                                We treat a wide range of conditions including sports
+                                                injuries, post-surgical rehabilitation, arthritis, back
+                                                and neck pain, stroke recovery, Parkinson's disease,
+                                                pediatric developmental issues, respiratory conditions,
+                                                and age-related mobility problems.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
