@@ -93,133 +93,106 @@
   <link rel="stylesheet" href="css/style.css" />
 
   <!-- JSON-LD Structured Data for Service Page -->
-  <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Service",
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Physiotherapy Services",
+      "serviceType": "Medical Services",
+      "provider": {
+        "@type": "MedicalBusiness",
+        "@id": "https://www.physio-dynamics.com/#medicalbusiness",
+        "name": "Physio Dynamics",
+        "url": "https://www.physio-dynamics.com/",
+        "medicalSpecialty": "Physiotherapy",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Panamaram",
+          "addressLocality": "Wayanad",
+          "addressRegion": "Kerala",
+          "postalCode": "670721",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 11.7387,
+          "longitude": 76.0823
+        },
+        "telephone": "+916282929104",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "08:00",
+            "closes": "19:00"
+          }
+        ]
+      },
+      "description": "Comprehensive physiotherapy services including orthopedic rehabilitation, sports injury treatment, neurological care, pediatric physiotherapy, chest therapy and home care services in Wayanad.",
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 11.7387,
+          "longitude": 76.0823
+        },
+        "geoRadius": "20000"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
         "name": "Physiotherapy Services",
-        "serviceType": "Medical Services",
-        "provider": {
-          "@type": "MedicalBusiness",
-          "name": "Physio Dynamics",
-          "url": "https://www.physio-dynamics.com/",
-          "medicalSpecialty": "Physiotherapy"
-        },
-        "description": "Comprehensive physiotherapy services including orthopedic rehabilitation, sports injury treatment, neurological care, pediatric physiotherapy, chest therapy and home care services in Wayanad.",
-        "areaServed": {
-          "@type": "GeoCircle",
-          "geoMidpoint": {
-            "@type": "GeoCoordinates",
-            "latitude": 11.7387,
-            "longitude": 76.0823
-          },
-          "geoRadius": "20000"
-        },
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Physiotherapy Services",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Orthopedic Physiotherapy",
-                "description": "Treatment for bones, joints, and muscles to restore mobility and reduce pain after injuries or surgeries."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Sports Physiotherapy",
-                "description": "Injury prevention, assessment, and treatment for athletes of all levels to enhance performance."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Neurological Physiotherapy",
-                "description": "Treatment for stroke, Parkinson's, spinal cord injuries to improve mobility and independence."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Pediatric Physiotherapy",
-                "description": "Specialized care for children to improve movement, strength, posture, and motor skills."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Chest Physiotherapy",
-                "description": "Techniques to clear mucus and improve breathing for asthma, bronchitis, pneumonia, or COPD."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Home Care Physiotherapy",
-                "description": "Personalized treatment at home for elderly, post-surgical, or mobility-challenged patients."
-              }
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Orthopedic Physiotherapy",
+              "description": "Treatment for bones, joints, and muscles to restore mobility and reduce pain after injuries or surgeries."
             }
-          ]
-        }
-      }
-    </script>
-
-  <!-- FAQ Schema Script for Physiotherapy Services -->
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What physiotherapy services do you offer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We offer comprehensive physiotherapy services including orthopedic rehabilitation, sports injury management, neurological rehabilitation, pediatric physiotherapy, chest physiotherapy, and home care services. Our treatments are tailored to each patient's specific needs."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which conditions are treated at Physio Dynamics?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We treat a wide range of conditions including back pain, neck pain, knee pain, sports injuries, stroke recovery, post-operative conditions, arthritis, neurological disorders, pediatric developmental issues, and respiratory conditions."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you provide post-surgical rehabilitation?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we provide structured post-surgical rehabilitation programs for joint replacements, ACL reconstruction, spinal surgeries, fracture recovery, and other surgical procedures. Our programs are designed to support safe and effective recovery while minimizing complications."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is physiotherapy safe for elderly patients?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, physiotherapy is safe and highly beneficial for elderly patients. All treatments are carefully adapted and supervised by our experienced therapists to ensure safety and comfort. We also offer home care services for elderly patients who prefer treatment in their own environment."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are customized rehabilitation programs available?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absolutely. All our rehabilitation programs are personalized based on thorough assessment of the patient's condition, medical history, recovery goals, and lifestyle factors. We don't believe in one-size-fits-all approaches and create individualized treatment plans for each patient."
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Sports Physiotherapy",
+              "description": "Injury prevention, assessment, and treatment for athletes of all levels to enhance performance."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Neurological Physiotherapy",
+              "description": "Treatment for stroke, Parkinson's, spinal cord injuries to improve mobility and independence."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pediatric Physiotherapy",
+              "description": "Specialized care for children to improve movement, strength, posture, and motor skills."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Chest Physiotherapy",
+              "description": "Techniques to clear mucus and improve breathing for asthma, bronchitis, pneumonia, or COPD."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Home Care Physiotherapy",
+              "description": "Personalized treatment at home for elderly, post-surgical, or mobility-challenged patients."
+            }
+          }
+        ]
       }
     }
-  ]
-}
 </script>
 
   <!-- Breadcrumb Schema -->
@@ -992,6 +965,6 @@
     document.getElementById("currentYear").textContent =
       new Date().getFullYear();
   </script>
-  </body>
+</body>
 
 </html>
