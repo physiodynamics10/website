@@ -86,38 +86,62 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../css/style.css" />
 
-  <!-- JSON-LD Structured Data for Pediatric Physiotherapy Service -->
-  <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "MedicalProcedure",
-        "name": "Pediatric Physiotherapy",
-        "description": "Specialized pediatric physiotherapy for children with developmental delays, cerebral palsy, Down syndrome, and other childhood conditions in Wayanad.",
-        "code": {
-          "@type": "MedicalCode",
-          "codeValue": "PT-PEDIATRIC",
-          "codingSystem": "Physio Dynamics Services"
+ <!-- JSON-LD Structured Data for Pediatric Physiotherapy Service -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalProcedure",
+      "name": "Pediatric Physiotherapy",
+      "description": "Specialized pediatric physiotherapy for children with developmental delays, cerebral palsy, Down syndrome, and other childhood conditions in Wayanad.",
+      "code": {
+        "@type": "MedicalCode",
+        "codeValue": "PT-PEDIATRIC",
+        "codingSystem": "Physio Dynamics Services"
+      },
+      "bodyLocation": "Child Development",
+      "followup": "Regular developmental assessments and progress monitoring",
+      "howPerformed": "Play-based therapy, developmental exercises, family-centered care, and child-friendly interventions",
+      "preparation": "Comprehensive developmental assessment, family consultation, goal setting",
+      "procedureType": "Pediatric Rehabilitation",
+      "status": "Active",
+      "relevantSpecialty": "Pediatric Physiotherapy",
+      "provider": {
+        "@type": "MedicalBusiness",
+        "@id": "https://www.physio-dynamics.com/#medicalbusiness",
+        "name": "Physio Dynamics",
+        "url": "https://www.physio-dynamics.com/",
+        "medicalSpecialty": "Pediatric Physiotherapy",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Panamaram",
+          "addressLocality": "Wayanad",
+          "addressRegion": "Kerala",
+          "postalCode": "670721",
+          "addressCountry": "IN"
         },
-        "bodyLocation": "Child Development",
-        "followup": "Regular developmental assessments and progress monitoring",
-        "howPerformed": "Play-based therapy, developmental exercises, family-centered care, and child-friendly interventions",
-        "preparation": "Comprehensive developmental assessment, family consultation, goal setting",
-        "procedureType": "Pediatric Rehabilitation",
-        "status": "Active",
-        "relevantSpecialty": "Pediatric Physiotherapy",
-        "provider": {
-          "@type": "MedicalBusiness",
-          "name": "Physio Dynamics",
-          "medicalSpecialty": "Pediatric Physiotherapy"
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 11.7387,
+          "longitude": 76.0823
         },
-        "recognizingAuthority": {
-          "@type": "Organization",
-          "name": "Physio Dynamics"
-        },
-        "legalStatus": "Available",
-        "medicineSystem": "Physiotherapy"
-      }
-    </script>
+        "telephone": "+916282929104",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "08:00",
+            "closes": "19:00"
+          }
+        ]
+      },
+      "recognizingAuthority": {
+        "@type": "Organization",
+        "name": "Physio Dynamics"
+      },
+      "legalStatus": "Available",
+      "medicineSystem": "Physiotherapy"
+    }
+</script>
 
   <!-- Breadcrumb Schema -->
   <script type="application/ld+json">

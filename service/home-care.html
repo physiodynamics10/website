@@ -87,47 +87,71 @@
   <link rel="stylesheet" href="../css/style.css" />
 
   <!-- JSON-LD Structured Data for Home Care Physiotherapy Service -->
-  <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "MedicalProcedure",
-        "name": "Home Care Physiotherapy",
-        "description": "Professional home care physiotherapy services bringing expert rehabilitation to your doorstep in Wayanad. Services include elderly care, post-surgical recovery, stroke rehabilitation, and mobility improvement.",
-        "code": {
-          "@type": "MedicalCode",
-          "codeValue": "PT-HOMECARE",
-          "codingSystem": "Physio Dynamics Services"
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalProcedure",
+      "name": "Home Care Physiotherapy",
+      "description": "Professional home care physiotherapy services bringing expert rehabilitation to your doorstep in Wayanad. Services include elderly care, post-surgical recovery, stroke rehabilitation, and mobility improvement.",
+      "code": {
+        "@type": "MedicalCode",
+        "codeValue": "PT-HOMECARE",
+        "codingSystem": "Physio Dynamics Services"
+      },
+      "bodyLocation": "Full Body Rehabilitation",
+      "followup": "Regular home visits with progress monitoring",
+      "howPerformed": "Mobile physiotherapy services with portable equipment brought to patient's home",
+      "preparation": "Home environment assessment, safety evaluation, personalized treatment planning",
+      "procedureType": "Home-Based Physiotherapy",
+      "status": "Active",
+      "relevantSpecialty": "Geriatric Physiotherapy, Post-Surgical Rehabilitation",
+      "provider": {
+        "@type": "MedicalBusiness",
+        "@id": "https://www.physio-dynamics.com/#medicalbusiness",
+        "name": "Physio Dynamics",
+        "url": "https://www.physio-dynamics.com/",
+        "medicalSpecialty": "Home Care Physiotherapy",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Panamaram",
+          "addressLocality": "Wayanad",
+          "addressRegion": "Kerala",
+          "postalCode": "670721",
+          "addressCountry": "IN"
         },
-        "bodyLocation": "Full Body Rehabilitation",
-        "followup": "Regular home visits with progress monitoring",
-        "howPerformed": "Mobile physiotherapy services with portable equipment brought to patient's home",
-        "preparation": "Home environment assessment, safety evaluation, personalized treatment planning",
-        "procedureType": "Home-Based Physiotherapy",
-        "status": "Active",
-        "relevantSpecialty": "Geriatric Physiotherapy, Post-Surgical Rehabilitation",
-        "provider": {
-          "@type": "MedicalBusiness",
-          "name": "Physio Dynamics",
-          "medicalSpecialty": "Physiotherapy"
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 11.7387,
+          "longitude": 76.0823
         },
-        "serviceArea": {
-          "@type": "GeoCircle",
-          "geoMidpoint": {
-            "@type": "GeoCoordinates",
-            "latitude": 11.7387,
-            "longitude": 76.0823
-          },
-          "geoRadius": "30000",
-          "name": "Wayanad District"
+        "telephone": "+916282929104",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "08:00",
+            "closes": "19:00"
+          }
+        ]
+      },
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 11.7387,
+          "longitude": 76.0823
         },
-        "recognizingAuthority": {
-          "@type": "Organization",
-          "name": "Physio Dynamics"
-        },
-        "legalStatus": "Available",
-        "medicineSystem": "Physiotherapy"
-      }
-    </script>
+        "geoRadius": "30000",
+        "name": "Wayanad District"
+      },
+      "recognizingAuthority": {
+        "@type": "Organization",
+        "name": "Physio Dynamics"
+      },
+      "legalStatus": "Available",
+      "medicineSystem": "Physiotherapy"
+    }
+</script>
 
   <!-- Breadcrumb Schema -->
   <script type="application/ld+json">

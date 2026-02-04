@@ -85,36 +85,60 @@
 
   <!-- JSON-LD Structured Data for Chest Physiotherapy Service -->
   <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "MedicalProcedure",
-        "name": "Chest Physiotherapy",
-        "description": "Expert chest physiotherapy for respiratory conditions including COPD, asthma, pneumonia, and post-COVID recovery. Techniques include breathing exercises, manual techniques, and respiratory muscle training.",
-        "code": {
-          "@type": "MedicalCode",
-          "codeValue": "PT-CHEST",
-          "codingSystem": "Physio Dynamics Services"
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalProcedure",
+      "name": "Chest Physiotherapy",
+      "description": "Expert chest physiotherapy for respiratory conditions including COPD, asthma, pneumonia, and post-COVID recovery. Techniques include breathing exercises, manual techniques, and respiratory muscle training.",
+      "code": {
+        "@type": "MedicalCode",
+        "codeValue": "PT-CHEST",
+        "codingSystem": "Physio Dynamics Services"
+      },
+      "bodyLocation": "Chest, Lungs",
+      "followup": "Regular monitoring of respiratory function and exercise tolerance",
+      "howPerformed": "Manual techniques, breathing exercises, respiratory muscle training, airway clearance techniques",
+      "preparation": "Initial respiratory assessment, oxygen saturation monitoring, lung function tests",
+      "procedureType": "Physiotherapy",
+      "status": "Active",
+      "relevantSpecialty": "Respiratory Physiotherapy",
+      "provider": {
+        "@type": "MedicalBusiness",
+        "@id": "https://www.physio-dynamics.com/#medicalbusiness",
+        "name": "Physio Dynamics",
+        "url": "https://www.physio-dynamics.com/",
+        "medicalSpecialty": "Chest Physiotherapy",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Panamaram",
+          "addressLocality": "Wayanad",
+          "addressRegion": "Kerala",
+          "postalCode": "670721",
+          "addressCountry": "IN"
         },
-        "bodyLocation": "Chest, Lungs",
-        "followup": "Regular monitoring of respiratory function and exercise tolerance",
-        "howPerformed": "Manual techniques, breathing exercises, respiratory muscle training, airway clearance techniques",
-        "preparation": "Initial respiratory assessment, oxygen saturation monitoring, lung function tests",
-        "procedureType": "Physiotherapy",
-        "status": "Active",
-        "relevantSpecialty": "Respiratory Physiotherapy",
-        "provider": {
-          "@type": "MedicalBusiness",
-          "name": "Physio Dynamics",
-          "medicalSpecialty": "Physiotherapy"
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 11.7387,
+          "longitude": 76.0823
         },
-        "recognizingAuthority": {
-          "@type": "Organization",
-          "name": "Physio Dynamics"
-        },
-        "legalStatus": "Available",
-        "medicineSystem": "Physiotherapy"
-      }
-    </script>
+        "telephone": "+916282929104",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "08:00",
+            "closes": "19:00"
+          }
+        ]
+      },
+      "recognizingAuthority": {
+        "@type": "Organization",
+        "name": "Physio Dynamics"
+      },
+      "legalStatus": "Available",
+      "medicineSystem": "Physiotherapy"
+    }
+</script>
 
   <!-- Breadcrumb Schema -->
   <script type="application/ld+json">
