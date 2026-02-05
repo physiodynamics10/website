@@ -1038,137 +1038,64 @@
 
                 <div class="col-lg-2 col-md-6">
                     <div class="footer-links">
-                        <h5>Opening Hours</h5>
-                        <ul>
-                            <li><strong>Mon - Sat:</strong></li>
-                            <li>8:00 AM - 7:00 PM</li>
-                            <li><strong>Sunday:</strong> Closed</li>
-                            <li><strong>Emergency:</strong> Available</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+   <script>
+document.addEventListener("DOMContentLoaded", function () {
 
-            <div class="copyright">
-                <p>
-                    &copy; <span id="currentYear"></span> Physio Dynamics. All Rights
-                    Reserved.
-                </p>
-            </div>
-        </div>
-    </footer>
+  // Footer year (safe)
+  const yearEl = document.getElementById("currentYear");
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
 
-    <!-- Floating Buttons -->
-    <div class="floating-buttons">
-        <a href="#top" class="floating-button back-to-top" aria-label="Back to top">
-            <i class="fas fa-arrow-up"></i>
-        </a>
-        <a href="tel:+916282929104" class="floating-button phone" aria-label="Call us">
-            <i class="fas fa-phone-alt"></i>
-        </a>
-        <a href="https://wa.me/916282929104" class="floating-button whatsapp" aria-label="Chat on WhatsApp"
-            target="_blank" rel="noopener">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-    </div>
+  // Testimonials carousel (SAFE)
+  const track = document.getElementById("testimonialsTrack");
+  const slides = document.querySelectorAll(".testimonial-slide");
+  const prevBtn = document.querySelector(".testimonial-arrow.prev");
+  const nextBtn = document.querySelector(".testimonial-arrow.next");
+  const dotsContainer = document.getElementById("testimonialDots");
+  const carouselContainer = document.querySelector(".testimonials-container");
 
-    <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
+  if (!track || !slides.length || !dotsContainer) return;
 
-    <script>
-        // Set current year in footer
-        document.getElementById("currentYear").textContent =
-            new Date().getFullYear();
+  let currentSlide = 0;
+  const slideWidth = slides[0].offsetWidth;
+  const totalSlides = slides.length;
 
-        // Initialize testimonials carousel
-        document.addEventListener("DOMContentLoaded", function () {
-            const track = document.getElementById("testimonialsTrack");
-            const slides = document.querySelectorAll(".testimonial-slide");
-            const prevBtn = document.querySelector(".testimonial-arrow.prev");
-            const nextBtn = document.querySelector(".testimonial-arrow.next");
-            const dotsContainer = document.getElementById("testimonialDots");
+  // Create dots safely
+  slides.forEach((_, index) => {
+    const dot = document.createElement("button");
+    dot.className = "testimonial-dot";
+    dot.setAttribute("aria-label", `Go to testimonial ${index + 1}`);
+    dot.addEventListener("click", () => goToSlide(index));
+    dotsContainer.appendChild(dot);
+  });
 
-            if (track && slides.length > 0) {
-                let currentSlide = 0;
-                const slideWidth = slides[0].offsetWidth;
-                const totalSlides = slides.length;
+  const dots = dotsContainer.querySelectorAll(".testimonial-dot");
 
-                // Create dots
-                slides.forEach((_, index) => {
-                    const dot = document.createElement("button");
-                    dot.classList.add("testimonial-dot");
-                    dot.setAttribute("aria-label", `Go to testimonial ${index + 1}`);
-                    dot.setAttribute("role", "tab");
-                    dot.addEventListener("click", () => goToSlide(index));
-                    dotsContainer.appendChild(dot);
-                });
+  function updateCarousel() {
+    track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+    dots.forEach((dot, index) => {
+      dot.classList.toggle("active", index === currentSlide);
+    });
+  }
 
-                const dots = document.querySelectorAll(".testimonial-dot");
+  function goToSlide(index) {
+    currentSlide = (index + totalSlides) % totalSlides;
+    updateCarousel();
+  }
 
-                function updateCarousel() {
-                    track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-                    dots.forEach((dot, index) => {
-                        dot.classList.toggle("active", index === currentSlide);
-                    });
-                }
+  prevBtn && prevBtn.addEventListener("click", () => goToSlide(currentSlide - 1));
+  nextBtn && nextBtn.addEventListener("click", () => goToSlide(currentSlide + 1));
 
-                function goToSlide(index) {
-                    currentSlide = index;
-                    if (currentSlide >= totalSlides) currentSlide = 0;
-                    if (currentSlide < 0) currentSlide = totalSlides - 1;
-                    updateCarousel();
-                }
+  let autoSlide = setInterval(() => goToSlide(currentSlide + 1), 5000);
 
-                function nextSlide() {
-                    goToSlide(currentSlide + 1);
-                }
+  if (carouselContainer) {
+    carouselContainer.addEventListener("mouseenter", () => clearInterval(autoSlide));
+    carouselContainer.addEventListener("mouseleave", () => {
+      autoSlide = setInterval(() => goToSlide(currentSlide + 1), 5000);
+    });
+  }
 
-                function prevSlide() {
-                    goToSlide(currentSlide - 1);
-                }
-
-                // Event listeners
-                prevBtn.addEventListener("click", prevSlide);
-                nextBtn.addEventListener("click", nextSlide);
-
-                // Auto slide every 5 seconds
-                let autoSlide = setInterval(nextSlide, 5000);
-
-                // Pause auto slide on hover
-                const carouselContainer = document.querySelector(
-                    ".testimonials-container",
-                );
-                carouselContainer.addEventListener("mouseenter", () =>
-                    clearInterval(autoSlide),
-                );
-                carouselContainer.addEventListener("mouseleave", () => {
-                    autoSlide = setInterval(nextSlide, 5000);
-                });
-
-                // Initialize
-                updateCarousel();
-
-                // Handle window resize
-                let resizeTimer;
-                window.addEventListener("resize", () => {
-                    clearTimeout(resizeTimer);
-                    resizeTimer = setTimeout(() => {
-                        updateCarousel();
-                    }, 250);
-                });
-            }
-        });
-
-        // Lazy loading for images
-        if ("loading" in HTMLImageElement.prototype) {
-            const images = document.querySelectorAll('img[loading="lazy"]');
-            images.forEach((img) => {
-                if (img.dataset.src) {
-                    img.src = img.dataset.src;
-                }
-            });
-        }
-    </script>
-</body>
-</html>
+  updateCarousel();
+});
+</script>
