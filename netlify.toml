@@ -1,150 +1,41 @@
-# netlify.toml
-# Complete configuration for Physio Dynamics website
-
 [build]
-  command = "npm run build"
   publish = "."
-  functions = "netlify/functions"
 
 [context.production.environment]
   NODE_VERSION = "18"
-  NODE_ENV = "production"
-
-[context.deploy-preview.environment]
-  NODE_ENV = "development"
-
-[context.branch-deploy.environment]
-  NODE_ENV = "development"
 
 # --------------------------------------------------
 # CANONICAL DOMAIN REDIRECTS
-# Ensure all traffic goes to https://www.physio-dynamics.com
 # --------------------------------------------------
 
-# 1. Redirect Netlify preview/app domain to primary canonical domain
 [[redirects]]
   from = "https://physiodynamics.netlify.app/*"
   to = "https://www.physio-dynamics.com/:splat"
   status = 301
   force = true
 
-# 2. Redirect HTTP non-WWW to HTTPS WWW
 [[redirects]]
   from = "http://physio-dynamics.com/*"
   to = "https://www.physio-dynamics.com/:splat"
   status = 301
   force = true
 
-# 3. Redirect HTTPS non-WWW to HTTPS WWW
 [[redirects]]
   from = "https://physio-dynamics.com/*"
   to = "https://www.physio-dynamics.com/:splat"
   status = 301
   force = true
 
-# 4. Redirect HTTP WWW to HTTPS WWW
 [[redirects]]
   from = "http://www.physio-dynamics.com/*"
   to = "https://www.physio-dynamics.com/:splat"
   status = 301
   force = true
 
-# 5. CRITICAL: Catch-all for canonical domain - serve content directly (no redirect)
-# This prevents redirect loops for the primary domain
-[[redirects]]
-  from = "/*"
-  to = "/:splat"
-  status = 200
-  conditions = {Host = "www.physio-dynamics.com"}
-
 # --------------------------------------------------
-# TRAILING SLASH HANDLING (Optional but recommended)
-# --------------------------------------------------
-# If you want to enforce consistent trailing slashes:
-
-# Remove trailing slashes from all URLs
-[[redirects]]
-  from = "/*/"
-  to = "/:splat"
-  status = 301
-  conditions = {Host = "www.physio-dynamics.com"}
-  except = ["/"]  # Keep trailing slash for homepage if needed
-
-# --------------------------------------------------
-# CUSTOM 404 PAGE
+# REAL 404 (STATIC SITE)
 # --------------------------------------------------
 [[redirects]]
   from = "/*"
   to = "/404.html"
   status = 404
-  conditions = {Status = "404"}
-
-# --------------------------------------------------
-# SECURITY & PERFORMANCE HEADERS
-# --------------------------------------------------
-[[headers]]
-  # Apply these headers to all paths
-  for = "/*"
-  [headers.values]
-    # Cache static assets for 1 year
-    Cache-Control = "public, max-age=31536000, immutable"
-    
-    # Force HTTPS for 1 year, include subdomains, and preload
-    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
-    
-    # Prevent MIME type sniffing
-    X-Content-Type-Options = "nosniff"
-    
-    # Basic XSS protection
-    X-XSS-Protection = "1; mode=block"
-    
-    # Control framing
-    X-Frame-Options = "DENY"
-    
-    # Referrer policy
-    Referrer-Policy = "strict-origin-when-cross-origin"
-    
-    # Permissions policy
-    Permissions-Policy = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
-
-# Special headers for HTML pages (shorter cache)
-[[headers]]
-  for = "/*.html"
-  [headers.values]
-    Cache-Control = "public, max-age=0, must-revalidate"
-
-# Special headers for assets that might change
-[[headers]]
-  for = "/sw.js"  # Service Worker
-  [headers.values]
-    Cache-Control = "no-cache, no-store, must-revalidate"
-
-# --------------------------------------------------
-# SITEMAP REDIRECT (if applicable)
-# --------------------------------------------------
-# If you have a sitemap.xml at root:
-[[redirects]]
-  from = "/sitemap.xml"
-  to = "/sitemap.xml"
-  status = 200
-  conditions = {Host = "www.physio-dynamics.com"}
-
-# --------------------------------------------------
-# ROBOTS.TXT HANDLING
-# --------------------------------------------------
-# Ensure robots.txt is accessible:
-[[redirects]]
-  from = "/robots.txt"
-  to = "/robots.txt"
-  status = 200
-  conditions = {Host = "www.physio-dynamics.com"}
-
-# --------------------------------------------------
-# FALLBACK FOR SPA (Single Page Application)
-# If you're using React/Vue/Angular with client-side routing:
-# --------------------------------------------------
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  conditions = {Host = "www.physio-dynamics.com"}
