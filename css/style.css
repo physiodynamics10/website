@@ -115,7 +115,7 @@ a {
 
 .service-card {
     background-color: #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .05)
+    box-shadow: 0 5px 15px rgba(223, 23, 23, 0.05)
 }
 
 .about-img,
@@ -2504,4 +2504,7 @@ a {
 }
 .cta-buttons {
   gap: 14px;
+}
+.navbar-toggler-icon {
+  background-image: none;
 }
