@@ -14,6 +14,10 @@
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://www.physio-dynamics.com/about" />
+
+  <!-- Hreflang for Indian English -->
+  <link rel="alternate" hreflang="en-IN" href="https://www.physio-dynamics.com/about" />
+  <link rel="alternate" hreflang="en" href="https://www.physio-dynamics.com/about" />
   <!-- Title -->
   <title>
     About Physio Dynamics | Best Physiotherapy Clinic in Wayanad, Panamaram
@@ -29,7 +33,7 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.physio-dynamics.com/about.html" />
+  <meta property="og:url" content="https://www.physio-dynamics.com/about" />
   <meta property="og:title" content="About Physio Dynamics | Best Physiotherapy Clinic in Wayanad" />
   <meta property="og:description"
     content="Learn about Physio Dynamics - our mission, values, and commitment to providing exceptional physiotherapy care in Panamaram, Wayanad." />
@@ -96,7 +100,7 @@
       "@type": "AboutPage",
       "name": "About Physio Dynamics",
       "description": "About Physio Dynamics - Wayanad's leading physiotherapy clinic in Panamaram providing expert care since 2024.",
-      "url": "https://www.physio-dynamics.com/about.html",
+      "url": "https://www.physio-dynamics.com/about",
       "about": {
         "@type": "MedicalBusiness",
         "name": "Physio Dynamics",
@@ -136,7 +140,7 @@
           "@type": "ListItem",
           "position": 2,
           "name": "About Us",
-          "item": "https://www.physio-dynamics.com/about.html"
+          "item": "https://www.physio-dynamics.com/about"
         }
       ]
     }
@@ -233,12 +237,13 @@
   </noscript>
 
 
+<body>
   <!-- Modern Header with Dropdown -->
   <header class="modern-header">
     <div class="container">
       <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="index.html">
-          <img src="logo.png" alt="Physio Dynamics Logo" loading="eager">
+        <a class="navbar-brand" href="/">
+          <img src="/logo.png" alt="Physio Dynamics Logo - Wayanad's leading physiotherapy clinic" loading="eager" />
           Physio Dynamics
         </a>
 
@@ -252,44 +257,44 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="about.html" aria-current="page">About</a>
+              <a class="nav-link active" href="/about" aria-current="page">About</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button"
+              <a class="nav-link dropdown-toggle" href="/services" id="servicesDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Services
               </a>
               <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                 <li>
-                  <a class="dropdown-item" href="service/orthopedic-physiotherapy.html">
+                  <a class="dropdown-item" href="/service/orthopedic-physiotherapy">
                     <i class="fas fa-bone"></i> Orthopedic Physiotherapy
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="service/sports-physiotherapy.html">
+                  <a class="dropdown-item" href="/service/sports-physiotherapy">
                     <i class="fas fa-running"></i> Sports Physiotherapy
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="service/neurological-physiotherapy.html">
+                  <a class="dropdown-item" href="/service/neurological-physiotherapy">
                     <i class="fas fa-brain"></i> Neurological Physiotherapy
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="service/pediatric-physiotherapy.html">
+                  <a class="dropdown-item" href="/service/pediatric-physiotherapy">
                     <i class="fas fa-child"></i> Pediatric Physiotherapy
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="service/chest-physiotherapy.html">
+                  <a class="dropdown-item" href="/service/chest-physiotherapy">
                     <i class="fas fa-lungs"></i> Chest Physiotherapy
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="service/home-care.html">
+                  <a class="dropdown-item" href="/service/home-care">
                     <i class="fas fa-home"></i> Home Care Services
                   </a>
                 </li>
@@ -297,14 +302,14 @@
                   <hr class="dropdown-divider" />
                 </li>
                 <li>
-                  <a class="dropdown-item" href="services.html">
+                  <a class="dropdown-item" href="/services">
                     <i class="fas fa-list"></i> View All Services
                   </a>
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="/contact">Contact</a>
             </li>
             <li class="nav-item">
               <a class="appointment-btn btn" href="https://kapcwayanad.in/bookings/create/9" target="_blank"
@@ -507,7 +512,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq-section" aria-label="Frequently Asked Questions">
+    <section class="faq-section" aria-label="Frequently Asked Questions" itemscope itemtype="https://schema.org/FAQPage">
       <div class="container">
         <div class="section-title text-center">
           <h2>Frequently Asked Questions</h2>
@@ -518,87 +523,87 @@
           <div class="col-lg-10">
             <div class="faq-accordion animate-fade-in">
               <div class="accordion" id="faqAccordion">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
+                <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <h3 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne">
-                      When was Physio Dynamics established?
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <span itemprop="name">When was Physio Dynamics established?</span>
                     </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                  </h3>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                     <div class="accordion-body">
-                      Physio Dynamics was established on 20th August 2024 in
+                      <div itemprop="text">Physio Dynamics was established on 20th August 2024 in
                       Panamaram, Wayanad, with a vision to provide advanced
-                      rehabilitation solutions to the community.
+                      rehabilitation solutions to the community.</div>
                     </div>
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
+                <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <h3 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo">
-                      What makes Physio Dynamics different from other clinics?
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <span itemprop="name">What makes Physio Dynamics different from other clinics?</span>
                     </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  </h3>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                     <div class="accordion-body">
-                      We focus on one-on-one care with dedicated one-hour
+                      <div itemprop="text">We focus on one-on-one care with dedicated one-hour
                       treatment sessions, personalized rehabilitation plans
                       based on thorough assessment, and comprehensive patient
-                      education for long-term recovery.
+                      education for long-term recovery.</div>
                     </div>
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
+                <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <h3 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree">
-                      Do you follow personalized treatment plans?
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <span itemprop="name">Do you follow personalized treatment plans?</span>
                     </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  </h3>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                     <div class="accordion-body">
-                      Yes, absolutely. Every patient receives a customized
+                      <div itemprop="text">Yes, absolutely. Every patient receives a customized
                       physiotherapy plan based on their specific condition,
                       assessment results, recovery goals, and lifestyle factors.
-                      We don't believe in one-size-fits-all approaches.
+                      We don't believe in one-size-fits-all approaches.</div>
                     </div>
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingFour">
+                <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <h3 class="accordion-header" id="headingFour">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseFour">
-                      Is your clinic suitable for elderly patients?
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      <span itemprop="name">Is your clinic suitable for elderly patients?</span>
                     </button>
-                  </h2>
-                  <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  </h3>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                     <div class="accordion-body">
-                      Yes, we provide gentle, supervised physiotherapy
+                      <div itemprop="text">Yes, we provide gentle, supervised physiotherapy
                       specifically designed for elderly patients. We also offer
                       home care services for those with mobility challenges or
-                      who prefer treatment in the comfort of their own home.
+                      who prefer treatment in the comfort of their own home.</div>
                     </div>
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingFive">
+                <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <h3 class="accordion-header" id="headingFive">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseFive">
-                      What conditions do you treat?
+                      data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      <span itemprop="name">What conditions do you treat?</span>
                     </button>
-                  </h2>
-                  <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  </h3>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                     <div class="accordion-body">
-                      We treat a wide range of conditions including sports
+                      <div itemprop="text">We treat a wide range of conditions including sports
                       injuries, post-surgical rehabilitation, arthritis, back
                       and neck pain, stroke recovery, Parkinson's disease,
                       pediatric developmental issues, respiratory conditions,
-                      and age-related mobility problems.
+                      and age-related mobility problems.</div>
                     </div>
                   </div>
                 </div>
@@ -643,7 +648,7 @@
     <div class="container">
       <div class="row g-5">
         <div class="col-lg-4">
-          <a href="index.html" class="footer-logo">Physio Dynamics</a>
+          <a href="/" class="footer-logo">Physio Dynamics</a>
           <p class="mb-4">
             Leading physiotherapy and sports rehabilitation center in Wayanad,
             providing expert care with compassion and professionalism since
@@ -665,10 +670,10 @@
           <div class="footer-links">
             <h5>Quick Links</h5>
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="services.html">Our Services</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/services">Our Services</a></li>
+              <li><a href="/contact">Contact Us</a></li>
               <li>
                 <a href="https://kapcwayanad.in/bookings/create/9" target="_blank" rel="noopener">Book Appointment</a>
               </li>
@@ -681,18 +686,18 @@
             <h5>Our Services</h5>
             <ul>
               <li>
-                <a href="service/orthopedic-physiotherapy.html">Orthopedic Physiotherapy</a>
+                <a href="/service/orthopedic-physiotherapy">Orthopedic Physiotherapy</a>
               </li>
               <li>
-                <a href="service/sports-physiotherapy.html">Sports Physiotherapy</a>
+                <a href="/service/sports-physiotherapy">Sports Physiotherapy</a>
               </li>
               <li>
-                <a href="service/neurological-physiotherapy.html">Neurological Physiotherapy</a>
+                <a href="/service/neurological-physiotherapy">Neurological Physiotherapy</a>
               </li>
               <li>
-                <a href="service/pediatric-physiotherapy.html">Pediatric Physiotherapy</a>
+                <a href="/service/pediatric-physiotherapy">Pediatric Physiotherapy</a>
               </li>
-              <li><a href="service/home-care.html">Home Care Services</a></li>
+              <li><a href="/service/home-care">Home Care Services</a></li>
             </ul>
           </div>
         </div>
