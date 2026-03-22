@@ -6,7 +6,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://www.physio-dynamics.com</loc>
-    <lastmod>2026-03-19</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -14,72 +14,72 @@
   <!-- About -->
   <url>
     <loc>https://www.physio-dynamics.com/about</loc>
-    <lastmod>2026-03-19</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Services Main -->
   <url>
     <loc>https://www.physio-dynamics.com/services</loc>
-    <lastmod>2026-03-19</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Orthopedic -->
   <url>
-    <loc>https://www.physio-dynamics.com/service/orthopedic-physiotherapy</loc>
-    <lastmod>2026-03-19</lastmod>
+    <loc>https://www.physio-dynamics.com/services/orthopedic-physiotherapy</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
 
   <!-- Sports -->
   <url>
-    <loc>https://www.physio-dynamics.com/service/sports-physiotherapy</loc>
-    <lastmod>2026-03-19</lastmod>
+    <loc>https://www.physio-dynamics.com/services/sports-physiotherapy</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
 
   <!-- Neurological -->
   <url>
-    <loc>https://www.physio-dynamics.com/service/neurological-physiotherapy</loc>
-    <lastmod>2026-03-19</lastmod>
+    <loc>https://www.physio-dynamics.com/services/neurological-physiotherapy</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
 
   <!-- Pediatric -->
   <url>
-    <loc>https://www.physio-dynamics.com/service/pediatric-physiotherapy</loc>
-    <lastmod>2026-03-19</lastmod>
+    <loc>https://www.physio-dynamics.com/services/pediatric-physiotherapy</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
 
   <!-- Chest -->
   <url>
-    <loc>https://www.physio-dynamics.com/service/chest-physiotherapy</loc>
-    <lastmod>2026-03-19</lastmod>
+    <loc>https://www.physio-dynamics.com/services/chest-physiotherapy</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
 
   <!-- Home Care -->
   <url>
-    <loc>https://www.physio-dynamics.com/service/home-care</loc>
-    <lastmod>2026-03-19</lastmod>
+    <loc>https://www.physio-dynamics.com/services/home-care</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
 
   <!-- Contact -->
   <url>
     <loc>https://www.physio-dynamics.com/contact</loc>
-    <lastmod>2026-03-19</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
