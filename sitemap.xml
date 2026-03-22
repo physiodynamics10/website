@@ -14,9 +14,17 @@
   <!-- About -->
   <url>
     <loc>https://www.physio-dynamics.com/about</loc>
-    <lastmod>2026-01-28</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <!-- Expertise Profile -->
+  <url>
+    <loc>https://www.physio-dynamics.com/expert-profile</loc>
+    <lastmod>2026-03-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- Services Main -->
