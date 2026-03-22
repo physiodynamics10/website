@@ -37,50 +37,50 @@
 
   <!-- Orthopedic -->
   <url>
-    <loc>https://www.physio-dynamics.com/services/orthopedic-physiotherapy</loc>
-    <lastmod>2026-01-28</lastmod>
+    <loc>https://www.physio-dynamics.com/service/orthopedic-physiotherapy</loc>
+    <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
 
   <!-- Sports -->
   <url>
-    <loc>https://www.physio-dynamics.com/services/sports-physiotherapy</loc>
-    <lastmod>2026-01-28</lastmod>
+    <loc>https://www.physio-dynamics.com/service/sports-physiotherapy</loc>
+    <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
 
   <!-- Neurological -->
   <url>
-    <loc>https://www.physio-dynamics.com/services/neurological-physiotherapy</loc>
-    <lastmod>2026-01-28</lastmod>
+    <loc>https://www.physio-dynamics.com/service/neurological-physiotherapy</loc>
+    <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
 
   <!-- Pediatric -->
   <url>
-    <loc>https://www.physio-dynamics.com/services/pediatric-physiotherapy</loc>
-    <lastmod>2026-01-28</lastmod>
+    <loc>https://www.physio-dynamics.com/service/pediatric-physiotherapy</loc>
+    <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
 
   <!-- Chest -->
   <url>
-    <loc>https://www.physio-dynamics.com/services/chest-physiotherapy</loc>
-    <lastmod>2026-01-28</lastmod>
+    <loc>https://www.physio-dynamics.com/service/chest-physiotherapy</loc>
+    <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
 
   <!-- Home Care -->
   <url>
-    <loc>https://www.physio-dynamics.com/services/home-care</loc>
-    <lastmod>2026-01-28</lastmod>
+    <loc>https://www.physio-dynamics.com/service/home-care</loc>
+    <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
 
   <!-- Contact -->
