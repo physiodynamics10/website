@@ -79,13 +79,18 @@
       "@type": "MedicalClinic",
       "name": "Physio Dynamics",
       "alternateName": "Physio Dynamics Physiotherapy and Sports Rehabilitation Centre",
+      "description": "Physio Dynamics is a physiotherapy and sports rehabilitation clinic in Panamaram, Wayanad, Kerala. Founded in August 2024 by HCPC-registered physiotherapist Sandra Thomas (BPT), we specialise in orthopedic, sports, neurological, pediatric, chest, and home care physiotherapy.",
       "url": "https://www.physio-dynamics.com",
-      "logo": "https://www.physio-dynamics.com/logo.png",
-      "image": "https://www.physio-dynamics.com/clinic-interior.jpg",
-      "description": "Physio Dynamics is a physiotherapy and sports rehabilitation clinic in Panamaram, Wayanad, offering orthopedic, sports, neurological, pediatric, chest, and home care physiotherapy services.",
-      "foundingDate": "2024-08-20",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.physio-dynamics.com/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://www.physio-dynamics.com/logo.png",
       "telephone": "+916282929104",
       "email": "physiodynamics10@gmail.com",
+      "foundingDate": "2024-08-20",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "UB City Centre Building, Near Crescent Public School, Panamaram",
@@ -99,41 +104,102 @@
         "latitude": "11.7200",
         "longitude": "76.0000"
       },
+      "hasMap": "https://maps.app.goo.gl/myuTpwMAnCEPEJa9A",
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "dayOfWeek": [
+            "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"
+          ],
           "opens": "08:00",
           "closes": "19:00"
         }
       ],
       "priceRange": "₹₹",
       "currenciesAccepted": "INR",
-      "paymentAccepted": "Cash, UPI",
-      "hasMap": "https://maps.app.goo.gl/myuTpwMAnCEPEJa9A",
+      "paymentAccepted": "Cash, UPI, Google Pay",
       "medicalSpecialty": [
         "Physiotherapy",
         "Sports Medicine",
         "Neurological Rehabilitation",
+        "Orthopedic Rehabilitation",
         "Pediatric Physiotherapy",
-        "Orthopedic Rehabilitation"
+        "Geriatric Rehabilitation"
       ],
       "availableService": [
-        {"@type": "MedicalTherapy", "name": "Orthopedic Physiotherapy"},
-        {"@type": "MedicalTherapy", "name": "Sports Physiotherapy"},
-        {"@type": "MedicalTherapy", "name": "Neurological Physiotherapy"},
-        {"@type": "MedicalTherapy", "name": "Pediatric Physiotherapy"},
-        {"@type": "MedicalTherapy", "name": "Chest Physiotherapy"},
-        {"@type": "MedicalTherapy", "name": "Home Care Physiotherapy"}
+        {
+          "@type": "MedicalTherapy",
+          "name": "Orthopedic Physiotherapy",
+          "url": "https://www.physio-dynamics.com/service/orthopedic-physiotherapy",
+          "description": "Treatment for bones, joints, and muscles to restore mobility and reduce pain after injuries or surgeries."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Sports Physiotherapy",
+          "url": "https://www.physio-dynamics.com/service/sports-physiotherapy",
+          "description": "Injury prevention, assessment, and treatment for athletes of all levels to enhance performance."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Neurological Physiotherapy",
+          "url": "https://www.physio-dynamics.com/service/neurological-physiotherapy",
+          "description": "Rehabilitation for stroke, Parkinson's disease, and spinal cord injuries to improve mobility and independence."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Pediatric Physiotherapy",
+          "url": "https://www.physio-dynamics.com/service/pediatric-physiotherapy",
+          "description": "Specialised care for children to improve movement, strength, posture, and motor skills."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Chest Physiotherapy",
+          "url": "https://www.physio-dynamics.com/service/chest-physiotherapy",
+          "description": "Techniques to clear mucus and improve breathing for asthma, bronchitis, pneumonia, or COPD."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Home Care Physiotherapy",
+          "url": "https://www.physio-dynamics.com/service/home-care",
+          "description": "Personalised physiotherapy treatment at home for elderly, post-surgical, or mobility-challenged patients across Wayanad."
+        }
+      ],
+      "employee": {
+        "@type": "Person",
+        "name": "Sandra Thomas",
+        "jobTitle": "Founder & Chief Physiotherapist",
+        "url": "https://www.physio-dynamics.com/expert-profile"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Panamaram"
+        },
+        {
+          "@type": "City",
+          "name": "Mananthavady"
+        },
+        {
+          "@type": "City",
+          "name": "Sulthan Bathery"
+        },
+        {
+          "@type": "City",
+          "name": "Kalpetta"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Wayanad"
+        }
       ],
       "sameAs": [
-        "https://www.google.com/maps/place/Physio+Dynamics",
-        "https://www.justdial.com/Wayanad/Physio-Dynamics",
-        "https://www.practo.com/wayanad/clinic/physio-dynamics"
+        "https://maps.app.goo.gl/myuTpwMAnCEPEJa9A",
+        "https://www.quickerala.com/wayanad/panamaram/physio-dynamics-physiotherapy-sports-rehabilitation-centre/460077",
+        "https://www.linkedin.com/in/sandrathomas10/"
       ],
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "5",
+        "ratingValue": "5.0",
         "reviewCount": "7",
         "bestRating": "5",
         "worstRating": "1"
@@ -141,15 +207,21 @@
       "review": [
         {
           "@type": "Review",
-          "author": {"@type": "Person", "name": "Abhinanadh"},
-          "reviewRating": {"@type": "Rating", "ratingValue": "5"},
-          "reviewBody": "My experience at Physio Dynamics was fantastic. I was struggling with knee pain and after some sessions my pain is significantly reduced."
+          "author": { "@type": "Person", "name": "Abhinanadh" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+          "reviewBody": "My experience at Physio Dynamics was fantastic. I was struggling with knee pain and after some sessions my pain is significantly reduced. Highly recommended."
         },
         {
           "@type": "Review",
-          "author": {"@type": "Person", "name": "Deepu Thomas"},
-          "reviewRating": {"@type": "Rating", "ratingValue": "5"},
-          "reviewBody": "Amazing center with tons of knowledge. The team at Physio Dynamics gave me the right treatment and coaching. It has been a year I am leading a normal life."
+          "author": { "@type": "Person", "name": "Deepu Thomas" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+          "reviewBody": "Amazing center with tons of knowledge. The team at Physio Dynamics gave me the right treatment and coaching. It has been a year and I am leading a normal life."
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Rajesh Kumar" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+          "reviewBody": "After my knee surgery, Physio Dynamics created a perfect rehab plan. Today I can walk without pain. Their home care service was especially helpful."
         }
       ]
     }
@@ -163,27 +235,58 @@
         {
           "@type": "Question",
           "name": "When was Physio Dynamics established?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Physio Dynamics was established on 20th August 2024 in Panamaram, Wayanad."}
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Physio Dynamics was established on 20th August 2024 in Panamaram, Wayanad, with a vision to provide advanced rehabilitation solutions to the community."
+          }
         },
         {
           "@type": "Question",
           "name": "What makes Physio Dynamics different from other clinics?",
-          "acceptedAnswer": {"@type": "Answer", "text": "We focus on one-on-one care with dedicated one-hour treatment sessions, personalized rehabilitation plans based on thorough assessment, and comprehensive patient education for long-term recovery."}
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Physio Dynamics offers one-on-one dedicated treatment sessions with personalised rehabilitation plans led by an HCPC-registered physiotherapist, Sandra Thomas. Every patient receives comprehensive education for long-term recovery across Wayanad."
+          }
         },
         {
           "@type": "Question",
-          "name": "Do you offer home care physiotherapy in Wayanad?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Yes, Physio Dynamics offers personalized home care physiotherapy in Wayanad for elderly patients, post-surgical patients, and those with mobility challenges."}
+          "name": "Is physiotherapy effective for knee pain in Wayanad?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, physiotherapy is highly effective for knee pain. At Physio Dynamics in Panamaram, Wayanad, we provide specialised assessments and personalised treatment plans for knee conditions, helping patients regain mobility and reduce pain without surgery in many cases."
+          }
         },
         {
           "@type": "Question",
-          "name": "What conditions does Physio Dynamics treat?",
-          "acceptedAnswer": {"@type": "Answer", "text": "We treat sports injuries, post-surgical rehabilitation, arthritis, back pain, neck pain, stroke recovery, Parkinson's disease, pediatric developmental issues, respiratory conditions, and age-related mobility problems."}
+          "name": "Can physiotherapy help after a stroke?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Neurological physiotherapy is crucial for stroke recovery. At Physio Dynamics, our specialised rehabilitation programmes focus on improving balance, strength, and coordination to help stroke survivors in Wayanad regain as much independence as possible."
+          }
         },
         {
           "@type": "Question",
-          "name": "How do I book an appointment at Physio Dynamics?",
-          "acceptedAnswer": {"@type": "Answer", "text": "You can book an appointment by calling +91 6282929104, emailing physiodynamics10@gmail.com, or using the online booking system at our website."}
+          "name": "Do you offer physiotherapy home visits in Wayanad?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Physio Dynamics offers professional home care physiotherapy services across Wayanad — including Panamaram, Mananthavady, Sulthan Bathery, and Kalpetta — for patients who have difficulty visiting our clinic, including elderly care and post-surgical rehabilitation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many physiotherapy sessions will I need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The number of sessions depends on your specific condition, severity, and recovery goals. After your initial assessment at Physio Dynamics, your physiotherapist will provide a clear treatment plan with an estimated timeline for your recovery."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is sports physiotherapy and who needs it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sports physiotherapy focuses on treating and preventing injuries related to sports and physical activity. It is not just for professional athletes — anyone active in Wayanad who suffers a sports-related injury can benefit from our specialised rehabilitation at Physio Dynamics."
+          }
         }
       ]
     }
