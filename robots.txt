@@ -2,4 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
+Disallow: /404.html
+Disallow: /google89be9aab9d25c09c.html
+
 Sitemap: https://www.physio-dynamics.com/sitemap.xml
