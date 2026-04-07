@@ -7,3 +7,6 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 # Force WWW
 RewriteCond %{HTTP_HOST} !^www\. [NC]
 RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirect old /ml/ paths to root
+RewriteRule ^ml(?:/(.*))?$ / [L,R=301]

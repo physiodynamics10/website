@@ -3,6 +3,8 @@ http://physio-dynamics.com/* https://www.physio-dynamics.com/:splat 301!
 https://physio-dynamics.com/* https://www.physio-dynamics.com/:splat 301!
 
 # Redirects for SEO stability
+/ml/* / 301
+/ml / 301
 /team.html /expert-profile 301
 /team /expert-profile 301
 
