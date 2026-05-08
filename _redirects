@@ -8,5 +8,11 @@ https://physio-dynamics.com/* https://www.physio-dynamics.com/:splat 301!
 /team.html /expert-profile 301
 /team /expert-profile 301
 
+# Trailing slash redirects (fix Google Redirect errors)
+/about/ /about 301
+/contact/ /contact 301
+/services/ /services 301
+/expert-profile/ /expert-profile 301
+
 # Proper 404 handling
 /* /404.html 404

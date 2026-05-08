@@ -50,6 +50,34 @@
   force = true
 
 # --------------------------------------------------
+# TRAILING SLASH REDIRECTS (fix Google Redirect errors)
+# --------------------------------------------------
+
+[[redirects]]
+  from = "/about/"
+  to = "/about"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact/"
+  to = "/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/"
+  to = "/services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/expert-profile/"
+  to = "/expert-profile"
+  status = 301
+  force = true
+
+# --------------------------------------------------
 # REAL 404 (STATIC SITE)
 # --------------------------------------------------
 [[redirects]]
