@@ -107,3 +107,21 @@
     .hero-section h1 { font-size: 1.6rem !important; }
     .service-card h3 { font-size: 1.2rem !important; }
 }
+
+/* ── Inline-style replacements ── */
+.service-steps-list { padding-left: 20px; }
+
+.quick-facts-list { list-style: none; padding: 0; }
+.quick-facts-list li { padding: 6px 0; border-bottom: 1px solid #eee; }
+.quick-facts-list li:last-child { border-bottom: none; }
+
+.expert-name { font-size: 2.8rem; }
+.expert-subtitle { font-size: 1rem; color: var(--gray); font-weight: 500; }
+.expert-bio-text { font-size: 1.05rem; line-height: 1.7; color: #4a5568; }
+.expert-section-title { color: var(--dark); font-size: 2.2rem; }
+.expert-divider { width: 60px; height: 4px; background: var(--primary); border-radius: 2px; }
+
+.btn-teal { min-width: 240px; background-color: #007d94 !important; border-color: #007d94 !important; }
+.btn-min-wide { min-width: 240px; }
+
+.time-closed { color: #dc3545; font-weight: 600; }
