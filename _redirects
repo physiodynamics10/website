@@ -13,6 +13,12 @@ https://physio-dynamics.com/* https://www.physio-dynamics.com/:splat 301!
 /contact/ /contact 301
 /services/ /services 301
 /expert-profile/ /expert-profile 301
+/service/orthopedic-physiotherapy/ /service/orthopedic-physiotherapy 301
+/service/sports-physiotherapy/ /service/sports-physiotherapy 301
+/service/neurological-physiotherapy/ /service/neurological-physiotherapy 301
+/service/pediatric-physiotherapy/ /service/pediatric-physiotherapy 301
+/service/chest-physiotherapy/ /service/chest-physiotherapy 301
+/service/home-care/ /service/home-care 301
 
 # Proper 404 handling
 /* /404.html 404

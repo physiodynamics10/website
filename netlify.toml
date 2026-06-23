@@ -77,6 +77,42 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "/service/orthopedic-physiotherapy/"
+  to = "/service/orthopedic-physiotherapy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service/sports-physiotherapy/"
+  to = "/service/sports-physiotherapy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service/neurological-physiotherapy/"
+  to = "/service/neurological-physiotherapy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service/pediatric-physiotherapy/"
+  to = "/service/pediatric-physiotherapy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service/chest-physiotherapy/"
+  to = "/service/chest-physiotherapy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service/home-care/"
+  to = "/service/home-care"
+  status = 301
+  force = true
+
 # --------------------------------------------------
 # REAL 404 (STATIC SITE)
 # --------------------------------------------------
