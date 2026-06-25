@@ -23,6 +23,20 @@
 .blog-hero .breadcrumb-item.active { color: rgba(255,255,255,0.6); font-size: 0.875rem; }
 .blog-hero .breadcrumb-item + .breadcrumb-item::before { color: rgba(255,255,255,0.4); }
 
+/* Mobile breadcrumb — truncate long active item */
+@media (max-width: 600px) {
+    .blog-hero nav[aria-label="breadcrumb"] { overflow: hidden; max-width: 100%; }
+    .blog-hero .breadcrumb { flex-wrap: nowrap; overflow: hidden; min-width: 0; }
+    .blog-hero .breadcrumb-item { white-space: nowrap; flex-shrink: 0; }
+    .blog-hero .breadcrumb-item.active {
+        flex-shrink: 1;
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
 .blog-category-badge {
     display: inline-flex;
     align-items: center;
