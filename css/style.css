@@ -125,3 +125,13 @@
 .btn-min-wide { min-width: 240px; }
 
 .time-closed { color: #dc3545; font-weight: 600; }
+
+/* ---- Fix: remove white gap between fixed navbar and hero sections ---- */
+/* margin-top was creating a white strip from the body background showing through */
+/* The existing large padding-top on each hero already clears the 70px navbar height */
+.hero-section,
+.about-hero,
+.contact-hero,
+.service-hero {
+    margin-top: 0 !important;
+}

@@ -7,8 +7,8 @@
 /* ---- Blog Hero (shared) ---- */
 .blog-hero {
     background: linear-gradient(135deg, #006075 0%, #007d94 50%, #00a3b4 100%);
-    padding: 60px 0 60px;
-    margin-top: 70px; /* clear fixed navbar — same as all other pages */
+    padding: 130px 0 60px; /* 70px navbar clearance + 60px visual space */
+    margin-top: 0;
     position: relative;
     overflow: hidden;
 }
@@ -77,7 +77,7 @@
 
 /* ---- Mobile: Hero & Article ---- */
 @media (max-width: 768px) {
-    .blog-hero { padding: 48px 0 44px; }
+    .blog-hero { padding: 110px 0 44px; } /* 70px navbar + 40px visual */
     .blog-hero h1 { font-size: clamp(1.5rem, 5vw, 2rem); margin-bottom: 16px; }
     .blog-hero-meta { gap: 12px; }
     .blog-layout { padding: 36px 0 60px; }
@@ -87,7 +87,7 @@
 }
 
 @media (max-width: 480px) {
-    .blog-hero { padding: 40px 0 36px; }
+    .blog-hero { padding: 100px 0 36px; } /* 70px navbar + 30px visual */
     .blog-hero h1 { font-size: clamp(1.35rem, 6vw, 1.75rem); }
     .blog-hero-meta { gap: 10px; }
     .blog-meta-item { font-size: 0.8rem; }
