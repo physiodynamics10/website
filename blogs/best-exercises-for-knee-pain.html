@@ -76,112 +76,261 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/blog.css" />
 
-    <!-- Structured Data: Article -->
+    <!-- Structured Data: @graph — SEO + AEO + GEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "MedicalWebPage",
-      "name": "Best Exercises for Knee Pain: A Physiotherapist's Guide",
-      "headline": "Best Exercises for Knee Pain: A Physiotherapist's Guide",
-      "description": "Learn the best physiotherapist-recommended exercises for knee pain. Discover causes, treatment options, and expert physiotherapy care in Wayanad from Physio Dynamics.",
-      "url": "https://www.physio-dynamics.com/blogs/best-exercises-for-knee-pain",
-      "image": "https://www.physio-dynamics.com/img/blog-knee-pain-hero.jpg",
-      "datePublished": "2026-06-24",
-      "dateModified": "2026-06-24",
-      "author": {
-        "@type": "Person",
-        "name": "Sandra Thomas",
-        "jobTitle": "Founder & Chief Physiotherapist, BPT",
-        "url": "https://www.physio-dynamics.com/expert-profile"
-      },
-      "publisher": {
-        "@type": "MedicalClinic",
-        "name": "Physio Dynamics",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.physio-dynamics.com/logo.png"
-        }
-      },
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://www.physio-dynamics.com/blogs/best-exercises-for-knee-pain"
-      },
-      "medicalAudience": {
-        "@type": "MedicalAudience",
-        "audienceType": "Patients"
-      },
-      "about": {
-        "@type": "MedicalCondition",
-        "name": "Knee Pain",
-        "alternateName": ["Gonalgia", "Knee Arthritis", "Patellofemoral Pain Syndrome"]
-      },
-      "mentions": [
-        {"@type": "MedicalTherapy", "name": "Physiotherapy"},
-        {"@type": "MedicalTherapy", "name": "Exercise Therapy"},
-        {"@type": "MedicalTherapy", "name": "Knee Rehabilitation"}
-      ]
-    }
-    </script>
+      "@graph": [
 
-    <!-- Structured Data: FAQ -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
         {
-          "@type": "Question",
-          "name": "Can exercise reduce knee pain?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Appropriate physiotherapy exercises can strengthen supporting muscles, improve flexibility, and reduce stress on the knee joint. A physiotherapist can design a programme tailored to your specific condition and goals."
+          "@type": ["MedicalWebPage", "Article"],
+          "@id": "https://www.physio-dynamics.com/blogs/best-exercises-for-knee-pain#article",
+          "name": "Best Exercises for Knee Pain: A Physiotherapist's Guide",
+          "headline": "Best Exercises for Knee Pain: A Physiotherapist's Guide",
+          "description": "Learn the best physiotherapist-recommended exercises for knee pain. Discover causes, treatment options, and expert physiotherapy care in Wayanad from Physio Dynamics.",
+          "url": "https://www.physio-dynamics.com/blogs/best-exercises-for-knee-pain",
+          "inLanguage": "en-IN",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://www.physio-dynamics.com/img/blog-knee-pain-hero.jpg",
+            "width": 800,
+            "height": 450
+          },
+          "datePublished": "2026-06-24",
+          "dateModified": "2026-06-25",
+          "wordCount": 1200,
+          "timeRequired": "PT6M",
+          "author": { "@id": "https://www.physio-dynamics.com/expert-profile#author" },
+          "publisher": { "@id": "https://www.physio-dynamics.com/#organization" },
+          "mainEntityOfPage": { "@id": "https://www.physio-dynamics.com/blogs/best-exercises-for-knee-pain" },
+          "isPartOf": { "@id": "https://www.physio-dynamics.com/blogs/" },
+          "about": {
+            "@type": "MedicalCondition",
+            "@id": "https://www.physio-dynamics.com/blogs/best-exercises-for-knee-pain#condition",
+            "name": "Knee Pain",
+            "alternateName": ["Gonalgia", "Knee Arthritis", "Patellofemoral Pain Syndrome", "Knee Osteoarthritis"],
+            "associatedAnatomy": { "@type": "AnatomicalStructure", "name": "Knee Joint" },
+            "possibleTreatment": { "@type": "MedicalTherapy", "name": "Physiotherapy" }
+          },
+          "mentions": [
+            { "@type": "MedicalTherapy", "name": "Physiotherapy" },
+            { "@type": "MedicalTherapy", "name": "Exercise Therapy" },
+            { "@type": "MedicalTherapy", "name": "Knee Rehabilitation" },
+            { "@type": "DefinedTerm", "name": "Quadriceps", "description": "The group of four muscles at the front of the thigh that extend the knee and stabilise the patella." },
+            { "@type": "DefinedTerm", "name": "Patellofemoral Pain Syndrome", "description": "Pain originating from the patellofemoral joint — the interface between the kneecap (patella) and the femur." },
+            { "@type": "DefinedTerm", "name": "Hamstrings", "description": "The group of three muscles at the back of the thigh responsible for knee flexion and hip extension." }
+          ],
+          "medicalAudience": { "@type": "MedicalAudience", "audienceType": "Patients" },
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [
+              ".blog-article-body > p:first-of-type",
+              "#faq-c1 .accordion-body",
+              "#faq-c2 .accordion-body",
+              "#faq-c3 .accordion-body",
+              "#faq-c5 .accordion-body"
+            ]
           }
         },
-        {
-          "@type": "Question",
-          "name": "Is walking good for knee pain?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "For many people, moderate walking can help maintain joint mobility. However, the suitability depends on the underlying condition and should be assessed by a physiotherapist before starting or continuing a walking programme."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can physiotherapy help avoid knee surgery?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "In some cases, physiotherapy can significantly improve symptoms and function, potentially reducing the need for surgical intervention. At Physio Dynamics in Wayanad, our physiotherapists assess each patient individually and provide evidence-based treatment to maximise non-surgical outcomes."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does it take to recover from knee pain?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Recovery time varies depending on the cause, severity, age, and overall health of the individual. Some conditions improve within a few weeks, while others may require several months of dedicated physiotherapy. Your physiotherapist at Physio Dynamics will provide a realistic timeline after assessment."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Where can I get physiotherapy for knee pain in Wayanad?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Physio Dynamics Physiotherapy & Sports Rehabilitation Centre, located in Panamaram, Wayanad, provides expert physiotherapy for knee pain. You can contact us at +91 62829 29104 to book a physiotherapy assessment."
-          }
-        }
-      ]
-    }
-    </script>
 
-    <!-- Structured Data: Breadcrumb -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.physio-dynamics.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.physio-dynamics.com/blogs/"},
-        {"@type": "ListItem", "position": 3, "name": "Best Exercises for Knee Pain", "item": "https://www.physio-dynamics.com/blogs/best-exercises-for-knee-pain"}
+        {
+          "@type": "Person",
+          "@id": "https://www.physio-dynamics.com/expert-profile#author",
+          "name": "Sandra Thomas",
+          "jobTitle": "Founder & Chief Physiotherapist",
+          "url": "https://www.physio-dynamics.com/expert-profile",
+          "image": "https://www.physio-dynamics.com/img/sandra-thomas.jpeg",
+          "worksFor": { "@id": "https://www.physio-dynamics.com/#organization" },
+          "hasCredential": {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Bachelor of Physiotherapy (BPT)",
+            "credentialCategory": "Degree",
+            "recognizedBy": { "@type": "Organization", "name": "Indian Association of Physiotherapists" }
+          },
+          "knowsAbout": [
+            "Physiotherapy",
+            "Orthopedic Physiotherapy",
+            "Knee Pain Rehabilitation",
+            "Sports Injury Rehabilitation",
+            "Neurological Physiotherapy",
+            "Pediatric Physiotherapy",
+            "Chest Physiotherapy"
+          ],
+          "description": "Sandra Thomas is a certified physiotherapist (BPT) and founder of Physio Dynamics in Panamaram, Wayanad. She specialises in orthopedic, sports, and neurological physiotherapy."
+        },
+
+        {
+          "@type": ["MedicalClinic", "LocalBusiness"],
+          "@id": "https://www.physio-dynamics.com/#organization",
+          "name": "Physio Dynamics Physiotherapy & Sports Rehabilitation Centre",
+          "alternateName": "Physio Dynamics",
+          "url": "https://www.physio-dynamics.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.physio-dynamics.com/logo.png",
+            "width": 512,
+            "height": 512
+          },
+          "image": "https://www.physio-dynamics.com/logo.png",
+          "description": "Physio Dynamics is Wayanad's leading physiotherapy and sports rehabilitation clinic, located in Panamaram. We provide expert physiotherapy for orthopedic, neurological, pediatric, sports injuries, and home care.",
+          "telephone": "+916282929104",
+          "email": "physiodynamics10@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "UB City Centre Building, Near Crescent Public School, Panamaram",
+            "addressLocality": "Panamaram",
+            "addressRegion": "Wayanad, Kerala",
+            "postalCode": "670721",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "11.7200",
+            "longitude": "76.0000"
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+              "opens": "08:00",
+              "closes": "19:00"
+            }
+          ],
+          "medicalSpecialty": [
+            "Orthopedic",
+            "Sports Medicine",
+            "Neurological",
+            "Pediatric"
+          ],
+          "sameAs": [
+            "https://www.facebook.com/physiodynamicz",
+            "https://www.instagram.com/physio.dynamics.panamaram/",
+            "https://www.linkedin.com/company/physio-dynamics-health/",
+            "https://maps.app.goo.gl/myuTpwMAnCEPEJa9A"
+          ],
+          "hasMap": "https://maps.app.goo.gl/myuTpwMAnCEPEJa9A",
+          "priceRange": "₹₹",
+          "areaServed": {
+            "@type": "Place",
+            "name": "Wayanad, Kerala, India"
+          }
+        },
+
+        {
+          "@type": "HowTo",
+          "@id": "https://www.physio-dynamics.com/blogs/best-exercises-for-knee-pain#howto",
+          "name": "5 Best Exercises for Knee Pain",
+          "description": "A physiotherapist-recommended set of exercises to reduce knee pain, strengthen supporting muscles, and improve mobility — suitable for most adults with knee pain.",
+          "image": "https://www.physio-dynamics.com/img/blog-knee-exercises-infographic.jpg",
+          "totalTime": "PT20M",
+          "supply": [
+            { "@type": "HowToSupply", "name": "Exercise mat or firm surface" },
+            { "@type": "HowToSupply", "name": "Low step or stair (for step-ups)" }
+          ],
+          "step": [
+            {
+              "@type": "HowToStep",
+              "position": 1,
+              "name": "Straight Leg Raise",
+              "text": "Lie flat on your back. Keep one knee bent with foot flat on the floor, other leg straight. Tighten the thigh muscle, raise the straight leg 30 cm off the ground, hold 3–5 seconds, then lower slowly. Repeat 10–15 times for 2–3 sets.",
+              "url": "https://www.physio-dynamics.com/blogs/best-exercises-for-knee-pain#exercise-1"
+            },
+            {
+              "@type": "HowToStep",
+              "position": 2,
+              "name": "Quadriceps Sets",
+              "text": "Sit or lie with your leg extended straight. Tighten the muscles at the front of your thigh, press the back of your knee gently toward the floor. Hold for 5 seconds, then relax. Repeat 10–15 times for 2–3 sets.",
+              "url": "https://www.physio-dynamics.com/blogs/best-exercises-for-knee-pain#exercise-2"
+            },
+            {
+              "@type": "HowToStep",
+              "position": 3,
+              "name": "Hamstring Stretch",
+              "text": "Sit on the floor with one leg extended. Keeping your back straight, reach forward toward your toes until you feel a gentle stretch at the back of the thigh. Hold 20–30 seconds, repeat 3 times each leg.",
+              "url": "https://www.physio-dynamics.com/blogs/best-exercises-for-knee-pain#exercise-3"
+            },
+            {
+              "@type": "HowToStep",
+              "position": 4,
+              "name": "Wall Squats",
+              "text": "Stand with your back against a wall, feet 30–45 cm away. Slide your back down into a partial squat, keeping knees aligned over feet. Hold 5–10 seconds, then return to standing. Repeat 10 times for 2 sets.",
+              "url": "https://www.physio-dynamics.com/blogs/best-exercises-for-knee-pain#exercise-4"
+            },
+            {
+              "@type": "HowToStep",
+              "position": 5,
+              "name": "Step-Ups",
+              "text": "Stand in front of a low step (15–20 cm). Step up with one foot, push through the heel, bring the other foot up. Step back down slowly. Repeat 10 times per leg for 2 sets.",
+              "url": "https://www.physio-dynamics.com/blogs/best-exercises-for-knee-pain#exercise-5"
+            }
+          ]
+        },
+
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.physio-dynamics.com/blogs/best-exercises-for-knee-pain#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Can exercise reduce knee pain?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Appropriate physiotherapy exercises can strengthen supporting muscles, improve flexibility, and reduce stress on the knee joint. A physiotherapist can design a programme tailored to your specific condition and goals."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is walking good for knee pain?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For many people, moderate walking can help maintain joint mobility. However, the suitability depends on the underlying condition and should be assessed by a physiotherapist before starting or continuing a walking programme."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can physiotherapy help avoid knee surgery?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In many cases, physiotherapy can significantly improve symptoms and function, potentially reducing or eliminating the need for surgical intervention. At Physio Dynamics in Wayanad, our physiotherapists assess each patient individually and provide evidence-based treatment to maximise non-surgical outcomes."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does it take to recover from knee pain?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Recovery time varies depending on the cause, severity, age, and overall health of the individual. Some conditions improve within a few weeks, while others may require several months of dedicated physiotherapy. Your physiotherapist at Physio Dynamics will provide a realistic timeline after assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where can I get physiotherapy for knee pain in Wayanad?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Physio Dynamics Physiotherapy & Sports Rehabilitation Centre, located in Panamaram, Wayanad (UB City Centre Building, Near Crescent Public School), provides expert physiotherapy for knee pain. Contact us at +91 62829 29104 to book a physiotherapy assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the best exercise for knee pain?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The straight leg raise and quadriceps sets are among the safest exercises for knee pain as they strengthen the muscles around the knee without placing stress on the joint. However, the best exercise depends on the cause of your pain — always consult a physiotherapist for a personalised programme."
+              }
+            }
+          ]
+        },
+
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.physio-dynamics.com/blogs/best-exercises-for-knee-pain#breadcrumb",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.physio-dynamics.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.physio-dynamics.com/blogs/" },
+            { "@type": "ListItem", "position": 3, "name": "Best Exercises for Knee Pain", "item": "https://www.physio-dynamics.com/blogs/best-exercises-for-knee-pain" }
+          ]
+        }
+
       ]
     }
     </script>
