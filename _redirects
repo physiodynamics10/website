@@ -19,6 +19,9 @@ https://physio-dynamics.com/* https://www.physio-dynamics.com/:splat 301!
 /service/pediatric-physiotherapy/ /service/pediatric-physiotherapy 301
 /service/chest-physiotherapy/ /service/chest-physiotherapy 301
 /service/home-care/ /service/home-care 301
+/blogs/ /blogs 301
+/blogs/index /blogs 301
+/blogs/index.html /blogs 301
 
 # Proper 404 handling
 /* /404.html 404

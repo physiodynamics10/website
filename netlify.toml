@@ -113,6 +113,24 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "/blogs/"
+  to = "/blogs"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blogs/index"
+  to = "/blogs"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blogs/index.html"
+  to = "/blogs"
+  status = 301
+  force = true
+
 # --------------------------------------------------
 # REAL 404 (STATIC SITE)
 # --------------------------------------------------
