@@ -6,4 +6,4 @@ Disallow: /404.html
 Disallow: /google89be9aab9d25c09c.html
 
 Sitemap: https://www.physio-dynamics.com/sitemap.xml
-LLMs: https://www.physio-dynamics.com/llms.txt
+# LLMs: https://www.physio-dynamics.com/llms.txt
