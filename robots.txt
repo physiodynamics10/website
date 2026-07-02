@@ -5,5 +5,24 @@ Disallow: /private/
 Disallow: /404.html
 Disallow: /google89be9aab9d25c09c.html
 
+# AI Bot Permissions
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
 Sitemap: https://www.physio-dynamics.com/sitemap.xml
 # LLMs: https://www.physio-dynamics.com/llms.txt

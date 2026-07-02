@@ -3,6 +3,17 @@
 
 <head>
     <!-- Google tag (gtag.js) -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'analytics_storage': 'denied',
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'wait_for_update': 500
+      });
+    </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PF3YJYKC6V"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -19,7 +30,7 @@
     <link rel="canonical" href="https://www.physio-dynamics.com/service/home-care" />
     <meta name="description" content="Expert home care physiotherapy in Wayanad. Our physiotherapists visit your home for rehab, elderly care, and post-surgical recovery. Book now." />
     <meta name="keywords" content="home care physiotherapy Wayanad, mobile physiotherapy Panamaram, physiotherapy at home Kerala, elderly care Wayanad" />
-    <meta name="robots" content=\"index, follow\" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta name="author" content="Physio Dynamics" />
     <meta name="theme-color" content="#1a6b4a" />
 
@@ -28,17 +39,23 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Home Care Physiotherapy in Wayanad | Physio Dynamics" />
-    <meta property="og:description" content="Professional home-based physiotherapy and rehabilitation services across Wayanad." />
+    <meta property="og:description" content="Expert home care physiotherapy in Wayanad. Our physiotherapists visit your home for rehab, elderly care, and post-surgical recovery. Book now." />
     <meta property="og:url" content="https://www.physio-dynamics.com/service/home-care" />
-    <meta property="og:image" content="https://www.physio-dynamics.com/img/og-homecare.jpg" />
+    <meta property="og:image" content="https://www.physio-dynamics.com/og-image.jpg" />
     <meta property="og:locale" content="en_IN" />
     <meta property="og:site_name" content="Physio Dynamics" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Home Care Physiotherapy in Wayanad | Physio Dynamics" />
-    <meta name="twitter:description" content="Expert physiotherapy home visits and personalized rehab in Panamaram, Wayanad." />
-    <meta name="twitter:image" content="https://www.physio-dynamics.com/img/og-homecare.jpg" />
+    <meta name="twitter:description" content="Expert home care physiotherapy in Wayanad. Our physiotherapists visit your home for rehab, elderly care, and post-surgical recovery." />
+    <meta name="twitter:image" content="https://www.physio-dynamics.com/og-image.jpg" />
+
+    <!-- Local SEO -->
+    <meta name="geo.region" content="IN-KL" />
+    <meta name="geo.placename" content="Panamaram, Wayanad, Kerala" />
+    <meta name="geo.position" content="11.7200;76.0000" />
+    <meta name="ICBM" content="11.7200, 76.0000" />
 
     <!-- Performance Optimizations -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -58,6 +75,15 @@
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /></noscript>
 
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/style.css" />
 
@@ -66,6 +92,7 @@
     {
       "@context": "https://schema.org",
       "@type": "MedicalClinic",
+      "@id": "https://www.physio-dynamics.com/#clinic",
       "name": "Physio Dynamics",
       "alternateName": "Physio Dynamics Physiotherapy and Sports Rehabilitation Centre",
       "description": "Physio Dynamics is a physiotherapy and sports rehabilitation clinic in Panamaram, Wayanad, Kerala. Founded in August 2024 by HCPC-registered physiotherapist Sandra Thomas (BPT), we specialise in orthopedic, sports, neurological, pediatric, chest, and home care physiotherapy.",

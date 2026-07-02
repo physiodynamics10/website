@@ -1,0 +1,3 @@
+Contact: mailto:physiodynamics10@gmail.com
+Expires: 2027-07-02T13:00:00.000Z
+Canonical: https://www.physio-dynamics.com/.well-known/security.txt
