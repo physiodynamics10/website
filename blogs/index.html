@@ -135,47 +135,17 @@
         .section-heading {
             font-size: 1.4rem;
             font-weight: 700;
-            color: #0d4f35;
+            color: #006075;
             margin-bottom: 0;
         }
         .section-heading-line {
             display: inline-block;
             width: 40px;
             height: 4px;
-            background: linear-gradient(90deg, #1a6b4a, #4ade80);
+            background: linear-gradient(90deg, #007d94, #00c6c8);
             border-radius: 2px;
             margin-right: 12px;
             vertical-align: middle;
-        }
-        /* Filter pills (inside listing area - green theme) */
-        .filter-bar {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            align-items: center;
-            margin-bottom: 36px;
-            padding-bottom: 24px;
-            border-bottom: 1px solid #e8f5f0;
-        }
-        .filter-pill {
-            background: #f0faf5;
-            border: 1px solid #c6e8d8;
-            color: #1a6b4a;
-            font-size: 0.82rem;
-            font-weight: 600;
-            padding: 7px 18px;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.2s;
-            text-decoration: none;
-            display: inline-block;
-            user-select: none;
-        }
-        .filter-pill:hover,
-        .filter-pill.active {
-            background: #1a6b4a;
-            color: #fff;
-            border-color: #1a6b4a;
         }
     </style>
     <meta name="google-site-verification" content="M1vVDIjSFVyNSNljTc_ljGDshn5rNpuiSZ2i81M6neA" />
@@ -311,44 +281,46 @@
                     <div id="articles-grid">
 
                         <!-- ── FEATURED ARTICLE ── -->
-                        <div class="mb-4 blog-article-item" data-category="knee" data-title="best exercises for knee pain physiotherapist guide">
-                            <article class="blog-card blog-card-featured">
-                                <div class="blog-card-img-wrap">
-                                    <img
-                                        src="/img/blog-knee-pain-hero.jpg"
-                                        alt="Physiotherapist treating knee pain at Physio Dynamics Wayanad"
-                                        loading="eager"
-                                        onerror="this.src='https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80'; this.onerror=null;"
-                                    />
-                                    <span class="blog-card-category">Knee Health</span>
-                                </div>
-                                <div class="blog-card-body">
-                                    <span class="featured-label">
-                                        <i class="fas fa-star"></i> Featured
-                                    </span>
-                                    <div class="blog-card-meta">
-                                        <span><i class="far fa-calendar-alt"></i> 24 June 2026</span>
-                                        <span><i class="far fa-clock"></i> 6 min read</span>
-                                        <span><i class="fas fa-map-marker-alt"></i> Wayanad</span>
+                        <div class="row mb-4 blog-article-item" data-category="knee" data-title="best exercises for knee pain physiotherapist guide">
+                            <div class="col-12">
+                                <article class="blog-card blog-card-featured">
+                                    <div class="blog-card-img-wrap">
+                                        <img
+                                            src="/img/blog-knee-pain-hero.jpg"
+                                            alt="Physiotherapist treating knee pain at Physio Dynamics Wayanad"
+                                            loading="eager"
+                                            onerror="this.src='https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80'; this.onerror=null;"
+                                        />
+                                        <span class="blog-card-category">Knee Health</span>
                                     </div>
-                                    <a href="/blogs/best-exercises-for-knee-pain" class="blog-card-title">
-                                        Best Exercises for Knee Pain: A Physiotherapist's Guide
-                                    </a>
-                                    <p class="blog-card-excerpt">
-                                        Knee pain affects people of all ages across Wayanad. Discover the most effective physiotherapist-recommended exercises to reduce pain, strengthen supporting muscles, and improve your mobility — without surgery.
-                                    </p>
-                                    <div class="blog-card-footer">
-                                        <div class="blog-card-author">
-                                            <img src="/img/sandra-thomas.jpeg" alt="Sandra Thomas BPT" loading="lazy"
-                                                onerror="this.src='https://ui-avatars.com/api/?name=Sandra+Thomas&background=007d94&color=fff&size=60'; this.onerror=null;" />
-                                            <span>Sandra Thomas, BPT</span>
+                                    <div class="blog-card-body">
+                                        <span class="featured-label">
+                                            <i class="fas fa-star"></i> Featured
+                                        </span>
+                                        <div class="blog-card-meta">
+                                            <span><i class="far fa-calendar-alt"></i> 24 June 2026</span>
+                                            <span><i class="far fa-clock"></i> 6 min read</span>
+                                            <span><i class="fas fa-map-marker-alt"></i> Wayanad</span>
                                         </div>
-                                        <a href="/blogs/best-exercises-for-knee-pain" class="blog-card-read-more" aria-label="Read full article: Best Exercises for Knee Pain">
-                                            Read Article <i class="fas fa-arrow-right"></i>
+                                        <a href="/blogs/best-exercises-for-knee-pain" class="blog-card-title">
+                                            Best Exercises for Knee Pain: A Physiotherapist's Guide
                                         </a>
+                                        <p class="blog-card-excerpt">
+                                            Knee pain affects people of all ages across Wayanad. Discover the most effective physiotherapist-recommended exercises to reduce pain, strengthen supporting muscles, and improve your mobility — without surgery.
+                                        </p>
+                                        <div class="blog-card-footer">
+                                            <div class="blog-card-author">
+                                                <img src="/img/sandra-thomas.jpeg" alt="Sandra Thomas BPT" loading="lazy"
+                                                    onerror="this.src='https://ui-avatars.com/api/?name=Sandra+Thomas&background=007d94&color=fff&size=60'; this.onerror=null;" />
+                                                <span>Sandra Thomas, BPT</span>
+                                            </div>
+                                            <a href="/blogs/best-exercises-for-knee-pain" class="blog-card-read-more" aria-label="Read full article: Best Exercises for Knee Pain">
+                                                Read Article <i class="fas fa-arrow-right"></i>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                            </article>
+                                </article>
+                            </div>
                         </div>
 
                         <!-- ── MORE ARTICLES PLACEHOLDER CARDS (styled as "coming soon") ── -->
@@ -692,7 +664,7 @@
             activeCategory = pill.dataset.category;
             // sync sidebar chips
             topicChips.forEach(c => {
-                c.style.background = (c.dataset.filter === activeCategory) ? '#1a6b4a' : '';
+                c.style.background = (c.dataset.filter === activeCategory) ? '#007d94' : '';
                 c.style.color = (c.dataset.filter === activeCategory) ? '#fff' : '';
             });
             filterArticles();
@@ -729,7 +701,7 @@
         }
         btn.innerHTML = '<i class="fas fa-check me-2"></i>Subscribed!';
         btn.style.background = '#fff';
-        btn.style.color = '#0d4f35';
+        btn.style.color = '#006075';
         document.getElementById('newsletter-email').value = '';
         setTimeout(() => {
             btn.innerHTML = '<i class="fas fa-paper-plane me-2"></i>Subscribe';
