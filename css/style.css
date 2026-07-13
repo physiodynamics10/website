@@ -161,34 +161,34 @@
 .floating-button.back-to-top {
     display: none;
 }
-.navbar-toggler {
-    width: 56px !important;
-    height: 40px !important;
-    padding: 0 !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    overflow: hidden !important;
+@media (max-width: 991.98px) {
+    .navbar-toggler {
+        width: 56px !important;
+        height: 40px !important;
+        padding: 0 !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        overflow: hidden !important;
+    }
+    .navbar-toggler-icon {
+        width: 30px !important;
+        height: 30px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        overflow: hidden !important;
+    }
+    .navbar-toggler-icon i {
+        width: 20px !important;
+        height: 20px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 20px !important;
+    }
+    .navbar-toggler-icon i::before { width: 20px !important; height: 20px !important; display: inline-block !important; }
 }
-.navbar-toggler-icon {
-    width: 30px !important;
-    height: 30px !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    overflow: hidden !important;
-}
-.navbar-toggler-icon i {
-    width: 20px !important;
-    height: 20px !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    font-size: 20px !important;
-}
-
-/* Reserve dimensions for pseudo-elements to completely eliminate from diagnostics */
-.navbar-toggler-icon i::before { width: 20px !important; height: 20px !important; display: inline-block !important; }
 .floating-button i::before { width: 22px !important; height: 22px !important; display: inline-block !important; }
 
 /* Tidio Chat Widget Position Fallback Override */
