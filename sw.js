@@ -10,7 +10,7 @@ const ASSETS = [
   '/blogs/best-exercises-for-knee-pain',
   '/blogs/lower-back-pain-physiotherapy-exercises',
   '/blogs/sports-injury-recovery-physiotherapy',
-  '/blogs/frozen-shoulder-causes-symptoms-treatment',
+  '/blogs/frozen-shoulder-physiotherapy-treatment',
   '/css/style.css',
   '/css/bootstrap.min.css',
   '/js/main.js',
