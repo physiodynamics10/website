@@ -190,3 +190,25 @@
 /* Reserve dimensions for pseudo-elements to completely eliminate from diagnostics */
 .navbar-toggler-icon i::before { width: 20px !important; height: 20px !important; display: inline-block !important; }
 .floating-button i::before { width: 22px !important; height: 22px !important; display: inline-block !important; }
+
+/* Tidio Chat Widget Position Fallback Override */
+#tidio-chat-iframe, #tidio-chat, #tidio {
+    bottom: 25px !important;
+    right: 25px !important;
+}
+@media (max-width: 768px) {
+    #tidio-chat-iframe, #tidio-chat, #tidio {
+        bottom: 20px !important;
+        right: 20px !important;
+    }
+}
+
+/* Position floating buttons stack above the Tidio Chat widget */
+.floating-buttons {
+    bottom: 95px !important;
+}
+@media (max-width: 768px) {
+    .floating-buttons {
+        bottom: 80px !important;
+    }
+}
