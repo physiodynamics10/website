@@ -186,3 +186,7 @@
     justify-content: center !important;
     font-size: 20px !important;
 }
+
+/* Reserve dimensions for pseudo-elements to completely eliminate from diagnostics */
+.navbar-toggler-icon i::before { width: 20px !important; height: 20px !important; display: inline-block !important; }
+.floating-button i::before { width: 22px !important; height: 22px !important; display: inline-block !important; }
