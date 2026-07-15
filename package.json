@@ -26,6 +26,7 @@
   "devDependencies": {
     "htmlhint": "^1.6.3",
     "prettier": "^3.6.2",
+    "purgecss": "^8.0.0",
     "sitemap": "^8.0.3"
   }
 }
