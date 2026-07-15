@@ -14,7 +14,7 @@
             'wait_for_update': 500
         });
     </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PF3YJYKC6V"></script>
+    
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -83,7 +83,8 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
 
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /></noscript>
 
     <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192.png" />
@@ -477,10 +478,7 @@
             }
 
             // ---- Load GTM ----
-            const gtm = document.createElement("script");
-            gtm.async = true;
-            gtm.src = "https://www.googletagmanager.com/gtm.js?id=GTM-WKMWL3T3";
-            document.head.appendChild(gtm);
+            
 
             // ---- CLICK TRACKING (delegated, lightweight) ----
             document.addEventListener("click", (e) => {
@@ -546,15 +544,13 @@
         }
     </script>
 
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WKMWL3T3" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe>
-    </noscript>
+    
 
 
 
     <meta name="google-site-verification" content="M1vVDIjSFVyNSNljTc_ljGDshn5rNpuiSZ2i81M6neA" />
     <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt" />
+  <script src="/js/defer-scripts.js" defer></script>
 </head>
 
 <body>
@@ -1199,7 +1195,7 @@
             });
         }
     </script>
-    <script src="//code.tidio.co/4cvipbnbdaxiob3bvkolvyaitucgfpnv.js" async></script>
+    
 </body>
 
 </html>
