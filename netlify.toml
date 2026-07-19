@@ -131,6 +131,18 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "/privacy-policy/"
+  to = "/privacy-policy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/terms-of-service/"
+  to = "/terms-of-service"
+  status = 301
+  force = true
+
 # --------------------------------------------------
 # REAL 404 (STATIC SITE)
 # --------------------------------------------------
