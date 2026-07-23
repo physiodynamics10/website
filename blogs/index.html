@@ -590,6 +590,39 @@
     let activeCategory = 'all';
     let searchTerm = '';
 
+    // Function to calculate and update category counts
+    function updateCategoryCounts() {
+        const counts = { all: 0, knee: 0, back: 0, sports: 0, general: 0 };
+        
+        // Exclude coming soon articles from counts if they are just placeholders, or include them?
+        // Let's include all that don't have style="display: none" initially, but all are blog-article-item.
+        articles.forEach(item => {
+            counts.all++;
+            const cat = item.dataset.category;
+            if (counts[cat] !== undefined) {
+                counts[cat]++;
+            }
+        });
+        
+        // Update pills
+        categoryPills.forEach(pill => {
+            const cat = pill.dataset.category;
+            // Remove existing count if any
+            const baseText = pill.textContent.replace(/\s*\(\d+\)$/, '').trim();
+            pill.textContent = `${baseText} (${counts[cat] || 0})`;
+        });
+        
+        // Update sidebar chips
+        topicChips.forEach(chip => {
+            const cat = chip.dataset.filter;
+            const baseText = chip.textContent.replace(/\s*\(\d+\)$/, '').trim();
+            const icon = chip.querySelector('i');
+            chip.innerHTML = '';
+            if (icon) chip.appendChild(icon);
+            chip.appendChild(document.createTextNode(` ${baseText} (${counts[cat] || 0})`));
+        });
+    }
+
     function filterArticles() {
         let visible = 0;
         articles.forEach(item => {
@@ -598,12 +631,29 @@
             const catMatch = (activeCategory === 'all') || (cat === activeCategory);
             const searchMatch = !searchTerm || title.includes(searchTerm);
             const show = catMatch && searchMatch;
-            item.style.display = show ? '' : 'none';
-            if (show) visible++;
+            
+            if (show) {
+                // Determine original display style (featured is flex/block based on classes, but empty string defaults to css)
+                item.style.display = '';
+                item.classList.remove('d-none');
+                visible++;
+            } else {
+                item.style.display = 'none';
+                item.classList.add('d-none'); // Safe fallback
+            }
         });
-        noResults.classList.toggle('d-none', visible > 0);
-        resultsCount.textContent = `Showing ${visible} article${visible !== 1 ? 's' : ''}`;
+        
+        if (noResults) {
+            noResults.classList.toggle('d-none', visible > 0);
+        }
+        if (resultsCount) {
+            resultsCount.textContent = `Showing ${visible} article${visible !== 1 ? 's' : ''}`;
+        }
     }
+
+    // Initialize counts on page load
+    updateCategoryCounts();
+    filterArticles(); // Run once to set initial text
 
     // Category pills (hero)
     categoryPills.forEach(pill => {
@@ -612,13 +662,19 @@
             categoryPills.forEach(p => p.classList.remove('active'));
             pill.classList.add('active');
             activeCategory = pill.dataset.category;
+            
             // sync sidebar chips
             topicChips.forEach(c => {
                 c.style.background = (c.dataset.filter === activeCategory) ? '#007d94' : '';
                 c.style.color = (c.dataset.filter === activeCategory) ? '#fff' : '';
             });
+            
             filterArticles();
-            document.getElementById('blog-articles').scrollIntoView({ behavior: 'smooth' });
+            
+            const articlesSection = document.getElementById('blog-articles');
+            if (articlesSection) {
+                articlesSection.scrollIntoView({ behavior: 'smooth' });
+            }
         });
     });
 
@@ -627,37 +683,35 @@
         chip.addEventListener('click', e => {
             e.preventDefault();
             activeCategory = chip.dataset.filter;
+            
             categoryPills.forEach(p => {
-                p.classList.toggle('active', p.dataset.category === activeCategory);
+                if (p.dataset.category === activeCategory) {
+                    p.classList.add('active');
+                } else {
+                    p.classList.remove('active');
+                }
             });
+            
+            topicChips.forEach(c => {
+                c.style.background = (c.dataset.filter === activeCategory) ? '#007d94' : '';
+                c.style.color = (c.dataset.filter === activeCategory) ? '#fff' : '';
+            });
+
             filterArticles();
+            
+            const articlesSection = document.getElementById('blog-articles');
+            if (articlesSection) {
+                articlesSection.scrollIntoView({ behavior: 'smooth' });
+            }
         });
     });
 
     // Search
-    searchInput.addEventListener('input', () => {
-        searchTerm = searchInput.value.trim().toLowerCase();
-        filterArticles();
-    });
-
-    /* ---- Newsletter ---- */
-    function handleNewsletter() {
-        const email = document.getElementById('newsletter-email').value.trim();
-        const btn = document.getElementById('newsletter-btn');
-        if (!email || !email.includes('@')) {
-            btn.textContent = '⚠️ Enter a valid email';
-            setTimeout(() => { btn.innerHTML = '<i class="fas fa-paper-plane me-2"></i>Subscribe'; }, 2000);
-            return;
-        }
-        btn.innerHTML = '<i class="fas fa-check me-2"></i>Subscribed!';
-        btn.style.background = '#fff';
-        btn.style.color = '#006075';
-        document.getElementById('newsletter-email').value = '';
-        setTimeout(() => {
-            btn.innerHTML = '<i class="fas fa-paper-plane me-2"></i>Subscribe';
-            btn.style.background = '';
-            btn.style.color = '';
-        }, 3000);
+    if (searchInput) {
+        searchInput.addEventListener('input', () => {
+            searchTerm = searchInput.value.trim().toLowerCase();
+            filterArticles();
+        });
     }
 </script>
 </body>
