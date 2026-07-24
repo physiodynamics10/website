@@ -1,11 +1,4 @@
-User-agent: *
-Allow: /
-Disallow: /admin/
-Disallow: /private/
-Disallow: /404.html
-Disallow: /google89be9aab9d25c09c.html
-
-# AI Bot Permissions
+# Explicitly Allow AI Bots First
 User-agent: GPTBot
 Allow: /
 
@@ -24,5 +17,23 @@ Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 
+User-agent: CCBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# General Directives
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /404.html
+Disallow: /google89be9aab9d25c09c.html
+
 Sitemap: https://www.physio-dynamics.com/sitemap.xml
-# LLMs: https://www.physio-dynamics.com/llms.txt
+# AI content structure
+LLMs: https://www.physio-dynamics.com/llms.txt
