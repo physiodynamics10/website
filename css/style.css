@@ -378,3 +378,4 @@
     50% { transform: translateY(-8px); }
     100% { transform: translateY(0px); }
 }
+.faq-accordion .accordion-item { border: none !important; box-shadow: none !important; }.faq-accordion .accordion-item::before, .faq-accordion .accordion-item::after { display: none !important; }.faq-accordion .accordion-button { border: none !important; box-shadow: none !important; outline: none !important; }.faq-accordion .accordion-header { border: none !important; padding: 0 !important; margin: 0 !important; }
