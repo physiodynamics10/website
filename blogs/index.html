@@ -236,7 +236,7 @@
 <h2 class="section-heading">
 <span class="section-heading-line"></span>Latest Articles
                         </h2>
-<span class="text-muted" id="results-count" style="font-size:0.85rem;">Showing 1 article</span>
+<span class="text-muted" id="results-count" style="font-size:0.85rem;">Showing 15 articles</span>
 </div>
 <!-- Articles grid -->
 <div id="articles-grid">
@@ -533,11 +533,10 @@
 </div>
 </article>
 </div>
-<!-- HIDE TODAY'S CREATED BLOGS (DRAFTS - TO BE PUBLISHED LATER)
-<div class="col-md-6 blog-article-item" data-category="back" data-title="slip disc treatment without surgery wayanad">
+<div class="col-md-6 blog-article-item" data-category="back" data-title="slip disc treatment without surgery wayanad sciatica back pain">
 <article class="blog-card">
 <div class="blog-card-img-wrap">
-<img alt="Slip disc non surgical treatment at Physio Dynamics Wayanad" loading="lazy" src="/logo.webp"/>
+<img alt="Slip disc non surgical treatment at Physio Dynamics Wayanad" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&amp;q=80'; this.onerror=null;" src="/img/back-header.png"/>
 <span class="blog-card-category">Back &amp; Spine</span>
 </div>
 <div class="blog-card-body">
@@ -562,10 +561,10 @@ Read Article <i class="fas fa-arrow-right"></i>
 </article>
 </div>
 
-<div class="col-md-6 blog-article-item" data-category="general" data-title="post fracture stiffness physiotherapy exercises">
+<div class="col-md-6 blog-article-item" data-category="general" data-title="post fracture stiffness physiotherapy exercises joint movement home recovery">
 <article class="blog-card">
 <div class="blog-card-img-wrap">
-<img alt="Post fracture stiffness physiotherapy exercises" loading="lazy" src="/logo.webp"/>
+<img alt="Post fracture stiffness physiotherapy exercises" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&amp;q=80'; this.onerror=null;" src="/img/blog-acute-chronic-hero.jpg"/>
 <span class="blog-card-category">General Health</span>
 </div>
 <div class="blog-card-body">
@@ -590,10 +589,10 @@ Read Article <i class="fas fa-arrow-right"></i>
 </article>
 </div>
 
-<div class="col-md-6 blog-article-item" data-category="general" data-title="parkinsons disease physiotherapy kerala">
+<div class="col-md-6 blog-article-item" data-category="general" data-title="parkinsons disease physiotherapy kerala neurological rehabilitation gait balance">
 <article class="blog-card">
 <div class="blog-card-img-wrap">
-<img alt="Parkinson's disease physiotherapy in Kerala" loading="lazy" src="/logo.webp"/>
+<img alt="Parkinson's disease physiotherapy in Kerala" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&amp;q=80'; this.onerror=null;" src="/img/blog-recovery-speed-hero.jpg"/>
 <span class="blog-card-category">General Health</span>
 </div>
 <div class="blog-card-body">
@@ -618,10 +617,10 @@ Read Article <i class="fas fa-arrow-right"></i>
 </article>
 </div>
 
-<div class="col-md-6 blog-article-item" data-category="knee" data-title="how long does physiotherapy take to work for knee pain">
+<div class="col-md-6 blog-article-item" data-category="knee" data-title="how long does physiotherapy take to work for knee pain recovery timeline osteoarthritis meniscus">
 <article class="blog-card">
 <div class="blog-card-img-wrap">
-<img alt="Physiotherapy timeline for knee pain in Wayanad" loading="lazy" src="/logo.webp"/>
+<img alt="Physiotherapy timeline for knee pain in Wayanad" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&amp;q=80'; this.onerror=null;" src="/img/blog-knee-pain-hero.jpg"/>
 <span class="blog-card-category">Knee Health</span>
 </div>
 <div class="blog-card-body">
@@ -645,7 +644,6 @@ Read Article <i class="fas fa-arrow-right"></i>
 </div>
 </article>
 </div>
--->
 
 <div class="col-md-6 blog-article-item" data-category="general" data-title="shoulder pain frozen shoulder physiotherapy treatment">
 <article class="blog-card">
@@ -885,9 +883,8 @@ Read Article <i class="fas fa-arrow-right"></i>
     function updateCategoryCounts() {
         const counts = { all: 0, knee: 0, back: 0, sports: 0, general: 0 };
         
-        // Exclude coming soon articles from counts if they are just placeholders, or include them?
-        // Let's include all that don't have style="display: none" initially, but all are blog-article-item.
         articles.forEach(item => {
+            if (item.querySelector('.blog-card-coming-soon')) return;
             counts.all++;
             const cat = item.dataset.category;
             if (counts[cat] !== undefined) {
@@ -898,7 +895,6 @@ Read Article <i class="fas fa-arrow-right"></i>
         // Update pills
         categoryPills.forEach(pill => {
             const cat = pill.dataset.category;
-            // Remove existing count if any
             const baseText = pill.textContent.replace(/\s*\(\d+\)$/, '').trim();
             pill.textContent = `${baseText} (${counts[cat] || 0})`;
         });
@@ -917,20 +913,21 @@ Read Article <i class="fas fa-arrow-right"></i>
     function filterArticles() {
         let visible = 0;
         articles.forEach(item => {
+            const isComingSoon = item.querySelector('.blog-card-coming-soon') !== null;
             const cat = item.dataset.category || '';
-            const title = (item.dataset.title || '').toLowerCase();
+            const titleAttr = (item.dataset.title || '').toLowerCase();
+            const textContent = (item.textContent || '').toLowerCase();
             const catMatch = (activeCategory === 'all') || (cat === activeCategory);
-            const searchMatch = !searchTerm || title.includes(searchTerm);
+            const searchMatch = !searchTerm || titleAttr.includes(searchTerm) || textContent.includes(searchTerm);
             const show = catMatch && searchMatch;
             
             if (show) {
-                // Determine original display style (featured is flex/block based on classes, but empty string defaults to css)
                 item.style.display = '';
                 item.classList.remove('d-none');
-                visible++;
+                if (!isComingSoon) visible++;
             } else {
                 item.style.display = 'none';
-                item.classList.add('d-none'); // Safe fallback
+                item.classList.add('d-none');
             }
         });
         

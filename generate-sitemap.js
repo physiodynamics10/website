@@ -28,9 +28,10 @@ function getHtmlFiles(dirPath, fileList = [], baseDir = __dirname) {
             // Convert file path to URL path
             let relativePath = path.relative(baseDir, fullPath).replace(/\\/g, '/');
             
-            // Normalize path: Remove .html and trailing slashes (except root)
+            // Normalize path: Remove .html and handle index files
             let urlPath = '/' + relativePath.replace('.html', '');
             if (urlPath === '/index') urlPath = '/';
+            else if (urlPath.endsWith('/index')) urlPath = urlPath.slice(0, -5); // e.g. /blogs/index -> /blogs/
             
             fileList.push(urlPath);
         }
