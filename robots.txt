@@ -36,4 +36,4 @@ Disallow: /google89be9aab9d25c09c.html
 
 Sitemap: https://www.physio-dynamics.com/sitemap.xml
 # AI content structure
-LLMs: https://www.physio-dynamics.com/llms.txt
+# LLMs: https://www.physio-dynamics.com/llms.txt
