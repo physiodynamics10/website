@@ -15,7 +15,7 @@ const ASSETS = [
   '/css/bootstrap.min.css',
   '/js/main.js',
   '/js/bootstrap.bundle.min.js',
-  '/logo.webp',
+  '/logo.png',
   '/clinic-interior.webp',
   '/site.webmanifest'
 ];
