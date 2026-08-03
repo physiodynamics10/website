@@ -242,8 +242,10 @@
 
 /* Search Bar */
 .blog-search-wrap { max-width: 480px; position: relative; }
-.blog-search-wrap input { border-radius: 50px; border: none; padding: 14px 52px 14px 22px; font-size: 0.95rem; width: 100%; outline: none; box-shadow: 0 4px 20px rgba(0,0,0,0.12); }
-.blog-search-wrap .search-icon { position: absolute; right: 18px; top: 50%; transform: translateY(-50%); color: #0692ab; font-size: 1rem; pointer-events: none; }
+.blog-search-wrap input { border-radius: 50px; border: none; padding: 14px 76px 14px 22px; font-size: 0.95rem; width: 100%; outline: none; box-shadow: 0 4px 20px rgba(0,0,0,0.12); }
+.blog-search-wrap .search-icon { position: absolute; right: 18px; top: 50%; transform: translateY(-50%); color: #0692ab; font-size: 1rem; cursor: pointer; }
+.blog-search-wrap .search-clear-btn { position: absolute; right: 44px; top: 50%; transform: translateY(-50%); background: none; border: none; color: #94a3b8; font-size: 0.9rem; cursor: pointer; display: none; padding: 4px 6px; border-radius: 50%; transition: color 0.2s; }
+.blog-search-wrap .search-clear-btn:hover { color: #0f172a; }
 
 /* Category pills */
 .category-filters { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }

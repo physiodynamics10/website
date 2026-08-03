@@ -188,16 +188,17 @@
 <p class="hero-desc">Expert advice on physiotherapy, pain management, rehabilitation exercises, and healthy living — written by our certified physiotherapists in Wayanad.</p>
 <!-- Search -->
 <div class="blog-search-wrap">
-<input aria-label="Search blog articles" id="blog-search" placeholder="Search articles…" type="text"/>
-<i class="fas fa-search search-icon"></i>
+<input aria-label="Search blog articles" autocomplete="off" id="blog-search" placeholder="Search articles…" type="text"/>
+<button aria-label="Clear search" class="search-clear-btn" id="search-clear" title="Clear search" type="button"><i class="fas fa-times"></i></button>
+<i class="fas fa-search search-icon" id="search-submit" title="Click to search"></i>
 </div>
 <!-- Category filter pills -->
 <div aria-label="Filter by category" class="category-filters mt-3" role="group">
-<a class="cat-pill active" data-category="all" href="#">All Articles</a>
-<a class="cat-pill" data-category="knee" href="#">Knee Health</a>
-<a class="cat-pill" data-category="back" href="#">Back &amp; Spine</a>
-<a class="cat-pill" data-category="sports" href="#">Sports Rehab</a>
-<a class="cat-pill" data-category="general" href="#">General Health</a>
+<a class="cat-pill active" data-base-title="All Articles" data-category="all" href="#">All Articles</a>
+<a class="cat-pill" data-base-title="Knee Health" data-category="knee" href="#">Knee Health</a>
+<a class="cat-pill" data-base-title="Back &amp; Spine" data-category="back" href="#">Back &amp; Spine</a>
+<a class="cat-pill" data-base-title="Sports Rehab" data-category="sports" href="#">Sports Rehab</a>
+<a class="cat-pill" data-base-title="General Health" data-category="general" href="#">General Health</a>
 </div>
 </div>
 <div aria-hidden="true" class="col-lg-5 d-none d-lg-block text-end">
@@ -702,10 +703,13 @@ Read Article <i class="fas fa-arrow-right"></i>
 </div><!-- end more-articles -->
 </div><!-- end articles-grid -->
 <!-- No results message -->
-<div class="no-results d-none" id="no-results">
-<i class="fas fa-search"></i>
-<h4>No articles found</h4>
-<p>Try a different search term or category.</p>
+<div class="no-results d-none py-5 text-center" id="no-results">
+<i class="fas fa-search-minus mb-3" style="font-size: 3rem; color: #94a3b8;"></i>
+<h4 class="fw-bold">No articles found</h4>
+<p class="text-muted" id="no-results-desc">Try a different search term or category.</p>
+<button class="btn btn-primary mt-2" id="btn-reset-filters" style="background-color: #0692ab; border: none; border-radius: 50px; padding: 10px 24px; font-weight: 600;" type="button">
+<i class="fas fa-redo-alt me-2"></i>Reset All Filters
+</button>
 </div>
 </div><!-- end col-lg-8 -->
 <!-- Right: Sidebar -->
@@ -727,11 +731,11 @@ Read Article <i class="fas fa-arrow-right"></i>
 <div class="sidebar-card">
 <h4><i class="fas fa-tags me-2 text-success"></i>Browse Topics</h4>
 <div>
-<a class="topic-chip" data-filter="knee" href="#"><i class="fas fa-bone"></i> Knee Health</a>
-<a class="topic-chip" data-filter="back" href="#"><i class="fas fa-spine"></i> Back &amp; Spine</a>
-<a class="topic-chip" data-filter="sports" href="#"><i class="fas fa-running"></i> Sports Rehab</a>
-<a class="topic-chip" data-filter="general" href="#"><i class="fas fa-heartbeat"></i> General Health</a>
-<a class="topic-chip" data-filter="all" href="#"><i class="fas fa-th-list"></i> All Articles</a>
+<a class="topic-chip" data-base-title="Knee Health" data-filter="knee" href="#"><i class="fas fa-bone"></i> Knee Health</a>
+<a class="topic-chip" data-base-title="Back &amp; Spine" data-filter="back" href="#"><i class="fas fa-spine"></i> Back &amp; Spine</a>
+<a class="topic-chip" data-base-title="Sports Rehab" data-filter="sports" href="#"><i class="fas fa-running"></i> Sports Rehab</a>
+<a class="topic-chip" data-base-title="General Health" data-filter="general" href="#"><i class="fas fa-heartbeat"></i> General Health</a>
+<a class="topic-chip" data-base-title="All Articles" data-filter="all" href="#"><i class="fas fa-th-list"></i> All Articles</a>
 </div>
 </div>
 <!-- Our Services -->
@@ -869,20 +873,26 @@ Read Article <i class="fas fa-arrow-right"></i>
 <script defer="" src="/js/bootstrap.bundle.min.js"></script>
 <script defer="" src="/js/main.js"></script>
 <script>
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
+document.addEventListener('DOMContentLoaded', () => {
+    const yearEl = document.getElementById('currentYear');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-    /* ---- Search & Filter ---- */
+    /* ---- Search & Filter Controller ---- */
     const searchInput = document.getElementById('blog-search');
+    const searchClearBtn = document.getElementById('search-clear');
+    const searchIcon = document.getElementById('search-submit');
     const categoryPills = document.querySelectorAll('.cat-pill');
     const topicChips = document.querySelectorAll('.topic-chip');
     const articles = document.querySelectorAll('.blog-article-item');
     const noResults = document.getElementById('no-results');
+    const noResultsDesc = document.getElementById('no-results-desc');
+    const resetBtn = document.getElementById('btn-reset-filters');
     const resultsCount = document.getElementById('results-count');
 
     let activeCategory = 'all';
     let searchTerm = '';
 
-    // Function to calculate and update category counts
+    // Calculate category counts cleanly using data-base-title
     function updateCategoryCounts() {
         const counts = { all: 0, knee: 0, back: 0, sports: 0, general: 0 };
         
@@ -894,36 +904,61 @@ Read Article <i class="fas fa-arrow-right"></i>
                 counts[cat]++;
             }
         });
-        
-        // Update pills
+
         categoryPills.forEach(pill => {
             const cat = pill.dataset.category;
-            const baseText = pill.textContent.replace(/\s*\(\d+\)$/, '').trim();
-            pill.textContent = `${baseText} (${counts[cat] || 0})`;
+            const baseTitle = pill.dataset.baseTitle || 'Articles';
+            pill.innerHTML = `${baseTitle} (${counts[cat] || 0})`;
         });
-        
-        // Update sidebar chips
+
         topicChips.forEach(chip => {
             const cat = chip.dataset.filter;
-            const baseText = chip.textContent.replace(/\s*\(\d+\)$/, '').trim();
             const icon = chip.querySelector('i');
-            chip.innerHTML = '';
-            if (icon) chip.appendChild(icon);
-            chip.appendChild(document.createTextNode(` ${baseText} (${counts[cat] || 0})`));
+            const iconHTML = icon ? icon.outerHTML : '';
+            const baseTitle = chip.dataset.baseTitle || 'Articles';
+            chip.innerHTML = `${iconHTML} ${baseTitle} (${counts[cat] || 0})`;
+        });
+    }
+
+    function syncActiveUI() {
+        categoryPills.forEach(p => {
+            if (p.dataset.category === activeCategory) {
+                p.classList.add('active');
+            } else {
+                p.classList.remove('active');
+            }
+        });
+
+        topicChips.forEach(c => {
+            if (c.dataset.filter === activeCategory) {
+                c.style.background = '#0692ab';
+                c.style.color = '#fff';
+                c.classList.add('active');
+            } else {
+                c.style.background = '';
+                c.style.color = '';
+                c.classList.remove('active');
+            }
         });
     }
 
     function filterArticles() {
         let visible = 0;
+        const query = searchTerm.trim().toLowerCase();
+
         articles.forEach(item => {
             const isComingSoon = item.querySelector('.blog-card-coming-soon') !== null;
             const cat = item.dataset.category || '';
             const titleAttr = (item.dataset.title || '').toLowerCase();
+            const cardTitle = (item.querySelector('.blog-card-title')?.textContent || '').toLowerCase();
+            const cardExcerpt = (item.querySelector('.blog-card-excerpt')?.textContent || '').toLowerCase();
             const textContent = (item.textContent || '').toLowerCase();
+
             const catMatch = (activeCategory === 'all') || (cat === activeCategory);
-            const searchMatch = !searchTerm || titleAttr.includes(searchTerm) || textContent.includes(searchTerm);
+            const searchMatch = !query || titleAttr.includes(query) || cardTitle.includes(query) || cardExcerpt.includes(query) || textContent.includes(query);
+
             const show = catMatch && searchMatch;
-            
+
             if (show) {
                 item.style.display = '';
                 item.classList.remove('d-none');
@@ -933,77 +968,126 @@ Read Article <i class="fas fa-arrow-right"></i>
                 item.classList.add('d-none');
             }
         });
-        
-        if (noResults) {
-            noResults.classList.toggle('d-none', visible > 0);
+
+        if (searchClearBtn) {
+            searchClearBtn.style.display = query ? 'inline-block' : 'none';
         }
+
+        if (noResults) {
+            const hasNoResults = visible === 0;
+            noResults.classList.toggle('d-none', !hasNoResults);
+            if (hasNoResults && noResultsDesc) {
+                let msg = 'Try a different search term or category.';
+                if (query && activeCategory !== 'all') {
+                    msg = `No articles found for "${query}" in this category.`;
+                } else if (query) {
+                    msg = `No articles found matching "${query}".`;
+                } else if (activeCategory !== 'all') {
+                    msg = `No articles found in this category.`;
+                }
+                noResultsDesc.textContent = msg;
+            }
+        }
+
         if (resultsCount) {
-            resultsCount.textContent = `Showing ${visible} article${visible !== 1 ? 's' : ''}`;
+            const catNameMap = { all: 'All Categories', knee: 'Knee Health', back: 'Back & Spine', sports: 'Sports Rehab', general: 'General Health' };
+            let label = `Showing ${visible} article${visible !== 1 ? 's' : ''}`;
+            if (query && activeCategory !== 'all') {
+                label += ` for "${query}" in ${catNameMap[activeCategory] || activeCategory}`;
+            } else if (query) {
+                label += ` for "${query}"`;
+            } else if (activeCategory !== 'all') {
+                label += ` in ${catNameMap[activeCategory] || activeCategory}`;
+            }
+            resultsCount.textContent = label;
         }
     }
 
-    // Initialize counts on page load
-    updateCategoryCounts();
-    filterArticles(); // Run once to set initial text
+    function resetAllFilters() {
+        activeCategory = 'all';
+        searchTerm = '';
+        if (searchInput) searchInput.value = '';
+        syncActiveUI();
+        filterArticles();
+    }
 
-    // Category pills (hero)
+    // Initial setup
+    updateCategoryCounts();
+
+    // Support URL Query String (e.g. ?category=knee or ?q=post)
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialCat = urlParams.get('category') || urlParams.get('cat');
+    const initialSearch = urlParams.get('search') || urlParams.get('q');
+
+    if (initialCat && ['all', 'knee', 'back', 'sports', 'general'].includes(initialCat)) {
+        activeCategory = initialCat;
+    }
+    if (initialSearch) {
+        searchTerm = initialSearch;
+        if (searchInput) searchInput.value = initialSearch;
+    }
+
+    syncActiveUI();
+    filterArticles();
+
+    // Event Listeners
     categoryPills.forEach(pill => {
         pill.addEventListener('click', e => {
             e.preventDefault();
-            categoryPills.forEach(p => p.classList.remove('active'));
-            pill.classList.add('active');
             activeCategory = pill.dataset.category;
-            
-            // sync sidebar chips
-            topicChips.forEach(c => {
-                c.style.background = (c.dataset.filter === activeCategory) ? '#0692ab' : '';
-                c.style.color = (c.dataset.filter === activeCategory) ? '#fff' : '';
-            });
-            
+            syncActiveUI();
             filterArticles();
-            
-            const articlesSection = document.getElementById('blog-articles');
-            if (articlesSection) {
-                articlesSection.scrollIntoView({ behavior: 'smooth' });
-            }
         });
     });
 
-    // Sidebar topic chips
     topicChips.forEach(chip => {
         chip.addEventListener('click', e => {
             e.preventDefault();
             activeCategory = chip.dataset.filter;
-            
-            categoryPills.forEach(p => {
-                if (p.dataset.category === activeCategory) {
-                    p.classList.add('active');
-                } else {
-                    p.classList.remove('active');
-                }
-            });
-            
-            topicChips.forEach(c => {
-                c.style.background = (c.dataset.filter === activeCategory) ? '#0692ab' : '';
-                c.style.color = (c.dataset.filter === activeCategory) ? '#fff' : '';
-            });
-
+            syncActiveUI();
             filterArticles();
-            
-            const articlesSection = document.getElementById('blog-articles');
-            if (articlesSection) {
-                articlesSection.scrollIntoView({ behavior: 'smooth' });
+            const articlesHeading = document.getElementById('articles-heading');
+            if (articlesHeading) {
+                articlesHeading.scrollIntoView({ behavior: 'smooth' });
             }
         });
     });
 
-    // Search
     if (searchInput) {
         searchInput.addEventListener('input', () => {
-            searchTerm = searchInput.value.trim().toLowerCase();
+            searchTerm = searchInput.value;
+            filterArticles();
+        });
+        searchInput.addEventListener('keydown', e => {
+            if (e.key === 'Escape') {
+                searchTerm = '';
+                searchInput.value = '';
+                filterArticles();
+            }
+        });
+    }
+
+    if (searchClearBtn) {
+        searchClearBtn.addEventListener('click', () => {
+            searchTerm = '';
+            if (searchInput) {
+                searchInput.value = '';
+                searchInput.focus();
+            }
             filterArticles();
         });
     }
+
+    if (searchIcon) {
+        searchIcon.addEventListener('click', () => {
+            if (searchInput) searchInput.focus();
+        });
+    }
+
+    if (resetBtn) {
+        resetBtn.addEventListener('click', resetAllFilters);
+    }
+});
 </script>
 </body>
 </html>
