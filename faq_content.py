@@ -14,7 +14,7 @@ faq_data = {
         {"q": "What advanced equipment do you use for your services?", "a": "Physio Dynamics is equipped with state-of-the-art modalities including Ultrasound Therapy, TENS (Transcutaneous Electrical Nerve Stimulation), Muscle Stimulators, and specialized exercise rehabilitation gear."}
     ],
     "expert-profile.html": [
-        {"q": "Who is Dr. Sandra Thomas?", "a": "Dr. Sandra Thomas (PT) is a Bachelor of Physiotherapy (BPT) graduate and an HCPC (UK) Registered Physiotherapist. She is the founder and Chief Physiotherapist at Physio Dynamics in Wayanad."},
+        {"q": "Who is Dr. Sandra Thomas?", "a": "Dr. Sandra Thomas (PT) is a Bachelor of Physiotherapy (BPT) graduate and an HCPC (UK) Registered Physiotherapist. She is the founder and Consultant Physiotherapist at Physio Dynamics in Wayanad."},
         {"q": "What conditions does Dr. Sandra specialize in treating?", "a": "She specializes in treating orthopedic conditions, sports injuries, neurological disorders (like stroke and Parkinson's), and post-surgical rehabilitation."},
         {"q": "What does HCPC (UK) Registration mean?", "a": "HCPC (Health and Care Professions Council) registration indicates that Dr. Sandra Thomas meets rigorous, internationally recognized standards of professional training, performance, and ethical conduct."},
         {"q": "How many years of clinical experience does she have?", "a": "Dr. Sandra has extensive clinical experience across multiple specialities, ensuring high-quality, evidence-based care for every patient she treats at her Panamaram clinic."},
