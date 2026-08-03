@@ -31,7 +31,7 @@ function getHtmlFiles(dirPath, fileList = [], baseDir = __dirname) {
             // Normalize path: Remove .html and handle index files
             let urlPath = '/' + relativePath.replace('.html', '');
             if (urlPath === '/index') urlPath = '/';
-            else if (urlPath.endsWith('/index')) urlPath = urlPath.slice(0, -5); // e.g. /blogs/index -> /blogs/
+            else if (urlPath.endsWith('/index')) urlPath = urlPath.slice(0, -6); // e.g. /blogs/index -> /blogs
             
             fileList.push(urlPath);
         }
