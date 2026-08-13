@@ -13,3 +13,43 @@
     document.addEventListener('tidioChat-ready', onTidioChatApiReady);
   }
 })();
+
+// Monitor AdSense status to hide empty/unfilled ad containers above footer
+(function() {
+  function checkAdContainers() {
+    document.querySelectorAll('.footer-ad-container').forEach(function(container) {
+      var ins = container.querySelector('ins.adsbygoogle');
+      if (!ins) return;
+
+      function updateStatus() {
+        var status = ins.getAttribute('data-ad-status');
+        var hasIframe = ins.querySelector('iframe') !== null;
+        var hasChildren = ins.children.length > 0;
+
+        if (status === 'unfilled' || (!hasIframe && !hasChildren && ins.offsetHeight === 0)) {
+          container.classList.add('ad-unfilled');
+          container.classList.remove('ad-filled');
+        } else if (status === 'filled' || hasIframe || ins.offsetHeight > 0) {
+          container.classList.remove('ad-unfilled');
+          container.classList.add('ad-filled');
+        }
+      }
+
+      updateStatus();
+
+      if ('MutationObserver' in window) {
+        var observer = new MutationObserver(updateStatus);
+        observer.observe(ins, { attributes: true, attributeFilter: ['data-ad-status', 'style'], childList: true, subtree: true });
+      }
+
+      setTimeout(updateStatus, 1500);
+      setTimeout(updateStatus, 3500);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', checkAdContainers);
+  } else {
+    checkAdContainers();
+  }
+})();
