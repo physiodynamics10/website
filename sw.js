@@ -1,12 +1,12 @@
-const CACHE_NAME = 'physio-dynamics-v4';
+const CACHE_NAME = 'physio-dynamics-v5';
 const ASSETS = [
   '/',
   '/index.html',
   '/about.html',
   '/services.html',
   '/contact.html',
-  '/blogs/',
-  '/blogs/index.html',
+  '/blogs',
+  '/blogs.html',
   '/blogs/best-exercises-for-knee-pain',
   '/blogs/lower-back-pain-physiotherapy-exercises',
   '/blogs/sports-injury-recovery-physiotherapy',

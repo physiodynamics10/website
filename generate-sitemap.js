@@ -46,9 +46,10 @@ async function generateSitemap() {
     });
 
     try {
-        const pages = getHtmlFiles(__dirname);
+        const rawPages = getHtmlFiles(__dirname);
+        const pages = Array.from(new Set(rawPages)).sort();
         
-        console.log('🔍 Found pages:', pages);
+        console.log('🔍 Found pages (' + pages.length + '):', pages);
 
         pages.forEach(url => {
             // Primary pages have higher priority
