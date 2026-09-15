@@ -1,4 +1,4 @@
-const CACHE_NAME = 'physio-dynamics-v5';
+const CACHE_NAME = 'physio-dynamics-v6';
 const ASSETS = [
   '/',
   '/index.html',
