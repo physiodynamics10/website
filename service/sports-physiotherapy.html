@@ -316,8 +316,219 @@
 <meta content="M1vVDIjSFVyNSNljTc_ljGDshn5rNpuiSZ2i81M6neA" name="google-site-verification"/>
 <link href="/llms.txt" rel="llms"/>
 <script defer="" src="/js/defer-scripts.js"></script>
+
+<style id="sports-page-redesign">
+/* ===== Sports Physiotherapy page refresh ===== */
+:root{
+  --sports-primary:#0692ab;
+  --sports-primary-dark:#05788d;
+  --sports-ink:#12313a;
+  --sports-muted:#64777d;
+  --sports-soft:#eef9fb;
+  --sports-line:#dcebed;
+  --sports-white:#fff;
+}
+
+.sports-page{background:#fff;color:var(--sports-ink)}
+.sports-page .container{max-width:1180px}
+.sports-page .sports-hero{
+  position:relative;overflow:hidden;
+  padding:72px 0 76px;
+  background:linear-gradient(135deg,#073d49 0%,#066f82 52%,#0692ab 100%);
+  color:#fff;
+}
+.sports-page .sports-hero:before,
+.sports-page .sports-hero:after{
+  content:"";position:absolute;border-radius:50%;pointer-events:none;
+  border:1px solid rgba(255,255,255,.13)
+}
+.sports-page .sports-hero:before{width:430px;height:430px;right:-170px;top:-180px}
+.sports-page .sports-hero:after{width:260px;height:260px;left:-150px;bottom:-150px}
+.sports-page .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:54px;align-items:center}
+.sports-page .eyebrow{
+  display:inline-flex;align-items:center;gap:9px;padding:8px 14px;
+  border:1px solid rgba(255,255,255,.25);border-radius:999px;
+  background:rgba(255,255,255,.09);font-size:.82rem;font-weight:700;
+  letter-spacing:.04em;text-transform:uppercase
+}
+.sports-page .eyebrow i{font-size:.9rem}
+.sports-page .sports-hero h1{
+  margin:18px 0 16px;color:#fff;font-size:clamp(2.25rem,4vw,4rem);
+  line-height:1.08;font-weight:800;letter-spacing:-.035em
+}
+.sports-page .sports-hero .lead{
+  max-width:650px;margin:0;color:rgba(255,255,255,.88);
+  font-size:1.08rem;line-height:1.75
+}
+.sports-page .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.sports-page .hero-actions .btn{border-radius:12px;padding:13px 20px;font-weight:700}
+.sports-page .hero-actions .btn-light{color:var(--sports-primary)}
+.sports-page .hero-card{
+  position:relative;min-height:330px;padding:30px;border-radius:28px;
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);
+  backdrop-filter:blur(10px);display:flex;flex-direction:column;justify-content:flex-end;
+  box-shadow:0 24px 70px rgba(0,0,0,.18)
+}
+.sports-page .hero-card-icon{
+  width:74px;height:74px;border-radius:22px;display:grid;place-items:center;
+  background:#fff;color:var(--sports-primary);font-size:2rem;margin-bottom:auto
+}
+.sports-page .hero-card h2{color:#fff;font-size:1.45rem;margin:26px 0 8px}
+.sports-page .hero-card p{margin:0;color:rgba(255,255,255,.78);line-height:1.65}
+.sports-page .hero-stats{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px
+}
+.sports-page .hero-stat{padding:14px;border-radius:14px;background:rgba(0,0,0,.13)}
+.sports-page .hero-stat strong{display:block;color:#fff;font-size:1.15rem}
+.sports-page .hero-stat span{font-size:.72rem;color:rgba(255,255,255,.7)}
+
+.sports-page .sports-breadcrumb{padding:16px 0;background:#fff}
+.sports-page .sports-breadcrumb .breadcrumb{margin:0;font-size:.88rem}
+
+.sports-page .section{padding:78px 0}
+.sports-page .section.soft{background:#f7fbfc}
+.sports-page .section-heading{text-align:center;max-width:740px;margin:0 auto 44px}
+.sports-page .section-heading .kicker{
+  color:var(--sports-primary);font-size:.78rem;font-weight:800;
+  letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px
+}
+.sports-page .section-heading h2{
+  margin:0 0 12px;font-size:clamp(1.85rem,3vw,2.65rem);
+  line-height:1.18;font-weight:800;color:var(--sports-ink)
+}
+.sports-page .section-heading p{margin:0;color:var(--sports-muted);line-height:1.7}
+
+.sports-page .intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}
+.sports-page .intro-panel{
+  padding:34px;border:1px solid var(--sports-line);border-radius:22px;background:#fff;
+  box-shadow:0 10px 35px rgba(9,57,66,.05)
+}
+.sports-page .intro-panel h3{margin:0 0 14px;font-size:1.35rem}
+.sports-page .intro-panel p{color:var(--sports-muted);line-height:1.78}
+.sports-page .intro-panel p:last-child{margin-bottom:0}
+.sports-page .check-list{list-style:none;padding:0;margin:0;display:grid;gap:13px}
+.sports-page .check-list li{display:flex;gap:12px;align-items:flex-start;color:#38535a;line-height:1.55}
+.sports-page .check-list i{color:var(--sports-primary);margin-top:4px}
+
+.sports-page .injury-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.sports-page .injury-card{
+  padding:23px;border:1px solid var(--sports-line);border-radius:18px;
+  background:#fff;transition:.2s ease
+}
+.sports-page .injury-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(8,74,86,.08)}
+.sports-page .injury-icon{
+  width:46px;height:46px;border-radius:14px;display:grid;place-items:center;
+  background:var(--sports-soft);color:var(--sports-primary);margin-bottom:15px
+}
+.sports-page .injury-card h3{font-size:1rem;margin:0 0 7px}
+.sports-page .injury-card p{font-size:.9rem;line-height:1.6;color:var(--sports-muted);margin:0}
+
+.sports-page .process{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.sports-page .process-card{
+  position:relative;padding:28px 23px 25px;border-radius:20px;background:#fff;
+  border:1px solid var(--sports-line);box-shadow:0 8px 28px rgba(9,57,66,.045)
+}
+.sports-page .process-no{
+  font-size:.76rem;font-weight:800;letter-spacing:.08em;color:var(--sports-primary);
+  margin-bottom:20px
+}
+.sports-page .process-card h3{font-size:1.08rem;margin:0 0 9px}
+.sports-page .process-card p{margin:0;color:var(--sports-muted);font-size:.9rem;line-height:1.65}
+.sports-page .process-card i{font-size:1.35rem;color:var(--sports-primary);margin-bottom:16px}
+
+.sports-page .sports-strip{
+  display:grid;grid-template-columns:repeat(5,1fr);gap:12px
+}
+.sports-page .sport-chip{
+  padding:19px 14px;text-align:center;border-radius:16px;background:#fff;
+  border:1px solid var(--sports-line);font-weight:700;color:#2f4e55
+}
+.sports-page .sport-chip i{display:block;color:var(--sports-primary);font-size:1.25rem;margin-bottom:8px}
+
+.sports-page .visit-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;align-items:stretch}
+.sports-page .visit-card{
+  padding:34px;border-radius:24px;background:linear-gradient(145deg,#063e4a,#087f93);
+  color:#fff
+}
+.sports-page .visit-card h2{color:#fff;margin:0 0 13px}
+.sports-page .visit-card p{color:rgba(255,255,255,.8);line-height:1.7}
+.sports-page .visit-points{display:grid;gap:12px;margin-top:22px}
+.sports-page .visit-points div{display:flex;gap:11px;align-items:flex-start;color:rgba(255,255,255,.9)}
+.sports-page .visit-points i{margin-top:4px}
+.sports-page .steps{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.sports-page .step{
+  padding:22px;border:1px solid var(--sports-line);border-radius:17px;background:#fff
+}
+.sports-page .step strong{display:block;margin-bottom:6px}
+.sports-page .step span{color:var(--sports-muted);font-size:.9rem;line-height:1.6}
+
+.sports-page .faq-wrap{max-width:920px;margin:auto}
+.sports-page .faq-wrap .accordion-item{
+  border:none!important;border-radius:12px!important;
+  overflow:hidden;margin-bottom:20px;background:var(--sports-soft);
+  box-shadow:none!important
+}
+.sports-page .faq-wrap .accordion-button{
+  font-weight:600;padding:18px 25px;box-shadow:none!important;border:none!important;
+  background:var(--sports-soft);color:var(--sports-dark);
+  border-radius:12px!important;font-size:1rem
+}
+.sports-page .faq-wrap .accordion-button:not(.collapsed){
+  color:#fff!important;background:var(--sports-primary)!important;
+  border-bottom-left-radius:0!important;border-bottom-right-radius:0!important
+}
+.sports-page .faq-wrap .accordion-button:not(.collapsed)::after{
+  filter:brightness(0) invert(1)
+}
+.sports-page .faq-wrap .accordion-body{
+  color:var(--sports-dark);line-height:1.7;padding:20px 25px;
+  background:var(--sports-soft);
+  border-bottom-left-radius:12px!important;border-bottom-right-radius:12px!important;
+  font-size:.95rem
+}
+
+.sports-page .guides{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.sports-page .guide{
+  display:block;padding:22px;border:1px solid var(--sports-line);border-radius:17px;
+  background:#fff;text-decoration:none;transition:.2s
+}
+.sports-page .guide:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(9,57,66,.07)}
+.sports-page .guide i{color:var(--sports-primary);margin-right:8px}
+.sports-page .guide h3{font-size:.98rem;color:var(--sports-ink);margin:0 0 7px}
+.sports-page .guide p{font-size:.84rem;line-height:1.55;color:var(--sports-muted);margin:0}
+
+.sports-page .final-cta{
+  padding:74px 0;background:var(--sports-soft);border-top:1px solid var(--sports-line)
+}
+.sports-page .final-cta-inner{
+  max-width:860px;margin:auto;text-align:center
+}
+.sports-page .final-cta h2{font-size:clamp(1.9rem,3vw,2.7rem);font-weight:800;margin-bottom:12px}
+.sports-page .final-cta p{max-width:650px;margin:0 auto;color:var(--sports-muted);line-height:1.7}
+.sports-page .final-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:25px}
+.sports-page .final-actions .btn{border-radius:12px;padding:13px 21px;font-weight:700}
+
+@media(max-width:991px){
+  .sports-page .hero-grid,.sports-page .intro-grid,.sports-page .visit-grid{grid-template-columns:1fr}
+  .sports-page .hero-card{min-height:260px}
+  .sports-page .process{grid-template-columns:1fr 1fr}
+  .sports-page .injury-grid{grid-template-columns:1fr 1fr}
+  .sports-page .guides{grid-template-columns:1fr 1fr}
+}
+@media(max-width:767px){
+  .sports-page .sports-hero{padding:52px 0 58px}
+  .sports-page .sports-hero h1{font-size:2.35rem}
+  .sports-page .hero-stats{grid-template-columns:1fr 1fr 1fr}
+  .sports-page .section{padding:58px 0}
+  .sports-page .process,.sports-page .injury-grid,.sports-page .guides,
+  .sports-page .sports-strip,.sports-page .steps{grid-template-columns:1fr}
+  .sports-page .intro-panel,.sports-page .visit-card{padding:25px}
+  .sports-page .hero-actions .btn{width:100%;margin:0!important}
+}
+</style>
+
 </head>
-<body>
+<body id="top">
 <!-- Modern Header with Dropdown -->
 <header class="modern-header">
 <div class="container">
@@ -362,461 +573,294 @@
 </div>
 </header>
 <!-- Main Content -->
-<main id="main-content">
-<!-- Breadcrumbs -->
-<div class="container mt-4">
-<nav aria-label="breadcrumb">
-<ol class="breadcrumb" itemscope="" itemtype="https://schema.org/BreadcrumbList">
-<li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-<a href="/" itemprop="item"><span itemprop="name">Home</span></a>
-<meta content="1" itemprop="position"/>
-</li>
-<li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-<a href="/services" itemprop="item"><span itemprop="name">Services</span></a>
-<meta content="2" itemprop="position"/>
-</li>
-<li aria-current="page" class="breadcrumb-item active" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-<span itemprop="name">Sports Physiotherapy</span>
-<meta content="3" itemprop="position"/>
-</li>
-</ol>
-</nav>
-</div>
-<!-- Hero Section -->
-<section aria-label="Sports Physiotherapy Introduction" class="service-hero">
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-lg-8">
-<div class="service-icon">
-<i class="fas fa-running"></i>
-</div>
-<h1 class="animate-fade-in">Sports Physiotherapy in Wayanad</h1>
-<p class="animate-fade-in">
-              Specialized treatment for athletes and active individuals to
-              prevent injuries, enhance performance, and ensure optimal
-              recovery from sports-related injuries.
-            </p>
-<div class="mt-3 animate-fade-in">
-<a class="btn btn-primary btn-lg me-2" href="#book-appointment">
-<i class="fas fa-calendar-check me-2"></i>Book Appointment
-              </a>
-<a class="btn btn-outline-light btn-lg" href="tel:+916282929104" rel="noopener">
-<i class="fas fa-phone-alt me-2"></i>Call Now
-              </a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Service Content -->
-<section aria-label="Sports Physiotherapy Details" class="service-content">
-<div class="container">
-<a class="back-link animate-fade-in" href="/services" rel="noopener">
-<i class="fas fa-arrow-left"></i> Back to All Services
-        </a>
-<div class="row g-5">
-<div class="col-lg-8">
-<div class="content-card animate-fade-in">
-<h3>About Sports Physiotherapy</h3>
-<p>
-                Sports physiotherapy is a specialized branch of physiotherapy
-                that focuses on preventing, assessing, and treating injuries
-                related to sports and exercise. Our sports physiotherapists in
-                Wayanad work with athletes of all levels—from recreational
-                enthusiasts to professional competitors—to optimize
-                performance and ensure safe participation in sports.
-              </p>
-<p>
-                We combine evidence-based treatment techniques with
-                sports-specific training to help athletes recover from
-                injuries, prevent future problems, and achieve their peak
-                performance potential.
-              </p>
-</div>
-<div class="content-card animate-fade-in">
-<h3>Common Sports Injuries We Treat</h3>
-<div class="row">
-<div class="col-md-6">
-<ul class="condition-list">
-<li>ACL, MCL, PCL injuries</li>
-<li>Meniscus tears</li>
-<li>Rotator cuff injuries</li>
-<li>Tennis/Golfer's elbow</li>
-<li>Ankle sprains</li>
-<li>Shin splints</li>
-</ul>
-</div>
-<div class="col-md-6">
-<ul class="condition-list">
-<li>Hamstring strains</li>
-<li>Achilles tendonitis</li>
-<li>Concussion management</li>
-<li>Stress fractures</li>
-<li>Dislocations</li>
-<li>Overuse injuries</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="animate-fade-in">
-<h3>Our Sports-Specific Approach</h3>
-<div class="row g-4 mt-3">
-<div class="col-md-6">
-<div class="treatment-card">
-<h4>
-<i class="fas fa-user-injured"></i> Injury Assessment
-                    </h4>
-<p>
-                      Comprehensive evaluation using functional movement
-                      screening, biomechanical analysis, and sport-specific
-                      testing to identify injury causes.
-                    </p>
-</div>
-</div>
-<div class="col-md-6">
-<div class="treatment-card">
-<h4>
-<i class="fas fa-dumbbell"></i> Performance Enhancement
-                    </h4>
-<p>
-                      Customized strength, conditioning, and flexibility
-                      programs to improve athletic performance and prevent
-                      injuries.
-                    </p>
-</div>
-</div>
-<div class="col-md-6">
-<div class="treatment-card">
-<h4>
-<i class="fas fa-running"></i> Sport-Specific
-                      Rehabilitation
-                    </h4>
-<p>
-                      Rehabilitation programs tailored to your specific sport
-                      demands and return-to-play goals.
-                    </p>
-</div>
-</div>
-<div class="col-md-6">
-<div class="treatment-card">
-<h4>
-<i class="fas fa-clipboard-check"></i> Return-to-Sport
-                      Planning
-                    </h4>
-<p>
-                      Structured progression plan with objective criteria to
-                      ensure safe return to training and competition.
-                    </p>
-</div>
-</div>
-</div>
-</div>
-<!-- <div class="content-card mt-4 animate-fade-in">
-                <h3>Sports We Specialize In</h3>
-                <p class="mb-4">
-                  Our sports physiotherapists have experience working with
-                  athletes from various sports disciplines:
-                </p>
 
-                <div class="sports-grid">
-                  <div class="sport-item">
-                    <i class="fas fa-futbol"></i>
-                    <span>Football</span>
-                  </div>
-                  <div class="sport-item">
-                    <i class="fas fa-basketball-ball"></i>
-                    <span>Basketball</span>
-                  </div>
-                  <div class="sport-item">
-                    <i class="fas fa-baseball-ball"></i>
-                    <span>Cricket</span>
-                  </div>
-                  <div class="sport-item">
-                    <i class="fas fa-running"></i>
-                    <span>Athletics</span>
-                  </div>
-                  <div class="sport-item">
-                    <i class="fas fa-swimmer"></i>
-                    <span>Swimming</span>
-                  </div>
-                  <div class="sport-item">
-                    <i class="fas fa-biking"></i>
-                    <span>Cycling</span>
-                  </div>
-                  <div class="sport-item">
-                    <i class="fas fa-volleyball-ball"></i>
-                    <span>Volleyball</span>
-                  </div>
-                  <div class="sport-item">
-                    <i class="fas fa-golf-ball"></i>
-                    <span>Golf</span>
-                  </div>
-                  <div class="sport-item">
-                    <i class="fas fa-hockey-puck"></i>
-                    <span>Hockey</span>
-                  </div>
-                  <div class="sport-item">
-                    <i class="fas fa-dumbbell"></i>
-                    <span>Weightlifting</span>
-                  </div>
-                  <div class="sport-item">
-                    <i class="fas fa-table-tennis"></i>
-                    <span>Table Tennis</span>
-                  </div>
-                  <div class="sport-item">
-                    <i class="fas fa-skating"></i>
-                    <span>Martial Arts</span>
-                  </div>
-                </div>
-              </div> -->
-<div class="content-card mt-4 animate-fade-in">
-<h3>What to Expect During Your Visit</h3>
-<ol class="mt-3 service-steps-list">
-<li class="mb-3">
-<strong>Comprehensive Sports Assessment:</strong> Evaluation
-                  of injury, movement patterns, and sport-specific demands
-                </li>
-<li class="mb-3">
-<strong>Biomechanical Analysis:</strong> Analysis of
-                  movement mechanics to identify injury risk factors
-                </li>
-<li class="mb-3">
-<strong>Personalized Treatment Plan:</strong> Customized
-                  rehabilitation plan based on your sport and goals
-                </li>
-<li class="mb-3">
-<strong>Sport-Specific Rehabilitation:</strong> Exercises
-                  and drills tailored to your sport requirements
-                </li>
-<li class="mb-3">
-<strong>Performance Training:</strong> Strength,
-                  conditioning, and flexibility programs to enhance
-                  performance
-                </li>
-<li>
-<strong>Return-to-Play Protocol:</strong> Graduated plan to
-                  safely return to training and competition
-                </li>
-</ol>
-</div>
-<!-- FAQ Section -->
-<div class="content-card mt-4 animate-fade-in" id="faq">
-<h2>Frequently Asked Questions — Sports Physiotherapy in Wayanad</h2>
-<div class="accordion mt-3" id="sportsFAQ">
-<div class="accordion-item">
-<h3 class="accordion-header" id="sfaq1-heading">
-<button class="accordion-button" data-bs-target="#sfaq1" data-bs-toggle="collapse" type="button">
-                      How soon after a sports injury should I start physiotherapy?
-                    </button>
-</h3>
-<div aria-labelledby="sfaq1-heading" class="accordion-collapse collapse show" id="sfaq1">
-<div class="accordion-body">
-                      You should seek sports physiotherapy assessment within 24 to 48 hours of an acute injury. Early evaluation allows proper initial management, reduces swelling, and prevents secondary complications, accelerating your return to activity.
-                    </div>
-</div>
-</div>
-<div class="accordion-item">
-<h3 class="accordion-header" id="sfaq2-heading">
-<button class="accordion-button collapsed" data-bs-target="#sfaq2" data-bs-toggle="collapse" type="button">
-                      What is sports physiotherapy and who needs it?
-                    </button>
-</h3>
-<div aria-labelledby="sfaq2-heading" class="accordion-collapse collapse" id="sfaq2">
-<div class="accordion-body">
-                      Sports physiotherapy specializes in treating and preventing injuries related to athletic activity. It is suitable for competitive athletes, recreational sports players, and anyone active in Wayanad seeking recovery from muscular or joint strain.
-                    </div>
-</div>
-</div>
-<div class="accordion-item">
-<h3 class="accordion-header" id="sfaq3-heading">
-<button class="accordion-button collapsed" data-bs-target="#sfaq3" data-bs-toggle="collapse" type="button">
-                      What are the most common sports injuries treated at Physio Dynamics?
-                    </button>
-</h3>
-<div aria-labelledby="sfaq3-heading" class="accordion-collapse collapse" id="sfaq3">
-<div class="accordion-body">
-                      We frequently treat conditions such as ACL/meniscus tears, ankle sprains, rotator cuff injuries, tennis/golfer's elbow, shin splints, and hamstring strains.
-                    </div>
-</div>
-</div>
-<div class="accordion-item">
-<h3 class="accordion-header" id="sfaq4-heading">
-<button class="accordion-button collapsed" data-bs-target="#sfaq4" data-bs-toggle="collapse" type="button">
-                      How does physiotherapy help prevent future sports injuries?
-                    </button>
-</h3>
-<div aria-labelledby="sfaq4-heading" class="accordion-collapse collapse" id="sfaq4">
-<div class="accordion-body">
-                      Our therapists conduct movement analyses to identify muscle imbalances, joint instability, or biomechanical issues. We then design custom strengthening, flexibility, and agility programs to improve durability.
-                    </div>
-</div>
-</div>
-<div class="accordion-item">
-<h3 class="accordion-header" id="sfaq5-heading">
-<button class="accordion-button collapsed" data-bs-target="#sfaq5" data-bs-toggle="collapse" type="button">
-                      How soon can I return to sports after an injury?
-                    </button>
-</h3>
-<div aria-labelledby="sfaq5-heading" class="accordion-collapse collapse" id="sfaq5">
-<div class="accordion-body">
-                      Recovery times vary by injury severity. At Physio Dynamics, we use objective return-to-sport testing to ensure your strength, agility, and joint stability are fully restored before you safely return to play.
-                    </div>
-</div>
-</div>
-</div>
-<!-- Related Clinical Guides Section -->
-<div class="content-card mt-4 animate-fade-in">
-  <h3>Related Sports Rehabilitation Guides</h3>
-  <p class="text-secondary mb-3">Explore our evidence-based patient guides written by consultant physiotherapist Sandra Thomas:</p>
-  <div class="row g-3">
-    <div class="col-md-6">
-      <div class="p-3 border rounded-3 bg-light h-100">
-        <h5 class="fs-6 fw-bold mb-1"><a href="/blogs/common-sports-injuries-and-treatment" class="text-decoration-none text-dark"><i class="fas fa-running text-primary me-2"></i>Common Sports Injuries &amp; Treatment</a></h5>
-        <p class="small text-muted mb-0">Overview of ligament tears, muscle strains, and evidence-based rehabilitation protocols.</p>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="p-3 border rounded-3 bg-light h-100">
-        <h5 class="fs-6 fw-bold mb-1"><a href="/blogs/how-sports-physiotherapy-speeds-up-recovery" class="text-decoration-none text-dark"><i class="fas fa-bolt text-primary me-2"></i>How Physiotherapy Speeds Recovery</a></h5>
-        <p class="small text-muted mb-0">How targeted mobility, electrotherapy, and progressive loading accelerate healing.</p>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="p-3 border rounded-3 bg-light h-100">
-        <h5 class="fs-6 fw-bold mb-1"><a href="/blogs/acute-vs-chronic-sports-injuries" class="text-decoration-none text-dark"><i class="fas fa-stopwatch text-primary me-2"></i>Acute vs Chronic Sports Injuries</a></h5>
-        <p class="small text-muted mb-0">Learn the critical differences in symptoms, management, and recovery timelines.</p>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="p-3 border rounded-3 bg-light h-100">
-        <h5 class="fs-6 fw-bold mb-1"><a href="/blogs/benefits-of-sports-physiotherapy-for-athletes" class="text-decoration-none text-dark"><i class="fas fa-medal text-primary me-2"></i>Benefits for Competitive Athletes</a></h5>
-        <p class="small text-muted mb-0">From injury prevention to biomechanical conditioning and peak performance.</p>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="p-3 border rounded-3 bg-light h-100">
-        <h5 class="fs-6 fw-bold mb-1"><a href="/blogs/sports-physiotherapy-vs-general-physiotherapy" class="text-decoration-none text-dark"><i class="fas fa-balance-scale text-primary me-2"></i>Sports vs General Physiotherapy</a></h5>
-        <p class="small text-muted mb-0">Understand when sport-specific biomechanical training is required.</p>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="p-3 border rounded-3 bg-light h-100">
-        <h5 class="fs-6 fw-bold mb-1"><a href="/blogs/when-to-visit-a-sports-physiotherapist" class="text-decoration-none text-dark"><i class="fas fa-user-md text-primary me-2"></i>When to Visit a Sports Physio</a></h5>
-        <p class="small text-muted mb-0">Key signs that indicate you need a specialised sports injury evaluation.</p>
-      </div>
+<main id="main-content" class="sports-page">
+
+  <div class="sports-breadcrumb">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Home</a></li>
+          <li class="breadcrumb-item"><a href="/services">Services</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Sports Physiotherapy</li>
+        </ol>
+      </nav>
     </div>
   </div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-4">
-<div class="sidebar-card animate-fade-in">
-<h4>Benefits for Athletes</h4>
-<ul class="condition-list">
-<li>Faster injury recovery</li>
-<li>Improved performance</li>
-<li>Injury prevention strategies</li>
-<li>Sport-specific conditioning</li>
-<li>Biomechanical analysis</li>
-<li>Mental resilience training</li>
-<li>Nutritional guidance referrals</li>
-</ul>
-</div>
-<div class="sidebar-card animate-fade-in">
-<h4>Prevention Programs</h4>
-<p>We offer specialized injury prevention programs for:</p>
-<ul class="condition-list">
-<li>ACL injury prevention</li>
-<li>Concussion management</li>
-<li>Overuse injury prevention</li>
-<li>Pre-season conditioning</li>
-<li>Youth athlete development</li>
-</ul>
-</div>
-<div class="sidebar-card animate-fade-in" id="book-appointment">
-<h4>Book Appointment</h4>
-<div class="text-center">
-<a class="btn btn-primary btn-lg w-100 mb-3" href="https://kapcwayanad.in/bookings/create/9" rel="noopener" target="_blank">
-<i class="fas fa-calendar-check me-2"></i>Schedule Visit
-                </a>
-<a class="btn btn-outline-primary btn-lg w-100 mb-3" href="tel:+916282929104" rel="noopener">
-<i class="fas fa-phone-alt me-2"></i>Call Now
-                </a>
-<a class="btn btn-success btn-lg w-100" href="https://wa.me/916282929104" rel="noopener" target="_blank">
-<i class="fab fa-whatsapp me-2"></i>WhatsApp Inquiry
-                </a>
-<p class="text-muted mt-3 small">
-<i class="fas fa-info-circle me-1"></i>
-                  Free initial phone consultation available
-                </p>
-</div>
-</div>
-<div class="sidebar-card animate-fade-in">
-<h4>Related Services</h4>
-<ul class="related-services">
-<li>
-<a href="/service/orthopedic-physiotherapy">Orthopedic Physiotherapy</a>
-</li>
-<li>
-<a href="/service/neurological-physiotherapy">Neurological Physiotherapy</a>
-</li>
-<li>
-<a href="/service/pediatric-physiotherapy">Pediatric Physiotherapy</a>
-</li>
-<li>
-<a href="/service/home-care">Home Care</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- CTA Section -->
 
-<section aria-label="Frequently Asked Questions" class="faq-section">
-<div class="container">
-<div class="section-title text-center">
-<h2>Frequently Asked Questions</h2>
-<p>Common questions about our treatments and services</p>
-</div>
-<div class="row justify-content-center">
-<div class="col-lg-10">
-<div class="faq-accordion animate-fade-in" itemscope="" itemtype="https://schema.org/FAQPage">
-<div class="accordion" id="faqAccordion">
-<div class="accordion-item" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question"><h3 class="accordion-header" id="headingNewOne"><button aria-controls="collapseNewOne" aria-expanded="true" class="accordion-button" data-bs-target="#collapseNewOne" data-bs-toggle="collapse" itemprop="name" type="button"><span>What is the difference between sports physiotherapy and general physiotherapy?</span></button></h3><div aria-labelledby="headingNewOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion" id="collapseNewOne" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer"><div class="accordion-body" itemprop="text"><div>Sports physiotherapy specifically focuses on athletic performance, rapid injury recovery, and preventing future sports-related injuries, often involving higher-level functional agility training compared to general physiotherapy.</div></div></div></div><div class="accordion-item" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question"><h3 class="accordion-header" id="headingNewTwo"><button aria-controls="collapseNewTwo" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseNewTwo" data-bs-toggle="collapse" itemprop="name" type="button"><span>Can you help me recover from a ligament tear?</span></button></h3><div aria-labelledby="headingNewTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="collapseNewTwo" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer"><div class="accordion-body" itemprop="text"><div>Yes, we specialize in rehabilitating acute sports injuries like ACL tears, meniscus injuries, and ankle sprains using evidence-based protocols to safely return you to your sport.</div></div></div></div><div class="accordion-item" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question"><h3 class="accordion-header" id="headingNewThree"><button aria-controls="collapseNewThree" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseNewThree" data-bs-toggle="collapse" itemprop="name" type="button"><span>How soon should I start physiotherapy after a sports injury?</span></button></h3><div aria-labelledby="headingNewThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="collapseNewThree" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer"><div class="accordion-body" itemprop="text"><div>It is best to seek an assessment within 48 to 72 hours of an acute injury. Early intervention helps control inflammation and prevents scar tissue buildup.</div></div></div></div><div class="accordion-item" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question"><h3 class="accordion-header" id="headingNewFour"><button aria-controls="collapseNewFour" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseNewFour" data-bs-toggle="collapse" itemprop="name" type="button"><span>Do you provide sports massage or kinesiology taping?</span></button></h3><div aria-labelledby="headingNewFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="collapseNewFour" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer"><div class="accordion-body" itemprop="text"><div>Yes, our sports rehab protocols often include sports massage, myofascial release, and Kinesio taping to support injured muscles and enhance blood flow.</div></div></div></div><div class="accordion-item" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question"><h3 class="accordion-header" id="headingNewFive"><button aria-controls="collapseNewFive" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseNewFive" data-bs-toggle="collapse" itemprop="name" type="button"><span>Can sports physiotherapy improve my athletic performance?</span></button></h3><div aria-labelledby="headingNewFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="collapseNewFive" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer"><div class="accordion-body" itemprop="text"><div>Absolutely. By addressing biomechanical imbalances, improving joint mobility, and enhancing core stability, we can help optimize your movement efficiency and overall athletic performance.</div></div></div></div></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section aria-label="Call to Action" class="cta-section">
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-lg-8 text-center">
-<h2 class="animate-fade-in">
-              Ready to Optimize Your Athletic Performance?
-            </h2>
-<p class="animate-fade-in">
-              Contact our sports physiotherapy specialists for a comprehensive
-              assessment and personalized performance plan.
-            </p>
-<div class="mt-4 animate-fade-in d-flex flex-column align-items-center cta-buttons">
-<a class="btn btn-primary btn-lg" href="tel:+916282929104" rel="noopener">
-<i class="fas fa-phone-alt me-2"></i>
-                Call Now: +91 62829 29104
-              </a>
-<a class="btn btn-success btn-lg" href="https://wa.me/916282929104" rel="noopener" target="_blank">
-<i class="fab fa-whatsapp me-2"></i>
-                Chat on WhatsApp
-              </a>
-</div>
-</div>
-</div>
-</div>
-</section>
+  <section class="sports-hero" aria-label="Sports Physiotherapy Introduction">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow"><i class="fas fa-running"></i> Sports Rehabilitation</div>
+          <h1>Sports Physiotherapy in Wayanad</h1>
+          <p class="lead">
+            Recover from sports injuries, rebuild strength and movement, prevent re-injury,
+            and return to the sport you love with a structured rehabilitation plan.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-light btn-lg" href="https://kapcwayanad.in/bookings/create/9" rel="noopener" target="_blank">
+              <i class="fas fa-calendar-check me-2"></i>Book Appointment
+            </a>
+            <a class="btn btn-outline-light btn-lg" href="tel:+916282929104" rel="noopener">
+              <i class="fas fa-phone-alt me-2"></i>Call Now
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-icon"><i class="fas fa-medal"></i></div>
+          <h2>From injury to confident return</h2>
+          <p>Assessment, rehabilitation, sport-specific training and return-to-play planning in one pathway.</p>
+          <div class="hero-stats">
+            <div class="hero-stat"><strong>Assess</strong><span>Find the problem</span></div>
+            <div class="hero-stat"><strong>Rebuild</strong><span>Restore capacity</span></div>
+            <div class="hero-stat"><strong>Return</strong><span>Play with confidence</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <div class="kicker">Why Sports Physiotherapy?</div>
+        <h2>More than pain relief</h2>
+        <p>Sports physiotherapy combines injury management with movement, strength and sport-specific rehabilitation.</p>
+      </div>
+
+      <div class="intro-grid">
+        <div class="intro-panel">
+          <h3>Built around your sport and your goal</h3>
+          <p>
+            Sports physiotherapy focuses on preventing, assessing and treating injuries
+            related to sports and exercise. It can support recreational players as well as
+            competitive athletes.
+          </p>
+          <p>
+            At Physio Dynamics, rehabilitation is progressed according to your injury,
+            movement needs and return-to-sport goals.
+          </p>
+        </div>
+
+        <div class="intro-panel">
+          <ul class="check-list">
+            <li><i class="fas fa-check-circle"></i><span>Injury assessment and movement screening</span></li>
+            <li><i class="fas fa-check-circle"></i><span>Strength, mobility and conditioning</span></li>
+            <li><i class="fas fa-check-circle"></i><span>Sport-specific rehabilitation</span></li>
+            <li><i class="fas fa-check-circle"></i><span>Injury prevention strategies</span></li>
+            <li><i class="fas fa-check-circle"></i><span>Structured return-to-sport progression</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="container">
+      <div class="section-heading">
+        <div class="kicker">Conditions We Treat</div>
+        <h2>Common sports injuries</h2>
+        <p>Targeted rehabilitation for common ligament, muscle, tendon and joint-related sports injuries.</p>
+      </div>
+
+      <div class="injury-grid">
+        <div class="injury-card"><div class="injury-icon"><i class="fas fa-bone"></i></div><h3>ACL, MCL &amp; PCL Injuries</h3><p>Progressive rehabilitation following ligament injury.</p></div>
+        <div class="injury-card"><div class="injury-icon"><i class="fas fa-joint"></i></div><h3>Meniscus Tears</h3><p>Movement, strength and functional rehabilitation.</p></div>
+        <div class="injury-card"><div class="injury-icon"><i class="fas fa-dumbbell"></i></div><h3>Rotator Cuff Injuries</h3><p>Shoulder mobility, control and strengthening.</p></div>
+        <div class="injury-card"><div class="injury-icon"><i class="fas fa-table-tennis"></i></div><h3>Tennis &amp; Golfer's Elbow</h3><p>Load management and progressive tendon rehabilitation.</p></div>
+        <div class="injury-card"><div class="injury-icon"><i class="fas fa-shoe-prints"></i></div><h3>Ankle Sprains</h3><p>Restore stability, balance and confidence in movement.</p></div>
+        <div class="injury-card"><div class="injury-icon"><i class="fas fa-running"></i></div><h3>Shin Splints</h3><p>Address training load and movement-related factors.</p></div>
+        <div class="injury-card"><div class="injury-icon"><i class="fas fa-walking"></i></div><h3>Hamstring Strains</h3><p>Progressive strength and return-to-running work.</p></div>
+        <div class="injury-card"><div class="injury-icon"><i class="fas fa-shoe-prints"></i></div><h3>Achilles Tendon Problems</h3><p>Gradual loading and functional progression.</p></div>
+        <div class="injury-card"><div class="injury-icon"><i class="fas fa-exclamation-triangle"></i></div><h3>Overuse Injuries</h3><p>Load, recovery and movement strategies for active people.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <div class="kicker">Our Approach</div>
+        <h2>A clear path back to your sport</h2>
+        <p>Each stage builds on the previous one so rehabilitation can move from basic recovery to sport-specific function.</p>
+      </div>
+
+      <div class="process">
+        <div class="process-card">
+          <i class="fas fa-user-injured"></i>
+          <div class="process-no">01 / ASSESS</div>
+          <h3>Injury Assessment</h3>
+          <p>Functional movement, biomechanical and sport-specific testing to understand the problem and contributing factors.</p>
+        </div>
+        <div class="process-card">
+          <i class="fas fa-dumbbell"></i>
+          <div class="process-no">02 / REBUILD</div>
+          <h3>Strength &amp; Conditioning</h3>
+          <p>Progressive strength, mobility, flexibility and conditioning based on your current capacity.</p>
+        </div>
+        <div class="process-card">
+          <i class="fas fa-running"></i>
+          <div class="process-no">03 / SPECIFIC</div>
+          <h3>Sport-Specific Rehab</h3>
+          <p>Exercises and drills are progressed toward the movement and physical demands of your sport.</p>
+        </div>
+        <div class="process-card">
+          <i class="fas fa-clipboard-check"></i>
+          <div class="process-no">04 / RETURN</div>
+          <h3>Return-to-Sport</h3>
+          <p>A structured progression using functional criteria before returning to training and competition.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="container">
+      <div class="section-heading">
+        <div class="kicker">Active People We Help</div>
+        <h2>Rehabilitation for different sports</h2>
+        <p>Training and rehabilitation can be adapted to the demands of your activity.</p>
+      </div>
+
+      <div class="sports-strip">
+        <div class="sport-chip"><i class="fas fa-futbol"></i>Football</div>
+        <div class="sport-chip"><i class="fas fa-baseball-ball"></i>Cricket</div>
+        <div class="sport-chip"><i class="fas fa-running"></i>Running</div>
+        <div class="sport-chip"><i class="fas fa-table-tennis"></i>Racket Sports</div>
+        <div class="sport-chip"><i class="fas fa-dumbbell"></i>Gym &amp; Fitness</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="visit-grid">
+        <div class="visit-card">
+          <h2>What to expect</h2>
+          <p>Your first visit is focused on understanding your injury, your movement and what you need to get back to your activity safely.</p>
+          <div class="visit-points">
+            <div><i class="fas fa-check"></i><span>Detailed injury and activity history</span></div>
+            <div><i class="fas fa-check"></i><span>Movement and functional assessment</span></div>
+            <div><i class="fas fa-check"></i><span>Personalized rehabilitation goals</span></div>
+            <div><i class="fas fa-check"></i><span>Progressive exercise and return-to-sport plan</span></div>
+          </div>
+        </div>
+
+        <div class="steps">
+          <div class="step"><strong>01. Assessment</strong><span>We evaluate the injury, movement patterns and sport-specific demands.</span></div>
+          <div class="step"><strong>02. Plan</strong><span>A rehabilitation plan is selected around your symptoms, goals and current ability.</span></div>
+          <div class="step"><strong>03. Progress</strong><span>Exercises and loading are progressed as strength, mobility and control improve.</span></div>
+          <div class="step"><strong>04. Return</strong><span>Functional work prepares you for the demands of training and competition.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-heading">
+        <div class="kicker">FAQs</div>
+        <h2>Sports physiotherapy in Wayanad</h2>
+        <p>Answers to common questions before starting sports rehabilitation.</p>
+      </div>
+
+      <div class="faq-wrap">
+        <div class="accordion" id="sportsFAQ">
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="sfaq1-heading">
+              <button class="accordion-button" data-bs-target="#sfaq1" data-bs-toggle="collapse" type="button">How soon after a sports injury should I start physiotherapy?</button>
+            </h3>
+            <div id="sfaq1" class="accordion-collapse collapse show" data-bs-parent="#sportsFAQ">
+              <div class="accordion-body">You should seek a sports physiotherapy assessment promptly after an acute injury. Early evaluation helps identify the injury and establish appropriate initial management.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="sfaq2-heading">
+              <button class="accordion-button collapsed" data-bs-target="#sfaq2" data-bs-toggle="collapse" type="button">What is sports physiotherapy and who needs it?</button>
+            </h3>
+            <div id="sfaq2" class="accordion-collapse collapse" data-bs-parent="#sportsFAQ">
+              <div class="accordion-body">Sports physiotherapy focuses on preventing, assessing and treating injuries related to athletic activity. It can help competitive athletes, recreational players and active individuals.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="sfaq3-heading">
+              <button class="accordion-button collapsed" data-bs-target="#sfaq3" data-bs-toggle="collapse" type="button">What sports injuries are commonly treated?</button>
+            </h3>
+            <div id="sfaq3" class="accordion-collapse collapse" data-bs-parent="#sportsFAQ">
+              <div class="accordion-body">Common examples include ACL and meniscus injuries, ankle sprains, rotator cuff injuries, tennis or golfer's elbow, shin splints, hamstring strains and overuse injuries.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="sfaq4-heading">
+              <button class="accordion-button collapsed" data-bs-target="#sfaq4" data-bs-toggle="collapse" type="button">Can physiotherapy help prevent future sports injuries?</button>
+            </h3>
+            <div id="sfaq4" class="accordion-collapse collapse" data-bs-parent="#sportsFAQ">
+              <div class="accordion-body">Yes. Movement assessment, progressive strengthening, flexibility work, conditioning and appropriate load management can help address factors associated with recurring injury.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="sfaq5-heading">
+              <button class="accordion-button collapsed" data-bs-target="#sfaq5" data-bs-toggle="collapse" type="button">How soon can I return to sports after an injury?</button>
+            </h3>
+            <div id="sfaq5" class="accordion-collapse collapse" data-bs-parent="#sportsFAQ">
+              <div class="accordion-body">Recovery time depends on the injury and its severity. Return-to-sport progression should be based on recovery, strength, movement quality and functional readiness rather than a fixed number of days.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="sfaq6-heading">
+              <button class="accordion-button collapsed" data-bs-target="#sfaq6" data-bs-toggle="collapse" type="button">Can sports physiotherapy improve athletic performance?</button>
+            </h3>
+            <div id="sfaq6" class="accordion-collapse collapse" data-bs-parent="#sportsFAQ">
+              <div class="accordion-body">It can support performance by addressing movement limitations, strength and conditioning needs, mobility and other physical factors relevant to your sport.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="container">
+      <div class="section-heading">
+        <div class="kicker">Patient Guides</div>
+        <h2>Sports rehabilitation resources</h2>
+        <p>Explore our sports injury and rehabilitation guides.</p>
+      </div>
+
+      <div class="guides">
+        <a class="guide" href="/blogs/common-sports-injuries-and-treatment"><h3><i class="fas fa-running me-2"></i>Common Sports Injuries &amp; Treatment</h3><p>Ligament tears, muscle strains and rehabilitation approaches.</p></a>
+        <a class="guide" href="/blogs/how-sports-physiotherapy-speeds-up-recovery"><h3><i class="fas fa-bolt me-2"></i>How Physiotherapy Speeds Recovery</h3><p>How targeted rehabilitation can support recovery and progressive loading.</p></a>
+        <a class="guide" href="/blogs/acute-vs-chronic-sports-injuries"><h3><i class="fas fa-clock me-2"></i>Acute vs Chronic Sports Injuries</h3><p>Key differences in symptoms, management and recovery.</p></a>
+        <a class="guide" href="/blogs/benefits-of-sports-physiotherapy-for-athletes"><h3><i class="fas fa-trophy me-2"></i>Benefits for Competitive Athletes</h3><p>Injury prevention, conditioning and performance-focused rehabilitation.</p></a>
+        <a class="guide" href="/blogs/sports-physiotherapy-vs-general-physiotherapy"><h3><i class="fas fa-balance-scale me-2"></i>Sports vs General Physiotherapy</h3><p>When sport-specific rehabilitation may be useful.</p></a>
+        <a class="guide" href="/blogs/when-to-visit-a-sports-physiotherapist"><h3><i class="fas fa-user-md me-2"></i>When to Visit a Sports Physio</h3><p>Signs that indicate you may benefit from a sports injury assessment.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta" aria-label="Book Sports Physiotherapy">
+    <div class="container">
+      <div class="final-cta-inner">
+        <h2>Ready to get back to your sport?</h2>
+        <p>Book a sports physiotherapy assessment at Physio Dynamics in Panamaram, Wayanad.</p>
+        <div class="final-actions">
+          <a class="btn btn-primary btn-lg" href="https://kapcwayanad.in/bookings/create/9" rel="noopener" target="_blank"><i class="fas fa-calendar-check me-2"></i>Book Appointment</a>
+          <a class="btn btn-outline-primary btn-lg" href="tel:+916282929104" rel="noopener"><i class="fas fa-phone-alt me-2"></i>Call +91 62829 29104</a>
+          <a class="btn btn-success btn-lg" href="https://wa.me/916282929104" rel="noopener" target="_blank"><i class="fab fa-whatsapp me-2"></i>WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
+
 <!-- Footer -->
 <footer class="modern-footer">
 <div class="container">
