@@ -678,81 +678,96 @@
 </div>
 </div>
 </section>
-<!-- Enhanced FAQ Section with Schema Microdata -->
-<section aria-label="Frequently Asked Questions about Physiotherapy Services" class="faq-section" itemscope="" itemtype="https://schema.org/FAQPage">
+<!-- FAQ Section -->
+<section aria-label="Frequently Asked Questions" class="faq-section">
 <div class="container">
-<div class="section-title animate-fade-in">
-<h2 itemprop="headline">Frequently Asked Questions</h2>
-<p>Common questions about our physiotherapy services</p>
-</div>
-<div class="row justify-content-center">
-<div class="col-lg-10">
-<div class="faq-accordion animate-fade-in">
-<div class="accordion" id="faqAccordion">
-<!-- FAQ Item 1 -->
-<div class="accordion-item" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
-<h3 class="accordion-header" id="headingOne">
-<button aria-controls="collapseOne" aria-expanded="true" class="accordion-button" data-bs-target="#collapseOne" data-bs-toggle="collapse" type="button">
-<span itemprop="name">Is physiotherapy effective for knee pain in Wayanad?</span>
-</button>
-</h3>
-<div aria-labelledby="headingOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion" id="collapseOne" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
-<div class="accordion-body">
-<div itemprop="text">
-                                Yes, physiotherapy is highly effective for knee pain. At Physio Dynamics, we provide specialized assessments and personalized treatment plans for knee conditions, helping patients in Wayanad regain mobility and reduce pain without surgery in many cases.
-                            </div>
-</div>
-</div>
-</div>
-<!-- FAQ Item 2 -->
-<div class="accordion-item" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
-<h3 class="accordion-header" id="headingTwo">
-<button aria-controls="collapseTwo" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseTwo" data-bs-toggle="collapse" type="button">
-<span itemprop="name">Can physiotherapy help after a stroke?</span>
-</button>
-</h3>
-<div aria-labelledby="headingTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="collapseTwo" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
-<div class="accordion-body">
-<div itemprop="text">
-                                Absolutely. Neurological physiotherapy is crucial for stroke recovery. Our specialized rehabilitation programs focus on improving balance, strength, and coordination to help stroke survivors in Wayanad regain as much independence as possible.
-                            </div>
-</div>
-</div>
-</div>
-<!-- FAQ Item 3 -->
-<div class="accordion-item" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
-<h3 class="accordion-header" id="headingThree">
-<button aria-controls="collapseThree" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseThree" data-bs-toggle="collapse" type="button">
-<span itemprop="name">Do you offer physiotherapy home visits in Wayanad?</span>
-</button>
-</h3>
-<div aria-labelledby="headingThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="collapseThree" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
-<div class="accordion-body">
-<div itemprop="text">
-                                Yes, Physio Dynamics offers professional home care physiotherapy services across Wayanad for patients who have difficulty visiting our clinic, including elderly care and post-surgical rehabilitation.
-                            </div>
-</div>
-</div>
-</div>
-<!-- FAQ Item 4 -->
-<div class="accordion-item" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
-<h3 class="accordion-header" id="headingFour">
-<button aria-controls="collapseFour" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseFour" data-bs-toggle="collapse" type="button">
-<span itemprop="name">How many physiotherapy sessions will I need?</span>
-</button>
-</h3>
-<div aria-labelledby="headingFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="collapseFour" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
-<div class="accordion-body">
-<div itemprop="text">
-                                The number of sessions depends on your specific condition, severity, and recovery goals. After your initial assessment, your physiotherapist will provide a clear treatment plan with an estimated timeline for your recovery.
-                            </div>
-</div>
-</div>
-</div>
-<div class="accordion-item" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question"><h3 class="accordion-header" id="headingNewFive"><button aria-controls="collapseNewFive" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseNewFive" data-bs-toggle="collapse" itemprop="name" type="button"><span>What types of physiotherapy services do you offer in Wayanad?</span></button></h3><div aria-labelledby="headingNewFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="collapseNewFive" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer"><div class="accordion-body" itemprop="text"><div>We offer comprehensive services including Orthopedic Physiotherapy, Sports Injury Rehabilitation, Neurological Physiotherapy, Pediatric Care, Chest Physiotherapy, and dedicated Home Care services.</div></div></div></div></div>
-</div>
-</div>
-</div>
+    <div class="section-title text-center">
+        <h2>Physiotherapy Services FAQs</h2>
+        <p>Common questions about physiotherapy services at Physio Dynamics, Wayanad</p>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="faq-accordion animate-fade-in">
+                <div class="accordion" id="servicesFaqAccordion">
+                <div class="accordion-item" itemscope itemtype="https://schema.org/Question">
+                    <h3 class="accordion-header" id="headingfaqItem1">
+                        <button class="accordion-button" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapsefaqItem1"
+                                aria-expanded="true" aria-controls="collapsefaqItem1"
+                                itemprop="name">
+                            <span>What physiotherapy services are available at Physio Dynamics?</span>
+                        </button>
+                    </h3>
+                    <div id="collapsefaqItem1" class="accordion-collapse collapse show"
+                         aria-labelledby="headingfaqItem1" data-bs-parent="#servicesFaqAccordion"
+                         itemscope itemtype="https://schema.org/Answer">
+                        <div class="accordion-body" itemprop="text">Physio Dynamics offers orthopedic physiotherapy, sports physiotherapy (including FIFA-standard sports rehab), neurological physiotherapy, paediatric physiotherapy, chest physiotherapy, and home care physiotherapy across Wayanad.</div>
+                    </div>
+                </div>
+                <div class="accordion-item" itemscope itemtype="https://schema.org/Question">
+                    <h3 class="accordion-header" id="headingfaqItem2">
+                        <button class="accordion-button collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapsefaqItem2"
+                                aria-expanded="false" aria-controls="collapsefaqItem2"
+                                itemprop="name">
+                            <span>Do I need a doctor's referral to access physiotherapy services?</span>
+                        </button>
+                    </h3>
+                    <div id="collapsefaqItem2" class="accordion-collapse collapse"
+                         aria-labelledby="headingfaqItem2" data-bs-parent="#servicesFaqAccordion"
+                         itemscope itemtype="https://schema.org/Answer">
+                        <div class="accordion-body" itemprop="text">No referral is required. You can book directly with Dr. Sandra Thomas for an initial physiotherapy assessment. If further medical investigation is needed, Dr. Sandra Thomas will advise you appropriately.</div>
+                    </div>
+                </div>
+                <div class="accordion-item" itemscope itemtype="https://schema.org/Question">
+                    <h3 class="accordion-header" id="headingfaqItem3">
+                        <button class="accordion-button collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapsefaqItem3"
+                                aria-expanded="false" aria-controls="collapsefaqItem3"
+                                itemprop="name">
+                            <span>How are treatment plans personalised at Physio Dynamics?</span>
+                        </button>
+                    </h3>
+                    <div id="collapsefaqItem3" class="accordion-collapse collapse"
+                         aria-labelledby="headingfaqItem3" data-bs-parent="#servicesFaqAccordion"
+                         itemscope itemtype="https://schema.org/Answer">
+                        <div class="accordion-body" itemprop="text">Every patient receives a comprehensive initial assessment with Dr. Sandra Thomas. Based on your clinical findings, lifestyle, goals, and physical demands, a personalised treatment plan is created — covering manual therapy, exercise rehabilitation, and patient education.</div>
+                    </div>
+                </div>
+                <div class="accordion-item" itemscope itemtype="https://schema.org/Question">
+                    <h3 class="accordion-header" id="headingfaqItem4">
+                        <button class="accordion-button collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapsefaqItem4"
+                                aria-expanded="false" aria-controls="collapsefaqItem4"
+                                itemprop="name">
+                            <span>Are physiotherapy sessions one-on-one at Physio Dynamics?</span>
+                        </button>
+                    </h3>
+                    <div id="collapsefaqItem4" class="accordion-collapse collapse"
+                         aria-labelledby="headingfaqItem4" data-bs-parent="#servicesFaqAccordion"
+                         itemscope itemtype="https://schema.org/Answer">
+                        <div class="accordion-body" itemprop="text">Yes. Every session at Physio Dynamics is a dedicated one-on-one consultation directly with Dr. Sandra Thomas. We do not use shared group sessions or delegate treatment to assistants, ensuring full clinical attention for every patient.</div>
+                    </div>
+                </div>
+                <div class="accordion-item" itemscope itemtype="https://schema.org/Question">
+                    <h3 class="accordion-header" id="headingfaqItem5">
+                        <button class="accordion-button collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapsefaqItem5"
+                                aria-expanded="false" aria-controls="collapsefaqItem5"
+                                itemprop="name">
+                            <span>What payment methods are accepted at Physio Dynamics?</span>
+                        </button>
+                    </h3>
+                    <div id="collapsefaqItem5" class="accordion-collapse collapse"
+                         aria-labelledby="headingfaqItem5" data-bs-parent="#servicesFaqAccordion"
+                         itemscope itemtype="https://schema.org/Answer">
+                        <div class="accordion-body" itemprop="text">Physio Dynamics accepts cash payments and major UPI payment methods. Please contact us directly on +91 62829 29104 for information about fees and payment arrangements prior to your appointment.</div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </section>
 </main>
