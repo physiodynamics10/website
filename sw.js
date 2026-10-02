@@ -1,4 +1,4 @@
-const CACHE_NAME = 'physio-dynamics-v8';
+const CACHE_NAME = 'physio-dynamics-v9';
 const ASSETS = [
   '/',
   '/index.html',
@@ -11,6 +11,7 @@ const ASSETS = [
   '/blogs/lower-back-pain-physiotherapy-exercises',
   '/blogs/sports-injury-recovery-physiotherapy',
   '/blogs/frozen-shoulder-physiotherapy-treatment',
+  '/blogs/neck-pain-cervical-spondylosis-physiotherapy-wayanad',
   '/css/style.css',
   '/css/bootstrap.min.css',
   '/js/main.js',
