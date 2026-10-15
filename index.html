@@ -6,10 +6,10 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('consent', 'default', {
-            'analytics_storage': 'granted',
-            'ad_storage': 'granted',
-            'ad_user_data': 'granted',
-            'ad_personalization': 'granted',
+            'analytics_storage': 'denied',
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
             'wait_for_update': 500
         });
     </script>
@@ -25,6 +25,8 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Physio Dynamics | Best Physiotherapy Clinic in Wayanad</title>
 <link href="https://www.physio-dynamics.com/" rel="canonical"/>
+<link href="https://www.physio-dynamics.com/" hreflang="en" rel="alternate"/>
+<link href="https://www.physio-dynamics.com/" hreflang="x-default" rel="alternate"/>
 <meta content="Expert physiotherapy in Wayanad: Knee &amp; back pain relief, sports rehab &amp; stroke recovery at Physio Dynamics, Panamaram. Book: +91 62829 29104." name="description"/>
 <meta content="physiotherapy Wayanad, consultant physiotherapist Wayanad, physiotherapy Panamaram, best physiotherapy clinic Wayanad, sports physiotherapy Wayanad, knee pain treatment Wayanad, back pain physiotherapy Kerala, neurological physiotherapy Wayanad, pediatric physiotherapy Wayanad, home care physiotherapy Wayanad, stroke rehabilitation Wayanad" name="keywords"/>
 <meta content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" name="robots"/>
@@ -70,6 +72,7 @@
 <!-- Font Awesome Icons -->
 <link href="/css/font-awesome-purged.min.css" rel="stylesheet"/>
 <!-- Favicons -->
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="/android-chrome-192.png" rel="icon" sizes="192x192" type="image/png"/>
 <link href="/android-chrome-512.png" rel="icon" sizes="512x512" type="image/png"/>
 <link href="/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
@@ -92,7 +95,7 @@
           "inLanguage": "en-IN"
         },
         {
-          "@type": "MedicalClinic",
+          "@type": ["MedicalClinic", "Organization"],
           "@id": "https://www.physio-dynamics.com/#clinic",
           "name": "Physio Dynamics",
           "image": "https://www.physio-dynamics.com/clinic-interior.webp",
@@ -136,13 +139,33 @@
             "Chest Physiotherapy",
             "Home Care Physiotherapy"
           ],
-          "founder": {
-            "@type": "Person",
-            "@id": "https://www.physio-dynamics.com/#founder",
-            "name": "Sandra Thomas",
-            "jobTitle": "Founder & Consultant Physiotherapist",
-            "credential": "BPT, CTTP, CAIASTM, CCTh, FIFA Diploma in Football Medicine, HCPC (UK) Registered Physiotherapist, ID: PH142734"
-          }
+          "foundingDate": "2024-08-20",
+          "knowsAbout": [
+            "Physiotherapy",
+            "Orthopedic Rehabilitation",
+            "Sports Injury Recovery",
+            "Neurological Physiotherapy",
+            "Stroke Rehabilitation",
+            "Pediatric Physiotherapy",
+            "Chest Physiotherapy",
+            "Post-Surgical Rehabilitation",
+            "Knee Pain Treatment",
+            "Back Pain Treatment",
+            "Home Care Physiotherapy"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Physiotherapy Services",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Orthopedic Physiotherapy", "url": "https://www.physio-dynamics.com/service/orthopedic-physiotherapy" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sports Physiotherapy", "url": "https://www.physio-dynamics.com/service/sports-physiotherapy" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Neurological Physiotherapy", "url": "https://www.physio-dynamics.com/service/neurological-physiotherapy" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pediatric Physiotherapy", "url": "https://www.physio-dynamics.com/service/pediatric-physiotherapy" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Chest Physiotherapy", "url": "https://www.physio-dynamics.com/service/chest-physiotherapy" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Home Care Physiotherapy", "url": "https://www.physio-dynamics.com/service/home-care" } }
+            ]
+          },
+          "founder": { "@id": "https://www.physio-dynamics.com/#founder" }
         },
         {
           "@type": "FAQPage",
@@ -212,6 +235,39 @@
           "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.physio-dynamics.com/"}
           ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.physio-dynamics.com/#founder",
+          "name": "Sandra Thomas",
+          "jobTitle": "Founder & Consultant Physiotherapist",
+          "url": "https://www.physio-dynamics.com/expert-profile",
+          "image": "https://www.physio-dynamics.com/img/sandra-thomas.jpeg",
+          "sameAs": [
+            "https://www.linkedin.com/in/sandrathomas10/"
+          ],
+          "hasCredential": [
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "degree",
+              "name": "Bachelor of Physiotherapy (BPT)"
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "certificate",
+              "name": "FIFA Diploma in Football Medicine"
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "license",
+              "name": "HCPC (UK) Registered Physiotherapist",
+              "recognizedBy": {
+                "@type": "Organization",
+                "name": "Health and Care Professions Council"
+              }
+            }
+          ],
+          "worksFor": { "@id": "https://www.physio-dynamics.com/#clinic" }
         }
       ]
     }
@@ -307,7 +363,7 @@
 <div class="container">
 <nav class="navbar navbar-expand-lg">
 <a class="navbar-brand" href="/">
-<img alt="Physio Dynamics Logo - Wayanad's leading physiotherapy clinic" height="40" loading="eager" src="/logo.png" width="40"/>
+<img alt="Physio Dynamics Logo - Wayanad's leading physiotherapy clinic" fetchpriority="high" height="40" loading="eager" src="/logo.png" width="40"/>
 <span>Physio Dynamics</span>
 </a>
 <button aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
@@ -633,7 +689,7 @@
             <a href="/blogs/what-is-sports-physiotherapy" class="text-decoration-none d-block h-100">
                 <div class="h-100 rounded-4 overflow-hidden bg-white shadow-sm d-flex flex-column" style="border: 1px solid rgba(6,146,171,0.09); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 16px 40px rgba(6,146,171,0.14)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
                     <div style="height: 210px; overflow: hidden; position: relative;">
-                        <img src="/img/blog-sports-injury-hero.jpg" alt="What is Sports Physiotherapy" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform=''"/>
+                        <img src="/img/blog-sports-injury-hero.jpg" alt="What is Sports Physiotherapy" loading="lazy" width="1024" height="682" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform=''"/>
                         <span style="position: absolute; top: 14px; left: 14px; background: rgba(6,146,171,0.92); color: #fff; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding: 4px 12px; border-radius: 50px; backdrop-filter: blur(6px);">Sports Rehab</span>
                     </div>
                     <div class="p-4 d-flex flex-column flex-grow-1">
@@ -657,7 +713,7 @@
             <a href="/blogs/post-surgery-rehabilitation-knee-replacement" class="text-decoration-none d-block h-100">
                 <div class="h-100 rounded-4 overflow-hidden bg-white shadow-sm d-flex flex-column" style="border: 1px solid rgba(6,146,171,0.09); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 16px 40px rgba(6,146,171,0.14)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
                     <div style="height: 210px; overflow: hidden; position: relative;">
-                        <img src="/img/blog-knee-replacement-hero.jpg" alt="Knee Replacement Rehabilitation" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform=''"/>
+                        <img src="/img/blog-knee-replacement-hero.jpg" alt="Knee Replacement Rehabilitation" loading="lazy" width="1024" height="682" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform=''"/>
                         <span style="position: absolute; top: 14px; left: 14px; background: rgba(6,146,171,0.92); color: #fff; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding: 4px 12px; border-radius: 50px; backdrop-filter: blur(6px);">Joint Recovery</span>
                     </div>
                     <div class="p-4 d-flex flex-column flex-grow-1">
@@ -681,7 +737,7 @@
             <a href="/blogs/acute-vs-chronic-sports-injuries" class="text-decoration-none d-block h-100">
                 <div class="h-100 rounded-4 overflow-hidden bg-white shadow-sm d-flex flex-column" style="border: 1px solid rgba(6,146,171,0.09); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 16px 40px rgba(6,146,171,0.14)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
                     <div style="height: 210px; overflow: hidden; position: relative;">
-                        <img src="/img/blog-acute-chronic-hero.jpg" alt="Acute vs Chronic Sports Injuries" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform=''"/>
+                        <img src="/img/blog-acute-chronic-hero.jpg" alt="Acute vs Chronic Sports Injuries" loading="lazy" width="1024" height="682" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform=''"/>
                         <span style="position: absolute; top: 14px; left: 14px; background: rgba(6,146,171,0.92); color: #fff; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding: 4px 12px; border-radius: 50px; backdrop-filter: blur(6px);">Injury Care</span>
                     </div>
                     <div class="p-4 d-flex flex-column flex-grow-1">

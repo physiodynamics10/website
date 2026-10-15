@@ -163,6 +163,9 @@
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
     Content-Security-Policy = "default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; script-src 'self' https: 'unsafe-inline' 'unsafe-eval'; frame-src 'self' https:; img-src 'self' https: data:; connect-src 'self' https: wss:;"
+    Cross-Origin-Opener-Policy = "same-origin"
+    Cross-Origin-Embedder-Policy = "unsafe-none"
+    Cross-Origin-Resource-Policy = "cross-origin"
 
 # Caching for Static Assets
 [[headers]]
