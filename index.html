@@ -49,7 +49,7 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link crossorigin="" href="https://cdnjs.cloudflare.com" rel="preconnect"/>
 <link href="https://maps.googleapis.com" rel="dns-prefetch"/>
-<link as="image" href="/logo.png" rel="preload"/>
+<link as="image" href="/logo-70.webp" rel="preload" type="image/webp"/>
 <!-- CSS Preloads -->
 <link rel="preload" href="/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="/css/bootstrap.min.css"></noscript>
@@ -367,7 +367,10 @@ body{margin:0;font-family:Inter,sans-serif;color:var(--dark);background-color:#f
 <div class="container">
 <nav class="navbar navbar-expand-lg">
 <a class="navbar-brand" href="/">
-<img alt="Physio Dynamics Logo - Wayanad's leading physiotherapy clinic" fetchpriority="high" height="40" loading="eager" src="/logo.png" width="40"/>
+<picture>
+<source type="image/webp" srcset="/logo-70.webp 1x, /logo-140.webp 2x">
+<img alt="Physio Dynamics Logo - Wayanad's leading physiotherapy clinic" fetchpriority="high" height="40" loading="eager" src="/logo-70.png" srcset="/logo-70.png 1x, /logo-140.png 2x" width="40"/>
+</picture>
 <span>Physio Dynamics</span>
 </a>
 <button aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
@@ -718,7 +721,12 @@ body{margin:0;font-family:Inter,sans-serif;color:var(--dark);background-color:#f
             <a href="/blogs/what-is-sports-physiotherapy" class="text-decoration-none d-block h-100">
                 <div class="h-100 rounded-4 overflow-hidden bg-white shadow-sm d-flex flex-column" style="border: 1px solid rgba(0,103,121,0.12); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 16px 40px rgba(0,103,121,0.14)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
                     <div style="height: 210px; overflow: hidden; position: relative;">
-                        <img src="/img/blog-sports-injury-hero.jpg" alt="What is Sports Physiotherapy" loading="lazy" width="1024" height="682" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform=''"/>
+                        <picture>
+                            <source type="image/avif" srcset="/img/blog-sports-injury-hero-480.avif 480w, /img/blog-sports-injury-hero-640.avif 640w, /img/blog-sports-injury-hero-1024.avif 1024w" sizes="(max-width: 576px) 480px, (max-width: 991px) 640px, 480px">
+                            <source type="image/webp" srcset="/img/blog-sports-injury-hero-480.webp 480w, /img/blog-sports-injury-hero-640.webp 640w, /img/blog-sports-injury-hero-1024.webp 1024w" sizes="(max-width: 576px) 480px, (max-width: 991px) 640px, 480px">
+                            <source type="image/jpeg" srcset="/img/blog-sports-injury-hero-480.jpg 480w, /img/blog-sports-injury-hero-640.jpg 640w, /img/blog-sports-injury-hero.jpg 1024w" sizes="(max-width: 576px) 480px, (max-width: 991px) 640px, 480px">
+                            <img src="/img/blog-sports-injury-hero.jpg" alt="What is Sports Physiotherapy" loading="lazy" width="480" height="319" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform=''"/>
+                        </picture>
                         <span style="position: absolute; top: 14px; left: 14px; background: rgba(0,103,121,0.95); color: #fff; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding: 4px 12px; border-radius: 50px; backdrop-filter: blur(6px);">Sports Rehab</span>
                     </div>
                     <div class="p-4 d-flex flex-column flex-grow-1">
@@ -727,7 +735,11 @@ body{margin:0;font-family:Inter,sans-serif;color:var(--dark);background-color:#f
                         <p class="flex-grow-1 mb-3" style="font-size: 0.91rem; color: #475569; line-height: 1.65;">Discover how specialized sports physiotherapy helps athletes recover faster, prevent recurring injuries, and enhance performance.</p>
                         <div class="d-flex align-items-center justify-content-between pt-3" style="border-top: 1px solid #f1f5f9;">
                             <div class="d-flex align-items-center gap-2">
-                                <img src="/img/sandra-thomas.jpeg" alt="Dr. Sandra Thomas (PT)" width="26" height="26" style="border-radius: 50%; object-fit: cover; border: 2px solid #95d0db;"/>
+                                <picture>
+                                    <source type="image/avif" srcset="/img/sandra-thomas-39.avif 1x, /img/sandra-thomas-78.avif 2x">
+                                    <source type="image/webp" srcset="/img/sandra-thomas-39.webp 1x, /img/sandra-thomas-78.webp 2x">
+                                    <img src="/img/sandra-thomas-78.webp" alt="Dr. Sandra Thomas (PT)" width="26" height="26" loading="lazy" style="border-radius: 50%; object-fit: cover; border: 2px solid #95d0db;"/>
+                                </picture>
                                 <span style="font-size: 0.8rem; color: #334155; font-weight: 600;">Dr. Sandra Thomas (PT)</span>
                             </div>
                             <span style="font-size: 0.85rem; font-weight: 700; color: #006779;">Read Guide <i class="fas fa-arrow-right ms-1"></i></span>
@@ -742,7 +754,12 @@ body{margin:0;font-family:Inter,sans-serif;color:var(--dark);background-color:#f
             <a href="/blogs/post-surgery-rehabilitation-knee-replacement" class="text-decoration-none d-block h-100">
                 <div class="h-100 rounded-4 overflow-hidden bg-white shadow-sm d-flex flex-column" style="border: 1px solid rgba(0,103,121,0.12); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 16px 40px rgba(0,103,121,0.14)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
                     <div style="height: 210px; overflow: hidden; position: relative;">
-                        <img src="/img/blog-knee-replacement-hero.jpg" alt="Knee Replacement Rehabilitation" loading="lazy" width="1024" height="682" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform=''"/>
+                        <picture>
+                            <source type="image/avif" srcset="/img/blog-knee-replacement-hero-480.avif 480w, /img/blog-knee-replacement-hero-640.avif 640w, /img/blog-knee-replacement-hero-1024.avif 1024w" sizes="(max-width: 576px) 480px, (max-width: 991px) 640px, 480px">
+                            <source type="image/webp" srcset="/img/blog-knee-replacement-hero-480.webp 480w, /img/blog-knee-replacement-hero-640.webp 640w, /img/blog-knee-replacement-hero-1024.webp 1024w" sizes="(max-width: 576px) 480px, (max-width: 991px) 640px, 480px">
+                            <source type="image/jpeg" srcset="/img/blog-knee-replacement-hero-480.jpg 480w, /img/blog-knee-replacement-hero-640.jpg 640w, /img/blog-knee-replacement-hero.jpg 1024w" sizes="(max-width: 576px) 480px, (max-width: 991px) 640px, 480px">
+                            <img src="/img/blog-knee-replacement-hero.jpg" alt="Knee Replacement Rehabilitation" loading="lazy" width="480" height="319" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform=''"/>
+                        </picture>
                         <span style="position: absolute; top: 14px; left: 14px; background: rgba(0,103,121,0.95); color: #fff; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding: 4px 12px; border-radius: 50px; backdrop-filter: blur(6px);">Joint Recovery</span>
                     </div>
                     <div class="p-4 d-flex flex-column flex-grow-1">
@@ -751,7 +768,11 @@ body{margin:0;font-family:Inter,sans-serif;color:var(--dark);background-color:#f
                         <p class="flex-grow-1 mb-3" style="font-size: 0.91rem; color: #475569; line-height: 1.65;">Essential recovery timeline, safe exercises, and mobility milestones to regain pain-free walking after total knee arthroplasty.</p>
                         <div class="d-flex align-items-center justify-content-between pt-3" style="border-top: 1px solid #f1f5f9;">
                             <div class="d-flex align-items-center gap-2">
-                                <img src="/img/sandra-thomas.jpeg" alt="Dr. Sandra Thomas (PT)" width="26" height="26" style="border-radius: 50%; object-fit: cover; border: 2px solid #95d0db;"/>
+                                <picture>
+                                    <source type="image/avif" srcset="/img/sandra-thomas-39.avif 1x, /img/sandra-thomas-78.avif 2x">
+                                    <source type="image/webp" srcset="/img/sandra-thomas-39.webp 1x, /img/sandra-thomas-78.webp 2x">
+                                    <img src="/img/sandra-thomas-78.webp" alt="Dr. Sandra Thomas (PT)" width="26" height="26" loading="lazy" style="border-radius: 50%; object-fit: cover; border: 2px solid #95d0db;"/>
+                                </picture>
                                 <span style="font-size: 0.8rem; color: #334155; font-weight: 600;">Dr. Sandra Thomas (PT)</span>
                             </div>
                             <span style="font-size: 0.85rem; font-weight: 700; color: #006779;">Read Guide <i class="fas fa-arrow-right ms-1"></i></span>
@@ -766,7 +787,12 @@ body{margin:0;font-family:Inter,sans-serif;color:var(--dark);background-color:#f
             <a href="/blogs/acute-vs-chronic-sports-injuries" class="text-decoration-none d-block h-100">
                 <div class="h-100 rounded-4 overflow-hidden bg-white shadow-sm d-flex flex-column" style="border: 1px solid rgba(0,103,121,0.12); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 16px 40px rgba(0,103,121,0.14)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
                     <div style="height: 210px; overflow: hidden; position: relative;">
-                        <img src="/img/blog-acute-chronic-hero.jpg" alt="Acute vs Chronic Sports Injuries" loading="lazy" width="1024" height="682" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform=''"/>
+                        <picture>
+                            <source type="image/avif" srcset="/img/blog-acute-chronic-hero-480.avif 480w, /img/blog-acute-chronic-hero-640.avif 640w, /img/blog-acute-chronic-hero-1024.avif 1024w" sizes="(max-width: 576px) 480px, (max-width: 991px) 640px, 480px">
+                            <source type="image/webp" srcset="/img/blog-acute-chronic-hero-480.webp 480w, /img/blog-acute-chronic-hero-640.webp 640w, /img/blog-acute-chronic-hero-1024.webp 1024w" sizes="(max-width: 576px) 480px, (max-width: 991px) 640px, 480px">
+                            <source type="image/jpeg" srcset="/img/blog-acute-chronic-hero-480.jpg 480w, /img/blog-acute-chronic-hero-640.jpg 640w, /img/blog-acute-chronic-hero.jpg 1024w" sizes="(max-width: 576px) 480px, (max-width: 991px) 640px, 480px">
+                            <img src="/img/blog-acute-chronic-hero.jpg" alt="Acute vs Chronic Sports Injuries" loading="lazy" width="480" height="319" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform=''"/>
+                        </picture>
                         <span style="position: absolute; top: 14px; left: 14px; background: rgba(0,103,121,0.95); color: #fff; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding: 4px 12px; border-radius: 50px; backdrop-filter: blur(6px);">Injury Care</span>
                     </div>
                     <div class="p-4 d-flex flex-column flex-grow-1">
@@ -775,7 +801,11 @@ body{margin:0;font-family:Inter,sans-serif;color:var(--dark);background-color:#f
                         <p class="flex-grow-1 mb-3" style="font-size: 0.91rem; color: #475569; line-height: 1.65;">Learn the key differences between sudden sprains and repetitive overuse injuries, and the right physiotherapy steps for permanent healing.</p>
                         <div class="d-flex align-items-center justify-content-between pt-3" style="border-top: 1px solid #f1f5f9;">
                             <div class="d-flex align-items-center gap-2">
-                                <img src="/img/sandra-thomas.jpeg" alt="Dr. Sandra Thomas (PT)" width="26" height="26" style="border-radius: 50%; object-fit: cover; border: 2px solid #95d0db;"/>
+                                <picture>
+                                    <source type="image/avif" srcset="/img/sandra-thomas-39.avif 1x, /img/sandra-thomas-78.avif 2x">
+                                    <source type="image/webp" srcset="/img/sandra-thomas-39.webp 1x, /img/sandra-thomas-78.webp 2x">
+                                    <img src="/img/sandra-thomas-78.webp" alt="Dr. Sandra Thomas (PT)" width="26" height="26" loading="lazy" style="border-radius: 50%; object-fit: cover; border: 2px solid #95d0db;"/>
+                                </picture>
                                 <span style="font-size: 0.8rem; color: #334155; font-weight: 600;">Dr. Sandra Thomas (PT)</span>
                             </div>
                             <span style="font-size: 0.85rem; font-weight: 700; color: #006779;">Read Guide <i class="fas fa-arrow-right ms-1"></i></span>

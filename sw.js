@@ -1,4 +1,4 @@
-const CACHE_NAME = 'physio-dynamics-v10';
+const CACHE_NAME = 'physio-dynamics-v11';
 const ASSETS = [
   '/',
   '/index.html',
@@ -17,6 +17,8 @@ const ASSETS = [
   '/js/main.js',
   '/js/bootstrap.bundle.min.js',
   '/logo.png',
+  '/logo-70.webp',
+  '/logo-140.webp',
   '/clinic-interior.webp',
   '/site.webmanifest'
 ];
