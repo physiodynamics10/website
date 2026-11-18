@@ -17,6 +17,12 @@
   force = true
 
 [[redirects]]
+  from = "http://physiodynamics.netlify.app/*"
+  to = "https://www.physio-dynamics.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "http://physio-dynamics.com/*"
   to = "https://www.physio-dynamics.com/:splat"
   status = 301
@@ -148,13 +154,35 @@
 # REAL 404 (STATIC SITE)
 # --------------------------------------------------
 [[redirects]]
+  from = "/404"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/404.html"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
   from = "/*"
   to = "/404.html"
   status = 404
 
 # --------------------------------------------------
-# SECURITY HEADERS
+# SECURITY & ROBOTS HEADERS
 # --------------------------------------------------
+[[headers]]
+  for = "/google89be9aab9d25c09c*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/404*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
 [[headers]]
   for = "/*"
   [headers.values]

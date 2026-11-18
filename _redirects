@@ -1,12 +1,31 @@
 # Force https + www
 http://physio-dynamics.com/* https://www.physio-dynamics.com/:splat 301!
 https://physio-dynamics.com/* https://www.physio-dynamics.com/:splat 301!
+http://physiodynamics.netlify.app/* https://www.physio-dynamics.com/:splat 301!
+https://physiodynamics.netlify.app/* https://www.physio-dynamics.com/:splat 301!
 
 # Redirects for SEO stability
 /ml/* / 301
 /ml / 301
 /team.html /expert-profile 301
 /team /expert-profile 301
+/blogs/role-of-physiotherapy-in-pain-management /blogs 301
+/blogs/parkinsons-disease-physiotherapy-kerala /service/neurological-physiotherapy 301
+
+# Clean URL redirects (.html to clean extensionless)
+/service/sports-physiotherapy.html /service/sports-physiotherapy 301
+/service/chest-physiotherapy.html /service/chest-physiotherapy 301
+/service/orthopedic-physiotherapy.html /service/orthopedic-physiotherapy 301
+/service/neurological-physiotherapy.html /service/neurological-physiotherapy 301
+/service/pediatric-physiotherapy.html /service/pediatric-physiotherapy 301
+/service/home-care.html /service/home-care 301
+/about.html /about 301
+/contact.html /contact 301
+/services.html /services 301
+/expert-profile.html /expert-profile 301
+/blogs.html /blogs 301
+/privacy-policy.html /privacy-policy 301
+/terms-of-service.html /terms-of-service 301
 
 # Trailing slash redirects (fix Google Redirect errors)
 /about/ /about 301
@@ -25,5 +44,9 @@ https://physio-dynamics.com/* https://www.physio-dynamics.com/:splat 301!
 /privacy-policy/ /privacy-policy 301
 /terms-of-service/ /terms-of-service 301
 
-# Proper 404 handling
+# Direct 404 URL handling (return true 404 status code)
+/404 /404.html 404
+/404.html /404.html 404
+
+# Proper 404 handling fallback
 /* /404.html 404

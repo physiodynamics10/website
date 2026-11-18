@@ -170,47 +170,82 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@type": ["MedicalTherapy", "Service"],
+  "@id": "https://www.physio-dynamics.com/service/chest-physiotherapy#service",
+  "name": "Chest Physiotherapy in Wayanad",
+  "alternateName": "Respiratory Physiotherapy & Pulmonary Rehabilitation in Wayanad",
+  "serviceType": "Chest Physiotherapy & Pulmonary Rehabilitation",
+  "provider": {
+    "@type": "MedicalClinic",
+    "@id": "https://www.physio-dynamics.com/#clinic",
+    "name": "Physio Dynamics",
+    "url": "https://www.physio-dynamics.com",
+    "telephone": "+916282929104",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "UB City Centre, Main Road",
+      "addressLocality": "Panamaram",
+      "addressRegion": "Kerala",
+      "postalCode": "670721",
+      "addressCountry": "IN"
+    }
+  },
+  "areaServed": [
+    { "@type": "AdministrativeArea", "name": "Wayanad" },
+    { "@type": "City", "name": "Panamaram" },
+    { "@type": "City", "name": "Mananthavady" },
+    { "@type": "City", "name": "Kalpetta" },
+    { "@type": "City", "name": "Sulthan Bathery" }
+  ],
+  "description": "Specialized chest physiotherapy, airway clearance techniques (ACBT), and pulmonary rehabilitation in Wayanad by Dr. Sandra Thomas. Expert treatment for COPD, asthma, bronchiectasis, post-pneumonia, and post-COVID recovery with clinic and home care options.",
+  "url": "https://www.physio-dynamics.com/service/chest-physiotherapy",
+  "medicalSpecialty": "Pulmonary"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.physio-dynamics.com/service/chest-physiotherapy#faq",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is chest physiotherapy safe for children with asthma?",
+      "name": "What is chest physiotherapy and who needs it?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, gentle chest physiotherapy techniques (such as guided breathing exercises, airway clearance techniques, and relaxed diaphragmatic breathing) are completely safe and effective for children with asthma under expert supervision at Physio Dynamics, Wayanad."
+        "text": "Chest physiotherapy uses specific techniques to improve breathing, clear airway secretions, and enhance lung function. It is recommended for patients with COPD, asthma, pneumonia, cystic fibrosis, post-COVID respiratory issues, or those recovering from chest surgery."
       }
     },
     {
       "@type": "Question",
-      "name": "What is chest physiotherapy and how does it help?",
+      "name": "What techniques are used in chest physiotherapy?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chest physiotherapy (or pulmonary physiotherapy) is a specialized treatment designed to improve respiratory function, clear mucus from the lungs, and make breathing easier. It utilizes techniques like postural drainage, percussion, vibration, and breathing exercises."
+        "text": "Techniques include percussion and vibration, postural drainage, breathing exercises (such as diaphragmatic breathing and pursed-lip breathing), active cycle of breathing technique (ACBT), and the use of incentive spirometry to improve lung capacity."
       }
     },
     {
       "@type": "Question",
-      "name": "How does pulmonary rehabilitation benefit COPD patients?",
+      "name": "Can chest physiotherapy help after COVID-19?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Pulmonary rehabilitation strengthens the diaphragm and intercostal muscles, trains efficient breathing patterns, clears stubborn sputum, and gradually builds physical stamina. This reduces breathlessness and minimizes hospital admissions for COPD patients."
+        "text": "Yes. Chest physiotherapy is highly effective for managing post-COVID respiratory complications such as breathlessness, reduced exercise tolerance, and persistent cough. A structured pulmonary rehabilitation programme helps restore lung capacity and daily function."
       }
     },
     {
       "@type": "Question",
-      "name": "How quickly can I expect improvement from chest physiotherapy?",
+      "name": "Is chest physiotherapy painful?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Many patients experience immediate relief in breathing ease and sputum clearance following a single session. For chronic conditions like COPD or bronchiectasis, lasting improvements in lung capacity and stamina occur with 4 to 8 weeks of consistent therapy."
+        "text": "Chest physiotherapy is not painful when performed correctly. Percussion and vibration techniques may feel unusual initially, but they are safe and performed within the patient's comfort. Dr. Sandra Thomas carefully monitors your response throughout each session."
       }
     },
     {
       "@type": "Question",
-      "name": "Do you provide home visits for chest physiotherapy in Wayanad?",
+      "name": "Can children receive chest physiotherapy?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, Physio Dynamics provides dedicated home care chest physiotherapy across Wayanad for patients with severe shortness of breath or restricted mobility who cannot easily visit the clinic."
+        "text": "Yes. Children with recurrent respiratory infections, asthma, or cystic fibrosis frequently benefit from paediatric chest physiotherapy. Dr. Sandra Thomas uses child-appropriate techniques to ensure a comfortable and effective treatment experience."
       }
     }
   ]
@@ -738,79 +773,69 @@
         <div class="col-lg-10">
             <div class="faq-accordion animate-fade-in">
                 <div class="accordion" id="chestFaqAccordion">
-                <div class="accordion-item" itemscope itemtype="https://schema.org/Question">
+                <div class="accordion-item">
                     <h3 class="accordion-header" id="headingfaqItem1">
                         <button class="accordion-button" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapsefaqItem1"
-                                aria-expanded="true" aria-controls="collapsefaqItem1"
-                                itemprop="name">
+                                aria-expanded="true" aria-controls="collapsefaqItem1">
                             <span>What is chest physiotherapy and who needs it?</span>
                         </button>
                     </h3>
                     <div id="collapsefaqItem1" class="accordion-collapse collapse show"
-                         aria-labelledby="headingfaqItem1" data-bs-parent="#chestFaqAccordion"
-                         itemscope itemtype="https://schema.org/Answer">
-                        <div class="accordion-body" itemprop="text">Chest physiotherapy uses specific techniques to improve breathing, clear airway secretions, and enhance lung function. It is recommended for patients with COPD, asthma, pneumonia, cystic fibrosis, post-COVID respiratory issues, or those recovering from chest surgery.</div>
+                         aria-labelledby="headingfaqItem1" data-bs-parent="#chestFaqAccordion">
+                        <div class="accordion-body">Chest physiotherapy uses specific techniques to improve breathing, clear airway secretions, and enhance lung function. It is recommended for patients with COPD, asthma, pneumonia, cystic fibrosis, post-COVID respiratory issues, or those recovering from chest surgery.</div>
                     </div>
                 </div>
-                <div class="accordion-item" itemscope itemtype="https://schema.org/Question">
+                <div class="accordion-item">
                     <h3 class="accordion-header" id="headingfaqItem2">
                         <button class="accordion-button collapsed" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapsefaqItem2"
-                                aria-expanded="false" aria-controls="collapsefaqItem2"
-                                itemprop="name">
+                                aria-expanded="false" aria-controls="collapsefaqItem2">
                             <span>What techniques are used in chest physiotherapy?</span>
                         </button>
                     </h3>
                     <div id="collapsefaqItem2" class="accordion-collapse collapse"
-                         aria-labelledby="headingfaqItem2" data-bs-parent="#chestFaqAccordion"
-                         itemscope itemtype="https://schema.org/Answer">
-                        <div class="accordion-body" itemprop="text">Techniques include percussion and vibration, postural drainage, breathing exercises (such as diaphragmatic breathing and pursed-lip breathing), active cycle of breathing technique (ACBT), and the use of incentive spirometry to improve lung capacity.</div>
+                         aria-labelledby="headingfaqItem2" data-bs-parent="#chestFaqAccordion">
+                        <div class="accordion-body">Techniques include percussion and vibration, postural drainage, breathing exercises (such as diaphragmatic breathing and pursed-lip breathing), active cycle of breathing technique (ACBT), and the use of incentive spirometry to improve lung capacity.</div>
                     </div>
                 </div>
-                <div class="accordion-item" itemscope itemtype="https://schema.org/Question">
+                <div class="accordion-item">
                     <h3 class="accordion-header" id="headingfaqItem3">
                         <button class="accordion-button collapsed" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapsefaqItem3"
-                                aria-expanded="false" aria-controls="collapsefaqItem3"
-                                itemprop="name">
+                                aria-expanded="false" aria-controls="collapsefaqItem3">
                             <span>Can chest physiotherapy help after COVID-19?</span>
                         </button>
                     </h3>
                     <div id="collapsefaqItem3" class="accordion-collapse collapse"
-                         aria-labelledby="headingfaqItem3" data-bs-parent="#chestFaqAccordion"
-                         itemscope itemtype="https://schema.org/Answer">
-                        <div class="accordion-body" itemprop="text">Yes. Chest physiotherapy is highly effective for managing post-COVID respiratory complications such as breathlessness, reduced exercise tolerance, and persistent cough. A structured pulmonary rehabilitation programme helps restore lung capacity and daily function.</div>
+                         aria-labelledby="headingfaqItem3" data-bs-parent="#chestFaqAccordion">
+                        <div class="accordion-body">Yes. Chest physiotherapy is highly effective for managing post-COVID respiratory complications such as breathlessness, reduced exercise tolerance, and persistent cough. A structured pulmonary rehabilitation programme helps restore lung capacity and daily function.</div>
                     </div>
                 </div>
-                <div class="accordion-item" itemscope itemtype="https://schema.org/Question">
+                <div class="accordion-item">
                     <h3 class="accordion-header" id="headingfaqItem4">
                         <button class="accordion-button collapsed" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapsefaqItem4"
-                                aria-expanded="false" aria-controls="collapsefaqItem4"
-                                itemprop="name">
+                                aria-expanded="false" aria-controls="collapsefaqItem4">
                             <span>Is chest physiotherapy painful?</span>
                         </button>
                     </h3>
                     <div id="collapsefaqItem4" class="accordion-collapse collapse"
-                         aria-labelledby="headingfaqItem4" data-bs-parent="#chestFaqAccordion"
-                         itemscope itemtype="https://schema.org/Answer">
-                        <div class="accordion-body" itemprop="text">Chest physiotherapy is not painful when performed correctly. Percussion and vibration techniques may feel unusual initially, but they are safe and performed within the patient's comfort. Dr. Sandra Thomas carefully monitors your response throughout each session.</div>
+                         aria-labelledby="headingfaqItem4" data-bs-parent="#chestFaqAccordion">
+                        <div class="accordion-body">Chest physiotherapy is not painful when performed correctly. Percussion and vibration techniques may feel unusual initially, but they are safe and performed within the patient's comfort. Dr. Sandra Thomas carefully monitors your response throughout each session.</div>
                     </div>
                 </div>
-                <div class="accordion-item" itemscope itemtype="https://schema.org/Question">
+                <div class="accordion-item">
                     <h3 class="accordion-header" id="headingfaqItem5">
                         <button class="accordion-button collapsed" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapsefaqItem5"
-                                aria-expanded="false" aria-controls="collapsefaqItem5"
-                                itemprop="name">
+                                aria-expanded="false" aria-controls="collapsefaqItem5">
                             <span>Can children receive chest physiotherapy?</span>
                         </button>
                     </h3>
                     <div id="collapsefaqItem5" class="accordion-collapse collapse"
-                         aria-labelledby="headingfaqItem5" data-bs-parent="#chestFaqAccordion"
-                         itemscope itemtype="https://schema.org/Answer">
-                        <div class="accordion-body" itemprop="text">Yes. Children with recurrent respiratory infections, asthma, or cystic fibrosis frequently benefit from paediatric chest physiotherapy. Dr. Sandra Thomas uses child-appropriate techniques to ensure a comfortable and effective treatment experience.</div>
+                         aria-labelledby="headingfaqItem5" data-bs-parent="#chestFaqAccordion">
+                        <div class="accordion-body">Yes. Children with recurrent respiratory infections, asthma, or cystic fibrosis frequently benefit from paediatric chest physiotherapy. Dr. Sandra Thomas uses child-appropriate techniques to ensure a comfortable and effective treatment experience.</div>
                     </div>
                 </div>
                 </div>
@@ -830,7 +855,7 @@
       </div>
 
       <div class="guides">
-        <a class="guide" href="/blogs/role-of-physiotherapy-in-pain-management">
+        <a class="guide" href="/service/chest-physiotherapy#faq">
           <h3><i class="fas fa-lungs me-2"></i>Airway Clearance Techniques</h3>
           <p>Step-by-step guide to active cycle of breathing and postural drainage.</p>
         </a>
