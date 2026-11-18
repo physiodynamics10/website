@@ -14,13 +14,6 @@
             'wait_for_update': 500
         });
     </script>
-<script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-PF3YJYKC6V');
-    </script>
 <!-- Primary Meta Tags -->
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -62,7 +55,6 @@
 <!-- CSS Preloads -->
 <link rel="preload" href="/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="/css/bootstrap.min.css"></noscript>
-<link as="style" href="/css/font-awesome-purged.min.css" rel="preload"/>
 <link as="style" href="/css/style.css" rel="preload"/>
 <!-- Fonts -->
 <link as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Poppins:wght@400;500;600;700&amp;display=optional" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/>
@@ -634,9 +626,34 @@ body{margin:0;font-family:Inter,sans-serif;color:var(--dark);background-color:#f
 <p class="testimonials-subtitle animate-fade-in">
                     What our patients say about their experience at Physio Dynamics
                 </p>
-<!-- Elfsight Google Reviews | Untitled Google Reviews -->
-<script async="" src="https://elfsightcdn.com/platform.js"></script>
-<div class="elfsight-app-59313a5b-2af1-4b49-ac5d-7ff1489c0277" data-elfsight-app-lazy=""></div>
+<!-- Elfsight Google Reviews – loaded lazily when section nears viewport -->
+<div class="elfsight-app-59313a5b-2af1-4b49-ac5d-7ff1489c0277" data-elfsight-app-lazy="" id="elfsight-widget"></div>
+<script>
+(function(){
+    var widget = document.getElementById('elfsight-widget');
+    if (!widget) return;
+    var loaded = false;
+    function loadElfsight() {
+        if (loaded) return;
+        loaded = true;
+        var s = document.createElement('script');
+        s.src = 'https://elfsightcdn.com/platform.js';
+        s.async = true;
+        document.head.appendChild(s);
+    }
+    if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) { loadElfsight(); io.disconnect(); }
+            });
+        }, { rootMargin: '200px' });
+        io.observe(widget);
+    } else {
+        // Fallback for browsers without IntersectionObserver
+        loadElfsight();
+    }
+})();
+</script>
 </div>
 </section>
 <!-- Contact Section -->
