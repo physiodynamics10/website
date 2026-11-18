@@ -46,7 +46,6 @@ https://physiodynamics.netlify.app/* https://www.physio-dynamics.com/:splat 301!
 
 # Direct 404 URL handling (return true 404 status code)
 /404 /404.html 404
-/404.html /404.html 404
 
 # Proper 404 handling fallback
 /* /404.html 404
