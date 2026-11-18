@@ -4,6 +4,7 @@
 
 [context.production.environment]
   NODE_VERSION = "18"
+  CLOUDINARY_CLOUD_NAME = "YOUR_CLOUDINARY_CLOUD_NAME"
 
 # --------------------------------------------------
 # CANONICAL DOMAIN REDIRECTS
@@ -202,3 +203,5 @@
   for = "/site.webmanifest"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+
