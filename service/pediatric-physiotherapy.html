@@ -192,6 +192,7 @@
 </script>
 
 <style id="service-page-redesign">
+/* ===== Service Page Standardized Design (Sports Physiotherapy Reference) ===== */
 :root{
   --service-primary:#0692ab;
   --service-primary-dark:#05788d;
@@ -204,19 +205,24 @@
 
 .service-page{background:#fff;color:var(--service-ink)}
 .service-page .container{max-width:1180px}
-.service-page .service-hero-banner{
+.service-page .service-hero-banner,
+.service-page .sports-hero{
   position:relative;overflow:hidden;
   padding:72px 0 76px;
   background:linear-gradient(135deg,#073d49 0%,#066f82 52%,#0692ab 100%);
   color:#fff;
 }
 .service-page .service-hero-banner:before,
-.service-page .service-hero-banner:after{
+.service-page .service-hero-banner:after,
+.service-page .sports-hero:before,
+.service-page .sports-hero:after{
   content:"";position:absolute;border-radius:50%;pointer-events:none;
   border:1px solid rgba(255,255,255,.13)
 }
-.service-page .service-hero-banner:before{width:430px;height:430px;right:-170px;top:-180px}
-.service-page .service-hero-banner:after{width:260px;height:260px;left:-150px;bottom:-150px}
+.service-page .service-hero-banner:before,
+.service-page .sports-hero:before{width:430px;height:430px;right:-170px;top:-180px}
+.service-page .service-hero-banner:after,
+.service-page .sports-hero:after{width:260px;height:260px;left:-150px;bottom:-150px}
 .service-page .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:54px;align-items:center}
 .service-page .eyebrow{
   display:inline-flex;align-items:center;gap:9px;padding:8px 14px;
@@ -225,11 +231,13 @@
   letter-spacing:.04em;text-transform:uppercase
 }
 .service-page .eyebrow i{font-size:.9rem}
-.service-page .service-hero-banner h1{
-  margin:18px 0 16px;color:#fff;font-size:clamp(2.25rem,4vw,3.9rem);
-  line-height:1.1;font-weight:800;letter-spacing:-.035em
+.service-page .service-hero-banner h1,
+.service-page .sports-hero h1{
+  margin:18px 0 16px;color:#fff;font-size:clamp(2.25rem,4vw,4rem);
+  line-height:1.08;font-weight:800;letter-spacing:-.035em
 }
-.service-page .service-hero-banner .lead{
+.service-page .service-hero-banner .lead,
+.service-page .sports-hero .lead{
   max-width:650px;margin:0;color:rgba(255,255,255,.88);
   font-size:1.08rem;line-height:1.75
 }
@@ -255,8 +263,10 @@
 .service-page .hero-stat strong{display:block;color:#fff;font-size:1.15rem}
 .service-page .hero-stat span{font-size:.72rem;color:rgba(255,255,255,.7)}
 
-.service-page .page-breadcrumb{padding:16px 0;background:#fff}
-.service-page .page-breadcrumb .breadcrumb{margin:0;font-size:.88rem}
+.service-page .page-breadcrumb,
+.service-page .sports-breadcrumb{padding:16px 0;background:#fff}
+.service-page .page-breadcrumb .breadcrumb,
+.service-page .sports-breadcrumb .breadcrumb{margin:0;font-size:.88rem}
 
 .service-page .section{padding:78px 0}
 .service-page .section.soft{background:#f7fbfc}
@@ -283,18 +293,24 @@
 .service-page .check-list li{display:flex;gap:12px;align-items:flex-start;color:#38535a;line-height:1.55}
 .service-page .check-list i{color:var(--service-primary);margin-top:4px}
 
-.service-page .condition-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.service-page .condition-card{
+.service-page .condition-grid,
+.service-page .injury-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.service-page .condition-card,
+.service-page .injury-card{
   padding:23px;border:1px solid var(--service-line);border-radius:18px;
   background:#fff;transition:.2s ease
 }
-.service-page .condition-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(8,74,86,.08)}
-.service-page .condition-icon{
+.service-page .condition-card:hover,
+.service-page .injury-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(8,74,86,.08)}
+.service-page .condition-icon,
+.service-page .injury-icon{
   width:46px;height:46px;border-radius:14px;display:grid;place-items:center;
   background:var(--service-soft);color:var(--service-primary);margin-bottom:15px;font-size:1.2rem
 }
-.service-page .condition-card h3{font-size:1rem;margin:0 0 7px;font-weight:700}
-.service-page .condition-card p{font-size:.9rem;line-height:1.6;color:var(--service-muted);margin:0}
+.service-page .condition-card h3,
+.service-page .injury-card h3{font-size:1rem;margin:0 0 7px;font-weight:700}
+.service-page .condition-card p,
+.service-page .injury-card p{font-size:.9rem;line-height:1.6;color:var(--service-muted);margin:0}
 
 .service-page .process{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
 .service-page .process-card{
@@ -309,14 +325,17 @@
 .service-page .process-card p{margin:0;color:var(--service-muted);font-size:.9rem;line-height:1.65}
 .service-page .process-card i{font-size:1.35rem;color:var(--service-primary);margin-bottom:16px}
 
-.service-page .category-strip{
+.service-page .category-strip,
+.service-page .sports-strip{
   display:grid;grid-template-columns:repeat(5,1fr);gap:12px
 }
-.service-page .category-chip{
+.service-page .category-chip,
+.service-page .sport-chip{
   padding:19px 14px;text-align:center;border-radius:16px;background:#fff;
   border:1px solid var(--service-line);font-weight:700;color:#2f4e55
 }
-.service-page .category-chip i{display:block;color:var(--service-primary);font-size:1.25rem;margin-bottom:8px}
+.service-page .category-chip i,
+.service-page .sport-chip i{display:block;color:var(--service-primary);font-size:1.25rem;margin-bottom:8px}
 
 .service-page .visit-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;align-items:stretch}
 .service-page .visit-card{
@@ -377,28 +396,42 @@
   max-width:860px;margin:auto;text-align:center
 }
 .service-page .final-cta h2{font-size:clamp(1.9rem,3vw,2.7rem);font-weight:800;margin-bottom:12px}
-.service-page .final-cta p{color:var(--service-muted);margin:0 0 28px;font-size:1.05rem;line-height:1.7}
-.service-page .final-cta .btn-group{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
-.service-page .final-cta .btn{padding:14px 24px;border-radius:12px;font-weight:700}
+.service-page .final-cta p{max-width:650px;margin:0 auto;color:var(--service-muted);line-height:1.7}
+.service-page .final-cta .btn-group,
+.service-page .final-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:25px}
+.service-page .final-cta .btn,
+.service-page .final-actions .btn{border-radius:12px;padding:13px 21px;font-weight:700}
 
 @media(max-width:991px){
   .service-page .hero-grid,
   .service-page .intro-grid,
   .service-page .visit-grid{grid-template-columns:1fr;gap:32px}
+  .service-page .hero-card{min-height:260px}
+  .service-page .process{grid-template-columns:1fr 1fr}
   .service-page .condition-grid,
-  .service-page .process,
-  .service-page .guides{grid-template-columns:repeat(2,1fr)}
-  .service-page .category-strip{grid-template-columns:repeat(3,1fr)}
+  .service-page .injury-grid{grid-template-columns:1fr 1fr}
+  .service-page .guides{grid-template-columns:1fr 1fr}
+  .service-page .category-strip,
+  .service-page .sports-strip{grid-template-columns:repeat(3,1fr)}
 }
-@media(max-width:640px){
-  .service-page .service-hero-banner{padding:54px 0}
-  .service-page .section{padding:56px 0}
-  .service-page .condition-grid,
+@media(max-width:767px){
+  .service-page .service-hero-banner,
+  .service-page .sports-hero{padding:52px 0 58px}
+  .service-page .service-hero-banner h1,
+  .service-page .sports-hero h1{font-size:2.35rem}
+  .service-page .hero-stats{grid-template-columns:1fr 1fr 1fr}
+  .service-page .section{padding:58px 0}
   .service-page .process,
+  .service-page .condition-grid,
+  .service-page .injury-grid,
   .service-page .guides,
-  .service-page .steps,
-  .service-page .category-strip{grid-template-columns:1fr}
-  .service-page .hero-stats{grid-template-columns:1fr}
+  .service-page .category-strip,
+  .service-page .sports-strip,
+  .service-page .steps{grid-template-columns:1fr}
+  .service-page .intro-panel,
+  .service-page .visit-card{padding:25px}
+  .service-page .hero-actions .btn{width:100%;margin:0!important}
+  .service-page .final-cta .btn{width:100%;margin:0!important}
 }
 </style>
 </head>
@@ -438,7 +471,17 @@
 
 <main id="main-content" class="service-page">
 
-  <!-- Hero Section -->
+  <!-- Breadcrumbs -->
+  <nav class="page-breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/services">Services</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Pediatric Physiotherapy</li>
+      </ol>
+    </div>
+  </nav>
+<!-- Hero Section -->
   <section class="service-hero-banner" aria-label="Pediatric Physiotherapy Introduction">
     <div class="container">
       <div class="hero-grid">
@@ -472,16 +515,7 @@
     </div>
   </section>
 
-  <!-- Breadcrumb -->
-  <nav class="page-breadcrumb" aria-label="Breadcrumb">
-    <div class="container">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">Home</a></li>
-        <li class="breadcrumb-item"><a href="/services">Services</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Pediatric Physiotherapy</li>
-      </ol>
-    </div>
-  </nav>
+  
 
   <!-- Intro / Why Pediatric Physio -->
   <section class="section">
@@ -804,7 +838,7 @@
       <div class="final-cta-inner">
         <h2>Give your child the best foundation to grow</h2>
         <p>Book a gentle developmental evaluation with Sandra Thomas at Physio Dynamics in Panamaram, Wayanad.</p>
-        <div class="btn-group">
+        <div class="final-actions btn-group">
           <a class="btn btn-primary btn-lg" href="https://kapcwayanad.in/bookings/create/9" rel="noopener" target="_blank">
             <i class="fas fa-calendar-check me-2"></i>Book Appointment
           </a>
