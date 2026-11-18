@@ -4,10 +4,7 @@
 
 [context.production.environment]
   NODE_VERSION = "18"
-  CLOUDINARY_CLOUD_NAME = "YOUR_CLOUDINARY_CLOUD_NAME"
-  ALGOLIA_API_KEY = "YOUR_ALGOLIA_API_KEY"
-  NODE_VERSION = "18"
-  CLOUDINARY_CLOUD_NAME = "YOUR_CLOUDINARY_CLOUD_NAME"
+
 
 # --------------------------------------------------
 # CANONICAL DOMAIN REDIRECTS
