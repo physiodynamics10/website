@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head><!-- Google tag (gtag.js) -->
+  <head>
+    <!-- Google tag (gtag.js) Consent Mode v2 Default Initialization -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -12,18 +13,16 @@
         'wait_for_update': 500
       });
     </script>
-    
-    
 
     <!-- Primary Meta Tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="canonical" href="https://www.physio-dynamics.com/terms-of-service" />
-    <title>Terms of Service | Physio Dynamics</title>
-    <meta name="description" content="Read the Terms of Service for Physio Dynamics clinic in Wayanad, Kerala. Learn about our clinic policies, appointment cancellations, and medical disclaimer." />
+    <title>Terms of Service | Physio Dynamics Panamaram, Wayanad</title>
+    <meta name="description" content="Read the official Terms of Service for Physio Dynamics clinic in Panamaram, Wayanad, Kerala. Understand our clinic policies, medical disclaimer, and booking guidelines." />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta name="author" content="Physio Dynamics" />
-    <meta name="theme-color" content="#0692ab" />
+    <meta name="theme-color" content="#006779" />
 
     <!-- Performance Optimizations -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,230 +35,657 @@
     <link rel="preload" href="/css/bootstrap.min.css" as="style" />
     <link rel="preload" href="/css/font-awesome-purged.min.css" as="style" />
     <link rel="preload" href="/css/style.css" as="style" />
+    <link rel="preload" href="/css/legal.css" as="style" />
 
     <!-- Fonts -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=optional" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=optional" /></noscript>
-    
 
-    <!-- Bootstrap CSS -->
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
-
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="/css/font-awesome-purged.min.css" />
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/legal.css" />
+
+    <!-- Favicons -->
+    <link href="/favicon.svg" rel="icon" type="image/svg+xml" />
+    <link href="/android-chrome-192.png" rel="icon" sizes="192x192" type="image/png" />
+    <link href="/android-chrome-512.png" rel="icon" sizes="512x512" type="image/png" />
+    <link href="/favicon-32.png" rel="icon" sizes="32x32" type="image/png" />
+    <link href="/favicon-16.png" rel="icon" sizes="16x16" type="image/png" />
+    <link href="/favicon.ico" rel="icon" />
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+    <link href="/site.webmanifest" rel="manifest" />
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Terms of Service | Physio Dynamics",
-      "description": "Read the Terms of Service for Physio Dynamics clinic in Wayanad, Kerala. Learn about our clinic policies, appointment cancellations, and medical disclaimer.",
-      "url": "https://www.physio-dynamics.com/terms-of-service"
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.physio-dynamics.com/terms-of-service#webpage",
+          "url": "https://www.physio-dynamics.com/terms-of-service",
+          "name": "Terms of Service | Physio Dynamics Panamaram, Wayanad",
+          "description": "Terms of Service and clinic policies for Physio Dynamics Physiotherapy and Sports Rehabilitation Centre in Panamaram, Wayanad, Kerala.",
+          "inLanguage": "en-IN",
+          "datePublished": "2024-08-01",
+          "dateModified": "2026-11-19"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.physio-dynamics.com/terms-of-service#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.physio-dynamics.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Terms of Service"
+            }
+          ]
+        },
+        {
+          "@type": "MedicalClinic",
+          "@id": "https://www.physio-dynamics.com/#organization",
+          "name": "Physio Dynamics – Physiotherapy and Sports Rehabilitation Centre",
+          "telephone": "+916282929104",
+          "email": "physiodynamics10@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "UB City Centre Building, Near Crescent Public School, Panamaram",
+            "addressLocality": "Panamaram",
+            "addressRegion": "Wayanad, Kerala",
+            "postalCode": "670721",
+            "addressCountry": "IN"
+          }
+        }
+      ]
     }
     </script>
 
+    <!-- Analytics Interaction Hook -->
     <script>
-        window.addEventListener("load", () => {
-            setTimeout(initAnalytics, 3000);
-        });
+      window.addEventListener("load", () => {
+        setTimeout(initAnalytics, 3000);
+      });
 
-        function initAnalytics() {
-            if (window.__analyticsLoaded) return;
-            window.__analyticsLoaded = true;
-            window.dataLayer = window.dataLayer || [];
-            function dl(event) { window.dataLayer.push(event); }
-            
-            document.addEventListener("click", (e) => {
-                const link = e.target.closest("a");
-                if (!link) return;
-                const href = link.getAttribute("href") || "";
-                if (link.classList.contains("appointment-btn") || href.includes("bookings")) {
-                    dl({ event: "appointment_click", method: "direct" });
-                }
-                if (href.startsWith("tel:")) { dl({ event: "phone_call", phone: href.replace("tel:", "") }); }
-                if (href.includes("wa.me") || href.includes("whatsapp")) { dl({ event: "whatsapp_click" }); }
-            });
-        }
+      function initAnalytics() {
+        if (window.__analyticsLoaded) return;
+        window.__analyticsLoaded = true;
+        window.dataLayer = window.dataLayer || [];
+        function dl(event) { window.dataLayer.push(event); }
+
+        document.addEventListener("click", (e) => {
+          const link = e.target.closest("a");
+          if (!link) return;
+          const href = link.getAttribute("href") || "";
+          if (link.classList.contains("appointment-btn") || href.includes("bookings")) {
+            dl({ event: "appointment_click", method: "direct" });
+          }
+          if (href.startsWith("tel:")) { dl({ event: "phone_call", phone: href.replace("tel:", "") }); }
+          if (href.includes("wa.me") || href.includes("whatsapp")) { dl({ event: "whatsapp_click" }); }
+        });
+      }
     </script>
 
-    
-      <meta name="google-site-verification" content="M1vVDIjSFVyNSNljTc_ljGDshn5rNpuiSZ2i81M6neA" />
-  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt" />
-  <script src="/js/defer-scripts.js" defer></script>
-<script defer="" src="/js/cookie-consent.js"></script>
-</head>
+    <meta name="google-site-verification" content="M1vVDIjSFVyNSNljTc_ljGDshn5rNpuiSZ2i81M6neA" />
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt" />
+    <script src="/js/defer-scripts.js" defer></script>
+    <script defer src="/js/cookie-consent.js"></script>
+  </head>
 
   <body itemscope itemtype="https://schema.org/WebPage">
     <!-- Skip to main content for accessibility -->
     <a class="skip-to-main visually-hidden" href="#main-content">Skip to main content</a>
 
-    <!-- Google Tag Manager (noscript) -->
-    
-    <!-- End Google Tag Manager (noscript) -->
-
-    <!-- Modern Header with Dropdown -->
+    <!-- Modern Header -->
     <header class="modern-header">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="/">
-                    <img src="/logo.png" alt="Physio Dynamics Logo - Wayanad's leading physiotherapy clinic"
-                        width="40" height="40" loading="eager" />
-                    <span>Physio Dynamics</span>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg" aria-label="Main Navigation">
+          <a class="navbar-brand" href="/">
+            <img src="/logo.png" alt="Physio Dynamics Logo - Wayanad's leading physiotherapy clinic" width="40" height="40" loading="eager" />
+            <span>Physio Dynamics</span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+              <i class="fas fa-bars text-white"></i>
+            </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/expert-profile">Expertise</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/blogs">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="appointment-btn btn" href="https://kapcwayanad.in/bookings/create/9" target="_blank" rel="noopener">
+                  <i class="fas fa-calendar-check me-2"></i>Book Appointment
                 </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon">
-                        <i class="fas fa-bars text-white"></i>
-                    </span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="/" aria-current="page">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/expert-profile">Expertise</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/contact">Contact</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="appointment-btn btn" href="https://kapcwayanad.in/bookings/create/9"
-                                target="_blank" rel="noopener">
-                                <i class="fas fa-calendar-check me-2"></i>Book Appointment
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <!-- Main Content -->
     <main id="main-content">
-      <section class="py-5 mt-5">
-        <div class="container py-5">
-          <h1 class="mb-4 text-primary">Terms of Service</h1>
-          <p class="text-muted mb-4">Last Updated: August 2024</p>
-          
-          <h2 class="h4 mt-4">1. Acceptance of Terms</h2>
-          <p>By accessing and using the website of Physio Dynamics and utilizing our physiotherapy services in Wayanad, you accept and agree to be bound by the terms and provision of this agreement.</p>
-          
-          <h2 class="h4 mt-4">2. Medical Disclaimer</h2>
-          <p>The content provided on this website is for informational purposes only and is not intended as a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of a qualified health provider with any questions you may have regarding a medical condition.</p>
-          
-          <h2 class="h4 mt-4">3. Appointments and Cancellations</h2>
-          <p>We kindly request that you provide at least 24 hours' notice if you need to cancel or reschedule an appointment. This allows us to offer the time slot to other patients in need.</p>
-          
-          <h2 class="h4 mt-4">4. Treatment Consent</h2>
-          <p>By receiving treatment at Physio Dynamics, you consent to the physiotherapy procedures explained and recommended by our qualified physiotherapists. You have the right to decline any treatment and will be informed of the potential risks and benefits.</p>
-          
-          <h2 class="h4 mt-4">5. Changes to Terms</h2>
-          <p>Physio Dynamics reserves the right to modify these terms at any time. Your continued use of the website and services following any changes constitutes your acceptance of the new terms.</p>
+      <!-- Legal Hero Section -->
+      <section class="legal-hero" aria-label="Terms of Service Introduction">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Terms of Service</li>
+            </ol>
+          </nav>
+          <div class="legal-badge">
+            <i class="fas fa-file-contract"></i> Clinical &amp; Website Terms
+          </div>
+          <h1>Terms of Service</h1>
+          <p class="lead">
+            Terms governing website usage, educational healthcare content, appointment arrangements, clinical care standards, and mutual responsibilities at Physio Dynamics in Panamaram, Wayanad.
+          </p>
+          <div class="legal-meta-strip">
+            <div class="legal-meta-item">
+              <i class="far fa-calendar-alt"></i>
+              <span>Last Updated: 19 November 2026</span>
+            </div>
+            <div class="legal-meta-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Panamaram, Wayanad, Kerala</span>
+            </div>
+            <div class="legal-meta-item">
+              <i class="fas fa-gavel"></i>
+              <span>Subject to Indian Jurisdiction</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Legal Layout Section -->
+      <section class="legal-page-section">
+        <div class="container">
+          <div class="row g-4">
+            <!-- Desktop Sticky Table of Contents (Col 3) -->
+            <aside class="col-lg-4 col-xl-3 d-none d-lg-block" aria-label="Table of Contents">
+              <div class="legal-toc-wrapper">
+                <div class="legal-toc-title">
+                  <i class="fas fa-list-ul"></i>
+                  <span>Contents</span>
+                </div>
+                <nav>
+                  <ul class="legal-toc-list" id="desktopTocList">
+                    <li><a href="#tos-1" class="legal-toc-link">1. Acceptance of Terms</a></li>
+                    <li><a href="#tos-2" class="legal-toc-link">2. About Physio Dynamics</a></li>
+                    <li><a href="#tos-3" class="legal-toc-link">3. Website Permitted Use</a></li>
+                    <li><a href="#tos-4" class="legal-toc-link">4. Medical Disclaimer</a></li>
+                    <li><a href="#tos-5" class="legal-toc-link">5. Emergency Notice</a></li>
+                    <li><a href="#tos-6" class="legal-toc-link">6. Clinical Services</a></li>
+                    <li><a href="#tos-7" class="legal-toc-link">7. Appointments &amp; Booking</a></li>
+                    <li><a href="#tos-8" class="legal-toc-link">8. Cancellations &amp; Courtesy</a></li>
+                    <li><a href="#tos-9" class="legal-toc-link">9. Patient Responsibilities</a></li>
+                    <li><a href="#tos-10" class="legal-toc-link">10. Treatment Outcomes</a></li>
+                    <li><a href="#tos-11" class="legal-toc-link">11. Third-Party Portals</a></li>
+                    <li><a href="#tos-12" class="legal-toc-link">12. Intellectual Property</a></li>
+                    <li><a href="#tos-13" class="legal-toc-link">13. Prohibited Website Use</a></li>
+                    <li><a href="#tos-14" class="legal-toc-link">14. Limitation of Liability</a></li>
+                    <li><a href="#tos-15" class="legal-toc-link">15. Governing Law &amp; Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </aside>
+
+            <!-- Main Legal Content Body (Col 9) -->
+            <div class="col-lg-8 col-xl-9">
+              <!-- Mobile Collapsible Table of Contents -->
+              <details class="legal-toc-mobile d-lg-none">
+                <summary>
+                  <span><i class="fas fa-list-ul me-2 text-primary"></i> Table of Contents</span>
+                </summary>
+                <div class="legal-toc-mobile-content">
+                  <ul class="legal-toc-list">
+                    <li><a href="#tos-1" class="legal-toc-link">1. Acceptance of Terms</a></li>
+                    <li><a href="#tos-2" class="legal-toc-link">2. About Physio Dynamics</a></li>
+                    <li><a href="#tos-3" class="legal-toc-link">3. Website Permitted Use</a></li>
+                    <li><a href="#tos-4" class="legal-toc-link">4. Medical Disclaimer</a></li>
+                    <li><a href="#tos-5" class="legal-toc-link">5. Emergency Notice</a></li>
+                    <li><a href="#tos-6" class="legal-toc-link">6. Clinical Services</a></li>
+                    <li><a href="#tos-7" class="legal-toc-link">7. Appointments &amp; Booking</a></li>
+                    <li><a href="#tos-8" class="legal-toc-link">8. Cancellations &amp; Courtesy</a></li>
+                    <li><a href="#tos-9" class="legal-toc-link">9. Patient Responsibilities</a></li>
+                    <li><a href="#tos-10" class="legal-toc-link">10. Treatment Outcomes</a></li>
+                    <li><a href="#tos-11" class="legal-toc-link">11. Third-Party Portals</a></li>
+                    <li><a href="#tos-12" class="legal-toc-link">12. Intellectual Property</a></li>
+                    <li><a href="#tos-13" class="legal-toc-link">13. Prohibited Website Use</a></li>
+                    <li><a href="#tos-14" class="legal-toc-link">14. Limitation of Liability</a></li>
+                    <li><a href="#tos-15" class="legal-toc-link">15. Governing Law &amp; Contact</a></li>
+                  </ul>
+                </div>
+              </details>
+
+              <article class="legal-content-card">
+                <!-- Section 1 -->
+                <section id="tos-1" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">1</span>
+                    <h2>Acceptance of Terms</h2>
+                  </div>
+                  <p>
+                    Welcome to the website of <strong>Physio Dynamics – Physiotherapy and Sports Rehabilitation Centre</strong> ("Physio Dynamics", "the clinic", "we", "us", or "our"). These Terms of Service constitute a legally binding agreement between you ("visitor", "user", "patient", or "you") and Physio Dynamics regarding your access to and use of <a href="https://www.physio-dynamics.com/">https://www.physio-dynamics.com/</a>, including all related subpages, articles, booking links, and communication channels.
+                  </p>
+                  <p>
+                    By browsing our website, reading our clinical guides, or submitting appointment enquiries, you confirm that you have read, understood, and agreed to be bound by these Terms of Service and our <a href="/privacy-policy">Privacy Policy</a>. If you do not agree with any part of these terms, please discontinue using this website.
+                  </p>
+                </section>
+
+                <!-- Section 2 -->
+                <section id="tos-2" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">2</span>
+                    <h2>About Physio Dynamics</h2>
+                  </div>
+                  <p>
+                    Physio Dynamics is an established physiotherapy and physical rehabilitation clinic operating from physical premises in Wayanad, Kerala:
+                  </p>
+                  <ul class="legal-list">
+                    <li><strong>Clinic Location:</strong> UB City Centre Building, Near Crescent Public School, Panamaram, Wayanad, Kerala, India – 670721.</li>
+                    <li><strong>Clinical Leadership:</strong> Founded and directed by qualified, certified physiotherapists (including Dr. Sandra Thomas, PT – BPT, CTTP, CAIASTM, CCTh, FIFA Diploma in Football Medicine).</li>
+                    <li><strong>Core Clinical Disciplines:</strong> Orthopedic Physiotherapy, Sports Injury Rehabilitation, Neurological Rehabilitation, Pediatric Physiotherapy, Chest/Cardiorespiratory Physiotherapy, and Specialized Home Care across Wayanad.</li>
+                  </ul>
+                </section>
+
+                <!-- Section 3 -->
+                <section id="tos-3" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">3</span>
+                    <h2>Website Purpose and Permitted Use</h2>
+                  </div>
+                  <p>
+                    The primary purposes of this website are to:
+                  </p>
+                  <ul class="legal-list">
+                    <li>Provide general educational information regarding musculoskeletal health, injury prevention, and physical rehabilitation modalities.</li>
+                    <li>Describe the clinical services, qualifications, equipment, and treatment philosophies offered at our Panamaram facility.</li>
+                    <li>Facilitate appointment inquiries, clinic contact, location directions, and opening hours for patients across Wayanad.</li>
+                  </ul>
+                  <p>
+                    You are granted a limited, revocable, non-exclusive license to access and view website content solely for your personal, non-commercial informational use.
+                  </p>
+                </section>
+
+                <!-- Section 4 -->
+                <section id="tos-4" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">4</span>
+                    <h2>Medical &amp; Health Information Disclaimer</h2>
+                  </div>
+                  <p>
+                    Please read this section carefully before utilizing any health or exercise information published on this website:
+                  </p>
+                  <div class="legal-callout legal-callout-warning">
+                    <i class="fas fa-stethoscope"></i>
+                    <div class="legal-callout-content">
+                      <div class="legal-callout-title">Educational Content Only — Not Medical Advice</div>
+                      <p>
+                        All articles, blog posts, exercise descriptions, rehabilitation guides, anatomical illustrations, and FAQ responses published on this website are provided strictly for <strong>general health educational purposes</strong>. Website content does <strong>not</strong> constitute medical diagnosis, formal physical examination, individualized therapeutic prescription, or a substitute for professional clinical consultation.
+                      </p>
+                    </div>
+                  </div>
+                  <ul class="legal-list">
+                    <li><strong>No Doctor-Patient Relationship:</strong> Browsing this website, sending an online contact message, or reading our articles does <strong>not</strong> establish a therapist-patient or doctor-patient relationship between you and Physio Dynamics or any of its practitioners.</li>
+                    <li><strong>Individual Evaluation Required:</strong> Musculoskeletal conditions, joint pain, spinal disorders, and sports injuries require personalized physical assessment, orthopedic testing, and palpation. Never begin any exercise or rehabilitation protocol described online without prior clinical evaluation from a licensed physiotherapist or medical physician.</li>
+                    <li><strong>Never Disregard Professional Advice:</strong> Do not delay seeking medical advice or disregard instructions given by your treating physician because of information you read on this website.</li>
+                  </ul>
+                </section>
+
+                <!-- Section 5 -->
+                <section id="tos-5" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">5</span>
+                    <h2>Emergency Medical Disclaimer</h2>
+                  </div>
+                  <p>
+                    Physio Dynamics is an outpatient physiotherapy and sports rehabilitation facility. We do <strong>not</strong> provide acute emergency trauma resuscitation, emergency surgical interventions, or 24/7 hospital critical care.
+                  </p>
+                  <div class="legal-callout legal-callout-emergency">
+                    <i class="fas fa-ambulance"></i>
+                    <div class="legal-callout-content">
+                      <div class="legal-callout-title">In Case of Medical Emergency</div>
+                      <p>
+                        If you or someone in your care is experiencing acute chest pain, severe breathing distress, sudden weakness or paralysis, acute loss of sensation or bowel/bladder control, suspected compound bone fractures, or head/spinal trauma, <strong>do not rely on this website or wait for an appointment enquiry response</strong>.
+                        <br><br>
+                        Immediately contact the National Emergency Ambulance Service in India by calling <a href="tel:108">108</a> or <a href="tel:112">112</a>, or report immediately to the nearest hospital casualty/emergency department.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- Section 6 -->
+                <section id="tos-6" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">6</span>
+                    <h2>Physiotherapy and Clinical Rehabilitation Services</h2>
+                  </div>
+                  <p>
+                    All clinical treatment provided by Physio Dynamics is subject to professional healthcare standards:
+                  </p>
+                  <ul class="legal-list">
+                    <li><strong>In-Person Clinical Assessment:</strong> Prior to initiating any therapy, every patient undergoes a thorough baseline evaluation, including movement screening, range of motion measurement, posture assessment, and relevant medical history review.</li>
+                    <li><strong>Informed Consent:</strong> Our physiotherapists explain proposed rehabilitation techniques, therapeutic modalities (such as manual therapy, joint mobilization, electrotherapy, therapeutic ultrasound, dry needling, cupping, or IASTM where appropriate), expected sensations, and safety considerations. Patients retain the right to ask questions or decline any technique.</li>
+                    <li><strong>Home Care Services:</strong> Home visits are provided across Wayanad for elderly, post-surgical, or mobility-impaired patients following initial clinical eligibility and geographic confirmation.</li>
+                  </ul>
+                </section>
+
+                <!-- Section 7 -->
+                <section id="tos-7" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">7</span>
+                    <h2>Appointment Enquiries and Booking Arrangements</h2>
+                  </div>
+                  <p>
+                    Appointments at Physio Dynamics may be arranged through several convenient pathways:
+                  </p>
+                  <ul class="legal-list">
+                    <li><strong>Direct Clinic Telephone:</strong> Calling our reception team at <a href="tel:+916282929104">+91 62829 29104</a> during clinic working hours (Monday – Saturday: 8:00 AM – 7:00 PM).</li>
+                    <li><strong>WhatsApp Messaging:</strong> Sending a direct booking enquiry through our official clinic WhatsApp link.</li>
+                    <li><strong>KAPC Online Portal:</strong> Scheduling via the Kerala Association of Physiotherapists Co-operative appointment scheduler at <a href="https://kapcwayanad.in/bookings/create/9" target="_blank" rel="noopener">kapcwayanad.in/bookings/create/9</a>.</li>
+                  </ul>
+                  <p>
+                    Submitting an appointment request through our website contact form or external scheduler is subject to clinical calendar confirmation. We make every effort to confirm requested time slots promptly.
+                  </p>
+                </section>
+
+                <!-- Section 8 -->
+                <section id="tos-8" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">8</span>
+                    <h2>Appointment Cancellations, Rescheduling, and Availability</h2>
+                  </div>
+                  <p>
+                    Clinical time is dedicated exclusively to each patient. To ensure fairness and optimal access for individuals in acute physical pain:
+                  </p>
+                  <ul class="legal-list">
+                    <li><strong>Advance Courtesy Notice:</strong> If you need to cancel or reschedule your consultation, we kindly request a minimum of <strong>24 hours of advance notice</strong> by telephone or WhatsApp.</li>
+                    <li><strong>Slot Reallocation:</strong> Advance notice allows our reception team to offer that clinical appointment slot to another patient on our waiting list who may be experiencing acute pain.</li>
+                    <li><strong>Fair Policy:</strong> We do not impose arbitrary financial cancellation penalties; we rely on mutual respect for our physiotherapists' time and fellow patients' healthcare needs.</li>
+                    <li><strong>Clinic Schedule Adjustments:</strong> While we strive to adhere strictly to booked times, emergency patient presentations or complex clinical needs may occasionally require slight scheduling adjustments. We thank you for your understanding.</li>
+                  </ul>
+                </section>
+
+                <!-- Section 9 -->
+                <section id="tos-9" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">9</span>
+                    <h2>Patient Responsibilities</h2>
+                  </div>
+                  <p>
+                    Safe, effective physical rehabilitation is a collaborative partnership between patient and therapist. As a patient, you agree to:
+                  </p>
+                  <ul class="legal-list">
+                    <li><strong>Provide Truthful Health Information:</strong> Fully disclose your complete medical background, past surgical interventions, implanted cardiac pacemakers, metal hardware/implants, cardiovascular conditions, hypertension, diabetes, osteoporosis, active infections, medications, and pregnancy during your clinical assessment.</li>
+                    <li><strong>Report Discomfort Immediately:</strong> Communicate openly with your physiotherapist during treatment regarding any unusual pain, sharp sensations, dizziness, nausea, or discomfort.</li>
+                    <li><strong>Adhere to Clinical Guidance:</strong> Carefully follow prescribed home exercise routines, posture modifications, and safety instructions provided by your therapist. Do not attempt unapproved strenuous activities that contradict clinical guidance.</li>
+                    <li><strong>Notify of Clinical Changes:</strong> Inform your therapist of any changes in your symptoms, new diagnostic reports (X-rays, MRIs), or medications prescribed by other treating physicians.</li>
+                  </ul>
+                </section>
+
+                <!-- Section 10 -->
+                <section id="tos-10" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">10</span>
+                    <h2>Treatment Outcomes and Recovery Expectations</h2>
+                  </div>
+                  <p>
+                    Physiotherapy is an evidence-based medical science dedicated to restoring functional mobility, managing pain, and enhancing physical performance.
+                  </p>
+                  <div class="legal-callout legal-callout-info">
+                    <i class="fas fa-balance-scale"></i>
+                    <div class="legal-callout-content">
+                      <div class="legal-callout-title">No Guarantee of Specific Clinical Results</div>
+                      <p>
+                        Human anatomy, tissue pathology, cellular healing rates, chronicity of condition, and individual biomechanical factors vary substantially between patients. While Physio Dynamics utilizes modern, evidence-backed clinical protocols, <strong>we cannot and do not guarantee complete pain elimination, identical recovery timelines, or specific clinical results for any individual patient</strong>.
+                      </p>
+                    </div>
+                  </div>
+                  <p>
+                    Clinical progress depends heavily on accurate diagnostic evaluation, timely attendance of scheduled sessions, adherence to prescribed home exercise regimens, ergonomic modifications, and general health status.
+                  </p>
+                </section>
+
+                <!-- Section 11 -->
+                <section id="tos-11" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">11</span>
+                    <h2>External Booking Platforms and Third-Party Links</h2>
+                  </div>
+                  <p>
+                    Our website provides links to third-party services for visitor convenience, including:
+                  </p>
+                  <ul class="legal-list">
+                    <li><strong>KAPC Wayanad Booking System:</strong> Online bookings executed via <a href="https://kapcwayanad.in/bookings/create/9" target="_blank" rel="noopener">kapcwayanad.in</a> are subject to the terms and technical parameters of the Kerala Association of Physiotherapists Co-operative portal.</li>
+                    <li><strong>Third-Party Portals:</strong> External healthcare directories, social media networks, and mapping services operate independently of our clinic. Physio Dynamics is not responsible for the availability, terms, or privacy standards of external providers.</li>
+                  </ul>
+                </section>
+
+                <!-- Section 12 -->
+                <section id="tos-12" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">12</span>
+                    <h2>Intellectual Property and Content Ownership</h2>
+                  </div>
+                  <p>
+                    All content featured on <a href="https://www.physio-dynamics.com/">https://www.physio-dynamics.com/</a>—including but not limited to text, articles, rehabilitation diagrams, clinic photography, logos, graphic design, brand identifiers, and website code—is the proprietary intellectual property of Physio Dynamics or used with appropriate authorization.
+                  </p>
+                  <ul class="legal-list">
+                    <li>You may not copy, reproduce, republish, distribute, sell, or commercially exploit any material from this website without prior express written permission from Physio Dynamics.</li>
+                    <li>Brief quotations or references to our educational blog articles are permitted, provided clear attribution and a direct hyperlink to the original source page on our website are included.</li>
+                  </ul>
+                </section>
+
+                <!-- Section 13 -->
+                <section id="tos-13" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">13</span>
+                    <h2>Prohibited Website Use</h2>
+                  </div>
+                  <p>
+                    When accessing or using our website, you agree not to:
+                  </p>
+                  <ul class="legal-list">
+                    <li>Use the website for any unlawful purpose or in violation of applicable local, state, national, or international law.</li>
+                    <li>Introduce or transmit viruses, worms, malware, trojan horses, or other harmful technological code intended to compromise our server or users.</li>
+                    <li>Engage in automated scraping, data mining, harvesting, or extraction of website text, contact emails, or telephone numbers without written authorization.</li>
+                    <li>Submit false, fraudulent, or impersonating appointment requests or spam inquiries through our contact forms.</li>
+                    <li>Interfere with, disrupt, or place an unreasonable or disproportionately large load on our digital infrastructure or security controls.</li>
+                  </ul>
+                </section>
+
+                <!-- Section 14 -->
+                <section id="tos-14" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">14</span>
+                    <h2>Limitation of Liability</h2>
+                  </div>
+                  <p>
+                    To the maximum extent permitted under applicable Indian law:
+                  </p>
+                  <ul class="legal-list">
+                    <li>Physio Dynamics provides website content on an "as is" and "as available" basis without express or implied warranties of any kind regarding accuracy, uninterrupted uptime, or fitness for a particular educational purpose.</li>
+                    <li>Physio Dynamics, its physiotherapists, directors, and administrative staff shall not be liable for any direct, indirect, incidental, consequential, or special damages arising out of the self-application of general exercises, tips, or information obtained from this website without individualized professional clinical supervision.</li>
+                    <li>We do not warrant that our website will be uninterrupted, error-free, or entirely free of viruses or other harmful digital components, though we maintain diligent security precautions.</li>
+                  </ul>
+                </section>
+
+                <!-- Section 15 -->
+                <section id="tos-15" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">15</span>
+                    <h2>Governing Law, Jurisdiction, and Contact Details</h2>
+                  </div>
+                  <p>
+                    These Terms of Service, along with any disputes or claims arising out of or related to your use of this website or clinical services, shall be governed by, construed, and enforced in accordance with the <strong>laws of the Republic of India</strong>.
+                  </p>
+                  <p>
+                    Any legal proceedings, disputes, or claims arising hereunder shall be subject to the exclusive jurisdiction of the competent courts having jurisdiction over <strong>Wayanad, Kerala, India</strong>.
+                  </p>
+                  <p>
+                    We reserve the right to revise or update these Terms of Service at any time. Changes become effective immediately upon being published on this page, accompanied by an updated "Last Updated" date.
+                  </p>
+
+                  <!-- Dedicated Clinic Contact Card -->
+                  <div class="legal-contact-card">
+                    <h3>Contact Physio Dynamics</h3>
+                    <p class="subtitle">
+                      For clinical inquiries, appointment confirmations, or questions concerning these Terms of Service, please reach out to our clinic team directly:
+                    </p>
+                    <div class="legal-contact-grid">
+                      <div class="legal-contact-item">
+                        <i class="fas fa-clinic-medical"></i>
+                        <div class="legal-contact-item-info">
+                          <h5>Clinic Address</h5>
+                          <p>UB City Centre Building, Near Crescent Public School, Panamaram, Wayanad, Kerala – 670721</p>
+                        </div>
+                      </div>
+                      <div class="legal-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="legal-contact-item-info">
+                          <h5>Telephone</h5>
+                          <p><a href="tel:+916282929104">+91 62829 29104</a></p>
+                        </div>
+                      </div>
+                      <div class="legal-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="legal-contact-item-info">
+                          <h5>Email Address</h5>
+                          <p><a href="mailto:physiodynamics10@gmail.com">physiodynamics10@gmail.com</a></p>
+                        </div>
+                      </div>
+                      <div class="legal-contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="legal-contact-item-info">
+                          <h5>Opening Hours</h5>
+                          <p>Mon – Sat: 8:00 AM – 7:00 PM<br><span class="text-muted">Sunday: Closed</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="legal-contact-actions">
+                      <a href="tel:+916282929104" class="legal-btn-action btn-primary-action">
+                        <i class="fas fa-phone-alt"></i> Call Clinic
+                      </a>
+                      <a href="mailto:physiodynamics10@gmail.com" class="legal-btn-action btn-outline-action">
+                        <i class="fas fa-envelope"></i> Email Us
+                      </a>
+                      <a href="https://kapcwayanad.in/bookings/create/9" target="_blank" rel="noopener" class="legal-btn-action btn-outline-action">
+                        <i class="fas fa-calendar-check"></i> Book Online
+                      </a>
+                    </div>
+                  </div>
+                </section>
+              </article>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
     <footer class="modern-footer">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-4">
-                    <a href="/" class="footer-logo">Physio Dynamics</a>
-                    <p class="mb-4">
-                        Leading physiotherapy and sports rehabilitation center in Wayanad,
-                        providing expert care with compassion and professionalism since
-                        2024.
-                    </p>
-                    <div class="social-links">
-                        <a href="https://wa.me/916282929104" target="_blank" rel="noopener" aria-label="WhatsApp"><i
-                                class="fab fa-whatsapp"></i></a>
-                        <a href="https://www.facebook.com/physiodynamicz" target="_blank" rel="noopener"
-                            aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/physio.dynamics.panamaram/" target="_blank" rel="noopener"
-                            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/company/physio-dynamics-health/" target="_blank"
-                            rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://www.quora.com/profile/Physio-Dynamics" target="_blank" rel="noopener" aria-label="Quora" class="d-inline-flex align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quora" viewBox="0 0 16 16" style="width: 1em; height: 1em;"><path d="M8.73 12.476c-.554-.065-1.148-.271-1.637-.609.152-.692.35-1.561.5-2.338 1.292-.04 2.307-.446 2.858-1.028.535-.566.814-1.393.814-2.407 0-.99-.31-1.786-.922-2.367C9.72 3.167 8.877 2.87 7.7 2.87c-1.127 0-1.968.271-2.502.805C4.67 4.21 4.39 4.975 4.39 5.922c0 .993.308 1.83.917 2.487.625.673 1.6 1.025 2.9 1.053-.186.979-.47 2.51-.7 3.708-.08.416-.25 1.09-.434 1.346-.115.16-.314.3-.572.3-.265 0-.482-.162-.647-.482-.197-.384-.342-1.005-.447-1.85-.017-.14-.08-.223-.215-.248a.5.5 0 0 0-.254.02L2.73 13.1c-.244.093-.327.359-.227.575.465 1.002 1.152 1.637 2.062 1.905.908.267 1.862.08 2.5-.548.743-.728 1.12-2.122 1.396-3.324a18 18 0 0 0 .269-1.232c.311.233.722.378 1.232.431.223.022.424-.132.472-.348.048-.216-.093-.443-.3-.483zm-1.01-3.64c-1.42 0-2.146-.662-2.146-1.97 0-1.297.712-1.954 2.146-1.954 1.41 0 2.115.65 2.115 1.954 0 1.3-.715 1.97-2.11 1.97z"/></svg></a>
-                        </div>
-                </div>
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <a href="/" class="footer-logo">Physio Dynamics</a>
+            <p class="mb-4">
+              Leading physiotherapy and sports rehabilitation center in Wayanad, providing expert care with compassion and professionalism since 2024.
+            </p>
+            <div class="social-links">
+              <a href="https://wa.me/916282929104" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://www.facebook.com/physiodynamicz" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/physio.dynamics.panamaram/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/physio-dynamics-health/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.quora.com/profile/Physio-Dynamics" target="_blank" rel="noopener" aria-label="Quora" class="d-inline-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quora" viewBox="0 0 16 16" style="width: 1em; height: 1em;"><path d="M8.73 12.476c-.554-.065-1.148-.271-1.637-.609.152-.692.35-1.561.5-2.338 1.292-.04 2.307-.446 2.858-1.028.535-.566.814-1.393.814-2.407 0-.99-.31-1.786-.922-2.367C9.72 3.167 8.877 2.87 7.7 2.87c-1.127 0-1.968.271-2.502.805C4.67 4.21 4.39 4.975 4.39 5.922c0 .993.308 1.83.917 2.487.625.673 1.6 1.025 2.9 1.053-.186.979-.47 2.51-.7 3.708-.08.416-.25 1.09-.434 1.346-.115.16-.314.3-.572.3-.265 0-.482-.162-.647-.482-.197-.384-.342-1.005-.447-1.85-.017-.14-.08-.223-.215-.248a.5.5 0 0 0-.254.02L2.73 13.1c-.244.093-.327.359-.227.575.465 1.002 1.152 1.637 2.062 1.905.908.267 1.862.08 2.5-.548.743-.728 1.12-2.122 1.396-3.324a18 18 0 0 0 .269-1.232c.311.233.722.378 1.232.431.223.022.424-.132.472-.348.048-.216-.093-.443-.3-.483zm-1.01-3.64c-1.42 0-2.146-.662-2.146-1.97 0-1.297.712-1.954 2.146-1.954 1.41 0 2.115.65 2.115 1.954 0 1.3-.715 1.97-2.11 1.97z"/></svg>
+              </a>
+            </div>
+          </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-links">
-                        <h3 class="h5">Quick Links</h3>
-                        <ul>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/about">About Us</a></li>
-                            <li><a href="/services">Our Services</a></li>
-                            <li><a href="/expert-profile">Our Expertise</a></li>
-                            <li><a href="/blogs">Blog</a></li>
-                            <li><a href="/contact">Contact Us</a></li>
-                            <li>
-                                <a href="https://kapcwayanad.in/bookings/create/9" target="_blank" rel="noopener">Book
-                                    Appointment</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-links">
+              <h3 class="h5">Quick Links</h3>
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/services">Our Services</a></li>
+                <li><a href="/expert-profile">Our Expertise</a></li>
+                <li><a href="/blogs">Blog</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="https://kapcwayanad.in/bookings/create/9" target="_blank" rel="noopener">Book Appointment</a></li>
+              </ul>
+            </div>
+          </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-links">
-<h3 class="h5">Our Services</h3>
-<ul>
-<li><a href="/service/orthopedic-physiotherapy">Orthopedic Physiotherapy</a></li>
-<li><a href="/service/sports-physiotherapy">Sports Physiotherapy</a></li>
-<li><a href="/service/neurological-physiotherapy">Neurological Physiotherapy</a></li>
-<li><a href="/service/pediatric-physiotherapy">Pediatric Physiotherapy</a></li>
-<li><a href="/service/chest-physiotherapy">Chest Physiotherapy</a></li>
-<li><a href="/service/home-care">Home Care Services</a></li>
-</ul>
-</div>
-                </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-links">
+              <h3 class="h5">Our Services</h3>
+              <ul>
+                <li><a href="/service/orthopedic-physiotherapy">Orthopedic Physiotherapy</a></li>
+                <li><a href="/service/sports-physiotherapy">Sports Physiotherapy</a></li>
+                <li><a href="/service/neurological-physiotherapy">Neurological Physiotherapy</a></li>
+                <li><a href="/service/pediatric-physiotherapy">Pediatric Physiotherapy</a></li>
+                <li><a href="/service/chest-physiotherapy">Chest Physiotherapy</a></li>
+                <li><a href="/service/home-care">Home Care Services</a></li>
+              </ul>
+            </div>
+          </div>
 
-                <div class="col-lg-2 col-md-6">
-          <div class="footer-links">
-            <h3 class="h5">Opening Hours</h3>
-            <ul>
-              <li><strong>Mon - Sat:</strong></li>
-              <li>8:00 AM - 7:00 PM</li>
-              <li><strong>Sunday:</strong> Closed</li>
-              <li><strong>Emergency:</strong> Available</li>
-            </ul>
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-links">
+              <h3 class="h5">Opening Hours</h3>
+              <ul>
+                <li><strong>Mon - Sat:</strong></li>
+                <li>8:00 AM - 7:00 PM</li>
+                <li><strong>Sunday:</strong> Closed</li>
+                <li><strong>Emergency:</strong> Available</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>
+            &copy; <span id="currentYear"></span> Physio Dynamics. All Rights Reserved.
+          </p>
+          <div class="mt-2" style="font-size: 0.85rem;">
+            <a href="/privacy-policy" class="text-white-50 text-decoration-none me-3">Privacy Policy</a>
+            <a href="/terms-of-service" class="text-white text-decoration-underline me-3">Terms of Service</a>
+            <a class="text-white-50 text-decoration-none me-3" href="#cookie-settings" id="openCookieSettingsFooter" role="button">Cookie Settings</a>
+            <span class="text-white-50 me-3">|</span>
+            <a href="https://www.rootracesolutions.com/" target="_blank" rel="noopener" class="text-white-50 text-decoration-none">Designed &amp; Developed by : <span class="text-white" style="font-weight: 600;">RootRace</span></a>
           </div>
         </div>
       </div>
-
-      <div class="copyright">
-        <p>
-          &copy; <span id="currentYear"></span> Physio Dynamics. All Rights
-          Reserved.
-        </p>
-        <div class="mt-2" style="font-size: 0.85rem;">
-          <a href="/privacy-policy" class="text-white-50 text-decoration-none me-3">Privacy Policy</a>
-          <a href="/terms-of-service" class="text-white-50 text-decoration-none me-3">Terms of Service</a>
-<a class="text-white-50 text-decoration-none me-3" href="#cookie-settings" id="openCookieSettings" role="button">Cookie Settings</a>
-          <span class="text-white-50 me-3">|</span>
-          <a href="https://www.rootracesolutions.com/" target="_blank" rel="noopener" class="text-white-50 text-decoration-none">Designed & Developed by : <span class="text-white" style="font-weight: 600;">RootRace</span></a>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
     <!-- JavaScript -->
     <script src="/js/bootstrap.bundle.min.js" defer></script>
@@ -267,35 +693,59 @@
 
     <!-- Floating Buttons -->
     <div class="floating-buttons">
-      <a
-        href="#top"
-        class="floating-button back-to-top"
-        aria-label="Back to top"
-      >
+      <a href="#main-content" class="floating-button back-to-top" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
       </a>
-      <a
-        href="tel:+916282929104"
-        class="floating-button phone"
-        aria-label="Call us"
-      >
+      <a href="tel:+916282929104" class="floating-button phone" aria-label="Call us">
         <i class="fas fa-phone-alt"></i>
       </a>
-      <a
-        href="https://wa.me/916282929104"
-        class="floating-button whatsapp"
-        aria-label="Chat on WhatsApp"
-        target="_blank"
-        rel="noopener"
-      >
+      <a href="https://wa.me/916282929104" class="floating-button whatsapp" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
         <i class="fab fa-whatsapp"></i>
       </a>
     </div>
 
+    <!-- Active TOC Spy & Dynamic Year Script -->
     <script>
-      // Set current year in footer
-      document.getElementById('currentYear').textContent = new Date().getFullYear();
+      document.addEventListener("DOMContentLoaded", function () {
+        // Set year
+        const yearEl = document.getElementById('currentYear');
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+        // Connect footer Cookie Settings button if present
+        const footerCookieBtn = document.getElementById('openCookieSettingsFooter');
+        if (footerCookieBtn && window.pdConsent && window.pdConsent.openModal) {
+          footerCookieBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            window.pdConsent.openModal();
+          });
+        }
+
+        // Table of Contents Active Link Highlight on Scroll
+        const sections = document.querySelectorAll('.legal-section');
+        const tocLinks = document.querySelectorAll('.legal-toc-link');
+
+        if ('IntersectionObserver' in window && sections.length && tocLinks.length) {
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const id = entry.target.getAttribute('id');
+                tocLinks.forEach((link) => {
+                  if (link.getAttribute('href') === '#' + id) {
+                    link.classList.add('active');
+                  } else {
+                    link.classList.remove('active');
+                  }
+                });
+              }
+            });
+          }, {
+            rootMargin: '-80px 0px -70% 0px',
+            threshold: 0
+          });
+
+          sections.forEach((sec) => observer.observe(sec));
+        }
+      });
     </script>
-      
-</body>
+  </body>
 </html>

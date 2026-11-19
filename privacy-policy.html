@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head><!-- Google tag (gtag.js) -->
+  <head>
+    <!-- Google tag (gtag.js) Consent Mode v2 Default Initialization -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -12,18 +13,16 @@
         'wait_for_update': 500
       });
     </script>
-    
-    
 
     <!-- Primary Meta Tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="canonical" href="https://www.physio-dynamics.com/privacy-policy" />
-    <title>Privacy Policy | Physio Dynamics</title>
-    <meta name="description" content="Read the Privacy Policy of Physio Dynamics. Learn how we collect, use, and safeguard your personal and medical information in Wayanad, Kerala." />
+    <title>Privacy Policy | Physio Dynamics Panamaram, Wayanad</title>
+    <meta name="description" content="Read the official Privacy Policy of Physio Dynamics in Panamaram, Wayanad, Kerala. Learn how we handle appointment enquiries, protect visitor privacy, and manage cookies." />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta name="author" content="Physio Dynamics" />
-    <meta name="theme-color" content="#0692ab" />
+    <meta name="theme-color" content="#006779" />
 
     <!-- Performance Optimizations -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,233 +35,688 @@
     <link rel="preload" href="/css/bootstrap.min.css" as="style" />
     <link rel="preload" href="/css/font-awesome-purged.min.css" as="style" />
     <link rel="preload" href="/css/style.css" as="style" />
+    <link rel="preload" href="/css/legal.css" as="style" />
 
     <!-- Fonts -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=optional" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=optional" /></noscript>
-    
 
-    <!-- Bootstrap CSS -->
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
-
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="/css/font-awesome-purged.min.css" />
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/legal.css" />
+
+    <!-- Favicons -->
+    <link href="/favicon.svg" rel="icon" type="image/svg+xml" />
+    <link href="/android-chrome-192.png" rel="icon" sizes="192x192" type="image/png" />
+    <link href="/android-chrome-512.png" rel="icon" sizes="512x512" type="image/png" />
+    <link href="/favicon-32.png" rel="icon" sizes="32x32" type="image/png" />
+    <link href="/favicon-16.png" rel="icon" sizes="16x16" type="image/png" />
+    <link href="/favicon.ico" rel="icon" />
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+    <link href="/site.webmanifest" rel="manifest" />
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Privacy Policy | Physio Dynamics",
-      "description": "Read the Privacy Policy of Physio Dynamics. Learn how we collect, use, and safeguard your personal and medical information in Wayanad, Kerala.",
-      "url": "https://www.physio-dynamics.com/privacy-policy"
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.physio-dynamics.com/privacy-policy#webpage",
+          "url": "https://www.physio-dynamics.com/privacy-policy",
+          "name": "Privacy Policy | Physio Dynamics Panamaram, Wayanad",
+          "description": "Privacy Policy of Physio Dynamics Physiotherapy and Sports Rehabilitation Centre in Panamaram, Wayanad, Kerala.",
+          "inLanguage": "en-IN",
+          "datePublished": "2024-08-01",
+          "dateModified": "2026-11-19"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.physio-dynamics.com/privacy-policy#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.physio-dynamics.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Privacy Policy"
+            }
+          ]
+        },
+        {
+          "@type": "MedicalClinic",
+          "@id": "https://www.physio-dynamics.com/#organization",
+          "name": "Physio Dynamics – Physiotherapy and Sports Rehabilitation Centre",
+          "telephone": "+916282929104",
+          "email": "physiodynamics10@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "UB City Centre Building, Near Crescent Public School, Panamaram",
+            "addressLocality": "Panamaram",
+            "addressRegion": "Wayanad, Kerala",
+            "postalCode": "670721",
+            "addressCountry": "IN"
+          }
+        }
+      ]
     }
     </script>
 
+    <!-- Analytics Interaction Hook -->
     <script>
-        window.addEventListener("load", () => {
-            setTimeout(initAnalytics, 3000);
-        });
+      window.addEventListener("load", () => {
+        setTimeout(initAnalytics, 3000);
+      });
 
-        function initAnalytics() {
-            if (window.__analyticsLoaded) return;
-            window.__analyticsLoaded = true;
-            window.dataLayer = window.dataLayer || [];
-            function dl(event) { window.dataLayer.push(event); }
-            
-            document.addEventListener("click", (e) => {
-                const link = e.target.closest("a");
-                if (!link) return;
-                const href = link.getAttribute("href") || "";
-                if (link.classList.contains("appointment-btn") || href.includes("bookings")) {
-                    dl({ event: "appointment_click", method: "direct" });
-                }
-                if (href.startsWith("tel:")) { dl({ event: "phone_call", phone: href.replace("tel:", "") }); }
-                if (href.includes("wa.me") || href.includes("whatsapp")) { dl({ event: "whatsapp_click" }); }
-            });
-        }
+      function initAnalytics() {
+        if (window.__analyticsLoaded) return;
+        window.__analyticsLoaded = true;
+        window.dataLayer = window.dataLayer || [];
+        function dl(event) { window.dataLayer.push(event); }
+
+        document.addEventListener("click", (e) => {
+          const link = e.target.closest("a");
+          if (!link) return;
+          const href = link.getAttribute("href") || "";
+          if (link.classList.contains("appointment-btn") || href.includes("bookings")) {
+            dl({ event: "appointment_click", method: "direct" });
+          }
+          if (href.startsWith("tel:")) { dl({ event: "phone_call", phone: href.replace("tel:", "") }); }
+          if (href.includes("wa.me") || href.includes("whatsapp")) { dl({ event: "whatsapp_click" }); }
+        });
+      }
     </script>
 
-    
-      <meta name="google-site-verification" content="M1vVDIjSFVyNSNljTc_ljGDshn5rNpuiSZ2i81M6neA" />
-  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt" />
-  <script src="/js/defer-scripts.js" defer></script>
-<script defer="" src="/js/cookie-consent.js"></script>
-</head>
+    <meta name="google-site-verification" content="M1vVDIjSFVyNSNljTc_ljGDshn5rNpuiSZ2i81M6neA" />
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt" />
+    <script src="/js/defer-scripts.js" defer></script>
+    <script defer src="/js/cookie-consent.js"></script>
+  </head>
 
   <body itemscope itemtype="https://schema.org/WebPage">
     <!-- Skip to main content for accessibility -->
     <a class="skip-to-main visually-hidden" href="#main-content">Skip to main content</a>
 
-    <!-- Google Tag Manager (noscript) -->
-    
-    <!-- End Google Tag Manager (noscript) -->
-
-    <!-- Modern Header with Dropdown -->
+    <!-- Modern Header -->
     <header class="modern-header">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="/">
-                    <img src="/logo.png" alt="Physio Dynamics Logo - Wayanad's leading physiotherapy clinic"
-                        width="40" height="40" loading="eager" />
-                    <span>Physio Dynamics</span>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg" aria-label="Main Navigation">
+          <a class="navbar-brand" href="/">
+            <img src="/logo.png" alt="Physio Dynamics Logo - Wayanad's leading physiotherapy clinic" width="40" height="40" loading="eager" />
+            <span>Physio Dynamics</span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+              <i class="fas fa-bars text-white"></i>
+            </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/expert-profile">Expertise</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/blogs">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="appointment-btn btn" href="https://kapcwayanad.in/bookings/create/9" target="_blank" rel="noopener">
+                  <i class="fas fa-calendar-check me-2"></i>Book Appointment
                 </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon">
-                        <i class="fas fa-bars text-white"></i>
-                    </span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="/" aria-current="page">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/expert-profile">Expertise</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/contact">Contact</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="appointment-btn btn" href="https://kapcwayanad.in/bookings/create/9"
-                                target="_blank" rel="noopener">
-                                <i class="fas fa-calendar-check me-2"></i>Book Appointment
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <!-- Main Content -->
     <main id="main-content">
-      <section class="py-5 mt-5">
-        <div class="container py-5">
-          <h1 class="mb-4 text-primary">Privacy Policy</h1>
-          <p class="text-muted mb-4">Last Updated: August 2024</p>
-          
-          <h2 class="h4 mt-4">1. Introduction</h2>
-          <p>Welcome to Physio Dynamics. We respect your privacy and are committed to protecting your personal data. This privacy policy explains how we collect, use, and safeguard your information when you visit our website or use our services in Wayanad, Kerala.</p>
-          
-          <h2 class="h4 mt-4">2. Information We Collect</h2>
-          <p>We may collect personal identification information (Name, Email address, Phone number, etc.) when you book an appointment, fill out a contact form, or communicate with us directly. We may also collect medical history and treatment records strictly for the purpose of providing physiotherapy services.</p>
-          
-          <h2 class="h4 mt-4">3. How We Use Your Information</h2>
-          <p>We use your information to provide and improve our physiotherapy services, manage appointments, communicate with you regarding your treatment, and send administrative information.</p>
-          
-          <h2 class="h4 mt-4">4. Data Security</h2>
-          <p>We implement appropriate security measures to protect against unauthorized access, alteration, disclosure, or destruction of your personal and medical information. Your medical records are kept strictly confidential.</p>
-          
-          <h2 class="h4 mt-4">5. Third-Party Services</h2>
-          <p>We do not sell, trade, or rent your personal identification information to others. We may use third-party service providers to help us operate our business (such as online booking systems), provided those parties agree to keep this information confidential.</p>
-          
-          <h2 class="h4 mt-4">6. Contact Us</h2>
-          <p>If you have any questions about this Privacy Policy, please contact us at physiodynamics10@gmail.com.</p>
+      <!-- Legal Hero Section -->
+      <section class="legal-hero" aria-label="Privacy Policy Introduction">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Privacy Policy</li>
+            </ol>
+          </nav>
+          <div class="legal-badge">
+            <i class="fas fa-shield-alt"></i> Patient &amp; Visitor Privacy
+          </div>
+          <h1>Privacy Policy</h1>
+          <p class="lead">
+            Transparent information about how Physio Dynamics handles patient enquiries, protects personal contact details, uses website analytics, and respects your cookie preferences in Panamaram, Wayanad.
+          </p>
+          <div class="legal-meta-strip">
+            <div class="legal-meta-item">
+              <i class="far fa-calendar-alt"></i>
+              <span>Last Updated: 19 November 2026</span>
+            </div>
+            <div class="legal-meta-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Panamaram, Wayanad, Kerala</span>
+            </div>
+            <div class="legal-meta-item">
+              <i class="fas fa-user-check"></i>
+              <span>Google Consent Mode v2 Compliant</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Legal Layout Section -->
+      <section class="legal-page-section">
+        <div class="container">
+          <div class="row g-4">
+            <!-- Desktop Sticky Table of Contents (Col 3) -->
+            <aside class="col-lg-4 col-xl-3 d-none d-lg-block" aria-label="Table of Contents">
+              <div class="legal-toc-wrapper">
+                <div class="legal-toc-title">
+                  <i class="fas fa-list-ul"></i>
+                  <span>Contents</span>
+                </div>
+                <nav>
+                  <ul class="legal-toc-list" id="desktopTocList">
+                    <li><a href="#section-1" class="legal-toc-link">1. Introduction &amp; Purpose</a></li>
+                    <li><a href="#section-2" class="legal-toc-link">2. Information We Collect</a></li>
+                    <li><a href="#section-3" class="legal-toc-link">3. How Information Is Collected</a></li>
+                    <li><a href="#section-4" class="legal-toc-link">4. How We Use Information</a></li>
+                    <li><a href="#section-5" class="legal-toc-link">5. Analytics &amp; Tag Manager</a></li>
+                    <li><a href="#section-6" class="legal-toc-link">6. Microsoft Clarity Analytics</a></li>
+                    <li><a href="#section-7" class="legal-toc-link">7. Cookie Usage &amp; Consent</a></li>
+                    <li><a href="#section-8" class="legal-toc-link">8. Third-Party Services</a></li>
+                    <li><a href="#section-9" class="legal-toc-link">9. Data Storage &amp; Security</a></li>
+                    <li><a href="#section-10" class="legal-toc-link">10. Information Sharing</a></li>
+                    <li><a href="#section-11" class="legal-toc-link">11. Your Privacy Rights</a></li>
+                    <li><a href="#section-12" class="legal-toc-link">12. Children's Privacy</a></li>
+                    <li><a href="#section-13" class="legal-toc-link">13. External Links Disclaimer</a></li>
+                    <li><a href="#section-14" class="legal-toc-link">14. Policy Updates &amp; Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </aside>
+
+            <!-- Main Legal Content Body (Col 9) -->
+            <div class="col-lg-8 col-xl-9">
+              <!-- Mobile Collapsible Table of Contents -->
+              <details class="legal-toc-mobile d-lg-none">
+                <summary>
+                  <span><i class="fas fa-list-ul me-2 text-primary"></i> Table of Contents</span>
+                </summary>
+                <div class="legal-toc-mobile-content">
+                  <ul class="legal-toc-list">
+                    <li><a href="#section-1" class="legal-toc-link">1. Introduction &amp; Purpose</a></li>
+                    <li><a href="#section-2" class="legal-toc-link">2. Information We Collect</a></li>
+                    <li><a href="#section-3" class="legal-toc-link">3. How Information Is Collected</a></li>
+                    <li><a href="#section-4" class="legal-toc-link">4. How We Use Information</a></li>
+                    <li><a href="#section-5" class="legal-toc-link">5. Analytics &amp; Tag Manager</a></li>
+                    <li><a href="#section-6" class="legal-toc-link">6. Microsoft Clarity Analytics</a></li>
+                    <li><a href="#section-7" class="legal-toc-link">7. Cookie Usage &amp; Consent</a></li>
+                    <li><a href="#section-8" class="legal-toc-link">8. Third-Party Services</a></li>
+                    <li><a href="#section-9" class="legal-toc-link">9. Data Storage &amp; Security</a></li>
+                    <li><a href="#section-10" class="legal-toc-link">10. Information Sharing</a></li>
+                    <li><a href="#section-11" class="legal-toc-link">11. Your Privacy Rights</a></li>
+                    <li><a href="#section-12" class="legal-toc-link">12. Children's Privacy</a></li>
+                    <li><a href="#section-13" class="legal-toc-link">13. External Links Disclaimer</a></li>
+                    <li><a href="#section-14" class="legal-toc-link">14. Policy Updates &amp; Contact</a></li>
+                  </ul>
+                </div>
+              </details>
+
+              <article class="legal-content-card">
+                <!-- Section 1 -->
+                <section id="section-1" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">1</span>
+                    <h2>Introduction and Purpose</h2>
+                  </div>
+                  <p>
+                    Physio Dynamics – Physiotherapy and Sports Rehabilitation Centre ("Physio Dynamics", "we", "our", or "the clinic") operates the website <a href="https://www.physio-dynamics.com/">https://www.physio-dynamics.com/</a>. We are an outpatient physiotherapy and physical rehabilitation facility located at UB City Centre Building, Near Crescent Public School, Panamaram, Wayanad, Kerala, India – 670721.
+                  </p>
+                  <p>
+                    This Privacy Policy outlines our transparent approach to collecting, utilizing, storing, and safeguarding information gathered from patients, website visitors, and individuals inquiring about our physiotherapy services. As a professional healthcare provider, we respect your confidentiality and adhere to applicable Indian information technology and digital personal data protection principles.
+                  </p>
+                  <div class="legal-callout legal-callout-info">
+                    <i class="fas fa-info-circle"></i>
+                    <div class="legal-callout-content">
+                      <div class="legal-callout-title">Core Commitment to Patient Privacy</div>
+                      <p>
+                        We treat all patient communications with the highest professional discretion. We do not sell, rent, monetize, or trade your personal contact details with third-party marketers under any circumstance.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- Section 2 -->
+                <section id="section-2" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">2</span>
+                    <h2>Information We Collect</h2>
+                  </div>
+                  <p>
+                    We collect only the minimal information necessary to facilitate communication, evaluate appointment requests, and ensure our website functions reliably. Information collected falls into two primary categories:
+                  </p>
+                  <h3>A. Information You Voluntarily Provide</h3>
+                  <ul class="legal-list">
+                    <li><strong>Contact Details:</strong> Your full name, telephone or mobile phone number, and email address submitted when filling out our contact form, requesting an appointment, or calling our clinic.</li>
+                    <li><strong>Appointment Enquiries:</strong> Preferred consultation dates, preferred time slots, clinic visit preference versus home care request in Wayanad, and communication notes.</li>
+                    <li><strong>Voluntary Health-Related Descriptions:</strong> Brief, voluntary descriptions of your clinical concerns (e.g., knee pain, post-fracture rehabilitation, sports injury, or neck stiffness) provided in enquiry messages to help us direct you to the appropriate therapist.</li>
+                  </ul>
+                  <div class="legal-callout legal-callout-info">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="legal-callout-content">
+                      <div class="legal-callout-title">Important Clarification on Medical Records</div>
+                      <p>
+                        Our website does <strong>not</strong> collect, process, or store electronic medical records (EMR), detailed hospital charts, diagnostic imaging files, or financial/payment data. Full clinical assessments, medical history disclosures, and treatment documentation are conducted confidentially and in-person at our clinic in Panamaram.
+                      </p>
+                    </div>
+                  </div>
+                  <h3>B. Automatically Collected Technical Data</h3>
+                  <ul class="legal-list legal-list-bullet">
+                    <li><strong>Device &amp; Browser Information:</strong> Browser type and version, device model, operating system, screen dimensions, and language preferences.</li>
+                    <li><strong>Usage &amp; Interaction Data:</strong> Pages viewed, time spent on specific educational articles, referral sources (e.g., Google search), and button interactions (such as phone call or booking clicks).</li>
+                    <li><strong>Network Data:</strong> Truncated/anonymized Internet Protocol (IP) addresses collected solely for regional diagnostics, bot prevention, and aggregated traffic measurement.</li>
+                  </ul>
+                </section>
+
+                <!-- Section 3 -->
+                <section id="section-3" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">3</span>
+                    <h2>How Information Is Collected</h2>
+                  </div>
+                  <p>
+                    Information is collected through the following transparent mechanisms:
+                  </p>
+                  <ul class="legal-list">
+                    <li><strong>Direct Visitor Submission:</strong> When you submit our website contact form, send an email to <a href="mailto:physiodynamics10@gmail.com">physiodynamics10@gmail.com</a>, call our clinic at <a href="tel:+916282929104">+91 62829 29104</a>, or initiate a chat via WhatsApp.</li>
+                    <li><strong>External Booking Portals:</strong> When you choose to book an appointment through the Kerala Association of Physiotherapists Co-operative (KAPC) portal linked from our website.</li>
+                    <li><strong>Automated Analytics &amp; Cookies:</strong> When you browse our pages, provided you have granted consent for analytics storage via our cookie consent banner.</li>
+                  </ul>
+                </section>
+
+                <!-- Section 4 -->
+                <section id="section-4" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">4</span>
+                    <h2>How We Use Personal Information</h2>
+                  </div>
+                  <p>
+                    We use the personal information collected through our website strictly for legitimate clinical, administrative, and service improvement purposes:
+                  </p>
+                  <ul class="legal-list">
+                    <li><strong>Appointment Coordination:</strong> Scheduling, confirming, rescheduling, and answering inquiries regarding clinic consultations and home-care physiotherapy visits across Wayanad.</li>
+                    <li><strong>Patient Support:</strong> Answering questions regarding our specialized therapies (orthopedic, sports rehabilitation, neurological, pediatric, and chest physiotherapy).</li>
+                    <li><strong>Website Administration &amp; Security:</strong> Ensuring our digital pages load quickly, detecting broken links, preventing spam submissions, and safeguarding server integrity.</li>
+                    <li><strong>Aggregated Understanding:</strong> Analyzing general traffic trends to identify which clinical topics and educational guides are most beneficial to our community.</li>
+                  </ul>
+                </section>
+
+                <!-- Section 5 -->
+                <section id="section-5" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">5</span>
+                    <h2>Google Analytics 4 and Tag Manager</h2>
+                  </div>
+                  <p>
+                    We use <strong>Google Analytics 4 (GA4)</strong> (Measurement ID: <code>G-PF3YJYKC6V</code>) orchestrated via <strong>Google Tag Manager (GTM)</strong> (Container ID: <code>GTM-WKMWL3T3</code>) to assess website usage patterns and improve user experience.
+                  </p>
+                  <p>
+                    GA4 uses first-party cookies to measure non-personally identifiable traffic metrics, such as page views, scroll depth, and interaction counts. IP addresses are automatically truncated and anonymized by Google before storage.
+                  </p>
+                  <div class="legal-callout legal-callout-info">
+                    <i class="fas fa-toggle-on"></i>
+                    <div class="legal-callout-content">
+                      <div class="legal-callout-title">Google Consent Mode v2 Integration</div>
+                      <p>
+                        Our website strictly implements Google Consent Mode v2. On every page, <code>analytics_storage</code>, <code>ad_storage</code>, <code>ad_user_data</code>, and <code>ad_personalization</code> are initialized in a <strong>denied</strong> state by default. No analytics data or cookies are transmitted to Google until you explicitly choose "Accept All" or enable analytics cookies in your Cookie Settings.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- Section 6 -->
+                <section id="section-6" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">6</span>
+                    <h2>Microsoft Clarity Analytics</h2>
+                  </div>
+                  <p>
+                    Where activated, our website utilizes <strong>Microsoft Clarity</strong> to analyze behavioral metrics, visual heatmaps, and session navigation dynamics. This service helps us understand how visitors navigate through our clinical service pages and locate contact details, allowing us to enhance user interface clarity.
+                  </p>
+                  <p>
+                    Clarity records session interactions without capturing sensitive personal data. Standard data masking is active to prevent any text typed into form input fields from being recorded. Like Google Analytics, Clarity operates in alignment with visitor cookie consent choices.
+                  </p>
+                </section>
+
+                <!-- Section 7 -->
+                <section id="section-7" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">7</span>
+                    <h2>Cookie Usage and Consent Management</h2>
+                  </div>
+                  <p>
+                    Cookies are small text files placed on your device to ensure website reliability and measure traffic. Below is an overview of cookies utilized on our website:
+                  </p>
+                  <div class="legal-table-responsive">
+                    <table class="legal-table">
+                      <thead>
+                        <tr>
+                          <th>Cookie Category</th>
+                          <th>Purpose</th>
+                          <th>Default Status</th>
+                          <th>Management Option</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><strong>Strictly Necessary</strong></td>
+                          <td>Preserves core website layout, security, and remembers your cookie consent selection (<code>pd_consent_status</code>).</td>
+                          <td>Always Active</td>
+                          <td>Required for basic site functionality.</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Analytics &amp; Performance</strong></td>
+                          <td>Measures page visits, bounce rates, and navigation paths (GA4: <code>_ga</code>, <code>_ga_*</code>; Clarity).</td>
+                          <td>Denied by Default</td>
+                          <td>Can be enabled or disabled via Cookie Settings.</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Marketing / Third-Party</strong></td>
+                          <td>Controls third-party behavioral tracking or external advertising signals.</td>
+                          <td>Denied by Default</td>
+                          <td>Can be enabled or disabled via Cookie Settings.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="legal-cookie-box">
+                    <div class="legal-cookie-box-text">
+                      <h4>Manage Your Cookie Preferences</h4>
+                      <p>
+                        You can update, modify, or revoke your cookie consent settings at any time with a single click. Your choices are honored immediately.
+                      </p>
+                    </div>
+                    <div>
+                      <a href="#cookie-settings" class="legal-btn-manage-cookies" id="openCookieSettings" role="button">
+                        <i class="fas fa-sliders-h"></i> Cookie Settings
+                      </a>
+                    </div>
+                  </div>
+                  <p class="text-muted small">
+                    You may also configure your web browser (Chrome, Safari, Firefox, Edge) to block or delete cookies entirely. Please note that blocking essential cookies may affect the visual display of certain website elements.
+                  </p>
+                </section>
+
+                <!-- Section 8 -->
+                <section id="section-8" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">8</span>
+                    <h2>Third-Party Services and External Links</h2>
+                  </div>
+                  <p>
+                    To provide convenient booking and communication, our website links to or integrates specific third-party tools:
+                  </p>
+                  <ul class="legal-list">
+                    <li><strong>KAPC Online Booking System:</strong> Appointment links direct visitors to the Kerala Association of Physiotherapists Co-operative portal at <a href="https://kapcwayanad.in/bookings/create/9" target="_blank" rel="noopener">kapcwayanad.in</a>. Data entered on that external portal is governed by KAPC's privacy terms.</li>
+                    <li><strong>WhatsApp Messaging:</strong> When you click our WhatsApp links (<a href="https://wa.me/916282929104" target="_blank" rel="noopener">+91 62829 29104</a>), conversation data is encrypted and managed subject to WhatsApp’s privacy policy.</li>
+                    <li><strong>Google Maps:</strong> We provide an embedded Google Map to help patients locate our clinic in Panamaram. Interaction with the map is subject to Google’s Privacy Policy.</li>
+                    <li><strong>Tidio Live Chat:</strong> Where active, our chat widget loads asynchronously on user interaction to facilitate real-time enquiry assistance.</li>
+                  </ul>
+                </section>
+
+                <!-- Section 9 -->
+                <section id="section-9" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">9</span>
+                    <h2>Data Storage, Retention, and Security Practices</h2>
+                  </div>
+                  <p>
+                    We implement sensible administrative, technical, and physical safeguards appropriate for a healthcare clinic website:
+                  </p>
+                  <ul class="legal-list">
+                    <li><strong>Secure Transmission:</strong> Our website operates under Hypertext Transfer Protocol Secure (HTTPS) with Transport Layer Security (TLS) certificates to protect data in transit between your browser and our server.</li>
+                    <li><strong>Restricted Staff Access:</strong> Enquiries submitted via email or telephone are accessed strictly by licensed clinical practitioners and authorized clinic administrative personnel who are bound by professional confidentiality.</li>
+                    <li><strong>Prudent Data Retention:</strong> General website enquiries that do not result in clinical consultations are periodically reviewed and purged. If you become a clinic patient, your clinical records are maintained under Indian clinical record-keeping standards at our physical clinic.</li>
+                  </ul>
+                  <div class="legal-callout legal-callout-warning">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <div class="legal-callout-content">
+                      <div class="legal-callout-title">Internet Transmission Disclaimer</div>
+                      <p>
+                        While we apply industry-standard security measures, no electronic data transmission over the Internet can be guaranteed as 100% invulnerable. We advise visitors not to transmit highly sensitive financial documents or unsolicited medical diagnostic scans through generic web contact forms.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- Section 10 -->
+                <section id="section-10" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">10</span>
+                    <h2>Sharing and Disclosure of Information</h2>
+                  </div>
+                  <p>
+                    Physio Dynamics does not sell, lease, trade, or distribute personal contact information to commercial advertising networks or data brokers. Personal data is disclosed only under the following limited circumstances:
+                  </p>
+                  <ul class="legal-list">
+                    <li><strong>Operational Service Providers:</strong> Trusted IT, hosting, and communication providers who assist in website hosting, domain infrastructure, or email delivery under strict confidentiality agreements.</li>
+                    <li><strong>Legal and Statutory Compliance:</strong> Where required by applicable Indian law, government regulatory authorities, or a valid order of a court of competent jurisdiction.</li>
+                    <li><strong>Protection of Health and Safety:</strong> In urgent medical circumstances where disclosure is necessary to protect the immediate physical safety or health of a patient or others, in accordance with medical ethics.</li>
+                  </ul>
+                </section>
+
+                <!-- Section 11 -->
+                <section id="section-11" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">11</span>
+                    <h2>Your Privacy Rights and Choices</h2>
+                  </div>
+                  <p>
+                    Subject to applicable Indian data protection laws, visitors and patients enjoy clear rights regarding their personal information:
+                  </p>
+                  <ul class="legal-list">
+                    <li><strong>Access and Verification:</strong> You may request confirmation of whether we hold contact details you previously submitted through our website.</li>
+                    <li><strong>Correction and Rectification:</strong> You may ask us to update or correct inaccurate or incomplete contact numbers, spellings, or email addresses.</li>
+                    <li><strong>Consent Revocation:</strong> You can modify or withdraw your analytics cookie consent at any time using the on-site Cookie Settings modal.</li>
+                    <li><strong>Enquiry Data Deletion:</strong> You may request the deletion of non-clinical enquiry messages submitted via our online contact form by emailing <a href="mailto:physiodynamics10@gmail.com">physiodynamics10@gmail.com</a>.</li>
+                  </ul>
+                </section>
+
+                <!-- Section 12 -->
+                <section id="section-12" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">12</span>
+                    <h2>Children's Privacy</h2>
+                  </div>
+                  <p>
+                    Physio Dynamics offers specialized pediatric physiotherapy services for children and adolescents experiencing developmental delays, neurological conditions, or post-injury rehabilitation. However, our website is intended for use by adults, parents, and legal guardians.
+                  </p>
+                  <p>
+                    We do not knowingly collect personal contact details directly from unsupervised minors under 18 years of age through our website. All clinical enquiries, appointments, and consent for pediatric patients must be submitted by a parent or legal guardian.
+                  </p>
+                </section>
+
+                <!-- Section 13 -->
+                <section id="section-13" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">13</span>
+                    <h2>External Website Links</h2>
+                  </div>
+                  <p>
+                    Our website may contain hyperlinks to external sites, including medical associations, clinical references, social media channels, or the KAPC online booking portal. These external websites are operated independently of Physio Dynamics and maintain their own distinct privacy policies.
+                  </p>
+                  <p>
+                    We encourage you to review the privacy notices of any external site you visit. Physio Dynamics assumes no responsibility or liability for the content, privacy practices, or operational procedures of third-party platforms.
+                  </p>
+                </section>
+
+                <!-- Section 14 -->
+                <section id="section-14" class="legal-section">
+                  <div class="legal-section-header">
+                    <span class="legal-section-num">14</span>
+                    <h2>Changes to this Policy and Contact Details</h2>
+                  </div>
+                  <p>
+                    We may update this Privacy Policy periodically to reflect technological enhancements, operational changes at our clinic, or evolving regulatory standards. Any revisions will be published on this page with an updated "Last Updated" date at the top of the document.
+                  </p>
+                  <p>
+                    Continued use of our website after updates are posted signifies your acknowledgement of the revised terms.
+                  </p>
+
+                  <!-- Dedicated Clinic Contact Card -->
+                  <div class="legal-contact-card">
+                    <h3>Contact Our Clinic for Privacy Enquiries</h3>
+                    <p class="subtitle">
+                      If you have questions, wish to exercise your data rights, or need clarification regarding our privacy practices, please contact our administrative team directly:
+                    </p>
+                    <div class="legal-contact-grid">
+                      <div class="legal-contact-item">
+                        <i class="fas fa-clinic-medical"></i>
+                        <div class="legal-contact-item-info">
+                          <h5>Clinic Location</h5>
+                          <p>UB City Centre Building, Near Crescent Public School, Panamaram, Wayanad, Kerala – 670721</p>
+                        </div>
+                      </div>
+                      <div class="legal-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="legal-contact-item-info">
+                          <h5>Telephone</h5>
+                          <p><a href="tel:+916282929104">+91 62829 29104</a></p>
+                        </div>
+                      </div>
+                      <div class="legal-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="legal-contact-item-info">
+                          <h5>Email Enquiries</h5>
+                          <p><a href="mailto:physiodynamics10@gmail.com">physiodynamics10@gmail.com</a></p>
+                        </div>
+                      </div>
+                      <div class="legal-contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="legal-contact-item-info">
+                          <h5>Working Hours</h5>
+                          <p>Mon – Sat: 8:00 AM – 7:00 PM<br><span class="text-muted">Sunday: Closed</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="legal-contact-actions">
+                      <a href="tel:+916282929104" class="legal-btn-action btn-primary-action">
+                        <i class="fas fa-phone-alt"></i> Call Clinic
+                      </a>
+                      <a href="mailto:physiodynamics10@gmail.com" class="legal-btn-action btn-outline-action">
+                        <i class="fas fa-envelope"></i> Email Us
+                      </a>
+                      <a href="https://kapcwayanad.in/bookings/create/9" target="_blank" rel="noopener" class="legal-btn-action btn-outline-action">
+                        <i class="fas fa-calendar-check"></i> Book Online
+                      </a>
+                    </div>
+                  </div>
+                </section>
+              </article>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
     <footer class="modern-footer">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-4">
-                    <a href="/" class="footer-logo">Physio Dynamics</a>
-                    <p class="mb-4">
-                        Leading physiotherapy and sports rehabilitation center in Wayanad,
-                        providing expert care with compassion and professionalism since
-                        2024.
-                    </p>
-                    <div class="social-links">
-                        <a href="https://wa.me/916282929104" target="_blank" rel="noopener" aria-label="WhatsApp"><i
-                                class="fab fa-whatsapp"></i></a>
-                        <a href="https://www.facebook.com/physiodynamicz" target="_blank" rel="noopener"
-                            aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/physio.dynamics.panamaram/" target="_blank" rel="noopener"
-                            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/company/physio-dynamics-health/" target="_blank"
-                            rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://www.quora.com/profile/Physio-Dynamics" target="_blank" rel="noopener" aria-label="Quora" class="d-inline-flex align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quora" viewBox="0 0 16 16" style="width: 1em; height: 1em;"><path d="M8.73 12.476c-.554-.065-1.148-.271-1.637-.609.152-.692.35-1.561.5-2.338 1.292-.04 2.307-.446 2.858-1.028.535-.566.814-1.393.814-2.407 0-.99-.31-1.786-.922-2.367C9.72 3.167 8.877 2.87 7.7 2.87c-1.127 0-1.968.271-2.502.805C4.67 4.21 4.39 4.975 4.39 5.922c0 .993.308 1.83.917 2.487.625.673 1.6 1.025 2.9 1.053-.186.979-.47 2.51-.7 3.708-.08.416-.25 1.09-.434 1.346-.115.16-.314.3-.572.3-.265 0-.482-.162-.647-.482-.197-.384-.342-1.005-.447-1.85-.017-.14-.08-.223-.215-.248a.5.5 0 0 0-.254.02L2.73 13.1c-.244.093-.327.359-.227.575.465 1.002 1.152 1.637 2.062 1.905.908.267 1.862.08 2.5-.548.743-.728 1.12-2.122 1.396-3.324a18 18 0 0 0 .269-1.232c.311.233.722.378 1.232.431.223.022.424-.132.472-.348.048-.216-.093-.443-.3-.483zm-1.01-3.64c-1.42 0-2.146-.662-2.146-1.97 0-1.297.712-1.954 2.146-1.954 1.41 0 2.115.65 2.115 1.954 0 1.3-.715 1.97-2.11 1.97z"/></svg></a>
-                        </div>
-                </div>
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <a href="/" class="footer-logo">Physio Dynamics</a>
+            <p class="mb-4">
+              Leading physiotherapy and sports rehabilitation center in Wayanad, providing expert care with compassion and professionalism since 2024.
+            </p>
+            <div class="social-links">
+              <a href="https://wa.me/916282929104" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://www.facebook.com/physiodynamicz" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/physio.dynamics.panamaram/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/physio-dynamics-health/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.quora.com/profile/Physio-Dynamics" target="_blank" rel="noopener" aria-label="Quora" class="d-inline-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quora" viewBox="0 0 16 16" style="width: 1em; height: 1em;"><path d="M8.73 12.476c-.554-.065-1.148-.271-1.637-.609.152-.692.35-1.561.5-2.338 1.292-.04 2.307-.446 2.858-1.028.535-.566.814-1.393.814-2.407 0-.99-.31-1.786-.922-2.367C9.72 3.167 8.877 2.87 7.7 2.87c-1.127 0-1.968.271-2.502.805C4.67 4.21 4.39 4.975 4.39 5.922c0 .993.308 1.83.917 2.487.625.673 1.6 1.025 2.9 1.053-.186.979-.47 2.51-.7 3.708-.08.416-.25 1.09-.434 1.346-.115.16-.314.3-.572.3-.265 0-.482-.162-.647-.482-.197-.384-.342-1.005-.447-1.85-.017-.14-.08-.223-.215-.248a.5.5 0 0 0-.254.02L2.73 13.1c-.244.093-.327.359-.227.575.465 1.002 1.152 1.637 2.062 1.905.908.267 1.862.08 2.5-.548.743-.728 1.12-2.122 1.396-3.324a18 18 0 0 0 .269-1.232c.311.233.722.378 1.232.431.223.022.424-.132.472-.348.048-.216-.093-.443-.3-.483zm-1.01-3.64c-1.42 0-2.146-.662-2.146-1.97 0-1.297.712-1.954 2.146-1.954 1.41 0 2.115.65 2.115 1.954 0 1.3-.715 1.97-2.11 1.97z"/></svg>
+              </a>
+            </div>
+          </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-links">
-                        <h3 class="h5">Quick Links</h3>
-                        <ul>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/about">About Us</a></li>
-                            <li><a href="/services">Our Services</a></li>
-                            <li><a href="/expert-profile">Our Expertise</a></li>
-                            <li><a href="/blogs">Blog</a></li>
-                            <li><a href="/contact">Contact Us</a></li>
-                            <li>
-                                <a href="https://kapcwayanad.in/bookings/create/9" target="_blank" rel="noopener">Book
-                                    Appointment</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-links">
+              <h3 class="h5">Quick Links</h3>
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/services">Our Services</a></li>
+                <li><a href="/expert-profile">Our Expertise</a></li>
+                <li><a href="/blogs">Blog</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="https://kapcwayanad.in/bookings/create/9" target="_blank" rel="noopener">Book Appointment</a></li>
+              </ul>
+            </div>
+          </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-links">
-<h3 class="h5">Our Services</h3>
-<ul>
-<li><a href="/service/orthopedic-physiotherapy">Orthopedic Physiotherapy</a></li>
-<li><a href="/service/sports-physiotherapy">Sports Physiotherapy</a></li>
-<li><a href="/service/neurological-physiotherapy">Neurological Physiotherapy</a></li>
-<li><a href="/service/pediatric-physiotherapy">Pediatric Physiotherapy</a></li>
-<li><a href="/service/chest-physiotherapy">Chest Physiotherapy</a></li>
-<li><a href="/service/home-care">Home Care Services</a></li>
-</ul>
-</div>
-                </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-links">
+              <h3 class="h5">Our Services</h3>
+              <ul>
+                <li><a href="/service/orthopedic-physiotherapy">Orthopedic Physiotherapy</a></li>
+                <li><a href="/service/sports-physiotherapy">Sports Physiotherapy</a></li>
+                <li><a href="/service/neurological-physiotherapy">Neurological Physiotherapy</a></li>
+                <li><a href="/service/pediatric-physiotherapy">Pediatric Physiotherapy</a></li>
+                <li><a href="/service/chest-physiotherapy">Chest Physiotherapy</a></li>
+                <li><a href="/service/home-care">Home Care Services</a></li>
+              </ul>
+            </div>
+          </div>
 
-                <div class="col-lg-2 col-md-6">
-          <div class="footer-links">
-            <h3 class="h5">Opening Hours</h3>
-            <ul>
-              <li><strong>Mon - Sat:</strong></li>
-              <li>8:00 AM - 7:00 PM</li>
-              <li><strong>Sunday:</strong> Closed</li>
-              <li><strong>Emergency:</strong> Available</li>
-            </ul>
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-links">
+              <h3 class="h5">Opening Hours</h3>
+              <ul>
+                <li><strong>Mon - Sat:</strong></li>
+                <li>8:00 AM - 7:00 PM</li>
+                <li><strong>Sunday:</strong> Closed</li>
+                <li><strong>Emergency:</strong> Available</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>
+            &copy; <span id="currentYear"></span> Physio Dynamics. All Rights Reserved.
+          </p>
+          <div class="mt-2" style="font-size: 0.85rem;">
+            <a href="/privacy-policy" class="text-white text-decoration-underline me-3">Privacy Policy</a>
+            <a href="/terms-of-service" class="text-white-50 text-decoration-none me-3">Terms of Service</a>
+            <a class="text-white-50 text-decoration-none me-3" href="#cookie-settings" id="openCookieSettingsFooter" role="button">Cookie Settings</a>
+            <span class="text-white-50 me-3">|</span>
+            <a href="https://www.rootracesolutions.com/" target="_blank" rel="noopener" class="text-white-50 text-decoration-none">Designed &amp; Developed by : <span class="text-white" style="font-weight: 600;">RootRace</span></a>
           </div>
         </div>
       </div>
-
-      <div class="copyright">
-        <p>
-          &copy; <span id="currentYear"></span> Physio Dynamics. All Rights
-          Reserved.
-        </p>
-        <div class="mt-2" style="font-size: 0.85rem;">
-          <a href="/privacy-policy" class="text-white-50 text-decoration-none me-3">Privacy Policy</a>
-          <a href="/terms-of-service" class="text-white-50 text-decoration-none me-3">Terms of Service</a>
-<a class="text-white-50 text-decoration-none me-3" href="#cookie-settings" id="openCookieSettings" role="button">Cookie Settings</a>
-          <span class="text-white-50 me-3">|</span>
-          <a href="https://www.rootracesolutions.com/" target="_blank" rel="noopener" class="text-white-50 text-decoration-none">Designed & Developed by : <span class="text-white" style="font-weight: 600;">RootRace</span></a>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
     <!-- JavaScript -->
     <script src="/js/bootstrap.bundle.min.js" defer></script>
@@ -270,35 +724,59 @@
 
     <!-- Floating Buttons -->
     <div class="floating-buttons">
-      <a
-        href="#top"
-        class="floating-button back-to-top"
-        aria-label="Back to top"
-      >
+      <a href="#main-content" class="floating-button back-to-top" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
       </a>
-      <a
-        href="tel:+916282929104"
-        class="floating-button phone"
-        aria-label="Call us"
-      >
+      <a href="tel:+916282929104" class="floating-button phone" aria-label="Call us">
         <i class="fas fa-phone-alt"></i>
       </a>
-      <a
-        href="https://wa.me/916282929104"
-        class="floating-button whatsapp"
-        aria-label="Chat on WhatsApp"
-        target="_blank"
-        rel="noopener"
-      >
+      <a href="https://wa.me/916282929104" class="floating-button whatsapp" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
         <i class="fab fa-whatsapp"></i>
       </a>
     </div>
 
+    <!-- Active TOC Spy & Dynamic Year Script -->
     <script>
-      // Set current year in footer
-      document.getElementById('currentYear').textContent = new Date().getFullYear();
+      document.addEventListener("DOMContentLoaded", function () {
+        // Set year
+        const yearEl = document.getElementById('currentYear');
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+        // Connect footer Cookie Settings button if present
+        const footerCookieBtn = document.getElementById('openCookieSettingsFooter');
+        if (footerCookieBtn && window.pdConsent && window.pdConsent.openModal) {
+          footerCookieBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            window.pdConsent.openModal();
+          });
+        }
+
+        // Table of Contents Active Link Highlight on Scroll
+        const sections = document.querySelectorAll('.legal-section');
+        const tocLinks = document.querySelectorAll('.legal-toc-link');
+
+        if ('IntersectionObserver' in window && sections.length && tocLinks.length) {
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const id = entry.target.getAttribute('id');
+                tocLinks.forEach((link) => {
+                  if (link.getAttribute('href') === '#' + id) {
+                    link.classList.add('active');
+                  } else {
+                    link.classList.remove('active');
+                  }
+                });
+              }
+            });
+          }, {
+            rootMargin: '-80px 0px -70% 0px',
+            threshold: 0
+          });
+
+          sections.forEach((sec) => observer.observe(sec));
+        }
+      });
     </script>
-      
-</body>
+  </body>
 </html>
