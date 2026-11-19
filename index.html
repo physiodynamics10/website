@@ -51,8 +51,8 @@
 <link href="https://maps.googleapis.com" rel="dns-prefetch"/>
 <link as="image" href="/logo-70.webp" rel="preload" type="image/webp"/>
 <!-- CSS Preloads -->
-<link rel="preload" href="/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="/css/bootstrap.min.css"></noscript>
+<link as="style" href="/css/bootstrap.min.css" rel="preload"/>
+<link as="style" href="/css/font-awesome-purged.min.css" rel="preload"/>
 <link as="style" href="/css/style.css" rel="preload"/>
 <!-- Fonts -->
 <link as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Poppins:wght@400;500;600;700&amp;display=optional" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/>
@@ -60,10 +60,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Poppins:wght@400;500;600;700&amp;display=optional" rel="stylesheet"/>
 </noscript>
 <!-- Bootstrap CSS -->
-
+<link href="/css/bootstrap.min.css" rel="stylesheet"/>
 <!-- Font Awesome Icons -->
-<link rel="preload" href="/css/font-awesome-purged.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="/css/font-awesome-purged.min.css"></noscript>
+<link href="/css/font-awesome-purged.min.css" rel="stylesheet"/>
 <!-- Favicons -->
 <link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="/android-chrome-192.png" rel="icon" sizes="192x192" type="image/png"/>
@@ -80,12 +79,11 @@ body{margin:0;font-family:Inter,sans-serif;color:var(--dark);background-color:#f
 .modern-header .navbar-brand{font-weight:700;font-size:1.5rem;display:flex;align-items:center;color:#fff}
 .modern-header .navbar-brand img{height:40px;margin-right:10px}
 .modern-header .nav-link{color:#ffffff;font-weight:500;margin:0 5px;padding:6px 12px!important;border-radius:50px;font-size:.9rem}
-.hero-section{background:linear-gradient(rgba(0,82,97,.88),rgba(0,103,121,.85)) center/cover;color:#fff;display:flex;align-items:center;padding:180px 0 100px;min-height:100vh;margin-top:70px}
+.hero-section{background:linear-gradient(rgba(0,82,97,.88),rgba(0,103,121,.85)) center/cover;color:#fff;display:flex;align-items:center;padding:180px 0 100px;min-height:100vh;margin-top:0}
 .hero-section h1{font-size:3.5rem;margin-bottom:1.5rem;line-height:1.1}
 .hero-section p{font-size:1.2rem;margin-bottom:2rem;opacity:.95;max-width:600px}
 </style>
-<link rel="preload" href="/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="/css/style.css"></noscript>
+<link href="/css/style.css" rel="stylesheet"/>
 <!-- Structured Data (JSON-LD) -->
 <script type="application/ld+json">
     {
