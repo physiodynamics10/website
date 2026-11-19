@@ -84,7 +84,7 @@
                 'color: #1e293b;' +
                 'padding: 18px 24px;' +
                 'box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.12);' +
-                'border-top: 3px solid #0692ab;' +
+                'border-top: 3px solid #006779;' +
                 'font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;' +
                 'font-size: 14px;' +
                 'line-height: 1.5;' +
@@ -117,12 +117,18 @@
                 'gap: 8px;' +
             '}' +
             '#pd-cookie-banner a {' +
-                'color: #0692ab;' +
+                'color: #006779;' +
                 'text-decoration: underline;' +
-                'font-weight: 500;' +
+                'text-underline-offset: 3px;' +
+                'font-weight: 600;' +
             '}' +
             '#pd-cookie-banner a:hover {' +
-                'color: #005261;' +
+                'color: #004d5a;' +
+            '}' +
+            '#pd-cookie-banner a:focus-visible {' +
+                'outline: 2px solid #006779;' +
+                'outline-offset: 2px;' +
+                'border-radius: 2px;' +
             '}' +
             '#pd-cookie-banner .pd-actions {' +
                 'display: flex;' +
@@ -141,19 +147,24 @@
                 'border: 1px solid transparent;' +
                 'white-space: nowrap;' +
             '}' +
+            '.pd-btn:focus-visible {' +
+                'outline: 2px solid #005261;' +
+                'outline-offset: 2px;' +
+            '}' +
             '.pd-btn-accept {' +
-                'background: #0692ab;' +
+                'background: #006779;' +
                 'color: #ffffff;' +
-                'border-color: #0692ab;' +
+                'border-color: #006779;' +
             '}' +
             '.pd-btn-accept:hover {' +
-                'background: #005261;' +
-                'border-color: #005261;' +
+                'background: #004d5a;' +
+                'border-color: #004d5a;' +
+                'color: #ffffff;' +
             '}' +
             '.pd-btn-reject {' +
                 'background: #f1f5f9;' +
-                'color: #334155;' +
-                'border-color: #cbd5e1;' +
+                'color: #1e293b;' +
+                'border-color: #94a3b8;' +
             '}' +
             '.pd-btn-reject:hover {' +
                 'background: #e2e8f0;' +
@@ -161,12 +172,13 @@
             '}' +
             '.pd-btn-settings {' +
                 'background: transparent;' +
-                'color: #0692ab;' +
-                'border-color: #0692ab;' +
+                'color: #006779;' +
+                'border-color: #006779;' +
             '}' +
             '.pd-btn-settings:hover {' +
                 'background: #f0fdfa;' +
-                'color: #005261;' +
+                'color: #004d5a;' +
+                'border-color: #004d5a;' +
             '}' +
             '/* Modal Styles */' +
             '#pd-cookie-modal-backdrop {' +
@@ -244,15 +256,15 @@
                 'font-size: 14px;' +
             '}' +
             '.pd-category-desc {' +
-                'font-size: 12.5px;' +
-                'color: #64748b;' +
+                'font-size: 13px;' +
+                'color: #334155;' +
                 'margin: 0;' +
-                'line-height: 1.4;' +
+                'line-height: 1.45;' +
             '}' +
             '.pd-badge-required {' +
                 'font-size: 11px;' +
-                'font-weight: 600;' +
-                'color: #0692ab;' +
+                'font-weight: 700;' +
+                'color: #005261;' +
                 'background: #e0f2fe;' +
                 'padding: 3px 8px;' +
                 'border-radius: 12px;' +
@@ -280,7 +292,7 @@
                 'transition: .2s;' +
                 'border-radius: 50%;' +
             '}' +
-            'input:checked + .pd-slider { background-color: #0692ab; }' +
+            'input:checked + .pd-slider { background-color: #006779; }' +
             'input:checked + .pd-slider:before { transform: translateX(20px); }' +
             '#pd-cookie-modal .pd-modal-footer {' +
                 'padding: 16px 24px;' +
@@ -321,7 +333,7 @@
             '<div class="pd-container">' +
                 '<div class="pd-text">' +
                     '<div class="pd-title">' +
-                        '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0692ab" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/></svg>' +
+                        '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#006779" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/></svg>' +
                         'We value your privacy' +
                     '</div>' +
                     'We use cookies to analyze clinic website traffic, improve treatment information, and understand how visitors use our site. You can accept, reject, or customize your preferences anytime. Learn more in our <a href="/privacy-policy">Privacy Policy</a>.' +
