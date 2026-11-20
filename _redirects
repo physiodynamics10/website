@@ -9,7 +9,6 @@ https://physiodynamics.netlify.app/* https://www.physio-dynamics.com/:splat 301!
 /ml / 301
 /team.html /expert-profile 301
 /team /expert-profile 301
-/blogs/role-of-physiotherapy-in-pain-management /blogs 301
 /blogs/parkinsons-disease-physiotherapy-kerala /service/neurological-physiotherapy 301
 
 # Clean URL redirects (.html to clean extensionless)
@@ -24,6 +23,7 @@ https://physiodynamics.netlify.app/* https://www.physio-dynamics.com/:splat 301!
 /services.html /services 301
 /expert-profile.html /expert-profile 301
 /blogs.html /blogs 301
+/blogs/role-of-physiotherapy-in-pain-management.html /blogs/role-of-physiotherapy-in-pain-management 301!
 /privacy-policy.html /privacy-policy 301
 /terms-of-service.html /terms-of-service 301
 
@@ -41,6 +41,7 @@ https://physiodynamics.netlify.app/* https://www.physio-dynamics.com/:splat 301!
 /blogs/ /blogs 301
 /blogs/index /blogs 301
 /blogs/index.html /blogs 301
+/blogs/role-of-physiotherapy-in-pain-management/ /blogs/role-of-physiotherapy-in-pain-management 301
 /privacy-policy/ /privacy-policy 301
 /terms-of-service/ /terms-of-service 301
 
