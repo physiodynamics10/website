@@ -623,4 +623,12 @@ a.text-primary:focus {
     color: var(--primary) !important;
 }
 
-
+/* --- Standardised Service Page Icon Styles --- */
+.service-page .condition-icon i,
+.service-page .injury-icon i,
+.sports-page .condition-icon i,
+.sports-page .injury-icon i,
+.service-page .hero-card-icon i,
+.sports-page .hero-card-icon i {
+    color: var(--service-primary, var(--sports-primary, var(--primary, #0692ab))) !important;
+}
