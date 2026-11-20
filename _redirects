@@ -13,8 +13,8 @@ https://physiodynamics.netlify.app/* https://www.physio-dynamics.com/:splat 301!
 /blogs/parkinsons-disease-physiotherapy-kerala /service/neurological-physiotherapy 301
 
 # Clean URL redirects (.html to clean extensionless)
-/service/sports-physiotherapy.html /service/sports-physiotherapy 301
-/service/chest-physiotherapy.html /service/chest-physiotherapy 301
+/service/sports-physiotherapy.html /service/sports-physiotherapy 301!
+/service/chest-physiotherapy.html /service/chest-physiotherapy 301!
 /service/orthopedic-physiotherapy.html /service/orthopedic-physiotherapy 301
 /service/neurological-physiotherapy.html /service/neurological-physiotherapy 301
 /service/pediatric-physiotherapy.html /service/pediatric-physiotherapy 301
@@ -45,7 +45,7 @@ https://physiodynamics.netlify.app/* https://www.physio-dynamics.com/:splat 301!
 /terms-of-service/ /terms-of-service 301
 
 # Direct 404 URL handling (return true 404 status code)
-/404 /404.html 404
+/404 /404.html 404!
 
 # Proper 404 handling fallback
 /* /404.html 404
